@@ -1,3 +1,46 @@
 <resources>
+    <!--Home page strings-->
     <string name="app_name">OpenLegendRPG</string>
+
+    <string
+        name="description_body1_header">What is Open Legend?
+    </string>
+
+    <string
+        name="description_body1">Open Legend is a tabletop roleplaying game (or RPG) in which the players play the part of mighty heroes and wicked villains in order to tell stories of epic proportion. In each game of Open Legend, the intrepid characters will fight mythic beasts, break ancient curses, unravel mysterious enigmas, discover treasures untold, and more. Open Legend is a streamlined system designed to let you tell big stories using small rules. The rules get complex when they need to, but never cumbersome, and wherever they could be cut out or simplified, they have been. Some of the highlights at the heart of Open Legend are explained below."
+    </string>
+
+    <string
+        name="description_body2_header">Unhindered Character Creation
+    </string>
+
+    <string
+        name="description_body2">With Open Legend, every ability you choose for your character is a new decision. You are never required to choose from a short list, and every character has the potential to access every ability. The story you choose to tell with these abilities and how they manifest, is an opportunity to let your imagination run wild. Select the abilities that match your vision and ignore the ones that don’t. Or, you can get started with one of our quick builds. Either way, the best part is, it is fast and simple but still has lots of potential for intricate and complex characters, if that is what you are looking for. Complex and simple characters can both play a meaningful role in an Open Legend game.
+    </string>
+
+    <string
+        name="description_body3_header">Banes and Boons
+    </string>
+
+    <string
+        name="banesAndBoons__description">Open Legend features a collection of banes and boons that any character can use as long as they possess the appropriate attributes. Banes allow you to stun your enemies, set them ablaze, or otherwise hinder them with devastating status effects. Boons are perks that you grant yourself or allies, such as magical healing, damage resistance, and flight. In Open Legend, no fighter is just a walking meat shield with a blade. He’s a trained combatant who can stun, blind, cripple, and hurl his foes across the battlefield. And when a sorceress summons an icy storm from the skies, she decides at the time of casting if she also wants it to slow, knockdown, or immobilize her enemies.
+    </string>
+
+    <string
+        name="diceWithoutLimit">Dice Without Limit
+    </string>
+
+    <string
+        name="diceDescription">In Open Legend, dice explode! That means that whenever any die rolls maximum, you get to reroll it and add the new roll to your total, ad infinitum. We love to tell a good story, but rolling dice is just so much fun, we thought that occasionally, you should get to roll a lot of them. The volatile nature of exploding dice makes every roll count, and every session of Open Legend is full of tense moments when the tides can turn at a moment’s notice, for better or worse.
+    </string>
+
+    <string
+        name="genrePossibility">Any Genre, Endless Possibilities
+    </string>
+
+    <string
+        name="genrePossibilityDescription">The core rules are written to reflect a high fantasy, sword and sorcery setting, but Open Legend was purposefully designed to be open to any genre. The mechanics of the game focus on effects rather than flavor so that your gaming table can tell whatever kind of story it wants. Struggle for survival in a post-apocalyptic zombie wasteland. Soar amidst the clouds on your crystal-powered airship in a steampunk inspired campaign of swashbuckling sky pirates. Explore an alien-infested space station abandoned at the edge of the universe. The possibilities are endless.
+    </string>
+
+    <!--End of home page strings-->
 </resources>
