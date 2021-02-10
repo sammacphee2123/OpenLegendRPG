@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">OpenLegendRPG</string>
+    <string-array name="navigation_drawer_items_array">
+        <item>Core Rules</item>
+        <item>Banes</item>
+        <item>Boons</item>
+        <item>Feats</item>
+    </string-array>
 </resources>
