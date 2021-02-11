@@ -19,6 +19,7 @@ import com.journaldev.navigationdrawer.CoreRulesFragment;
 import com.journaldev.navigationdrawer.DataModel;
 import com.journaldev.navigationdrawer.DrawerItemCustomAdapter;
 import com.journaldev.navigationdrawer.FeatsFragment;
+import com.journaldev.navigationdrawer.HomeFragment;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -43,12 +44,13 @@ public class MainActivity extends AppCompatActivity {
 
         setupToolbar();
 
-        DataModel[] drawerItem = new DataModel[4];
+        DataModel[] drawerItem = new DataModel[5];
 
-        drawerItem[0] = new DataModel(R.drawable.corerules, "Core Rules");
-        drawerItem[1] = new DataModel(R.drawable.banes, "Banes");
-        drawerItem[2] = new DataModel(R.drawable.boons, "Boons");
-        drawerItem[3] = new DataModel(R.drawable.feats, "Feats");
+        drawerItem[0] = new DataModel(R.drawable.home, "Home");
+        drawerItem[1] = new DataModel(R.drawable.corerules, "Core Rules");
+        drawerItem[2] = new DataModel(R.drawable.banes, "Banes");
+        drawerItem[3] = new DataModel(R.drawable.boons, "Boons");
+        drawerItem[4] = new DataModel(R.drawable.feats, "Feats");
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(false);
         getSupportActionBar().setHomeButtonEnabled(true);
@@ -59,6 +61,8 @@ public class MainActivity extends AppCompatActivity {
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerLayout.setDrawerListener((DrawerLayout.DrawerListener) mDrawerToggle);
         setupDrawerToggle();
+
+        selectItem(0);
     }
 
     private class DrawerItemClickListener implements ListView.OnItemClickListener {
@@ -76,17 +80,19 @@ public class MainActivity extends AppCompatActivity {
 
         switch (position) {
             case 0:
-                fragment = new CoreRulesFragment();
+                fragment = new HomeFragment();
                 break;
             case 1:
-                fragment = new BanesFragment();
+                fragment = new CoreRulesFragment();
                 break;
             case 2:
-                fragment = new BoonsFragment();
+                fragment = new BanesFragment();
                 break;
             case 3:
-                fragment = new FeatsFragment();
+                fragment = new BoonsFragment();
                 break;
+            case 4:
+                fragment = new FeatsFragment();
             default:
                 break;
         }
