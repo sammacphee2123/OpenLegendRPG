@@ -18,7 +18,7 @@ import com.journaldev.navigationdrawer.BoonsFragment;
 import com.journaldev.navigationdrawer.CoreRulesFragment;
 import com.journaldev.navigationdrawer.DataModel;
 import com.journaldev.navigationdrawer.DrawerItemCustomAdapter;
-import com.journaldev.navigationdrawer.FeatsFragment;
+import com.journaldev.navigationdrawer.feats.FeatsFragment;
 import com.journaldev.navigationdrawer.HomeFragment;
 
 
