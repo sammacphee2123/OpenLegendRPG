@@ -19,8 +19,7 @@ public class BoonsFragment extends Fragment
     RecyclerView recyclerView;
     List<Boon> boonsList;
 
-    public BoonsFragment() {
-    }
+    public BoonsFragment() { }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
@@ -31,7 +30,7 @@ public class BoonsFragment extends Fragment
         recyclerView = rootView.findViewById(R.id.recyclerView);
 
         initData();
-        initRecyclerView();;
+        initRecyclerView();
 
         return rootView;
     }

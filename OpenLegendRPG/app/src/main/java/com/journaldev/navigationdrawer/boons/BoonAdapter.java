@@ -66,7 +66,8 @@ public class BoonAdapter extends RecyclerView.Adapter<BoonAdapter.ViewHolder>
                 boonDurationTV, boonAttributesTV, boonEffectTV;
         LinearLayout expandableLayout;
 
-        public ViewHolder(@NonNull final View itemView) {
+        public ViewHolder(@NonNull final View itemView)
+        {
             super(itemView);
 
             boonNameTV = itemView.findViewById(R.id.boonNameTV);
