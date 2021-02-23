@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="2.1"
+        android:scaleY="2.1"
+        android:scrollX="60dp"
+        android:alpha="0.85"
+        app:srcCompat="@drawable/open_legend_saryth_navigator_night_in_forest" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/openlegend_logo"
+            android:layout_width="244dp"
+            android:layout_height="81dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/openlegend_logo" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:id="@+id/chart_container"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#00000000"
+                android:orientation="vertical"
+                android:paddingBottom="200dp">
+
+                <TextView
+                    android:id="@+id/description_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:background="@drawable/box"
+                    android:duplicateParentState="false"
+                    android:text="@string/description_body1_header"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/description_body1"
+                    android:layout_width="match_parent"
+                    android:layout_height="237dp"
+                    android:background="@drawable/box"
+                    android:text="@string/description_body1"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/description_title" />
+
+                <TextView
+                    android:id="@+id/description_body2_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/box"
+                    android:duplicateParentState="false"
+                    android:text="@string/description_body2_header"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/description_body1" />
+
+                <TextView
+                    android:id="@+id/description_body2"
+                    android:layout_width="297dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/box"
+                    android:text="@string/description_body2"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/description_body2_header" />
+
+                <TextView
+                    android:id="@+id/description_body3_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/box"
+                    android:duplicateParentState="false"
+                    android:text="@string/description_body3_header"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/description_body2" />
+
+                <TextView
+                    android:id="@+id/banesAndBoons_body"
+                    android:layout_width="297dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/box"
+                    android:text="@string/banesAndBoons__description"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/description_body3_header" />
+
+                <TextView
+                    android:id="@+id/description_body4_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/box"
+                    android:duplicateParentState="false"
+                    android:text="@string/diceWithoutLimit"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/description_body3" />
+
+                <TextView
+                    android:id="@+id/description_body4"
+                    android:layout_width="297dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/box"
+                    android:text="@string/diceDescription"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/description_body4_header" />
+
+                <TextView
+                    android:id="@+id/description_body5_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/box"
+                    android:duplicateParentState="false"
+                    android:text="@string/genrePossibility"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/description_body4" />
+
+                <TextView
+                    android:id="@+id/description_body5"
+                    android:layout_width="297dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/box"
+                    android:text="@string/genrePossibilityDescription"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/description_body5_header" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

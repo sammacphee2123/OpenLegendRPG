@@ -6,9 +6,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
 import java.util.List;
+
 import ca.unb.mobiledev.openlegendrpg.R;
 
 public class BoonAdapter extends RecyclerView.Adapter<BoonAdapter.ViewHolder>
@@ -23,7 +26,7 @@ public class BoonAdapter extends RecyclerView.Adapter<BoonAdapter.ViewHolder>
 
     @NonNull
     @Override
-    public BoonAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
     {
         Log.i(TAG, "onCreateViewHolder: ");
 
@@ -34,7 +37,7 @@ public class BoonAdapter extends RecyclerView.Adapter<BoonAdapter.ViewHolder>
 
     @NonNull
     @Override
-    public void onBindViewHolder(@NonNull BoonAdapter.ViewHolder holder, int position)
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position)
     {
         Boon boon = boonsList.get(position);
         holder.boonNameTV.setText(boon.getName());
