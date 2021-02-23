@@ -14,7 +14,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
 import com.journaldev.navigationdrawer.BanesFragment;
-import com.journaldev.navigationdrawer.BoonsFragment;
+import com.journaldev.navigationdrawer.boons.BoonsFragment;
 import com.journaldev.navigationdrawer.CoreRulesFragment;
 import com.journaldev.navigationdrawer.DataModel;
 import com.journaldev.navigationdrawer.DrawerItemCustomAdapter;
