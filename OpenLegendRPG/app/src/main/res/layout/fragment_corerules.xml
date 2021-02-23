@@ -1,6 +1,6 @@
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/IntroButton"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -8,24 +8,133 @@
 
     <TextView
         android:id="@+id/label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="100dp"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:textSize="45dp"
         android:text="Core Rules"
-        android:textStyle="bold"/>
+        android:textSize="45dp"
+        android:textStyle="bold" />
 
     <TextView
-        android:layout_below="@id/label"
-        android:layout_centerInParent="true"
+        android:id="@+id/textView2"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:textSize="12dp"
-        android:layout_marginTop="10dp"
+        android:layout_below="@id/label"
+        android:layout_alignParentBottom="true"
         android:gravity="center_horizontal"
         android:text="Edit fragment_corerules.xml to change the appearance"
-        android:id="@+id/textView2" />
+        android:textSize="12dp" />
+
+    <Button
+        android:id="@+id/contentsIntroButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="500dp"
+        android:text="@string/introTitle" />
+
+    <Button
+        android:id="@+id/contentsCH1Button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="450dp"
+        android:text="@string/chapter1Title" />
+
+    <Button
+        android:id="@+id/contentsCH2Button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="400dp"
+        android:text="@string/chapter2Title" />
+
+    <Button
+        android:id="@+id/contentsCH3Button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="350dp"
+        android:text="@string/chapter3Title" />
+
+    <Button
+        android:id="@+id/contentsCH4Button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="300dp"
+        android:text="@string/chapter4Title" />
+
+    <Button
+        android:id="@+id/contentsCH5Button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="250dp"
+        android:text="@string/chapter5Title" />
+
+    <Button
+        android:id="@+id/contentsCH6Button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="200dp"
+        android:text="@string/chapter6Title" />
+
+    <Button
+        android:id="@+id/contentsCH7Button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="150dp"
+        android:text="@string/chapter7Title" />
+
+    <Button
+        android:id="@+id/contentsCH8Button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="100dp"
+        android:text="@string/chapter8Title" />
+
+    <Button
+        android:id="@+id/contentsCH9Button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/chapter9Title" />
 
 </RelativeLayout>
