@@ -58,4 +58,50 @@
     </string>
 
     <!--End of home page strings-->
+
+    strings iun vals
+
+    <!--Beginning of Core Rules strings-->
+    <string
+        name="next">Next Chapter
+    </string>
+    <string
+        name="table">Table of Contents
+    </string>
+    <string
+        name="previous">Previous Chapter
+    </string>
+    <string
+        name="introTitle">Introduction
+    </string>
+    <string
+        name="chapter1Title">Ch1: Character Creation
+    </string>
+    <string
+        name="chapter2Title">Ch2: Actions and Attributes
+    </string>
+    <string
+        name="chapter3Title">Ch3: Banes and Boons
+    </string>
+    <string
+        name="chapter4Title">Ch4: Feats
+    </string>
+    <string
+        name="chapter5Title">Ch5: Perks and Flaws
+    </string>
+    <string
+        name="chapter6Title">Ch6: Wealth and Equipment
+    </string>
+    <string
+        name="chapter7Title">Ch7: Combat
+    </string>
+    <string
+        name="chapter8Title">Ch8: Running the Game
+    </string>
+    <string
+        name="chapter9Title">Ch9: Special Equipment
+    </string>
+
+    <!--End of Core Rules strings-->
+
 </resources>

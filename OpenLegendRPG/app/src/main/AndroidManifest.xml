@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ca.unb.mobiledev.openlegendrpg">
@@ -9,12 +10,43 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OpenLegendRPG">
-        <activity android:name=".MainActivity" android:theme = "@style/Theme.OpenLegendRPG.NoActionBar">
+        <activity android:name=".MainActivity"
+            android:theme = "@style/Theme.OpenLegendRPG.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".chapters.introduction"
+            android:theme = "@style/Theme.OpenLegendRPG.NoActionBar">
+        </activity>
+        <activity android:name=".chapters.chapter1"
+            android:theme = "@style/Theme.OpenLegendRPG.NoActionBar">
+        </activity>
+        <activity android:name=".chapters.chapter2"
+            android:theme = "@style/Theme.OpenLegendRPG.NoActionBar">
+        </activity>
+        <activity android:name=".chapters.chapter3"
+            android:theme = "@style/Theme.OpenLegendRPG.NoActionBar">
+        </activity>
+        <activity android:name=".chapters.chapter4"
+            android:theme = "@style/Theme.OpenLegendRPG.NoActionBar">
+        </activity>
+        <activity android:name=".chapters.chapter5"
+            android:theme = "@style/Theme.OpenLegendRPG.NoActionBar">
+        </activity>
+        <activity android:name=".chapters.chapter6"
+            android:theme = "@style/Theme.OpenLegendRPG.NoActionBar">
+        </activity>
+        <activity android:name=".chapters.chapter7"
+            android:theme = "@style/Theme.OpenLegendRPG.NoActionBar">
+        </activity>
+        <activity android:name=".chapters.chapter8"
+            android:theme = "@style/Theme.OpenLegendRPG.NoActionBar">
+        </activity>v
+        <activity android:name=".chapters.chapter9"
+            android:theme = "@style/Theme.OpenLegendRPG.NoActionBar">
         </activity>
     </application>
 </manifest>
