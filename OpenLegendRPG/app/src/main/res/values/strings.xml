@@ -72,36 +72,441 @@
         name="previous">Previous Chapter
     </string>
     <string
-        name="introTitle">Introduction
+        name="introTitle">Introduction: This is Your Story. Tell it.
     </string>
     <string
-        name="chapter1Title">Ch1: Character Creation
+        name="chapter1Title">Chapter 1: Character Creation: Character Creation
     </string>
     <string
-        name="chapter2Title">Ch2: Actions and Attributes
+        name="chapter2Title">Chapter 2: Actions and Attributes: Actions and Attributes
     </string>
     <string
-        name="chapter3Title">Ch3: Banes and Boons
+        name="chapter3Title">Chapter 3: Banes and Boons: Banes and Boons
     </string>
     <string
-        name="chapter4Title">Ch4: Feats
+        name="chapter4Title">Chapter 4: Feats
     </string>
     <string
-        name="chapter5Title">Ch5: Perks and Flaws
+        name="chapter5Title">Chapter 5: Perks and Flaws
     </string>
     <string
-        name="chapter6Title">Ch6: Wealth and Equipment
+        name="chapter6Title">Chapter 6: Wealth and Equipment
     </string>
     <string
-        name="chapter7Title">Ch7: Combat
+        name="chapter7Title">Chapter 7: Combat
     </string>
     <string
-        name="chapter8Title">Ch8: Running the Game
+        name="chapter8Title">Chapter 8: Running the Game
     </string>
     <string
-        name="chapter9Title">Ch9: Special Equipment
+        name="chapter9Title">Chapter 9: Special Equipment
+    </string>
+    <string
+        name="whatDefinesOpenLegend">What Defines Open Legend?
+    </string>
+    <string
+        name="theActionRoll">The Core Mechanic: The Action Roll
+    </string>
+    <string
+        name="treasures">Greater Treasures Lie Within
+    </string>
+    <string
+        name="intro_Description1">Why Open Legend?
+    </string>
+    <string
+        name="intro_Description2">If you have played roleplaying games in the past, you may be wondering What makes Open Legend worth my time? What makes it different?
+The secret’s in the title: Open. Everything about the game has been built to open up the doors of possibility so that every table tells a legend worth telling. Here are a few of the possibilities that Open Legend offers.
+    </string>
+    <string name="ss"><![CDATA[<b>Bold.</b> <u>Underlined.</u> <i>Italic.</i> <big>Big.</big> <small>Small</small>]]></string>
+
+    <string
+        name="intro_Description3"><b>Open Source.</b> That’s right. The unabridged core rules are available on the website and the Open Legend Community License allows for publication of both commercial as well as non-commercial derivative works using the system. We know the public will love the game as much as we do, and we hope they’ll spread the love by publishing their own adventures, rules supplements, and more.
+    </string>
+    <string
+        name="intro_Description4"><b>Open Dice.</b> In Open Legend, dice explode! That means that whenever ANY die rolls maximum, you get to reroll it and add the new roll to your total, ad infinitum. The volatile nature of dice rolling makes every roll count, and each session of Open Legend is full of tense moments when the tides can turn at a moment’s notice, for better or worse.
+    </string>
+    <string
+        name="intro_Description5"><b>Open Legend.</b> You get to tell the story that you want to tell, with the characters you want to play. You aren’t tied down to specific class, archetype, or race combinations. The only limit is your imagination (and maybe the GM’s veto power). Rather than a list of set classes with a menu of skills to pick from, you start the game with attribute points that you spend as you wish to give your character the powers they need.
+    </string>
+    <string
+        name="intro_Description6">Welcome to Open Legend, a tabletop roleplaying game (or RPG) in which the players take the part of mighty heroes and wicked villains in order to tell stories of epic proportion. As in the vignettes above, every game of Open Legend revolves around intrepid characters performing heroic deeds. They will fight mythic beasts, outsmart cunning foes, break ancient curses, crack baffling cases, discover untold treasures, and more.
+    </string>
+    <string
+        name="intro_Description7">If you have never played a roleplaying game before, you can think of it as a movie in which the actors make up the script (and even much of the plot) as the movie is being shot. One player, called the <b>Game Master</b> (or GM), acts as producer, director, and writer. The GM establishes the setting, creates the antagonists, and develops enough plot to get the other players started. The GM also acts out the part of the villains and neutral characters in the story.
+    </string>
+    <string
+        name="intro_Description8">The rest of the players take the role of <b>Player Characters</b> (or PCs). The PCs are the protagonists of the story. In a high fantasy setting, one PC might be a dwarven warrior with a lust for gems, another an immortal elven wizard whose only desire is knowledge, and still another a half-angelic priest who travels the world in order to inspire others to act justly. In another game of Open Legend, the players might star as a rag tag crew of space pirates living from score to score on their barely functioning merchant class starship. All the common tropes could make an appearance: the reckless pilot, the brash captain with a troubled past, the hired gun, the stowaway, and the engineer who gets along with the ship better than with the crew.
+    </string>
+    <string
+        name="intro_Description9">Whatever the motivation of their characters, the players share a common goal: to take the plot and setting established by the GM and have fun. At some tables, this might look like J.R.R Tolkien’s Lord of the Rings. In others, it might look more like <i>Monty Python</i> and the <i>Holy Grail</i>. Whatever fun looks like at your table, Open Legend will be a part of it.
+    </string>
+    <string
+        name="intro_Description10">This is your story. Tell it.
+    </string>
+    <string
+        name="intro_Description11">Open Legend is a game designed for players who want enough rules to make a game fair, but not so many that the rules interfere with the fun or imagination. Open Legend provides a way to make sure that the game is balanced while adjusting the story of character abilities on the fly. The rules should be robust, but their only value is in telling a story.
+    </string>
+    <string
+        name="intro_Description12">For example, Open Legend’s streamlined systems for secondary effects (banes) and multi-target attacks mean that all characters use the same mechanics to craft unique attacks. In a fantasy campaign, an elemental mage might blast a fork of lightning to damage and stun his foes. A star trooper in a far future campaign might shoot an energy beam to create the very same effect. The rules for both attacks are the same regardless of the story you are using the mechanics to tell.
+    </string>
+    <string
+        name="intro_Description13">As storytellers, we love intricate plotlines that feature characters of depth and beauty. But as gamers, we also love rolling dice. If all we wanted to do with our friends was tell stories, we would write a novel together or join an improv theater group.
+    </string>
+    <string
+        name="intro_Description14">What we want to do is game. And that means we need rules.
+    </string>
+    <string
+        name="intro_Description15">Without well-defined rules, the decisions made by players and GMs can seem arbitrary or inconsistent. The GM may feel overburdened by a constant need to recall past rulings that they have made, and the players may feel like their decisions don’t actually matter because the GM can interpret them however they want. This is the opposite of how a baseball ref operates. The ref doesn’t need to create new rules for every play that they call. The rules of the game are already spelled out. They just need to interpret and apply them.
+    </string>
+    <string
+        name="intro_Description16">Open Legend was designed to provide enough rules so that players have a clear framework to guide their play, but not so many rules that the game gets bogged down by them. You spend your day job worrying about bookkeeping and policies. We don’t want the gaming table to feel like that, and we designed Open Legend to focus on the fun rather than the homework.
+    </string>
+    <string
+        name="intro_Description17">For example, you won’t have long lists of resources to manage. Any abilities that you can use or spells you can cast in Open Legend can be used at will. Likewise, spellcasters, psions, and techies don’t need to worry about poring over page after page of power descriptions in order to make the right choices. Instead, Open Legend uses a system of <b>banes</b> and <b>boons</b>, or status effects, that any character can apply if they are built to do so.
+    </string>
+    <string
+        name="intro_Description18">Other mechanics that will ensure that you can focus on the story you want to tell include simplified wealth and encumbrance systems. In Open Legend, you’ll never need to record a single gold piece on your character sheet or even think about how many pounds your revolver weighs.
+    </string>
+    <string
+        name="intro_Description19">Open Legend straddles the line between storytelling and rules mechanics by giving the best of both worlds. It emphasizes both storytelling and strategy at the same time, placing less restrictions on both.
+    </string>
+    <string
+        name="intro_Description20">We hope that we’ve built a game for players who love to tell a good story but don’t want every decision to be made on a whim.
+    </string>
+    <string
+        name="intro_Description21">We hope that we’ve built a game for players who love to shake the dice and see them roll but don’t want to spend hours min-maxing their characters.
+    </string>
+    <string
+        name="intro_Description22">Most of all, we hope that we’ve built a game for players like you.
+    </string>
+    <string
+        name="intro_Description23">Most meaningful tasks that a character attempts in Open Legend will be determined by the roll of dice.
+    </string>
+    <string
+        name="intro_Description24">To determine the outcome, you roll 1d20 plus any bonus dice granted by your character’s attribute that is most relevant to the task. Any dice that roll the maximum possible explode, which means you can roll them again and add the new total to your action roll as well. Continue rerolling dice until none of them explode.
+    </string>
+    <string
+        name="intro_Description25">Add all of the dice together to find your action roll total. If your total is equal to or greater than the action’s Challenge Rating, then you succeed. Otherwise, the GM decides that you either succeed with a twist or fail in a way that allows the story to progress.
+    </string>
+    <string
+        name="actionRoll">THE ACTION ROLL
+    </string>
+    <string
+        name="actionRoll2">Roll 1d20 + attribute dice (all dice explode)
+    </string>
+    <string
+        name="intro_Description26"><b>If the action roll…</b>
+    </string>
+    <string
+        name="intro_Description27"><b>then the result is…</b>
+    </string>
+    <string
+        name="intro_Description28">equals or exceeds the Challenge Rating,
+    </string>
+    <string
+        name="intro_Description29">the player succeeds.
+    </string>
+    <string
+        name="intro_Description30">is less than the Challenge Rating,
+    </string>
+    <string
+        name="intro_Description31">the player succeeds with a twist.
+    </string>
+    <string
+        name="intro_Description32">- OR -
+    </string>
+    <string
+        name="intro_Description33">the player fails but the story progresses. (GM’s Choice)
+    </string>
+    <string
+        name="intro_Description34">Example Action Roll
+    </string>
+    <string
+        name="intro_Description35">An adventuring party is traveling through the Darkwood, a forest cursed with malignant energy and cast in shadows at every turn. The party spies a gathering of lights in the distance ahead. At the same time, though, a Shade Demon has crept up behind the heroes. The GM tells Imladril, the elven ranger who is at the back of the marching order, to make a Perception roll against a Challenge Rating of 18. Imladril’s Perception score of 5 grants him a 2d6 bonus to Perception action rolls, so he grabs 1d20 + 2d6 and lets them fly.
+    </string>
+    <string
+        name="intro_Description36">Imladril rolls a 7 on the d20, and the d6s come up 1 and 6. Since the 6 explodes, the die is rolled again and it comes up a 3, for a grand total of 17 (7+1+6+3), just shy of the required 18. The GM decides to allow Imladril to <b>succeed with a twist</b>, so the GM rules that Imladril hears the demon fast enough to alert the party, but the demon is already within melee distance and is able to knock the ranger’s bow out of his hands before the combat begins.
+    </string>
+    <string
+        name="intro_Description37">Alternatively, the GM could decide that Imladril <b>fails, but the story progresses.</b> For example, the GM rules that the demon is able to grab the ranger and drag him silently into the darkness completely unbeknownst to the rest of the party distracted by the lights in the distance.
+    </string>
+    <string
+        name="intro_Description38">Action rolls and exploding dice are just the start of what makes Open Legend a blast to play. Read on to discover how to build the characters you’ve always wanted to play, equip them for adventure, explore unknown worlds, and perform epic feats of heroism.
+    </string>
+    <string
+        name="acquiringFeats">Acquiring Feats
+    </string>
+    <string
+        name="acquiringFeatDescription">During your adventurers, the GM will award you Experience Points (or XP) for accomplishing quests and driving the story forward. Every time you gain a point of XP, you also gain one feat point that can be used to purchase new feats just as you did during character creation. You do not have to spend these feat points when you gain them. You can feel free to save any unused feat points to be used at a later time.
     </string>
 
+    <string
+        name="Button1">Step 1: Describe Your Character
+    </string>
+    <string
+        name="Button2">Step 2: Choose Attributes
+    </string>
+    <string
+        name="Button3">Quick Build
+    </string>
+    <string
+        name="Button4">Custom Build
+    </string>
+    <string
+        name="Button5">Record Attribute Dice
+    </string>
+
+    <string
+        name="Chapter1_Description1">Before you can start telling your story, you’ll need a character to play. This chapter will offer you step-by-step instructions to create your own hero. In Open Legend, you typically begin as a level one character. As you complete missions or quests and gain more experience as a hero, you’ll level up and gain more power. These rules explain how to create a character starting at level one. Later, you’ll learn what to do when you level up.
+    </string>
+    <string
+        name="Chapter1_Description2">Before reading on, take a minute and think of your favorite movies, books, or video games.
+    </string>
+    <string
+        name="Chapter1_Description3"><i>Who were the characters you identified with?</i>
+    </string>
+    <string
+        name="Chapter1_Description4"><i>Who inspired you?</i>
+    </string>
+    <string
+        name="Chapter1_Description5">Now that you’ve got some of your favorites in mind, let’s create your character.
+    </string>
+    <string
+        name="Chapter1_Description6">Open Legend is a role playing game, which means your character will need more depth than merely a selection of attributes, feats, perks, and gear. To make your character come to life, add some of the following details. If you can’t think of anything yet, try to fill in the blanks during your first couple of play sessions as you get to know your character better.
+    </string>
+    <string
+        name="Chapter1_Description7"><b>A heroic name.</b> Be sure to check with your GM to see if they have any particular setting in mind. Phil the Fighter would feel quite out of place next to Therilas Windcaster and Gorion Skullcleaver.
+    </string>
+    <string
+        name="Chapter1_Description8"><b>Your race.</b> Your decision of race is limited only by your imagination, the setting, and the constraints provided by your GM. A typical fantasy campaign might feature dwarves, elves, halflings, celestials, and dragon-blooded. If you are playing in a futuristic space opera on the fringes of the galaxy, your GM might have several alien races to choose from. Some campaigns, such as a mystery of Lovecraftian horror, might allow only for regular old humans. Really, though, as long as it is approved by your GM, you can play anything you would like, whether that’s a psionic humanoid tiger, a 3-inch tall pixie, or anything in between.
+    </string>
+    <string
+        name="Chapter1_Description9">As part of deciding your race, you should also choose your <b>size</b>: small, medium, or large. A medium character is roughly the size of an average human. Small creatures range from about 2 - 4 feet in height, while large creatures are about 7 - 10 feet tall. A large creature occupies a 10’x10’ square in combat and has a 10’ reach (see Chapter 7: Combat for details). The GM may assign advantage or disadvantage during situations in which your size is relevant. For example, small creatures may gain advantage on rolls to hide and receive disadvantage on rolls to kick down a door. Likewise, large creatures might suffer disadvantage on attack rolls when fighting in confined spaces but gain advantage on rolls to intimidate smaller creatures.
+    </string>
+    <string
+        name="Chapter1_Description10">At the GM’s discretion, you may choose to be even smaller or larger than the listed sizes. A large creature’s reach is always equal to the length of its base. So, a giant with a 15’x15’ base would have a 15’ reach. All creatures always have at least a 5’ reach.
+    </string>
+    <string
+        name="Chapter1_Description11">No Racial Abilities or Adjustments?
+    </string>
+    <string
+        name="Chapter1_Description12">In Open Legend, races do not provide specific mechanical costs and benefits. Instead, you’ll have a chance to further define your character in a later step of character creation by choosing your perks and flaws. Some or all of your decisions at that stage may be influenced by your race, and you are encouraged to explain to the rest of your group how your race informs your choice of perks and flaws. For example, if you are playing a psionic humanoid tiger, you might choose the scent perk to highlight your hunter’s bloodline and the observant perk to simulate your extrasensory perception. Likewise, you could select the hot tempered flaw to represent the savage animal that still lurks beneath your intelligent outer shell.
+    </string>
+    <string
+        name="Chapter1_Description13"><b>Two exceptional physical traits.</b> Think of the first two features that other characters notice when they see you. Do your eyes glow red when you are angry? Are you seven feet tall? Is your hair a rainbow hue?
+    </string>
+    <string
+        name="Chapter1_Description14"><b>Two defining social traits.</b> Maybe you stutter when you’re nervous. Maybe you don’t trust anyone until they’ve proven themselves to you. Or, perhaps, you are a winsome bard who almost always talks in sing-song. Your two social traits should be characteristics that others will learn shortly after getting to know you.
+    </string>
+    <string
+        name="Chapter1_Description15"><b>A secret.</b> Your secret is something that other characters probably won’t find out about until they’ve gotten to know you quite well. It’s also a seed for great adventure that the GM can weave into the campaign.
+    </string>
+    <string
+        name="Chapter1_Description16">Example Character Secrets
+    </string>
+    <string
+        name="Chapter1_Description17">Before Volkor changed his name and began wandering the land as a barbarian sellsword, he was heir to the throne.
+    </string>
+    <string
+        name="Chapter1_Description18">Sir Thomas Tuckburrough served as an assassin for the local thieves guild until a job went bad and he murdered an innocent child—that’s when he began his road to the priesthood.
+    </string>
+    <string
+        name="Chapter1_Description19">Talia suffered from a horrible car accident as a youth. She only survived because a mad street doctor found her body and kept it alive with a number of cybernetic implants that have left her half machine, both physically and mentally.
+    </string>
+    <string
+        name="Chapter1_Description20">Attributes are the backbone of every character in Open Legend. They define what your character can and can’t do—the spheres they excel in, as well as their greatest weaknesses. Whenever your character attempts a heroic action in Open Legend, you’ll look to your attributes to see how well you succeed or fail.
+    </string>
+
+    <string
+        name="Chapter1_Description21">In Open Legend, attributes are divided into four categories: physical, social, mental, and extraordinary.
+    </string>
+    <string
+        name="Chapter1_Description22">A character’s skill with each attribute is expressed as a score from 0 (completely unpracticed) to 9 (superhuman). A character cannot use an extraordinary attribute if they have a score of zero, though physical, social, and mental attributes may still be used untrained.
+    </string>
+    <string
+        name="Chapter1_Description23">The average commoner or craftsman usually has scores ranging from 1 - 3 in several physical, social, and mental attributes. Extraordinary attributes are generally reserved for characters of power and note.
+    </string>
+    <string
+        name="Chapter1_Description24">The Attributes at a Glance tables provide a quick overview of some of the common actions that each attribute will help you accomplish. All of the attributes are explained in further detail in Chapter 2: Actions and Attributes.
+    </string>
+    <string
+        name="Chapter1_Description25">Physical Attributes at a Glance
+    </string>
+    <string
+        name="Chapter1_Description26"><b>Agility</b>
+    </string>
+    <string
+        name="Chapter1_Description27">Dodge attacks, move with stealth, perform acrobatics, shoot a bow, pick a pocket
+    </string>
+    <string
+        name="Chapter1_Description28"><b>Fortitude</b>
+    </string>
+    <string
+        name="Chapter1_Description29">Resist poison, shrug off pain, survive in a desert, wear heavy armor
+    </string>
+    <string
+        name="Chapter1_Description30"><b>Might</b>
+    </string>
+    <string
+        name="Chapter1_Description31">Swing a maul, jump over a chasm, break down a door, wrestle a foe to submission
+    </string>
+    <string
+        name="Chapter1_Description32">Mental Attributes at a Glance
+    </string>
+    <string
+        name="Chapter1_Description33"><b>Learning</b>
+    </string>
+    <string
+        name="Chapter1_Description34">Recall facts about history, arcane magic, the natural world, or any information you picked up from an external source
+    </string>
+    <string
+        name="Chapter1_Description35"><b>Logic</b>
+    </string>
+    <string
+        name="Chapter1_Description36">Innovate a new crafting method, decipher a code, jury-rig a device, get the gist of a language you don’t speak
+    </string>
+    <string
+        name="Chapter1_Description37"><b>Perception</b>
+    </string>
+    <string
+        name="Chapter1_Description38">Sense ulterior motives, track someone, catch a gut feeling, spot a hidden foe, find a secret door
+    </string>
+    <string
+        name="Chapter1_Description39"><b>Will</b>
+    </string>
+    <string
+        name="Chapter1_Description40">Maintain your resolve, resist torture, study long hours, stay awake on watch, stave off insanity
+    </string>
+
+    <string
+        name="Chapter1_Description41">Social Attributes at a Glance
+    </string>
+    <string
+        name="Chapter1_Description42"><b>Deception</b>
+    </string>
+    <string
+        name="Chapter1_Description43">Tell a lie, bluff at cards, disguise yourself, spread rumors, swindle a sucker
+    </string>
+    <string
+        name="Chapter1_Description44"><b>Persuasion</b>
+    </string>
+    <string
+        name="Chapter1_Description45">Negotiate a deal, convince someone, haggle a good price, pry information
+    </string>
+    <string
+        name="Chapter1_Description46"><b>Presence</b>
+    </string>
+    <string
+        name="Chapter1_Description47">Give a speech, sing a song, inspire an army, exert your force of personality, have luck smile upon you
+    </string>
+
+    <string
+        name="Chapter1_Description48">Extraordinary Attributes at a Glance
+    </string>
+    <string
+        name="Chapter1_Description49"><b>Alteration</b>
+    </string>
+    <string
+        name="Chapter1_Description50">Change shape, alter molecular structures, transmute one material into another
+    </string>
+    <string
+        name="Chapter1_Description51"><b>Creation</b>
+    </string>
+    <string
+        name="Chapter1_Description52">Channel higher powers, manifest something from nothing, regenerate, divinely bolster
+    </string>
+    <string
+        name="Chapter1_Description53"><b>Energy</b>
+    </string>
+    <string
+        name="Chapter1_Description54">Create and control the elements—fire, cold, electricity
+    </string>
+    <string
+        name="Chapter1_Description55"><b>Entropy</b>
+    </string>
+    <string
+        name="Chapter1_Description56">Disintegrate matter, kill with a word, create undead, sicken others
+    </string>
+    <string
+        name="Chapter1_Description57"><b>Influence</b>
+    </string>
+    <string
+        name="Chapter1_Description58">Control the minds of others, speak telepathically, instill fear, create illusory figments, cloak with invisibility
+    </string>
+
+    <string
+        name="Chapter1_Description59"><b>Movement</b>
+    </string>
+    <string
+        name="Chapter1_Description60">Teleport, fly, hasten, telekinetically push
+    </string>
+    <string
+        name="Chapter1_Description61"><b>Prescience</b>
+    </string>
+    <string
+        name="Chapter1_Description62">See the future, read minds or auras, view from afar, detect magic or evil, communicate with extraplanar entities
+    </string>
+    <string
+        name="Chapter1_Description63"><b>Protection</b>
+    </string>
+    <string
+        name="Chapter1_Description64">Protect from damage, break supernatural influence, dispel magic, exile extradimensional beings
+    </string>
+    <string
+        name="Chapter1_Description65">In Open Legend, you get to define your character’s strengths and weaknesses by choosing the attributes that fit your character concept. Described below are several methods by which you can assign your attributes.
+    </string>
+    <string
+        name="Chapter1_Description66">Quick Build
+    </string>
+    <string
+        name="Chapter1_Description67">If you are new to roleplaying games, or are just looking to get your character built quickly, choose one of the attribute sets listed in the Attribute Quick Builds table. Assign the scores listed to the attributes that define the type of character you want to play. The rest of your attributes begin with a score of zero.
+    </string>
+    <string
+        name="Chapter1_Description68">ATTRIBUTE QUICK BUILDS
+    </string>
+    <string
+        name="Chapter1_Description69"><b>Specialized Hero</b>
+    </string>
+
+    <string
+        name="Chapter1_Description70">5, 4, 3, 2, 2, 2
+    </string>
+    <string
+        name="Chapter1_Description71"><b>Well-rounded Hero</b>
+    </string>
+    <string
+        name="Chapter1_Description72">4, 4, 3, 3, 3, 1, 1
+    </string>
+    <string
+        name="Chapter1_Description73"><b>Jack of All Trades</b>
+    </string>
+    <string
+        name="Chapter1_Description74">3, 3, 3, 3, 3, 2, 2, 2, 1
+    </string>
+    <string
+        name="Chapter1_Description75">Custom Build
+    </string>
+    <string
+        name="Chapter1_Description76">If you would like more control over your attributes, you can purchase them to create your own set. With this method, at first level, you have a budget of 40 attribute points to spend, and the cost of each score is defined in the Purchasing Attributes table. The highest any score can reach at first level is 5, and you don’t have to spend all of your points at character creation.
+    </string>
+    <string
+        name="readingFeat">Reading a Feat Description
+    </string>
+    <string
+        name="readingFeat_Description">The full listing of feats is available in a searchable list here.
+
+Each feat description includes the following elements.
+
+<b>Title.</b> The name of the feat. Some feats contain multiple tiers, rising in power with each new tier. If a feat contains multiple tiers, these will be indicated in parentheses after the title (e.g., “Alternate Form (I - II)”).
+
+<b>Cost.</b> This is the number of feat points required to purchase the feat. If the feat has multiple tiers, the cost is the same for each tier and must be paid every time the feat is purchased at a new tier unless otherwise noted in the feat description. So, to access the Tier 5 ability of a feat, you must pay for the feat 5 times. If a feat does not have a noted exception it can only be purchased once.
+
+<b>Prerequisites.</b> Many feats have specific requirements that must be met before a character can purchase the feat. Prerequisites may take the form of a minimum attribute score, another feat, or a special requirement. If a feat has multiple tiers with different prerequisites, the requirements for each tier are separated by a slash.
+
+<b>Description.</b> This entry simply provides a general idea of what the feat could look like in the story. Because feats generally provide mechanical benefits that aren’t tied to specific sources, you can interpret the look and feel of your feat in a way that best fits your character concept and campaign setting. For example, a paladin in a typical fantasy setting might use the companion feat to enlist the assistance of a noble squire, while a technologist in a futuristic campaign might use the same feat to create an automaton combat droid. In both cases, the feat functions the same even though it is described differently.
+
+<b>Effect.</b> This entry indicates the mechanical effects of the feat on the rules of the game.
+    </string>
     <!--End of Core Rules strings-->
 
 </resources>

@@ -4,42 +4,1364 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_height="match_parent"
+    android:background="@android:color/transparent"
     android:layout_width="match_parent">
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleX="2.1"
+        android:scaleY="2.1"
+        android:scrollX="60dp"
+        app:srcCompat="@drawable/paper_bg" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@android:color/transparent"
         android:orientation="vertical">
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="0dp"
+            android:background="@android:color/transparent"
             android:fillViewport="true"
             android:layout_gravity="center_horizontal">
 
-            <RelativeLayout
-                android:id="@+id/ch1_container"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#00000000"
+                android:background="@android:color/transparent"
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/chapter1_title"
+                    android:id="@+id/Chapter1_Title"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="37dp"
-                    android:layout_marginEnd="0dp"
+                    android:layout_height="wrap_content"
                     android:background="@drawable/corerules"
-                    android:duplicateParentState="false"
                     android:text="@string/chapter1Title"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="28sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
+                    android:fontFamily="times"
                     app:layout_constraintTop_toTopOf="parent" />
+                <Button
+                    android:id="@+id/Button1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:fontFamily="times"
+                    android:background="@android:color/transparent"
+                    android:text="@string/Button1"
+                    android:textColor="@color/purple_700" />
+                <Button
+                    android:id="@+id/Button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:fontFamily="times"
+                    android:background="@android:color/transparent"
+                    android:text="@string/Button2"
+                    android:textColor="@color/purple_700" />
+
+                <Button
+                    android:id="@+id/Button3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/purple_700"
+                    android:fontFamily="times"
+                    android:text="@string/Button3" />
+
+                <Button
+                    android:id="@+id/Button4"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:fontFamily="times"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/purple_700"
+                    android:text="@string/Button5" />
+                <Button
+                    android:id="@+id/Button5"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:fontFamily="times"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/purple_700"
+                    android:text="@string/treasures" />
+
+                <TextView
+                    android:id="@+id/Chapter1_Description1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Chapter1_Description1"
+                    android:textColor="@color/black"
+                    android:fontFamily="times"
+                    android:textSize="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+                <TextView
+                    android:id="@+id/Chapter1_Description2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/Chapter1_Description2"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+                <TextView
+                    android:id="@+id/Chapter1_Description3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/Chapter1_Description3"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+                <TextView
+                    android:id="@+id/Chapter1_Description4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Chapter1_Description4"
+                    android:fontFamily="times"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+                <TextView
+                    android:id="@+id/Chapter1_Description5"
+                    android:layout_width="match_parent"
+                    android:fontFamily="times"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Chapter1_Description5"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+                <TextView
+                    android:id="@+id/SubTitle1"
+                    android:layout_width="match_parent"
+                    android:fontFamily="times"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/purple_100"
+                    android:text="@string/Button1"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/Chapter1_Description6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/Chapter1_Description6"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+                <TextView
+                    android:id="@+id/Chapter1_Description8"
+                    android:layout_width="match_parent"
+                    android:fontFamily="times"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Chapter1_Description8"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+                <TextView
+                    android:id="@+id/Chapter1_Description9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Chapter1_Description9"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:fontFamily="times"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+                <TextView
+                    android:id="@+id/Chapter1_Description10"
+                    android:layout_width="match_parent"
+                    android:fontFamily="times"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Chapter1_Description10"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+                <TextView
+                    android:id="@+id/Chapter1_Description11"
+                    android:layout_width="match_parent"
+                    android:fontFamily="times"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Chapter1_Description11"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:background="@android:color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                android:id="@+id/Chapter1_Description12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Chapter1_Description12"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:fontFamily="times"
+                android:background="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:background="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/Chapter1_Descriptio13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Chapter1_Description13"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:fontFamily="times"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+                <TextView
+                    android:id="@+id/Chapter1_Description14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Chapter1_Description14"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:fontFamily="times"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+                <TextView
+                    android:id="@+id/Chapter1_Description15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Chapter1_Description15"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:fontFamily="times"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+                <TextView
+                    android:id="@+id/Chapter1_Description16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Chapter1_Description16"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:fontFamily="times"
+                    android:background="@android:color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/Chapter1_Description17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Chapter1_Description17"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:fontFamily="times"
+                    android:background="@android:color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:background="@android:color/white"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/black"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:background="@android:color/white"/>
+                <TextView
+                    android:id="@+id/Chapter1_Description18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Chapter1_Description18"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:fontFamily="times"
+                    android:background="@android:color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:background="@android:color/white"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/black"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:background="@android:color/white"/>
+                <TextView
+                    android:id="@+id/Chapter1_Description19"
+                    android:layout_width="match_parent"
+                    android:fontFamily="times"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Chapter1_Description19"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:background="@android:color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:background="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/SubTitle2"
+                    android:fontFamily="times"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/purple_100"
+                    android:text="@string/Button2"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/Chapter1_Description20"
+                    android:layout_width="match_parent"
+                    android:fontFamily="times"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Chapter1_Description20"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+                <TextView
+                    android:id="@+id/Chapter1_Description21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/Chapter1_Description21"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+                <TextView
+                    android:id="@+id/Chapter1_Description22"
+                    android:fontFamily="times"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Chapter1_Description22"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+                <TextView
+                    android:id="@+id/Chapter1_Description23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Chapter1_Description23"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:fontFamily="times"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+                <TextView
+                    android:id="@+id/Chapter1_Description24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Chapter1_Description24"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:fontFamily="times"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+                <TextView
+                    android:id="@+id/Chapter1_Description25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/corerules"
+                    android:text="@string/Chapter1_Description25"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:fontFamily="times"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:background="@color/white"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:id="@+id/Chapter1_Description26"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="@string/Chapter1_Description26"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:fontFamily="times"
+                        android:textAlignment="center"
+                        android:layout_weight="2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                    <TextView
+                        android:id="@+id/Chapter1_Description27"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="@string/Chapter1_Description27"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:fontFamily="times"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:background="@color/yellow"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:id="@+id/Chapter1_Description28"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/yellow"
+                        android:text="@string/Chapter1_Description28"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:layout_weight="2"
+                        android:fontFamily="times"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                    <TextView
+                        android:id="@+id/Chapter1_Description29"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/yellow"
+                        android:text="@string/Chapter1_Description29"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:fontFamily="times"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:background="@color/white"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:id="@+id/Chapter1_Description30"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="@string/Chapter1_Description30"
+                        android:fontFamily="times"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:layout_weight="2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                    <TextView
+                        android:id="@+id/Chapter1_Description31"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="@string/Chapter1_Description31"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:fontFamily="times"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+                <TextView
+                    android:id="@+id/Chapter1_Description32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/corerules"
+                    android:text="@string/Chapter1_Description32"
+                    android:textAlignment="center"
+                    android:fontFamily="times"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:background="@color/white"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:id="@+id/Chapter1_Description33"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="@string/Chapter1_Description33"
+                        android:fontFamily="times"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:layout_weight="2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                    <TextView
+                        android:id="@+id/Chapter1_Description34"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="@string/Chapter1_Description34"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:fontFamily="times"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:background="@color/yellow"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:id="@+id/Chapter1_Description35"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/yellow"
+                        android:text="@string/Chapter1_Description35"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:layout_weight="2"
+                        android:fontFamily="times"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                    <TextView
+                        android:id="@+id/Chapter1_Description36"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/yellow"
+                        android:text="@string/Chapter1_Description36"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:fontFamily="times"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:fontFamily="times"
+                    android:background="@color/white"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:id="@+id/Chapter1_Description37"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="@string/Chapter1_Description37"
+                        android:fontFamily="times"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:layout_weight="2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                    <TextView
+                        android:id="@+id/Chapter1_Description38"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="@string/Chapter1_Description38"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:fontFamily="times"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:background="@color/yellow"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:id="@+id/Chapter1_Description39"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/yellow"
+                        android:text="@string/Chapter1_Description39"
+                        android:fontFamily="times"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:layout_weight="2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                    <TextView
+                        android:id="@+id/Chapter1_Description40"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/yellow"
+                        android:text="@string/Chapter1_Description40"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:fontFamily="times"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+
+
+                <TextView
+                    android:id="@+id/Chapter1_Description41"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/corerules"
+                    android:text="@string/Chapter1_Description41"
+                    android:textAlignment="center"
+                    android:fontFamily="times"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:background="@color/white"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:id="@+id/Chapter1_Description42"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="@string/Chapter1_Description42"
+                        android:fontFamily="times"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:layout_weight="2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                    <TextView
+                        android:id="@+id/Chapter1_Description43"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="@string/Chapter1_Description43"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:fontFamily="times"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:background="@color/yellow"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:id="@+id/Chapter1_Description44"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/yellow"
+                        android:text="@string/Chapter1_Description44"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:fontFamily="times"
+                        android:textAlignment="center"
+                        android:layout_weight="2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                    <TextView
+                        android:id="@+id/Chapter1_Description45"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/yellow"
+                        android:text="@string/Chapter1_Description45"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:fontFamily="times"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:background="@color/white"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:id="@+id/Chapter1_Description46"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="@string/Chapter1_Description46"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:fontFamily="times"
+                        android:textAlignment="center"
+                        android:layout_weight="2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                    <TextView
+                        android:id="@+id/Chapter1_Description47"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="@string/Chapter1_Description47"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:fontFamily="times"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+
+                <TextView
+                    android:id="@+id/Chapter1_Description48"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/corerules"
+                    android:text="@string/Chapter1_Description48"
+                    android:textAlignment="center"
+                    android:fontFamily="times"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:background="@color/white"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:id="@+id/Chapter1_Description49"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="@string/Chapter1_Description49"
+                        android:fontFamily="times"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:layout_weight="2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                    <TextView
+                        android:id="@+id/Chapter1_Description50"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="@string/Chapter1_Description50"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:fontFamily="times"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:background="@color/yellow"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:id="@+id/Chapter1_Description51"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/yellow"
+                        android:text="@string/Chapter1_Description51"
+                        android:fontFamily="times"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:layout_weight="2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                    <TextView
+                        android:id="@+id/Chapter1_Description52"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/yellow"
+                        android:text="@string/Chapter1_Description52"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:fontFamily="times"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:background="@color/white"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:id="@+id/Chapter1_Description53"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="@string/Chapter1_Description53"
+                        android:fontFamily="times"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:layout_weight="2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                    <TextView
+                        android:id="@+id/Chapter1_Description54"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="@string/Chapter1_Description54"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:fontFamily="times"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:background="@color/yellow"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:id="@+id/Chapter1_Description55"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/yellow"
+                        android:text="@string/Chapter1_Description55"
+                        android:fontFamily="times"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:layout_weight="2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                    <TextView
+                        android:id="@+id/Chapter1_Description56"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/yellow"
+                        android:text="@string/Chapter1_Description56"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:fontFamily="times"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:background="@color/white"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:id="@+id/Chapter1_Description57"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="@string/Chapter1_Description57"
+                        android:fontFamily="times"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:layout_weight="2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                    <TextView
+                        android:id="@+id/Chapter1_Description58"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="@string/Chapter1_Description58"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:fontFamily="times"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:background="@color/yellow"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:id="@+id/Chapter1_Description59"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/yellow"
+                        android:text="@string/Chapter1_Description59"
+                        android:fontFamily="times"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:layout_weight="2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                    <TextView
+                        android:id="@+id/Chapter1_Description60"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/yellow"
+                        android:text="@string/Chapter1_Description60"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:fontFamily="times"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:background="@color/white"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:id="@+id/Chapter1_Description61"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="@string/Chapter1_Description61"
+                        android:fontFamily="times"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:layout_weight="2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                    <TextView
+                        android:id="@+id/Chapter1_Description62"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="@string/Chapter1_Description62"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:fontFamily="times"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:background="@color/yellow"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:id="@+id/Chapter1_Description63"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/yellow"
+                        android:text="@string/Chapter1_Description63"
+                        android:fontFamily="times"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:layout_weight="2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                    <TextView
+                        android:id="@+id/Chapter1_Description64"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/yellow"
+                        android:text="@string/Chapter1_Description64"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:fontFamily="times"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+                <TextView
+                    android:id="@+id/Chapter1_Description65"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Chapter1_Description65"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:fontFamily="times"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+                <TextView
+                    android:id="@+id/Chapter1_Description66"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Chapter1_Description66"
+                    android:fontFamily="times"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/Chapter1_Description67"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Chapter1_Description67"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:fontFamily="times"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+                <TextView
+                    android:id="@+id/Chapter1_Description68"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Chapter1_Description68"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:fontFamily="times"
+                    android:gravity="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/Chapter1_Description69"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:text="@string/Chapter1_Description69"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:fontFamily="times"
+                    android:gravity="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/Chapter1_Description70"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/yellow"
+                    android:text="@string/Chapter1_Description70"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:fontFamily="times"
+                    android:gravity="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/Chapter1_Description71"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:text="@string/Chapter1_Description71"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:fontFamily="times"
+                    android:gravity="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/Chapter1_Description72"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/yellow"
+                    android:text="@string/Chapter1_Description72"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:fontFamily="times"
+                    android:gravity="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/Chapter1_Description73"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:text="@string/Chapter1_Description73"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:fontFamily="times"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/Chapter1_Description74"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/yellow"
+                    android:text="@string/Chapter1_Description74"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:fontFamily="times"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+                <TextView
+                    android:id="@+id/Chapter1_Description75"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Chapter1_Description75"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:fontFamily="times"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/Chapter1_Description76"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Chapter1_Description76"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:fontFamily="times"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+
+
+
+
 
                 <LinearLayout
                     android:id="@+id/Buttons"
@@ -47,32 +1369,41 @@
                     android:layout_height="70dp"
                     android:layout_alignParentBottom="true"
                     android:orientation="horizontal">
-
                     <Button
                         android:id="@+id/PreviousButton"
-                        android:layout_width="140dp"
-                        android:layout_height="wrap_content"
+                        android:layout_width="137dp"
+                        android:layout_height="60dp"
+                        android:background="@android:color/transparent"
+                        android:textColor="@color/purple_700"
+                        android:fontFamily="times"
                         android:layout_alignParentBottom="true"
-                        android:layout_marginBottom="0dp"
                         android:text="@string/previous" />
 
                     <Button
                         android:id="@+id/TableButton"
-                        android:layout_width="140dp"
-                        android:layout_height="wrap_content"
+                        android:layout_width="137dp"
+                        android:fontFamily="times"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="0dp"
+                        android:textColor="@color/purple_700"
+                        android:background="@android:color/transparent"
+                        android:layout_centerInParent="true"
                         android:layout_alignParentBottom="true"
-                        android:layout_marginBottom="0dp"
                         android:text="@string/table" />
 
                     <Button
                         android:id="@+id/NextButton"
-                        android:layout_width="140dp"
-                        android:layout_height="wrap_content"
+                        android:layout_width="137dp"
+                        android:fontFamily="times"
+                        android:layout_height="60dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/purple_700"
+                        android:background="@android:color/transparent"
                         android:layout_alignParentBottom="true"
-                        android:layout_marginBottom="0dp"
                         android:text="@string/next" />
+
                 </LinearLayout>
-            </RelativeLayout>
+            </LinearLayout>
         </ScrollView>
     </LinearLayout>
 </RelativeLayout>
