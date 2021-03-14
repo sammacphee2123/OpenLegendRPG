@@ -16,7 +16,6 @@ import ca.unb.mobiledev.openlegendrpg.R;
 public class introduction extends android.app.Activity {
     private Button ContentsButton;
     private Button NextButton;
-/////////////////////////////////////////////////////////connect two buttons////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Log.i("please: ", "onCreate() called");

@@ -7,6 +7,8 @@
         <item>Banes</item>
         <item>Boons</item>
         <item>Feats</item>
+        <item>Login</item>
+        <item>Create Account</item>
     </string-array>
 
     <string
@@ -508,5 +510,28 @@ Each feat description includes the following elements.
 <b>Effect.</b> This entry indicates the mechanical effects of the feat on the rules of the game.
     </string>
     <!--End of Core Rules strings-->
+    <!--End of Login & create strings-->
+    <string
+        name="login">Login
+    </string>
+    <string
+        name="password">Password
+    </string>
+    <string
+        name="e_mail">Email
+    </string>
+    <string
+        name="tag">Welcome to the world of OpenLegendRPG! Please Create an account or login.
+    </string>
+    <string
+        name="register">Register
+    </string>
+    <string
+        name="re_type_password">Re-type Password
+    </string>
+    <string
+        name="your_name">Full Name
+    </string>
+    <!--End of Login & create strings-->
 
 </resources>

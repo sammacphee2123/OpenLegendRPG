@@ -43,7 +43,7 @@
         </activity>
         <activity android:name=".chapters.chapter8"
             android:theme = "@style/Theme.OpenLegendRPG.NoActionBar">
-        </activity>v
+        </activity>
         <activity android:name=".chapters.chapter9"
             android:theme = "@style/Theme.OpenLegendRPG.NoActionBar">
         </activity>
