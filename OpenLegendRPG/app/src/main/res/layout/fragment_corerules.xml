@@ -1,12 +1,12 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/IntroButton"
-    android:layout_width="match_parent"
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_width="match_parent">
 
     <Button
-        android:id="@+id/contentsIntroButton"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentEnd="true"
@@ -17,7 +17,6 @@
         android:text="@string/introTitle" />
 
     <Button
-        android:id="@+id/contentsCH1Button"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentEnd="true"
@@ -28,7 +27,6 @@
         android:text="@string/chapter1Title" />
 
     <Button
-        android:id="@+id/contentsCH2Button"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentEnd="true"
@@ -39,7 +37,6 @@
         android:text="@string/chapter2Title" />
 
     <Button
-        android:id="@+id/contentsCH3Button"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentEnd="true"
@@ -50,7 +47,6 @@
         android:text="@string/chapter3Title" />
 
     <Button
-        android:id="@+id/contentsCH4Button"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentEnd="true"
@@ -61,7 +57,6 @@
         android:text="@string/chapter4Title" />
 
     <Button
-        android:id="@+id/contentsCH5Button"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentEnd="true"
@@ -72,7 +67,6 @@
         android:text="@string/chapter5Title" />
 
     <Button
-        android:id="@+id/contentsCH6Button"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentEnd="true"
@@ -83,7 +77,6 @@
         android:text="@string/chapter6Title" />
 
     <Button
-        android:id="@+id/contentsCH7Button"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentEnd="true"
@@ -94,7 +87,6 @@
         android:text="@string/chapter7Title" />
 
     <Button
-        android:id="@+id/contentsCH8Button"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentEnd="true"
@@ -105,7 +97,6 @@
         android:text="@string/chapter8Title" />
 
     <Button
-        android:id="@+id/contentsCH9Button"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentEnd="true"
@@ -114,5 +105,126 @@
         android:layout_marginEnd="-2dp"
         android:layout_marginBottom="220dp"
         android:text="@string/chapter9Title" />
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleX="2.1"
+        android:scaleY="2.1"
+        android:scrollX="60dp"
+        android:alpha="0.85"
+        app:srcCompat="@drawable/paper_bg" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:id="@+id/chart_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:orientation="vertical"
+                android:paddingBottom="200dp">
+
+                <TextView
+                    android:id="@+id/label"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Core Rules"
+                    android:textSize="45dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <Button
+                    android:id="@+id/contentsIntroButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@android:color/transparent"
+                    android:text="@string/introTitle"
+                    android:textColor="@color/purple_700"/>
+
+                <Button
+                    android:id="@+id/contentsCH1Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@android:color/transparent"
+                    android:text="@string/chapter1Title"
+                    android:textColor="@color/purple_700"/>
+                <Button
+                    android:id="@+id/contentsCH2Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@android:color/transparent"
+                    android:text="@string/chapter2Title"
+                    android:textColor="@color/purple_700"/>
+
+                <Button
+                    android:id="@+id/contentsCH3Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@android:color/transparent"
+                    android:text="@string/chapter3Title"
+                    android:textColor="@color/purple_700"/>
+
+                <Button
+                    android:id="@+id/contentsCH4Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@android:color/transparent"
+                    android:text="@string/chapter4Title"
+                    android:textColor="@color/purple_700" />
+
+                <Button
+                    android:id="@+id/contentsCH5Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@android:color/transparent"
+                    android:text="@string/chapter5Title"
+                    android:textColor="@color/purple_700" />
+
+                <Button
+                    android:id="@+id/contentsCH6Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@android:color/transparent"
+                    android:text="@string/chapter6Title"
+                    android:textColor="@color/purple_700" />
+
+                <Button
+                    android:id="@+id/contentsCH7Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@android:color/transparent"
+                    android:text="@string/chapter7Title"
+                    android:textColor="@color/purple_700" />
+
+                <Button
+                    android:id="@+id/contentsCH8Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@android:color/transparent"
+                    android:text="@string/chapter8Title"
+                    android:textColor="@color/purple_700" />
+
+                <Button
+                    android:id="@+id/contentsCH9Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@android:color/transparent"
+                    android:text="@string/chapter9Title"
+                    android:textColor="@color/purple_700" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
 </RelativeLayout>

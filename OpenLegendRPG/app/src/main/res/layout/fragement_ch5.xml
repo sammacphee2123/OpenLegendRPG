@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent">
 
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleX="2.1"
+        android:scaleY="2.1"
+        android:scrollX="60dp"
+        android:alpha="0.85"
+        app:srcCompat="@drawable/paper_bg" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -29,7 +39,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_alignParentTop="true"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="51dp"
                     android:layout_marginEnd="0dp"
                     android:background="@drawable/corerules"
                     android:duplicateParentState="false"
@@ -45,32 +55,43 @@
                     android:id="@+id/Buttons"
                     android:layout_width="match_parent"
                     android:layout_height="70dp"
+                    android:layout_centerInParent="true"
                     android:layout_alignParentBottom="true"
                     android:orientation="horizontal">
 
                     <Button
                         android:id="@+id/PreviousButton"
-                        android:layout_width="140dp"
-                        android:layout_height="wrap_content"
+                        android:layout_width="137dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@android:color/transparent"
+                        android:textColor="@color/purple_700"
                         android:layout_alignParentBottom="true"
-                        android:layout_marginBottom="0dp"
                         android:text="@string/previous" />
 
                     <Button
                         android:id="@+id/TableButton"
-                        android:layout_width="140dp"
-                        android:layout_height="wrap_content"
+                        android:layout_width="137dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_centerInParent="true"
+                        android:background="@android:color/transparent"
+                        android:textColor="@color/purple_700"
                         android:layout_alignParentBottom="true"
-                        android:layout_marginBottom="0dp"
                         android:text="@string/table" />
 
                     <Button
                         android:id="@+id/NextButton"
-                        android:layout_width="140dp"
-                        android:layout_height="wrap_content"
+                        android:layout_width="137dp"
+                        android:layout_height="60dp"
+                        android:textAlignment="center"
+                        android:background="@android:color/transparent"
+                        android:textColor="@color/purple_700"
+                        android:layout_marginTop="8dp"
                         android:layout_alignParentBottom="true"
-                        android:layout_marginBottom="0dp"
                         android:text="@string/next" />
+
+
                 </LinearLayout>
             </RelativeLayout>
         </ScrollView>
