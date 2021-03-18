@@ -13,6 +13,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
+import com.journaldev.navigationdrawer.CreateAccountFragment;
+import com.journaldev.navigationdrawer.LoginFragment;
 import com.journaldev.navigationdrawer.banes.BanesFragment;
 import com.journaldev.navigationdrawer.boons.BoonsFragment;
 import com.journaldev.navigationdrawer.CoreRulesFragment;
@@ -44,13 +46,15 @@ public class MainActivity extends AppCompatActivity {
 
         setupToolbar();
 
-        DataModel[] drawerItem = new DataModel[5];
+        DataModel[] drawerItem = new DataModel[7];
 
         drawerItem[0] = new DataModel(R.drawable.home, "Home");
         drawerItem[1] = new DataModel(R.drawable.corerules, "Core Rules");
         drawerItem[2] = new DataModel(R.drawable.banes, "Banes");
         drawerItem[3] = new DataModel(R.drawable.boons, "Boons");
         drawerItem[4] = new DataModel(R.drawable.feats, "Feats");
+        drawerItem[5] = new DataModel(R.drawable.login, "Login");
+        drawerItem[6] = new DataModel(R.drawable.create_account, "Create Account");
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(false);
         getSupportActionBar().setHomeButtonEnabled(true);
@@ -75,9 +79,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void selectItem(int position) {
-
         Fragment fragment = null;
-
         switch (position) {
             case 0:
                 fragment = new HomeFragment();
@@ -93,6 +95,12 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case 4:
                 fragment = new FeatsFragment();
+                break;
+            case 5:
+                fragment = new LoginFragment();
+                break;
+            case 6:
+                fragment = new CreateAccountFragment();
             default:
                 break;
         }
