@@ -1,4 +1,4 @@
-package com.journaldev.navigationdrawer;
+package com.journaldev.navigationdrawer.CoreRules;
 
 import android.content.Intent;
 import android.os.Bundle;

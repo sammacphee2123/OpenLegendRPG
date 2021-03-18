@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ca.unb.mobiledev.openlegendrpg">
@@ -44,7 +43,7 @@
         </activity>
         <activity android:name=".chapters.chapter8"
             android:theme = "@style/Theme.OpenLegendRPG.NoActionBar">
-        </activity>v
+        </activity>
         <activity android:name=".chapters.chapter9"
             android:theme = "@style/Theme.OpenLegendRPG.NoActionBar">
         </activity>

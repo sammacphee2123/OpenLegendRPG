@@ -51,7 +51,7 @@
                     <Button
                         android:id="@+id/PreviousButton"
                         android:layout_width="140dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_alignParentBottom="true"
                         android:layout_marginBottom="0dp"
                         android:text="@string/previous" />
@@ -59,7 +59,7 @@
                     <Button
                         android:id="@+id/TableButton"
                         android:layout_width="140dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_alignParentBottom="true"
                         android:layout_marginBottom="0dp"
                         android:text="@string/table" />
@@ -67,7 +67,7 @@
                     <Button
                         android:id="@+id/NextButton"
                         android:layout_width="140dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_alignParentBottom="true"
                         android:layout_marginBottom="0dp"
                         android:text="@string/next" />

@@ -1,16 +1,12 @@
 package ca.unb.mobiledev.openlegendrpg.chapters;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 
 import ca.unb.mobiledev.openlegendrpg.R;
-import com.journaldev.navigationdrawer.CoreRulesFragment;
 
 public class introduction extends android.app.Activity {
 

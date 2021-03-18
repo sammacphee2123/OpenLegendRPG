@@ -15,11 +15,13 @@ import androidx.fragment.app.FragmentManager;
 
 import com.journaldev.navigationdrawer.banes.BanesFragment;
 import com.journaldev.navigationdrawer.boons.BoonsFragment;
-import com.journaldev.navigationdrawer.CoreRulesFragment;
+import com.journaldev.navigationdrawer.CoreRules.CoreRulesFragment;
 import com.journaldev.navigationdrawer.DataModel;
 import com.journaldev.navigationdrawer.DrawerItemCustomAdapter;
 import com.journaldev.navigationdrawer.feats.FeatsFragment;
 import com.journaldev.navigationdrawer.HomeFragment;
+
+import java.util.Objects;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -28,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ListView mDrawerList;
     Toolbar toolbar;
-    private CharSequence mDrawerTitle;
     private CharSequence mTitle;
     ActionBarDrawerToggle mDrawerToggle;
 
@@ -37,29 +38,29 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mTitle = mDrawerTitle = getTitle();
         mNavigationDrawerItemTitles= getResources().getStringArray(R.array.navigation_drawer_items_array);
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        mDrawerList = (ListView) findViewById(R.id.left_drawer);
+        mDrawerLayout = findViewById(R.id.drawer_layout);
+        mDrawerList = findViewById(R.id.left_drawer);
+        View header = getLayoutInflater().inflate(R.layout.header, null);
 
         setupToolbar();
 
-        DataModel[] drawerItem = new DataModel[5];
+        DataModel[] drawerItem = new DataModel[4];
 
-        drawerItem[0] = new DataModel(R.drawable.home, "Home");
-        drawerItem[1] = new DataModel(R.drawable.corerules, "Core Rules");
-        drawerItem[2] = new DataModel(R.drawable.banes, "Banes");
-        drawerItem[3] = new DataModel(R.drawable.boons, "Boons");
-        drawerItem[4] = new DataModel(R.drawable.feats, "Feats");
+        drawerItem[0] = new DataModel(R.drawable.corerules, "Core Rules");
+        drawerItem[1] = new DataModel(R.drawable.banes, "Banes");
+        drawerItem[2] = new DataModel(R.drawable.boons, "Boons");
+        drawerItem[3] = new DataModel(R.drawable.feats, "Feats");
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(false);
         getSupportActionBar().setHomeButtonEnabled(true);
 
+        mDrawerList.addHeaderView(header);
         DrawerItemCustomAdapter adapter = new DrawerItemCustomAdapter(this, R.layout.list_view_item_row, drawerItem);
         mDrawerList.setAdapter(adapter);
         mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        mDrawerLayout.setDrawerListener((DrawerLayout.DrawerListener) mDrawerToggle);
+        mDrawerLayout = findViewById(R.id.drawer_layout);
+        mDrawerLayout.setDrawerListener(mDrawerToggle);
         setupDrawerToggle();
 
         selectItem(0);
@@ -124,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void setTitle(CharSequence title) {
         mTitle = title;
-        getSupportActionBar().setTitle(mTitle);
+        Objects.requireNonNull(getSupportActionBar()).setTitle(mTitle);
     }
 
     @Override
@@ -136,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
     void setupToolbar(){
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayShowHomeEnabled(true);
     }
 
     void setupDrawerToggle(){

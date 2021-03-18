@@ -1,21 +1,27 @@
-package com.journaldev.navigationdrawer.feats;
+package ca.unb.mobiledev.openlegendrpg.Items;
 
+import androidx.annotation.NonNull;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity(tableName = "feat_table")
 public class Feat {
-    private String cost;
+
+    @PrimaryKey
+    @NonNull
     private String name;
+    private String cost;
     private String preReq;
     private String desc;
     private String effect;
-    private String special;
     private boolean expanded;
 
-    public Feat(String cost, String name, String preReq, String desc, String effect, String special){
-        this.cost = cost;
+    public Feat(String name, String cost, String preReq, String desc, String effect){
         this.name = name;
+        this.cost = cost;
         this.preReq = preReq;
         this.desc = desc;
         this.effect = effect;
-        this.special = special;
         this.expanded = false;
     }
 
@@ -52,13 +58,6 @@ public class Feat {
     }
     public void setEffect(){
         this.effect = effect;
-    }
-
-    public String getSpecial(){
-        return special;
-    }
-    public void setSpecial(String special){
-        this.special = special;
     }
 
     public boolean isExpanded() {

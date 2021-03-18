@@ -5,28 +5,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-
-    <TextView
-        android:id="@+id/label"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="100dp"
-        android:gravity="center_horizontal"
-        android:text="Core Rules"
-        android:textSize="45dp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/label"
-        android:layout_alignParentBottom="true"
-        android:gravity="center_horizontal"
-        android:text="Edit fragment_corerules.xml to change the appearance"
-        android:textSize="12dp" />
-
     <Button
         android:id="@+id/contentsIntroButton"
         android:layout_width="match_parent"
@@ -35,7 +13,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
         android:layout_marginEnd="0dp"
-        android:layout_marginBottom="500dp"
+        android:layout_marginBottom="681dp"
         android:text="@string/introTitle" />
 
     <Button
@@ -45,8 +23,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="450dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginBottom="628dp"
         android:text="@string/chapter1Title" />
 
     <Button
@@ -57,7 +35,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
         android:layout_marginEnd="0dp"
-        android:layout_marginBottom="400dp"
+        android:layout_marginBottom="577dp"
         android:text="@string/chapter2Title" />
 
     <Button
@@ -67,8 +45,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="350dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginBottom="525dp"
         android:text="@string/chapter3Title" />
 
     <Button
@@ -79,7 +57,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
         android:layout_marginEnd="0dp"
-        android:layout_marginBottom="300dp"
+        android:layout_marginBottom="473dp"
         android:text="@string/chapter4Title" />
 
     <Button
@@ -90,7 +68,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
         android:layout_marginEnd="0dp"
-        android:layout_marginBottom="250dp"
+        android:layout_marginBottom="423dp"
         android:text="@string/chapter5Title" />
 
     <Button
@@ -100,8 +78,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="200dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginBottom="371dp"
         android:text="@string/chapter6Title" />
 
     <Button
@@ -111,8 +89,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="150dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="321dp"
         android:text="@string/chapter7Title" />
 
     <Button
@@ -123,7 +101,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
         android:layout_marginEnd="0dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="270dp"
         android:text="@string/chapter8Title" />
 
     <Button
@@ -133,8 +111,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginBottom="220dp"
         android:text="@string/chapter9Title" />
 
 </RelativeLayout>

@@ -1,7 +1,14 @@
-package com.journaldev.navigationdrawer.banes;
+package ca.unb.mobiledev.openlegendrpg.Items;
 
+import androidx.annotation.NonNull;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity(tableName = "bane_table")
 public class Bane
 {
+    @PrimaryKey
+    @NonNull
     private String name;
     private String powerLevel;
     private String description;
@@ -9,10 +16,10 @@ public class Bane
     private String atkAttributes;
     private String attack;
     private String effect;
-    private String special;
     private boolean expanded;
 
-    public Bane(String name, String powerLevel, String description, String duration, String atkAttributes, String attack, String effect, String special)
+    public Bane(String name, String powerLevel, String description, String duration,
+                String atkAttributes, String attack, String effect)
     {
         this.name = name;
         this.powerLevel = powerLevel;
@@ -21,7 +28,6 @@ public class Bane
         this.atkAttributes = atkAttributes;
         this.attack = attack;
         this.effect = effect;
-        this.special = special;
 
         expanded = false;
     }
@@ -87,15 +93,6 @@ public class Bane
     public void setEffect(String effect)
     {
         this.effect = effect;
-    }
-
-    public String getSpecial()
-    {
-        return special;
-    }
-    public void setSpecial(String special)
-    {
-        this.special = special;
     }
 
     public boolean isExpanded()

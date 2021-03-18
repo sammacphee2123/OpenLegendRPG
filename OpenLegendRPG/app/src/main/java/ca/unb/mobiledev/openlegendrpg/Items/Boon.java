@@ -1,7 +1,14 @@
-package com.journaldev.navigationdrawer.boons;
+package ca.unb.mobiledev.openlegendrpg.Items;
 
+import androidx.annotation.NonNull;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity(tableName = "boon_table")
 public class Boon
 {
+    @PrimaryKey
+    @NonNull
     private String name;
     private String powerLevel;
     private String description;

@@ -1,4 +1,4 @@
-package com.journaldev.navigationdrawer.boons;
+package ca.unb.mobiledev.openlegendrpg.Adapters;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -8,38 +8,35 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.DiffUtil;
+import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.List;
-
+import ca.unb.mobiledev.openlegendrpg.Items.Boon;
 import ca.unb.mobiledev.openlegendrpg.R;
 
-public class BoonAdapter extends RecyclerView.Adapter<BoonAdapter.ViewHolder>
-{
+public class boonListAdapter extends ListAdapter<Boon, boonListAdapter.boonViewHolder>{
     private static final String TAG = "RecyclerAdapter (Boon)";
-    List<Boon> boonsList;
 
-    public BoonAdapter(List<Boon> boonsList)
-    {
-        this.boonsList = boonsList;
+    public boonListAdapter(@NonNull DiffUtil.ItemCallback<Boon> diffCallback) {
+        super(diffCallback);
     }
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
+    public boonViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
     {
         Log.i(TAG, "onCreateViewHolder: ");
 
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
         View view = layoutInflater.inflate(R.layout.boons_row_item, parent, false);
-        return new ViewHolder(view);
+        return new boonViewHolder(view);
     }
 
-    @NonNull
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position)
+    public void onBindViewHolder(@NonNull boonViewHolder holder, int position)
     {
-        Boon boon = boonsList.get(position);
+        Boon boon = getItem(position);
         holder.boonNameTV.setText(boon.getName());
         holder.boonPowerLevelTV.setText(boon.getPowerLevel());
         holder.boonDescriptionTV.setText(boon.getDescription());
@@ -48,26 +45,30 @@ public class BoonAdapter extends RecyclerView.Adapter<BoonAdapter.ViewHolder>
         holder.boonAttributesTV.setText(boon.getAttributes());
         holder.boonEffectTV.setText(boon.getEffect());
 
-        boolean isExpanded = boonsList.get(position).isExpanded();
+        boolean isExpanded = boon.isExpanded();
         holder.expandableLayout.setVisibility(isExpanded ? View.VISIBLE : View.GONE);
     }
 
-    @Override
-    public int getItemCount()
-    {
-        return boonsList.size();
+    public static class boonDiff extends DiffUtil.ItemCallback<Boon> {
+
+        @Override
+        public boolean areItemsTheSame(@NonNull Boon oldItem, @NonNull Boon newItem) {
+            return oldItem == newItem;
+        }
+
+        @Override
+        public boolean areContentsTheSame(@NonNull Boon oldItem, @NonNull Boon newItem) {
+            return oldItem.getName().equals(newItem.getName());
+        }
     }
 
-    class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener
-    {
-        private static final String TAG = "boon view holder";
+    public class boonViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        TextView boonNameTV, boonPowerLevelTV, boonDescriptionTV, boonInvocationTV,
+        public TextView boonNameTV, boonPowerLevelTV, boonDescriptionTV, boonInvocationTV,
                 boonDurationTV, boonAttributesTV, boonEffectTV;
-        LinearLayout expandableLayout;
+        public LinearLayout expandableLayout;
 
-        public ViewHolder(@NonNull final View itemView)
-        {
+        public boonViewHolder(@NonNull final View itemView) {
             super(itemView);
 
             boonNameTV = itemView.findViewById(R.id.boonNameTV);
@@ -82,11 +83,9 @@ public class BoonAdapter extends RecyclerView.Adapter<BoonAdapter.ViewHolder>
 
             boonNameTV.setOnClickListener(this);
         }
-
         @Override
-        public void onClick(View v)
-        {
-            Boon boon = boonsList.get(getAdapterPosition());
+        public void onClick(View v) {
+            Boon boon = getItem(getAdapterPosition());
             boon.setExpanded(!boon.isExpanded());
             notifyItemChanged(getAdapterPosition());
         }

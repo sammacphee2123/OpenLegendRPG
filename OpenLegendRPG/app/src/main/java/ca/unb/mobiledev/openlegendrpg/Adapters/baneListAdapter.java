@@ -1,6 +1,5 @@
-package com.journaldev.navigationdrawer.banes;
+package ca.unb.mobiledev.openlegendrpg.Adapters;
 
-import android.text.Layout;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,87 +8,83 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.DiffUtil;
+import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.List;
-
+import ca.unb.mobiledev.openlegendrpg.Items.Bane;
 import ca.unb.mobiledev.openlegendrpg.R;
 
-public class BaneAdapter extends RecyclerView.Adapter<BaneAdapter.ViewHolder>
-{
-    private static final String TAG = "RecyclerAdapter (Bane)";
-    List<Bane> banesList;
+public class baneListAdapter extends ListAdapter<Bane, baneListAdapter.baneViewHolder>{
+    private static final String TAG = "RecyclerAdapter (Boon)";
 
-    public BaneAdapter(List<Bane> banesList)
-    {
-        this.banesList = banesList;
+    public baneListAdapter(@NonNull DiffUtil.ItemCallback<Bane> diffCallback) {
+        super(diffCallback);
     }
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
+    public baneViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
     {
         Log.i(TAG, "onCreateViewHolder: ");
 
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
         View view = layoutInflater.inflate(R.layout.banes_row_item, parent, false);
-        return new ViewHolder(view);
+        return new baneViewHolder(view);
     }
 
-    @NonNull
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position)
+    public void onBindViewHolder(@NonNull baneViewHolder holder, int position)
     {
-        Bane bane = banesList.get(position);
+        Bane bane = getItem(position);
         holder.baneNameTV.setText(bane.getName());
         holder.banePowerLevelTV.setText(bane.getPowerLevel());
         holder.baneDescriptionTV.setText(bane.getDescription());
         holder.baneDurationTV.setText(bane.getDuration());
-        holder.baneAtkAttributesTV.setText(bane.getAtkAttributes());
         holder.baneAttackTV.setText(bane.getAttack());
+        holder.baneAttributesTV.setText(bane.getAtkAttributes());
         holder.baneEffectTV.setText(bane.getEffect());
-        holder.baneSpecialTV.setText(bane.getSpecial());
 
-        boolean isExpanded = banesList.get(position).isExpanded();
+        boolean isExpanded = bane.isExpanded();
         holder.expandableLayout.setVisibility(isExpanded ? View.VISIBLE : View.GONE);
     }
 
-    @Override
-    public int getItemCount()
-    {
-        return banesList.size();
+    public static class baneDiff extends DiffUtil.ItemCallback<Bane> {
+
+        @Override
+        public boolean areItemsTheSame(@NonNull Bane oldItem, @NonNull Bane newItem) {
+            return oldItem == newItem;
+        }
+
+        @Override
+        public boolean areContentsTheSame(@NonNull Bane oldItem, @NonNull Bane newItem) {
+            return oldItem.getName().equals(newItem.getName());
+        }
     }
 
-    class ViewHolder extends  RecyclerView.ViewHolder implements View.OnClickListener
-    {
-        private static final String TAG = "bane view holder";
+    public class baneViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        TextView baneNameTV, banePowerLevelTV, baneDescriptionTV, baneDurationTV,
-                baneAtkAttributesTV, baneAttackTV, baneEffectTV, baneSpecialTV;
-        LinearLayout expandableLayout;
+        public TextView baneNameTV, banePowerLevelTV, baneDescriptionTV, baneDurationTV, baneAttributesTV, baneAttackTV, baneEffectTV;
+        public LinearLayout expandableLayout;
 
-        public ViewHolder(@NonNull final View itemView)
-        {
+        public baneViewHolder(@NonNull final View itemView) {
             super(itemView);
 
             baneNameTV = itemView.findViewById(R.id.baneNameTV);
             banePowerLevelTV = itemView.findViewById(R.id.banePowerLevelTV);
             baneDescriptionTV = itemView.findViewById(R.id.baneDescriptionTV);
             baneDurationTV = itemView.findViewById(R.id.baneDurationTV);
-            baneAtkAttributesTV = itemView.findViewById(R.id.baneAtkAttributesTV);
+            baneAttributesTV = itemView.findViewById(R.id.baneAtkAttributesTV);
             baneAttackTV = itemView.findViewById(R.id.baneAttackTV);
             baneEffectTV = itemView.findViewById(R.id.baneEffectTV);
-            baneSpecialTV = itemView.findViewById(R.id.baneSpecialTV);
 
             expandableLayout = itemView.findViewById(R.id.expandableLayout);
 
             baneNameTV.setOnClickListener(this);
         }
-
         @Override
-        public void onClick(View v)
-        {
-            Bane bane = banesList.get(getAdapterPosition());
+        public void onClick(View v) {
+            Bane bane = getItem(getAdapterPosition());
             bane.setExpanded(!bane.isExpanded());
             notifyItemChanged(getAdapterPosition());
         }
