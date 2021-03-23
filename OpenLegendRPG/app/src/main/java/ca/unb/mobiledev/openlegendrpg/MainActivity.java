@@ -20,6 +20,7 @@ import com.journaldev.navigationdrawer.boons.BoonsFragment;
 import com.journaldev.navigationdrawer.CoreRules.CoreRulesFragment;
 import com.journaldev.navigationdrawer.DataModel;
 import com.journaldev.navigationdrawer.DrawerItemCustomAdapter;
+import com.journaldev.navigationdrawer.characters.CharacterFragment;
 import com.journaldev.navigationdrawer.feats.FeatsFragment;
 import com.journaldev.navigationdrawer.HomeFragment;
 
@@ -48,14 +49,15 @@ public class MainActivity extends AppCompatActivity {
         setupToolbar();
 
 
-        DataModel[] drawerItem = new DataModel[6];
+        DataModel[] drawerItem = new DataModel[7];
 
         drawerItem[0] = new DataModel(R.drawable.corerules, "Core Rules");
         drawerItem[1] = new DataModel(R.drawable.banes, "Banes");
         drawerItem[2] = new DataModel(R.drawable.boons, "Boons");
         drawerItem[3] = new DataModel(R.drawable.feats, "Feats");
-        drawerItem[4] = new DataModel(R.drawable.login, "Login");
-        drawerItem[5] = new DataModel(R.drawable.create_account, "Create Account");
+        drawerItem[4] = new DataModel(R.drawable.character, "Characters");
+        drawerItem[5] = new DataModel(R.drawable.login, "Login");
+        drawerItem[6] = new DataModel(R.drawable.create_account, "Create Account");
 
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(false);
         getSupportActionBar().setHomeButtonEnabled(true);
@@ -99,9 +101,12 @@ public class MainActivity extends AppCompatActivity {
                 fragment = new FeatsFragment();
                 break;
             case 5:
-                fragment = new LoginFragment();
+                fragment = new CharacterFragment();
                 break;
             case 6:
+                fragment = new LoginFragment();
+                break;
+            case 7:
                 fragment = new CreateAccountFragment();
             default:
                 break;

@@ -47,5 +47,8 @@
         <activity android:name=".chapters.chapter9"
             android:theme = "@style/Theme.OpenLegendRPG.NoActionBar">
         </activity>
+
+        <activity android:name=".characters.CharacterCreation"/>
+
     </application>
 </manifest>
