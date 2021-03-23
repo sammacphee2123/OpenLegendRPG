@@ -532,7 +532,7 @@ Each feat description includes the following elements.
         name="re_type_password">Re-type Password
     </string>
     <string
-        name="your_name">Full Name
+        name="your_name">Username
     </string>
     <!--End of Login & create strings-->
 
