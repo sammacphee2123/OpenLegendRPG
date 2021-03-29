@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@color/dark"
-    tools:context=".CreateAccount">
+    tools:context="com.journaldev.navigationdrawer.CreateAccountFragment">
     <ImageView
         android:id="@+id/openlegend_logo"
         android:layout_width="244dp"

@@ -1,11 +1,13 @@
 package ca.unb.mobiledev.openlegendrpg.chapters;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+
+import ca.unb.mobiledev.openlegendrpg.R;
+
 import android.widget.ScrollView;
 import android.widget.TextView;
 

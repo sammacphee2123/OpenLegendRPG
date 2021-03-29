@@ -7,6 +7,7 @@
         <item>Banes</item>
         <item>Boons</item>
         <item>Feats</item>
+        <item>Characters</item>
         <item>Login</item>
         <item>Create Account</item>
     </string-array>
@@ -77,14 +78,15 @@
         name="introTitle">Introduction: This is Your Story. Tell it.
     </string>
     <string
-        name="chapter1Title">Chapter 1: Character Creation: Character Creation
+        name="chapter1Title">Chapter 1: Character Creation
     </string>
     <string
-        name="chapter2Title">Chapter 2: Actions and Attributes: Actions and Attributes
+        name="chapter2Title">Chapter 2: Actions and Attributes
     </string>
     <string
-        name="chapter3Title">Chapter 3: Banes and Boons: Banes and Boons
+        name="chapter3Title">Chapter 3: Banes and Boons
     </string>
+
     <string
         name="chapter4Title">Chapter 4: Feats
     </string>
@@ -255,6 +257,7 @@ The secret’s in the title: Open. Everything about the game has been built to o
     </string>
     <string
         name="Button5">Record Attribute Dice
+>>>>>>> 57b148b5ef12ceff6f35de135eb4e5c568ede834
     </string>
 
     <string
@@ -638,7 +641,7 @@ The secret’s in the title: Open. Everything about the game has been built to o
         name="re_type_password">Re-type Password
     </string>
     <string
-        name="your_name">Full Name
+        name="your_name">Username
     </string>
     <!--End of Login & create strings-->
 

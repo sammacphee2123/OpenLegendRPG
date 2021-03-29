@@ -38,10 +38,10 @@
         android:layout_marginBottom="50dp"/>
 
     <EditText
-        android:id="@+id/et_email"
+        android:id="@+id/et_name"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:hint="@string/e_mail"
+        android:hint="@string/your_name"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"

@@ -3,6 +3,9 @@
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/teal_200"
+    android:background="#512DA8"
     android:minHeight="?attr/actionBarSize"
-    local:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    local:titleTextAppearance="@style/TextAppearance.AppCompat.Large"
+    local:titleTextColor="#FFFFFF"
+    android:theme="@style/AppTheme.AppBarOverlay"/>

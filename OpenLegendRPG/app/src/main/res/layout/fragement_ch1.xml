@@ -1230,6 +1230,44 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="15dp"/>
+              
+                <LinearLayout
+                    android:id="@+id/Buttons"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_width="137dp"
+                        android:layout_height="60dp"
+                        android:background="@android:color/transparent"
+                        android:textColor="@color/purple_700"
+                        android:fontFamily="times"
+                        android:layout_alignParentBottom="true"
+                        android:text="@string/previous" />
+
+                    <Button
+                        android:layout_width="137dp"
+                        android:fontFamily="times"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="0dp"
+                        android:textColor="@color/purple_700"
+                        android:background="@android:color/transparent"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentBottom="true"
+                        android:text="@string/table" />
+
+                    <Button
+                        android:layout_width="137dp"
+                        android:fontFamily="times"
+                        android:layout_height="60dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/purple_700"
+                        android:background="@android:color/transparent"
+                        android:layout_alignParentBottom="true"
+                        android:text="@string/next" />
+
+                </LinearLayout>
             </LinearLayout>
             <View
                 android:layout_width="match_parent"
