@@ -1,792 +1,782 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_height="match_parent"
-
-    android:background="@android:color/transparent"
     android:layout_width="match_parent">
 
     <ImageView
         android:id="@+id/background_image"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleX="2.1"
+        android:scaleX="2.5"
         android:scaleY="2.1"
         android:scrollX="60dp"
         android:alpha="0.85"
         app:srcCompat="@drawable/paper_bg" />
-
     <LinearLayout
+        android:id="@+id/Buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/TableButton"
+            android:layout_width="137dp"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/purple_700"
+            android:layout_marginTop="0dp"
+            android:layout_centerInParent="true"
+            android:text="@string/table" />
+
+        <Button
+            android:id="@+id/NextButton"
+            android:layout_width="137dp"
+            android:layout_height="60dp"
+            android:textAlignment="center"
+            android:background="@android:color/transparent"
+            android:textColor="@color/purple_700"
+            android:text="@string/next" />
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/scrl"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@android:color/transparent"
-        android:orientation="vertical">
-        <ScrollView
-            android:id="@+id/scrl"
+        android:layout_height="650dp"
+        android:layout_marginBottom="0dp"
+        android:layout_above="@id/Buttons"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:fillViewport="true"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="0dp"
+            android:orientation="vertical">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:background="@android:color/transparent"
-            android:fillViewport="true"
-            android:layout_gravity="center_horizontal">
+            android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/intro_title"
+                android:fontFamily="times"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/corerules"
+                android:text="@string/introTitle"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/whatDefinesOpenLegend"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="times"
+                android:background="@android:color/transparent"
+                android:text="@string/whatDefinesOpenLegend"
+                android:textColor="@color/purple_700" />
+
+            <Button
+                android:id="@+id/theActionRoll"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="times"
+                android:background="@android:color/transparent"
+                android:textColor="@color/purple_700"
+                android:text="@string/theActionRoll" />
+
+            <Button
+                android:id="@+id/treasures"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:textColor="@color/purple_700"
+                android:fontFamily="times"
+                android:text="@string/treasures" />
+
+            <TextView
+                android:id="@+id/intro_Description1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="times"
+                android:text="@string/intro_Description1"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:background="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@android:color/white"/>
+            <TextView
+                android:id="@+id/intro_Description2"
+                android:layout_width="match_parent"
+                android:fontFamily="times"
+                android:layout_height="wrap_content"
+                android:text="@string/intro_Description2"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:background="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@android:color/white"/>
+            <TextView
+                android:id="@+id/intro_Description3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="times"
+                android:text="@string/intro_Description3"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:background="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@android:color/white"/>
+            <TextView
+                android:id="@+id/intro_Description4"
+                android:layout_width="match_parent"
+                android:fontFamily="times"
+                android:layout_height="wrap_content"
+                android:text="@string/intro_Description4"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:background="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@android:color/white"/>
+            <TextView
+                android:id="@+id/intro_Description5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/intro_Description5"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:fontFamily="times"
+                android:background="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@android:color/white"/>
+            <TextView
+                android:id="@+id/intro_Description6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/corerules"
+                android:text="@string/intro_Description6"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="times"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@android:color/transparent"/>
+            <TextView
+                android:id="@+id/intro_Description7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/corerules"
+                android:fontFamily="times"
+                android:text="@string/intro_Description7"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@android:color/transparent"/>
+            <TextView
+                android:id="@+id/intro_Description8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="times"
+                android:background="@drawable/corerules"
+                android:text="@string/intro_Description8"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@android:color/transparent"/>
+            <TextView
+                android:id="@+id/intro_Description9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="times"
+                android:background="@drawable/corerules"
+                android:text="@string/intro_Description9"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@android:color/transparent"/>
+            <TextView
+                android:id="@+id/intro_Description10"
+                android:fontFamily="times"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/corerules"
+                android:text="@string/intro_Description10"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@android:color/transparent"/>
+
+            <TextView
+                android:id="@+id/whatDefinesOpenLegend_Title"
+                android:layout_width="match_parent"
+                android:fontFamily="times"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/purple_100"
+                android:text="@string/whatDefinesOpenLegend"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/intro_Description11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="times"
+                android:background="@drawable/corerules"
+                android:text="@string/intro_Description11"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@android:color/transparent"/>
+            <TextView
+                android:id="@+id/intro_Description12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="times"
+                android:background="@drawable/corerules"
+                android:text="@string/intro_Description12"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@android:color/transparent"/>
+            <TextView
+                android:id="@+id/intro_Description13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="times"
+                android:background="@drawable/corerules"
+                android:text="@string/intro_Description13"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@android:color/transparent"/>
+            <TextView
+                android:id="@+id/intro_Description14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="times"
+                android:background="@drawable/corerules"
+                android:text="@string/intro_Description15"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@android:color/transparent"/>
+            <TextView
+                android:id="@+id/intro_Description16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="times"
+                android:background="@drawable/corerules"
+                android:text="@string/intro_Description16"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@android:color/transparent"/>
+            <TextView
+                android:id="@+id/intro_Description17"
+                android:layout_width="wrap_content"
+                android:fontFamily="times"
+                android:layout_height="wrap_content"
+                android:background="@drawable/corerules"
+                android:text="@string/intro_Description17"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@android:color/transparent"/>
+            <TextView
+                android:id="@+id/intro_Description18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="times"
+                android:background="@drawable/corerules"
+                android:text="@string/intro_Description18"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@android:color/transparent"/>
+            <TextView
+                android:id="@+id/intro_Description19"
+                android:layout_width="wrap_content"
+                android:fontFamily="times"
+                android:layout_height="wrap_content"
+                android:background="@drawable/corerules"
+                android:text="@string/intro_Description19"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@android:color/transparent"/>
+            <TextView
+                android:id="@+id/intro_Description20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="times"
+                android:background="@drawable/corerules"
+                android:text="@string/intro_Description20"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@android:color/transparent"/>
+            <TextView
+                android:id="@+id/intro_Description21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="times"
+                android:background="@drawable/corerules"
+                android:text="@string/intro_Description21"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@android:color/transparent"/>
+            <TextView
+                android:id="@+id/intro_Description22"
+                android:layout_width="wrap_content"
+                android:fontFamily="times"
+                android:layout_height="wrap_content"
+                android:background="@drawable/corerules"
+                android:text="@string/intro_Description22"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@android:color/transparent"/>
+            <TextView
+                android:id="@+id/theActionRoll_Title"
+                android:layout_width="match_parent"
+                android:fontFamily="times"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/purple_100"
+                android:text="@string/theActionRoll"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/intro_Description23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/corerules"
+                android:text="@string/intro_Description23"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="times"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@android:color/transparent"/>
+            <TextView
+                android:id="@+id/intro_Description24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="times"
+                android:background="@drawable/corerules"
+                android:text="@string/intro_Description24"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@android:color/transparent"/>
+            <TextView
+                android:id="@+id/intro_Description25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/corerules"
+                android:text="@string/intro_Description25"
+                android:textColor="@color/black"
+                android:fontFamily="times"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@android:color/transparent"/>
+            <TextView
+                android:id="@+id/actionRoll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/corerules"
+                android:text="@string/actionRoll"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:fontFamily="times"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/actionRoll2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/actionRoll2"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:fontFamily="times"
+                android:textSize="16dp"
+                android:background="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:id="@+id/ifAndresult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <TextView
+                    android:id="@+id/intro_Description26"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="times"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/corerules"
+                    android:text="@string/intro_Description26"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+                <TextView
+                    android:id="@+id/intro_Description27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/corerules"
+                    android:text="@string/intro_Description27"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:fontFamily="times"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@android:color/transparent"
-                android:orientation="vertical">
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:weightSum="2" >
 
                 <TextView
-                    android:id="@+id/intro_title"
-                    android:fontFamily="times"
-                    android:layout_width="match_parent"
+                    android:id="@+id/intro_Description28"
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/corerules"
-                    android:text="@string/introTitle"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="28sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <Button
-                    android:id="@+id/whatDefinesOpenLegend"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:fontFamily="times"
-                    android:background="@android:color/transparent"
-                    android:text="@string/whatDefinesOpenLegend"
-                    android:textColor="@color/purple_700" />
-
-                <Button
-                    android:id="@+id/theActionRoll"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:fontFamily="times"
-                    android:background="@android:color/transparent"
-                    android:textColor="@color/purple_700"
-                    android:text="@string/theActionRoll" />
-
-                <Button
-                    android:id="@+id/treasures"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:background="@android:color/transparent"
-                    android:textColor="@color/purple_700"
-                    android:fontFamily="times"
-                    android:text="@string/treasures" />
-
-                <TextView
-                    android:id="@+id/intro_Description1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="times"
-                    android:text="@string/intro_Description1"
-                    android:textColor="@color/black"
-                    android:textSize="20dp"
-                    android:gravity="center"
-                    android:background="@android:color/white"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:background="@android:color/white"/>
-                <TextView
-                    android:id="@+id/intro_Description2"
-                    android:layout_width="match_parent"
-                    android:fontFamily="times"
-                    android:layout_height="wrap_content"
-                    android:text="@string/intro_Description2"
-                    android:textColor="@color/black"
-                    android:textSize="16dp"
-                    android:background="@android:color/white"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:background="@android:color/white"/>
-                <TextView
-                    android:id="@+id/intro_Description3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="times"
-                    android:text="@string/intro_Description3"
-                    android:textColor="@color/black"
-                    android:textSize="16dp"
-                    android:background="@android:color/white"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:background="@android:color/white"/>
-                <TextView
-                    android:id="@+id/intro_Description4"
-                    android:layout_width="match_parent"
-                    android:fontFamily="times"
-                    android:layout_height="wrap_content"
-                    android:text="@string/intro_Description4"
-                    android:textColor="@color/black"
-                    android:textSize="16dp"
-                    android:background="@android:color/white"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:background="@android:color/white"/>
-                <TextView
-                    android:id="@+id/intro_Description5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/intro_Description5"
-                    android:textColor="@color/black"
-                    android:textSize="16dp"
-                    android:fontFamily="times"
-                    android:background="@android:color/white"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:background="@android:color/white"/>
-                <TextView
-                    android:id="@+id/intro_Description6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/corerules"
-                    android:text="@string/intro_Description6"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    android:fontFamily="times"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:background="@android:color/transparent"/>
-                <TextView
-                    android:id="@+id/intro_Description7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/corerules"
-                    android:fontFamily="times"
-                    android:text="@string/intro_Description7"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:background="@android:color/transparent"/>
-                <TextView
-                    android:id="@+id/intro_Description8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="times"
-                    android:background="@drawable/corerules"
-                    android:text="@string/intro_Description8"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:background="@android:color/transparent"/>
-                <TextView
-                    android:id="@+id/intro_Description9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="times"
-                    android:background="@drawable/corerules"
-                    android:text="@string/intro_Description9"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:background="@android:color/transparent"/>
-                <TextView
-                    android:id="@+id/intro_Description10"
-                    android:fontFamily="times"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/corerules"
-                    android:text="@string/intro_Description10"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:background="@android:color/transparent"/>
-
-                <TextView
-                    android:id="@+id/whatDefinesOpenLegend_Title"
-                    android:layout_width="match_parent"
-                    android:fontFamily="times"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:background="@color/purple_100"
-                    android:text="@string/whatDefinesOpenLegend"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <TextView
-                    android:id="@+id/intro_Description11"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="times"
-                    android:background="@drawable/corerules"
-                    android:text="@string/intro_Description11"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:background="@android:color/transparent"/>
-                <TextView
-                    android:id="@+id/intro_Description12"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="times"
-                    android:background="@drawable/corerules"
-                    android:text="@string/intro_Description12"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:background="@android:color/transparent"/>
-                <TextView
-                    android:id="@+id/intro_Description13"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="times"
-                    android:background="@drawable/corerules"
-                    android:text="@string/intro_Description13"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:background="@android:color/transparent"/>
-                <TextView
-                    android:id="@+id/intro_Description14"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="times"
-                    android:background="@drawable/corerules"
-                    android:text="@string/intro_Description15"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:background="@android:color/transparent"/>
-                <TextView
-                    android:id="@+id/intro_Description16"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="times"
-                    android:background="@drawable/corerules"
-                    android:text="@string/intro_Description16"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:background="@android:color/transparent"/>
-                <TextView
-                    android:id="@+id/intro_Description17"
-                    android:layout_width="wrap_content"
-                    android:fontFamily="times"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/corerules"
-                    android:text="@string/intro_Description17"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:background="@android:color/transparent"/>
-                <TextView
-                    android:id="@+id/intro_Description18"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="times"
-                    android:background="@drawable/corerules"
-                    android:text="@string/intro_Description18"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:background="@android:color/transparent"/>
-                <TextView
-                    android:id="@+id/intro_Description19"
-                    android:layout_width="wrap_content"
-                    android:fontFamily="times"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/corerules"
-                    android:text="@string/intro_Description19"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:background="@android:color/transparent"/>
-                <TextView
-                    android:id="@+id/intro_Description20"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="times"
-                    android:background="@drawable/corerules"
-                    android:text="@string/intro_Description20"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:background="@android:color/transparent"/>
-                <TextView
-                    android:id="@+id/intro_Description21"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="times"
-                    android:background="@drawable/corerules"
-                    android:text="@string/intro_Description21"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:background="@android:color/transparent"/>
-                <TextView
-                    android:id="@+id/intro_Description22"
-                    android:layout_width="wrap_content"
-                    android:fontFamily="times"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/corerules"
-                    android:text="@string/intro_Description22"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:background="@android:color/transparent"/>
-                <TextView
-                    android:id="@+id/theActionRoll_Title"
-                    android:layout_width="match_parent"
-                    android:fontFamily="times"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:background="@color/purple_100"
-                    android:text="@string/theActionRoll"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <TextView
-                    android:id="@+id/intro_Description23"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/corerules"
-                    android:text="@string/intro_Description23"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    android:fontFamily="times"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:background="@android:color/transparent"/>
-                <TextView
-                    android:id="@+id/intro_Description24"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="times"
-                    android:background="@drawable/corerules"
-                    android:text="@string/intro_Description24"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:background="@android:color/transparent"/>
-                <TextView
-                    android:id="@+id/intro_Description25"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/corerules"
-                    android:text="@string/intro_Description25"
-                    android:textColor="@color/black"
-                    android:fontFamily="times"
-                    android:textSize="16sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:background="@android:color/transparent"/>
-                <TextView
-                    android:id="@+id/actionRoll"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/corerules"
-                    android:text="@string/actionRoll"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:fontFamily="times"
-                    android:textSize="16sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/actionRoll2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/actionRoll2"
-                    android:textColor="@color/black"
-                    android:textAlignment="center"
-                    android:fontFamily="times"
-                    android:textSize="16dp"
-                    android:background="@android:color/white"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <LinearLayout
-                    android:id="@+id/ifAndresult"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:orientation="horizontal"
-                    android:weightSum="2" >
-
-                        <TextView
-                            android:id="@+id/intro_Description26"
-                            android:layout_width="wrap_content"
-                            android:fontFamily="times"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/corerules"
-                            android:text="@string/intro_Description26"
-                            android:textColor="@color/black"
-                            android:textSize="16sp"
-                            android:textAlignment="center"
-                            android:layout_weight="1"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"/>
-                        <TextView
-                            android:id="@+id/intro_Description27"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/corerules"
-                            android:text="@string/intro_Description27"
-                            android:textColor="@color/black"
-                            android:textSize="16sp"
-                            android:fontFamily="times"
-                            android:textAlignment="center"
-                            android:layout_weight="1"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:orientation="horizontal"
                     android:background="@color/white"
-                    android:weightSum="2" >
+                    android:text="@string/intro_Description28"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:fontFamily="times"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+                <TextView
+                    android:id="@+id/intro_Description29"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:text="@string/intro_Description29"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:fontFamily="times"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-                    <TextView
-                        android:id="@+id/intro_Description28"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@color/white"
-                        android:text="@string/intro_Description28"
-                        android:textColor="@color/black"
-                        android:textSize="16sp"
-                        android:textAlignment="center"
-                        android:layout_weight="1"
-                        android:fontFamily="times"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"/>
-                    <TextView
-                        android:id="@+id/intro_Description29"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@color/white"
-                        android:text="@string/intro_Description29"
-                        android:textColor="@color/black"
-                        android:textSize="16sp"
-                        android:textAlignment="center"
-                        android:layout_weight="1"
-                        android:fontFamily="times"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:background="@color/yellow"
+                android:weightSum="2" >
 
-                </LinearLayout>
+                <TextView
+                    android:id="@+id/intro_Description30"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/yellow"
+                    android:fontFamily="times"
+                    android:text="@string/intro_Description30"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
-                    android:orientation="horizontal"
+                    android:orientation="vertical"
                     android:background="@color/yellow"
-                    android:weightSum="2" >
+                    android:layout_weight="1" >
 
                     <TextView
-                        android:id="@+id/intro_Description30"
+                        android:id="@+id/intro_Description31"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/yellow"
-                        android:fontFamily="times"
-                        android:text="@string/intro_Description30"
+                        android:text="@string/intro_Description31"
                         android:textColor="@color/black"
                         android:textSize="16sp"
-                        android:layout_weight="1"
+                        android:fontFamily="times"
                         android:textAlignment="center"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"/>
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentBottom="true"
-                            android:orientation="vertical"
-                            android:background="@color/yellow"
-                            android:layout_weight="1" >
-
-                            <TextView
-                                android:id="@+id/intro_Description31"
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content"
-                                android:background="@color/yellow"
-                                android:text="@string/intro_Description31"
-                                android:textColor="@color/black"
-                                android:textSize="16sp"
-                                android:fontFamily="times"
-                                android:textAlignment="center"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"/>
-                            <TextView
-                                android:id="@+id/intro_Description32"
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content"
-                                android:background="@color/yellow"
-                                android:text="@string/intro_Description32"
-                                android:fontFamily="times"
-                                android:textColor="@color/black"
-                                android:textSize="16sp"
-                                android:textAlignment="center"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
-                            <TextView
-                                android:id="@+id/intro_Description33"
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content"
-                                android:background="@color/yellow"
-                                android:text="@string/intro_Description33"
-                                android:textColor="@color/black"
-                                android:textSize="16sp"
-                                android:fontFamily="times"
-                                android:textAlignment="center"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
-
-                        </LinearLayout>
-
-                </LinearLayout>
-                <TextView
-                    android:id="@+id/intro_Description34"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/intro_Description34"
-                    android:fontFamily="times"
-                    android:textColor="@color/black"
-                    android:textSize="20dp"
-                    android:gravity="center"
-                    android:background="@android:color/white"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <TextView
-                    android:id="@+id/intro_Description35"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/intro_Description35"
-                    android:textColor="@color/black"
-                    android:textSize="16dp"
-                    android:fontFamily="times"
-                    android:background="@android:color/white"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:background="@android:color/white"/>
-                <TextView
-                    android:id="@+id/intro_Description36"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/intro_Description36"
-                    android:textColor="@color/black"
-                    android:fontFamily="times"
-                    android:textSize="16dp"
-                    android:background="@android:color/white"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:fontFamily="times"
-                    android:background="@android:color/white"/>
-                <TextView
-                    android:id="@+id/intro_Description37"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/intro_Description37"
-                    android:textColor="@color/black"
-                    android:textSize="16dp"
-                    android:fontFamily="times"
-                    android:background="@android:color/white"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:background="@android:color/white"/>
-                <TextView
-                    android:id="@+id/treasures_Title"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:background="@color/purple_100"
-                    android:text="@string/treasures"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:fontFamily="times"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <TextView
-                    android:id="@+id/intro_Description38"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/corerules"
-                    android:text="@string/intro_Description38"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    android:fontFamily="times"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <LinearLayout
-                    android:id="@+id/Buttons"
-                    android:layout_width="match_parent"
-                    android:layout_height="70dp"
-                    android:layout_alignParentBottom="true"
-                    android:orientation="horizontal">
-
-                    <Button
-                        android:id="@+id/TableButton"
-                        android:layout_width="137dp"
-                        android:layout_height="60dp"
-                        android:layout_marginStart="137dp"
-                        android:layout_marginTop="0dp"
+                    <TextView
+                        android:id="@+id/intro_Description32"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/yellow"
+                        android:text="@string/intro_Description32"
                         android:fontFamily="times"
-                        android:textColor="@color/purple_700"
-                        android:background="@android:color/transparent"
-                        android:layout_centerInParent="true"
-                        android:layout_alignParentBottom="true"
-                        android:text="@string/table" />
-
-                    <Button
-                        android:id="@+id/NextButton"
-                        android:layout_width="137dp"
-                        android:layout_height="60dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
                         android:textAlignment="center"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <TextView
+                        android:id="@+id/intro_Description33"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/yellow"
+                        android:text="@string/intro_Description33"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
                         android:fontFamily="times"
-                        android:textColor="@color/purple_700"
-                        android:background="@android:color/transparent"
-                        android:layout_alignParentBottom="true"
-                        android:text="@string/next" />
-
+                        android:textAlignment="center"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
                 </LinearLayout>
             </LinearLayout>
-        </ScrollView>
-    </LinearLayout>
+            <TextView
+                android:id="@+id/intro_Description34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/intro_Description34"
+                android:fontFamily="times"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:background="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/intro_Description35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/intro_Description35"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:fontFamily="times"
+                android:background="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@android:color/white"/>
+            <TextView
+                android:id="@+id/intro_Description36"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/intro_Description36"
+                android:textColor="@color/black"
+                android:fontFamily="times"
+                android:textSize="16dp"
+                android:background="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:fontFamily="times"
+                android:background="@android:color/white"/>
+            <TextView
+                android:id="@+id/intro_Description37"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/intro_Description37"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:fontFamily="times"
+                android:background="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@android:color/white"/>
+            <TextView
+                android:id="@+id/treasures_Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/purple_100"
+                android:text="@string/treasures"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:fontFamily="times"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/intro_Description38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/corerules"
+                android:text="@string/intro_Description38"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="times"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>
