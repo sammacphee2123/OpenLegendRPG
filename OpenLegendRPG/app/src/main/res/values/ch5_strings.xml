@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="paragraph1">
+        In this chapter, you’ll find detailed descriptions of the perks and flaws that you can use to round out your character’s personality, background, strengths, and weaknesses. Additionally, you’ll learn how to activate your perks and flaws to enhance your roleplaying and gain mechanical benefits.
+    </string>
+
+    <string name="subTitle1">
+        Fleshing Out Your Character with Perks and Flaws
+    </string>
+    
+    <string name="paragraph2">
+        <b>Perks</b> are characteristics that describe very specific skills, attitudes, backgrounds, or opportunities that tend to give your character the upper hand in certain situations. For example, maybe you are a noble and thus able to draw favors from powerful political figures, or perhaps you once served as mechanic on a starship and those technical skills still help you out in your adventuring life today.
+    </string>
+
+    <string name="paragraph3">
+        <b>Flaws</b> are your Achilles’ heel. They are weaknesses that your enemies can exploit or character deficits that always seem to hold you back at just the wrong moment. Maybe you are stubborn as a mule and won’t accept a compromise under any circumstances. Perhaps your greed tends to get the best of you, and your love of coin will even trump your loyalty to your friends. Your flaws might even be physical in nature: you’re blind, missing an arm, or suffer from a wounded knee that slows you down.
+    </string>
+    
+    <string name="subTitle1_section1">
+        <b>Acquiring Perks and Flaws</b>
+    </string>
+
+    <string name="paragraph4">
+        At character creation, you may select up to two perks and two flaws, and you do not have to select any. Throughout your adventures, the GM may assign you additional perks and flaws as the natural results of your deeds. For example, if your party spends several months on board a ship, the GM may reward everyone with the <i>profession: sailor</i> perk. Likewise, if you are subjected to horrible chemical burns as part of a laboratory explosion, the GM might assign you the <i>physical deformity</i> flaw to describe your scarred face.
+    </string>
+
+    <string name="paragraph5">
+        You too, may decide to adopt new perks or flaws with the GM’s approval as your character’s personality and background develop through play. Perhaps a series of encounters with powerful forces leads you to take on the <i>cowardly</i> flaw. Or maybe you spend significant downtime between adventures training with the local weaponsmith and would like to gain the <i>artisan</i> perk. The GM is the final arbiter for deciding when and under what circumstances you may choose new perks and flaws, but you should communicate with them your hopes for your character’s development.
+    </string>
+
+    <string name="subTitle1_section2">
+        <b>Designing Your Own Perks and Flaws</b>
+    </string>
+
+    <string name="paragraph6">
+        The lists provided in this chapter are by no means comprehensive, and you are encouraged to work with your GM to create the perks and flaws that you need to define your character.
+    </string>
+
+    <string name="paragraph7">
+        Flaws are very easy to create, as they simply represent situational triggers that hold your character back. Because the PCs decides when their flaws take effect, there is no need to consider balance when creating new flaws.
+    </string>
+
+    <string name="paragraph8">
+        Perks, on the other hand, often grant elaborate benefits and even mechanical bonuses. These require you to work closely with your GM to ensure that your perks are balanced with the other perks available to PCs. The first rule to adhere to is that perks should provide non-combat effects, as feats, banes, and boons are the primary means for PCs to boost their combat expertise. Next, try to make your proposed perk limited to a specific type of task or a relatively rare situation. For example, the <i>artisan</i> perk provides expertise for a single craft, and the <i>attractive</i> perk is only beneficial in social situations that rely on physical attractiveness. If your perk is more generally applicable, then the effect should be more limited than other perks. For example, the <i>idol</i> perk makes you trusted by just about anyone, but it is limited to being used once per game session.
+    </string>
+
+    <string name="subTitle2">
+        <b>Activating Perks</b>
+    </string>
+
+    <string name="paragraph9">
+        Perks provide very specific bonuses or effects in specific situations. Your perk description will explain exactly what your perk does and how often it can be activated. Some perks can be used whenever the situation merits while others are more limited. If the use of a perk relies on a situation being relevant to the sphere of influence of the perk, the GM has the final say as to whether the perk applies or not. For example, the <i>profession</i> perk provides advantage 1 to any non-combat action rolls related to your chosen profession. If a character wants to use their <i>profession: hunter</i> perk to gain advantage on a roll to track an orc, the GM would decide whether or not the PC’s experience tracking game was relevant enough to aid in the hunt for a humanoid.
+    </string>
+
+    <string name="subTitle3">
+        <b>Activating Flaws</b>
+    </string>
+
+    <string name="paragraph10">
+        While perks provide specific benefits according to their descriptions, flaws are actively used by players to hinder the actions of their characters. You would do this for two primary reasons: first, to add depth and variety to your character and the story; and, second, to earn legend points, which can be used to enhance your chances of success on a future action (see Chapter 2: Actions and Attributes). In this way, flaws and legend points provide a sort of karmic balance to one another. Your sacrifice in one situation is rewarded in a future situation.
+    </string>
+
+    <string name="paragraph11">
+        To activate a flaw, you should intentionally make a disadvantageous choice based on your flaw that creates an interesting or tense moment in the plot. When you do so, let your GM know that you are activating your flaw and describe how it is hindering your efforts or influencing your decisions. If the GM approves that your flaw is creating a significant disadvantage and advancing the story, you receive one legend point. Sometimes, the GM may recognize that you are roleplaying a flaw without you having to overtly activate it. In such cases, the GM may award you with a legend point as well.
+    </string>
+
+    <string name="paragraph12">
+        You may not gain a legend point from the same flaw more than once per game session. Furthermore, you are in complete control of how and when your own flaws affect you. For example, you might play a blind samurai (using the <i>disabled</i> flaw) who has such heightened senses of hearing, smell, and touch that they’re usually completely unaffected by their blindness. Only under extreme circumstances does the blindness hinder them.
+    </string>
+
+    <string name="paragraph13">
+        The type of hindrance caused by activating a flaw should be more than a simple reduced chance of success. Good examples of activating a flaw include putting yourself or an ally in danger, making a bad decision, wasting a resource, and missing out on an opportunity, among others. It’s also important to note that a good use of a flaw makes something new and interesting happen in the story rather than ending the narrative. For example, instead of activating a flaw to miss an attack, you might target an ally. Or, rather than activating a flaw to fail to find a secret door, you might make so much noise in your search that you attract unwanted attention.
+    </string>
+
+    <string name="subTitle3_section1">
+        <b>Examples of Activating Flaws</b>
+    </string>
+
+    <string name="subTitle3_section1_p1">
+        Oxnar the Barbarian was never known for his brains, so when the pixie promised him that eating the golden mushroom would make him as strong as a hundred mules, he gobbled it up with no questions and much gusto. A minute later he was dozing in a puddle of his own drool as the imp made off with his coin purse. The GM awards Oxnar with a legend point for effectively roleplaying his <i>dimwitted</i> flaw to his own detriment.
+    </string>
+
+    <string name="subTitle_section1_p2">
+        Normally, Celeste’s blindness from the <i>disabled</i> flaw doesn’t stop her from being one of the best shots in the Badlands. Her keen hearing and extrasensory perception more than make up for her lack of sight. The unearthly wailing of these zombie shriekers, however, have overwhelmed her senses. The player who is role-playing Celeste decides that the situation is dicey enough that she will unintentionally target one of her allies. She lets the GM know that she is specifically activating her <i>disabled</i> flaw, and the GM agrees that the impact is significant enough to merit a legend point for adding a new level of depth and realism to the story the group is telling together.
+    </string>
+
+    <string name="subTitle_section1_p3">
+        The psion Madrina has the <i>ambitious</i> flaw. After rescuing a group of mining colony civilians from a catastrophic air lock breach, Madrina is given the chance to ask a reward of the Chancellor. Madrina asks for the hand of the Chancellor’s eldest in marriage, rather than a more reasonable request such as a pick from the Chancellor’s treasury. The Chancellor becomes infuriated, but the GM awards a legend point for role-playing a flaw in a way that advances the story.
+    </string>
+
+    <string name="subTitle4">
+        <b>Perk Descriptions</b>
+    </string>
+    <!--Fill in all perks-->
+
+    <string name="subTitle5">
+        <b>Flaw Descriptions</b>
+    </string>
+    <!--Fill in all flaws-->
+
+</resources>
