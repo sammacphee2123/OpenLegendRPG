@@ -22,13 +22,16 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
         <ScrollView
+            android:id="@+id/scrl_ch5"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="0dp"
             android:fillViewport="true"
-            android:layout_gravity="center_horizontal">
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
 
-            <RelativeLayout
+            <LinearLayout
                 android:id="@+id/ch5_container"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -38,7 +41,7 @@
                 <TextView
                     android:id="@+id/chapter5_title"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
                     android:layout_marginTop="51dp"
                     android:layout_marginEnd="0dp"
@@ -48,9 +51,225 @@
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="28sp"
+                    android:paddingBottom="15dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/ch5_paragraph1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/paragraph1_ch5"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:id="@+id/ch5_subTitle1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/purple_100"
+                    android:fontFamily="times"
+                    android:text="@string/subTitle1_ch5"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:id="@+id/ch5_paragraph2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/paragraph2_ch5"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:id="@+id/ch5_paragraph3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/paragraph3_ch5"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:id="@+id/ch5_subTitle1_section1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/subTitle1_section1_ch5"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="5dp"/>
+
+                <TextView
+                    android:id="@+id/ch5_paragraph4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/paragraph4_ch5"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:id="@+id/ch5_paragraph5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/paragraph5_ch5"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:id="@+id/ch5_subTitle2_section1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/subTitle1_section2_ch5"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="5dp"/>
+
+                <TextView
+                    android:id="@+id/ch5_paragraph6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/paragraph6_ch5"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:id="@+id/ch5_paragraph7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/paragraph7_ch5"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:id="@+id/ch5_paragraph8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/paragraph8_ch5"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:id="@+id/ch5_subTitle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/purple_100"
+                    android:fontFamily="times"
+                    android:text="@string/subTitle2_ch5"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:id="@+id/ch5_paragraph9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/paragraph9_ch5"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:id="@+id/ch5_subTitle3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/purple_100"
+                    android:fontFamily="times"
+                    android:text="@string/subTitle3_ch5"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:id="@+id/ch5_paragraph10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/paragraph10_ch5"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:id="@+id/ch5_paragraph11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/paragraph11_ch5"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:id="@+id/ch5_paragraph12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/paragraph12_ch5"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:id="@+id/ch5_paragraph13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/paragraph13_ch5"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                 <LinearLayout
                     android:id="@+id/Buttons"
@@ -94,7 +313,7 @@
 
 
                 </LinearLayout>
-            </RelativeLayout>
+            </LinearLayout>
         </ScrollView>
     </LinearLayout>
 </RelativeLayout>
