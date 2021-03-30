@@ -81,11 +81,11 @@
         1. Oxnar the Barbarian was never known for his brains, so when the pixie promised him that eating the golden mushroom would make him as strong as a hundred mules, he gobbled it up with no questions and much gusto. A minute later he was dozing in a puddle of his own drool as the imp made off with his coin purse. The GM awards Oxnar with a legend point for effectively roleplaying his <i>dimwitted</i> flaw to his own detriment.
     </string>
 
-    <string name="subTitle_p2_ch5">
+    <string name="subTitle3_p2_ch5">
         2. Normally, Celeste’s blindness from the <i>disabled</i> flaw doesn’t stop her from being one of the best shots in the Badlands. Her keen hearing and extrasensory perception more than make up for her lack of sight. The unearthly wailing of these zombie shriekers, however, have overwhelmed her senses. The player who is role-playing Celeste decides that the situation is dicey enough that she will unintentionally target one of her allies. She lets the GM know that she is specifically activating her <i>disabled</i> flaw, and the GM agrees that the impact is significant enough to merit a legend point for adding a new level of depth and realism to the story the group is telling together.
     </string>
 
-    <string name="subTitle_p3_ch5">
+    <string name="subTitle3_p3_ch5">
         3. The psion Madrina has the <i>ambitious</i> flaw. After rescuing a group of mining colony civilians from a catastrophic air lock breach, Madrina is given the chance to ask a reward of the Chancellor. Madrina asks for the hand of the Chancellor’s eldest in marriage, rather than a more reasonable request such as a pick from the Chancellor’s treasury. The Chancellor becomes infuriated, but the GM awards a legend point for role-playing a flaw in a way that advances the story.
     </string>
 
@@ -340,7 +340,7 @@
         </string>
 
 
-    <string name="subTitle5">
+    <string name="subTitle5_ch5">
         <b>Flaw Descriptions</b>
     </string>
     <!--Fill in all flaws-->
