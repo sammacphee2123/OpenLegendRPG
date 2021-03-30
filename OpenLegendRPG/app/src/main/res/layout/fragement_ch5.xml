@@ -97,6 +97,51 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"/>
 
+                    <Button
+                        android:id="@+id/Button1_ch5"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="times"
+                        android:text="@string/subTitle1_ch5"
+                        android:textColor="@color/purple_700" />
+
+                    <Button
+                        android:id="@+id/Button2_ch5"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="times"
+                        android:text="@string/subTitle2_ch5"
+                        android:textColor="@color/purple_700" />
+
+                    <Button
+                        android:id="@+id/Button3_ch5"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="times"
+                        android:text="@string/subTitle3_ch5"
+                        android:textColor="@color/purple_700" />
+
+                    <Button
+                        android:id="@+id/Button4_ch5"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="times"
+                        android:text="@string/subTitle4_ch5"
+                        android:textColor="@color/purple_700" />
+
+                    <Button
+                        android:id="@+id/Button5_ch5"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="times"
+                        android:text="@string/subTitle5_ch5"
+                        android:textColor="@color/purple_700" />
+
                     <TextView
                         android:id="@+id/ch5_paragraph1"
                         android:layout_width="match_parent"
@@ -117,7 +162,7 @@
                         android:text="@string/subTitle1_ch5"
                         android:textColor="@color/black"
                         android:textSize="20sp"
-                        android:paddingBottom="15dp"/>
+                        android:paddingBottom="5dp"/>
 
                     <TextView
                         android:id="@+id/ch5_paragraph2"
@@ -219,7 +264,7 @@
                         android:text="@string/subTitle2_ch5"
                         android:textColor="@color/black"
                         android:textSize="20sp"
-                        android:paddingBottom="15dp"/>
+                        android:paddingBottom="5dp"/>
 
                     <TextView
                         android:id="@+id/ch5_paragraph9"
@@ -241,7 +286,7 @@
                         android:text="@string/subTitle3_ch5"
                         android:textColor="@color/black"
                         android:textSize="20sp"
-                        android:paddingBottom="15dp"/>
+                        android:paddingBottom="5dp"/>
 
                     <TextView
                         android:id="@+id/ch5_paragraph10"
@@ -341,7 +386,7 @@
                         android:text="@string/subTitle4_ch5"
                         android:textColor="@color/black"
                         android:textSize="20sp"
-                        android:paddingBottom="15dp"/>
+                        android:paddingBottom="5dp"/>
 
                     <!--Fill in all the perks here-->
 
@@ -955,6 +1000,550 @@
                         android:paddingBottom="15dp"/>
 
                     <!--Fill in all the flaws here-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="times"
+                        android:text="@string/absentMinded_flaw"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="times"
+                        android:text="@string/absentMinded_description"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:paddingBottom="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="times"
+                        android:text="@string/addiction_flaw"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="times"
+                        android:text="@string/addiction_description"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:paddingBottom="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="times"
+                        android:text="@string/ambitious_flaw"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="times"
+                        android:text="@string/ambitious_description"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:paddingBottom="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="times"
+                        android:text="@string/bloodlust_flaw"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="times"
+                        android:text="@string/bloodlust_description"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:paddingBottom="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="times"
+                        android:text="@string/brash_flaw"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="times"
+                        android:text="@string/brash_description"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:paddingBottom="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="times"
+                        android:text="@string/bravado_flaw"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="times"
+                        android:text="@string/bravado_description"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:paddingBottom="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="times"
+                        android:text="@string/cosmeticDeformity_flaw"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="times"
+                        android:text="@string/cosmeticDeformity_description"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:paddingBottom="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="times"
+                        android:text="@string/compulsion_flaw"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="times"
+                        android:text="@string/compulsion_description"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:paddingBottom="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="times"
+                        android:text="@string/cowardly_flaw"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="times"
+                        android:text="@string/cowardly_description"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:paddingBottom="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="times"
+                        android:text="@string/dimwitted_flaw"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="times"
+                        android:text="@string/dimwitted_description"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:paddingBottom="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="times"
+                        android:text="@string/disabled_flaw"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="times"
+                        android:text="@string/disabled_description"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:paddingBottom="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="times"
+                        android:text="@string/greedy_flaw"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="times"
+                        android:text="@string/greedy_description"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:paddingBottom="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="times"
+                        android:text="@string/honest_flaw"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="times"
+                        android:text="@string/honest_description"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:paddingBottom="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="times"
+                        android:text="@string/hotTempered_flaw"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="times"
+                        android:text="@string/hotTempered_description"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:paddingBottom="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="times"
+                        android:text="@string/illiterate_flaw"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="times"
+                        android:text="@string/illiterate_description"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:paddingBottom="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="times"
+                        android:text="@string/literalMinded_flaw"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="times"
+                        android:text="@string/literalMinded_description"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:paddingBottom="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="times"
+                        android:text="@string/moodDisorder_flaw"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="times"
+                        android:text="@string/moodDisorder_description"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:paddingBottom="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="times"
+                        android:text="@string/naive_flaw"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="times"
+                        android:text="@string/naive_description"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:paddingBottom="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="times"
+                        android:text="@string/overt_flaw"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="times"
+                        android:text="@string/overt_description"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:paddingBottom="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="times"
+                        android:text="@string/overweight_flaw"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="times"
+                        android:text="@string/overweight_description"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:paddingBottom="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="times"
+                        android:text="@string/pacifist_flaw"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="times"
+                        android:text="@string/pacifist_description"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:paddingBottom="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="times"
+                        android:text="@string/phobia_flaw"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="times"
+                        android:text="@string/phobia_description"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:paddingBottom="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="times"
+                        android:text="@string/proud_flaw"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="times"
+                        android:text="@string/proud_description"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:paddingBottom="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="times"
+                        android:text="@string/psychotic_flaw"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="times"
+                        android:text="@string/psychotic_description"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:paddingBottom="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="times"
+                        android:text="@string/shortWinded_flaw"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="times"
+                        android:text="@string/shortWinded_description"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:paddingBottom="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="times"
+                        android:text="@string/sick_flaw"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="times"
+                        android:text="@string/sick_description"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:paddingBottom="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="times"
+                        android:text="@string/sociallyAwkward_flaw"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="times"
+                        android:text="@string/sociallyAwkward_description"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:paddingBottom="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="times"
+                        android:text="@string/stubborn_flaw"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="times"
+                        android:text="@string/stubborn_description"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:paddingBottom="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="times"
+                        android:text="@string/uncoordinated_flaw"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="times"
+                        android:text="@string/uncoordinated_description"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:paddingBottom="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="times"
+                        android:text="@string/vengeful_flaw"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="times"
+                        android:text="@string/vengeful_description"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:paddingBottom="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="times"
+                        android:text="@string/zealous_flaw"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="times"
+                        android:text="@string/zealous_description"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:paddingBottom="15dp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
                 </LinearLayout>
