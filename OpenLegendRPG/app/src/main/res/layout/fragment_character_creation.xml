@@ -177,7 +177,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:layout_weight="1">
                         <View
                             android:layout_height="15dp"
                             android:layout_width="match_parent">
@@ -223,15 +224,11 @@
                             </EditText>
                         </LinearLayout>
                         </LinearLayout>
-                <View
-                    android:layout_height="match_parent"
-                    android:layout_width="15dp">
-                </View>
                         <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:layout_weight="3">
+                        android:layout_weight="1">
                         <View
                             android:layout_height="15dp"
                             android:layout_width="match_parent">
@@ -338,7 +335,8 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:layout_weight="1">
                     <View
                         android:layout_height="15dp"
                         android:layout_width="match_parent">
@@ -384,15 +382,11 @@
                         </EditText>
                     </LinearLayout>
                 </LinearLayout>
-                <View
-                    android:layout_height="match_parent"
-                    android:layout_width="15dp">
-                </View>
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:layout_weight="3">
+                    android:layout_weight="1">
                     <View
                         android:layout_height="15dp"
                         android:layout_width="match_parent">
@@ -479,7 +473,8 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:layout_weight="1">
                     <View
                         android:layout_height="15dp"
                         android:layout_width="match_parent">
@@ -525,15 +520,11 @@
                         </EditText>
                     </LinearLayout>
                 </LinearLayout>
-                <View
-                    android:layout_height="match_parent"
-                    android:layout_width="15dp">
-                </View>
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:layout_weight="3">
+                    android:layout_weight="1">
                     <View
                         android:layout_height="15dp"
                         android:layout_width="match_parent">
@@ -577,16 +568,18 @@
                 android:layout_height="15dp"
                 android:layout_width="match_parent">
             </View>
+
             <LinearLayout
                 android:id="@+id/hitpoints"
                 android:layout_width="match_parent"
-                android:layout_height = "wrap_content"
+                android:layout_height="wrap_content"
                 android:background="@drawable/box2"
                 android:orientation="vertical">
+
                 <View
-                    android:layout_height="15dp"
-                    android:layout_width="match_parent">
-                </View>
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"></View>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -596,90 +589,113 @@
                     android:fontFamily="times"
                     android:text="Hit Points"
                     android:textSize="20sp" />
+
                 <View
-                    android:layout_height="match_parent"
-                    android:layout_width="10dp">
-                </View>
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"></View>
+
                 <LinearLayout
-                    android:layout_width="331dp"
-                    android:layout_height = "wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:background="@drawable/box2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:orientation="vertical"
-                    android:layout_gravity="center"
                     android:weightSum="2">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
                         android:weightSum="2">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
                             android:background="@color/lightyellow"
                             android:fontFamily="times"
                             android:text="Max"
-                            android:layout_weight="1"
                             android:textSize="20sp" />
+
                         <EditText
                             android:id="@+id/maxhpET"
-                            android:layout_weight="1"
                             android:layout_width="50dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:inputType="number"
                             android:text="">
+
                         </EditText>
                     </LinearLayout>
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
                         android:fontFamily="times"
                         android:text="2 x (Fort+Will+Presence)+10"
-                        android:layout_gravity="center_horizontal"
                         android:textSize="12sp" />
+
                     <View
-                        android:layout_height="10dp"
-                        android:layout_width="match_parent">
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp">
+
                     </View>
                 </LinearLayout>
+
                 <View
-                    android:layout_height="10dp"
-                    android:layout_width="match_parent">
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp">
+
                 </View>
+
                 <LinearLayout
-                    android:layout_width="331dp"
-                    android:layout_height = "wrap_content"
-                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:orientation="vertical"
                     android:weightSum="2">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
                         android:background="@drawable/box2"
                         android:orientation="horizontal"
                         android:weightSum="2">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
                             android:background="@color/lightyellow"
                             android:fontFamily="times"
                             android:text="Lethal"
-                            android:layout_weight="1"
                             android:textSize="20sp" />
+
                         <EditText
                             android:id="@+id/lethalET"
-                            android:layout_weight="1"
                             android:layout_width="50dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:inputType="number"
                             android:text="">
+
                         </EditText>
                     </LinearLayout>
+
                     <View
-                        android:layout_height="10dp"
-                        android:layout_width="match_parent">
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp">
+
                     </View>
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -688,15 +704,18 @@
                         android:fontFamily="times"
                         android:text="Current"
                         android:textSize="20sp" />
+
                     <EditText
                         android:id="@+id/currentET"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="textMultiLine"
                         android:text="">
+
                     </EditText>
                 </LinearLayout>
             </LinearLayout>
+
             <View
                 android:layout_height="15dp"
                 android:layout_width="match_parent">
@@ -727,11 +746,12 @@
                     android:layout_width="10dp">
                 </View>
                 <LinearLayout
-                    android:layout_width="331dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/box2"
                     android:orientation="horizontal"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:weightSum="2">
                     <TextView
                         android:layout_width="wrap_content"
@@ -752,11 +772,12 @@
                     </EditText>
                 </LinearLayout>
                 <LinearLayout
-                    android:layout_width="331dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/box2"
-                    android:layout_marginLeft="10dp"
                     android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:weightSum="2">
                     <TextView
                         android:layout_width="wrap_content"
