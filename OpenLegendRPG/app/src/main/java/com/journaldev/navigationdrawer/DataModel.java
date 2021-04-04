@@ -8,4 +8,11 @@ public class DataModel {
         this.icon = icon;
         this.name = name;
     }
+    public void setString(String string){
+        this.name = string;
+    }
+
+    public String getString() {
+        return name;
+    }
 }
