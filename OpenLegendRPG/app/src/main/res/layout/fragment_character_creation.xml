@@ -37,7 +37,7 @@
     <ScrollView
         android:id="@+id/scrl"
         android:layout_width="match_parent"
-        android:layout_height="650dp"
+        android:layout_height="match_parent"
         android:layout_marginBottom="0dp"
         android:layout_above="@id/Buttons"
         android:paddingRight="30dp"
@@ -55,6 +55,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
+                android:textSize="12sp"
                 android:inputType="text"
                 android:text=""/>
             <TextView
@@ -68,6 +69,7 @@
                 android:id="@+id/playerNameET"
                 android:layout_width="331dp"
                 android:fontFamily="times"
+                android:textSize="12sp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:inputType="text"
@@ -87,6 +89,7 @@
                 android:layout_alignParentTop="true"
                 android:fontFamily="times"
                 android:inputType="number"
+                android:textSize="12sp"
                 android:text="">
             </EditText>
             <TextView
@@ -102,6 +105,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
                     android:fontFamily="times"
+                    android:textSize="12sp"
                     android:inputType="number"
                     android:text="">
                 </EditText>
@@ -119,6 +123,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:inputType="text"
+                android:textSize="12sp"
                 android:fontFamily="times"
                 android:text="">
             </EditText>
@@ -200,6 +205,7 @@
                                 android:layout_height="wrap_content"
                                 android:inputType="number"
                                 android:fontFamily="times"
+                                android:textSize="12sp"
                                 android:text="">
                             </EditText>
                         </LinearLayout>
@@ -220,6 +226,7 @@
                                 android:layout_height="wrap_content"
                                 android:inputType="number"
                                 android:fontFamily="times"
+                                android:textSize="12sp"
                                 android:text="">
                             </EditText>
                         </LinearLayout>
@@ -250,6 +257,7 @@
                                 android:layout_height="wrap_content"
                                 android:inputType="number"
                                 android:fontFamily="times"
+                                android:textSize="12sp"
                                 android:text="">
                             </EditText>
                         </LinearLayout>
@@ -269,6 +277,7 @@
                                 android:layout_width="50dp"
                                 android:layout_height="wrap_content"
                                 android:inputType="number"
+                                android:textSize="12sp"
                                 android:text="">
                             </EditText>
                         </LinearLayout>
@@ -358,6 +367,7 @@
                             android:layout_height="wrap_content"
                             android:inputType="number"
                             android:fontFamily="times"
+                            android:textSize="12sp"
                             android:text="">
                         </EditText>
                     </LinearLayout>
@@ -408,6 +418,7 @@
                             android:layout_height="wrap_content"
                             android:inputType="number"
                             android:fontFamily="times"
+                            android:textSize="12sp"
                             android:text="">
                         </EditText>
                     </LinearLayout>
@@ -495,6 +506,7 @@
                             android:layout_width="50dp"
                             android:layout_height="wrap_content"
                             android:inputType="number"
+                            android:textSize="12sp"
                             android:fontFamily="times"
                             android:text="">
                         </EditText>
@@ -513,6 +525,7 @@
                         <EditText
                             android:id="@+id/resolve_willET"
                             android:layout_width="50dp"
+                            android:textSize="12sp"
                             android:layout_height="wrap_content"
                             android:inputType="number"
                             android:fontFamily="times"
@@ -543,6 +556,7 @@
                         <EditText
                             android:id="@+id/resolve_otherET"
                             android:layout_width="50dp"
+                            android:textSize="12sp"
                             android:layout_height="wrap_content"
                             android:inputType="number"
                             android:fontFamily="times"
@@ -578,7 +592,9 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="15dp"></View>
+                    android:layout_height="15dp">
+
+                </View>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -592,7 +608,9 @@
 
                 <View
                     android:layout_width="10dp"
-                    android:layout_height="match_parent"></View>
+                    android:layout_height="match_parent">
+
+                </View>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -615,6 +633,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
+
+                            android:layout_marginTop="5dp"
                             android:layout_weight="1"
                             android:background="@color/lightyellow"
                             android:fontFamily="times"
@@ -626,11 +646,18 @@
                             android:layout_width="50dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:textSize="12sp"
                             android:inputType="number"
                             android:text="">
 
                         </EditText>
                     </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp">
+
+                    </View>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -640,11 +667,6 @@
                         android:text="2 x (Fort+Will+Presence)+10"
                         android:textSize="12sp" />
 
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="10dp">
-
-                    </View>
                 </LinearLayout>
 
                 <View
@@ -672,6 +694,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+
+                            android:layout_marginTop="5dp"
                             android:layout_marginLeft="10dp"
                             android:layout_weight="1"
                             android:background="@color/lightyellow"
@@ -684,6 +708,7 @@
                             android:layout_width="50dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:textSize="12sp"
                             android:inputType="number"
                             android:text="">
 
@@ -710,7 +735,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="textMultiLine"
-                        android:text="">
+                        android:text=""
+                        android:textSize="12sp">
 
                     </EditText>
                 </LinearLayout>
@@ -756,6 +782,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+
+                        android:layout_marginTop="5dp"
                         android:layout_marginLeft="10dp"
                         android:background="@color/lightyellow"
                         android:fontFamily="times"
@@ -768,7 +796,8 @@
                         android:layout_width="50dp"
                         android:layout_height="wrap_content"
                         android:inputType="number"
-                        android:text="">
+                        android:text=""
+                        android:textSize="12sp">
                     </EditText>
                 </LinearLayout>
                 <LinearLayout
@@ -783,6 +812,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
+
+                        android:layout_marginTop="5dp"
                         android:background="@color/lightyellow"
                         android:fontFamily="times"
                         android:text="Advantage"
@@ -794,6 +825,7 @@
                         android:layout_width="50dp"
                         android:layout_height="wrap_content"
                         android:inputType="number"
+                        android:textSize="12sp"
                         android:text="">
                     </EditText>
                 </LinearLayout>
@@ -809,7 +841,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
                 android:orientation="horizontal"
                 android:weightSum="3">
                 <LinearLayout
@@ -832,7 +863,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:inputType="number"
-                        android:text="">
+                        android:text=""
+                        android:textSize="12sp">
 
                     </EditText>
                 </LinearLayout>
@@ -855,6 +887,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:inputType="number"
+                        android:textSize="12sp"
                         android:text="">
                     </EditText>
                 </LinearLayout>
@@ -878,10 +911,1090 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:inputType="number"
-                        android:text="">
+                        android:text=""
+                        android:textSize="12sp">
                     </EditText>
                 </LinearLayout>
             </LinearLayout>
+            <!--attributes-->
+            <View
+                android:layout_height="15dp"
+                android:layout_width="match_parent">
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="Attributes"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/spent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:text="">
+                        </TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="Spent"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="times"
+                        android:text="/"
+                        android:textSize="16sp" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/total"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:text="">
+                        </TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="Total"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </TableRow>
+                    <TableLayout
+                        android:id="@+id/table2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TableRow
+                            android:id="@+id/table2Row1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/lightyellow"
+                                android:padding="5dp"
+                                android:text="Physical"
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text="Score"
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text="Cost"
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text="Dice"
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+
+                            </TextView>
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text="Agility"
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+
+                            </TextView>
+
+                            <EditText
+                                android:id="@+id/agilityScore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </EditText>
+                            <TextView
+                                android:id="@+id/agilityCost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                            <TextView
+                                android:id="@+id/agilityDice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text="Fortitude"
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+
+                            </TextView>
+
+                            <EditText
+                                android:id="@+id/fortitudeScore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </EditText>
+                            <TextView
+                                android:id="@+id/fortitudeCost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                            <TextView
+                                android:id="@+id/fortitudeDice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text="Might"
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                            <EditText
+                                android:id="@+id/mightScore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </EditText>
+                            <TextView
+                                android:id="@+id/mightCost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/mightDice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TableRow
+                        android:id="@+id/tabla_cabecera"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </TableRow>
+                    <TableLayout
+                        android:id="@+id/tabla_cuerpo"
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="match_parent">
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/lightyellow"
+                                android:padding="5dp"
+                                android:text="Mental"
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text="Score"
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text="Cost"
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text="Dice"
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+
+                            </TextView>
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/table2Row2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text="Learning"
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+
+                            </TextView>
+
+                            <EditText
+                                android:id="@+id/learningScore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </EditText>
+                            <TextView
+                                android:id="@+id/learningCost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                            <TextView
+                                android:id="@+id/leaningDice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/table2Row3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text="Logic"
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+
+                            </TextView>
+
+                            <EditText
+                                android:id="@+id/logicScore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </EditText>
+                            <TextView
+                                android:id="@+id/logicCost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                            <TextView
+                                android:id="@+id/logicDice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/table2Row4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text="Perception"
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                            <EditText
+                                android:id="@+id/perceptionScore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </EditText>
+                            <TextView
+                                android:id="@+id/perceptionCost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                            <TextView
+                                android:id="@+id/perceptionDice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                        </TableRow>
+                        <TableRow
+                            android:id="@+id/table2Row5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text="Will"
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                            <EditText
+                                android:id="@+id/willScore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </EditText>
+                            <TextView
+                                android:id="@+id/willCost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                            <TextView
+                                android:id="@+id/willDice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </TableRow>
+                    <TableLayout
+                        android:id="@+id/table3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TableRow
+                            android:id="@+id/table3Row1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/lightyellow"
+                                android:padding="5dp"
+                                android:text="Social"
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text="Score"
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text="Cost"
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text="Dice"
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+
+                            </TextView>
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/table3Row2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text="Deception"
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                            <EditText
+                                android:id="@+id/deceptionScore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </EditText>
+                            <TextView
+                                android:id="@+id/deceptionCost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                            <TextView
+                                android:id="@+id/deceptionDice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/table3Row3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text="Persuasion"
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+
+                            </TextView>
+
+                            <EditText
+                                android:id="@+id/persuasionScore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </EditText>
+                            <TextView
+                                android:id="@+id/persuasionCost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                            <TextView
+                                android:id="@+id/persuasionDice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/table3Row4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text="Presence"
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                            <EditText
+                                android:id="@+id/presenceScore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </EditText>
+                            <TextView
+                                android:id="@+id/presenceCost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                            <TextView
+                                android:id="@+id/presenceDice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </TableRow>
+                    <TableLayout
+                        android:id="@+id/table4"
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="match_parent">
+                        <TableRow
+                            android:id="@+id/table4Row1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/lightyellow"
+                                android:padding="5dp"
+                                android:text="Extraordinary"
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text="Score"
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text="Cost"
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text="Dice"
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+
+                            </TextView>
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/table4Row2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text="Alteration"
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                            <EditText
+                                android:id="@+id/alterationScore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </EditText>
+                            <TextView
+                                android:id="@+id/alterationCost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                            <TextView
+                                android:id="@+id/alterationDice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/table4Row3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text="Creation"
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+
+                            </TextView>
+
+                            <EditText
+                                android:id="@+id/creationScore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </EditText>
+                            <TextView
+                                android:id="@+id/creationCost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                            <TextView
+                                android:id="@+id/creationDice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                        </TableRow>
+                        <TableRow
+                            android:id="@+id/table4Row4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text="Enegry"
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                            <EditText
+                                android:id="@+id/energyScore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </EditText>
+                            <TextView
+                                android:id="@+id/energyCost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                            <TextView
+                                android:id="@+id/energyDice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/table4Row5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text="Entropy"
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                            <EditText
+                                android:id="@+id/entropyScore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </EditText>
+                            <TextView
+                                android:id="@+id/entropyCost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                            <TextView
+                                android:id="@+id/entropyDice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                        </TableRow>
+                        <TableRow
+                            android:id="@+id/table4Row6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text="Influence"
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                            <EditText
+                                android:id="@+id/influenceScore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </EditText>
+                            <TextView
+                                android:id="@+id/infleuenceCost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                            <TextView
+                                android:id="@+id/influenceDice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                        </TableRow>
+                        <TableRow
+                            android:id="@+id/table4Row7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text="Movement"
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                            <EditText
+                                android:id="@+id/movementScore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </EditText>
+                            <TextView
+                                android:id="@+id/movementCost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                            <TextView
+                                android:id="@+id/movementDice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                        </TableRow>
+                        <TableRow
+                            android:id="@+id/table4Row8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text="Prescience"
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                            <EditText
+                                android:id="@+id/prescienceScore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </EditText>
+                            <TextView
+                                android:id="@+id/prescienceCost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                            <TextView
+                                android:id="@+id/prescienceDice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                        </TableRow>
+                        <TableRow
+                            android:id="@+id/table4Row9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text="Protection"
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                            <EditText
+                                android:id="@+id/protectionScore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </EditText>
+                            <TextView
+                                android:id="@+id/protectionCost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                            <TextView
+                                android:id="@+id/protectionDice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box2"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium">
+                            </TextView>
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!--equip and additional-->
             <View
                 android:layout_height="15dp"
                 android:layout_width="match_parent">
@@ -901,6 +2014,7 @@
                     android:textSize="16sp" />
                 <EditText
                     android:id="@+id/equipmentET"
+                    android:textSize="12sp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textMultiLine"
@@ -921,6 +2035,7 @@
                     android:text="Additional Notes"
                     android:textSize="16sp" />
                 <EditText
+                    android:textSize="12sp"
                     android:id="@+id/additionalET"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
