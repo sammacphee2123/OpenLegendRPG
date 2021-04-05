@@ -97,7 +97,9 @@ public class CreateAccountFragment extends Fragment {
     }
     public static void hideSoftKeyboard(Activity activity) {
         InputMethodManager inputMethodManager = (InputMethodManager) activity.getSystemService(Activity.INPUT_METHOD_SERVICE);
-        inputMethodManager.hideSoftInputFromWindow(activity.getCurrentFocus().getWindowToken(), 0);
+        if (activity.getCurrentFocus() != null){
+            inputMethodManager.hideSoftInputFromWindow(activity.getCurrentFocus().getWindowToken(), 0);
+        }
     }
     private void createAccount(String name, String password, String email) throws ExecutionException, InterruptedException {
         mUserViewModel = new ViewModelProvider(this).get(userViewModel.class);

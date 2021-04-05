@@ -66,13 +66,13 @@
 
     <!--Beginning of Core Rules strings-->
     <string
-        name="next">Next Chapter
+        name="next">Next\n Chapter
     </string>
     <string
         name="table">Table of Contents
     </string>
     <string
-        name="previous">Previous Chapter
+        name="previous">Previous\n Chapter
     </string>
     <string
         name="introTitle">Introduction: This is Your Story. Tell it.

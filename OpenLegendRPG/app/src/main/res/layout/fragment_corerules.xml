@@ -21,12 +21,6 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="0dp"
-            android:layout_gravity="center_horizontal">
-
             <LinearLayout
                 android:id="@+id/chart_container"
                 android:layout_width="match_parent"
@@ -126,6 +120,5 @@
                     android:text="@string/chapter9Title"
                     android:textColor="@color/purple_700" />
             </LinearLayout>
-        </ScrollView>
     </LinearLayout>
 </RelativeLayout>
