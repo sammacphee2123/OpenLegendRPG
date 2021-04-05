@@ -170,7 +170,7 @@
                                 android:orientation="horizontal"
                                 android:layout_gravity="center">
                                 <TextView
-                                    android:id="@+id/GuardNum"
+                                    android:id="@+id/GuardNumTV"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text=""
@@ -199,15 +199,15 @@
                                 android:text="Agility"
                                 android:textSize="12sp" />
 
-                            <EditText
-                                android:id="@+id/guard_agilityET"
+                            <TextView
+                                android:id="@+id/guard_agilityTV"
                                 android:layout_width="50dp"
                                 android:layout_height="wrap_content"
                                 android:inputType="number"
                                 android:fontFamily="times"
                                 android:textSize="12sp"
                                 android:text="">
-                            </EditText>
+                            </TextView>
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -220,15 +220,15 @@
                                 android:text="Might"
                                 android:textSize="12sp" />
 
-                            <EditText
-                                android:id="@+id/guard_mightET"
+                            <TextView
+                                android:id="@+id/guard_mightTV"
                                 android:layout_width="50dp"
                                 android:layout_height="wrap_content"
                                 android:inputType="number"
                                 android:fontFamily="times"
                                 android:textSize="12sp"
                                 android:text="">
-                            </EditText>
+                            </TextView>
                         </LinearLayout>
                         </LinearLayout>
                         <LinearLayout
@@ -332,7 +332,7 @@
                         android:orientation="horizontal"
                         android:layout_gravity="center">
                         <TextView
-                            android:id="@+id/ToughnessNum"
+                            android:id="@+id/ToughnessNumTV"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text=""
@@ -361,15 +361,15 @@
                             android:text="Fortitude"
                             android:textSize="12sp" />
 
-                        <EditText
-                            android:id="@+id/toughness_fortitudeET"
+                        <TextView
+                            android:id="@+id/toughness_fortitudeTV"
                             android:layout_width="50dp"
                             android:layout_height="wrap_content"
                             android:inputType="number"
                             android:fontFamily="times"
                             android:textSize="12sp"
                             android:text="">
-                        </EditText>
+                        </TextView>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -382,14 +382,14 @@
                             android:text="Will"
                             android:textSize="12sp" />
 
-                        <EditText
-                            android:id="@+id/toughness_willET"
+                        <TextView
+                            android:id="@+id/toughness_willTV"
                             android:layout_width="50dp"
                             android:layout_height="wrap_content"
                             android:inputType="number"
                             android:fontFamily="times"
                             android:text="">
-                        </EditText>
+                        </TextView>
                     </LinearLayout>
                 </LinearLayout>
                 <LinearLayout
@@ -434,6 +434,11 @@
                             android:layout_marginLeft="60dp"
                             android:textSize="12sp" />
                     </LinearLayout>
+                    <View
+                        android:layout_height="30dp"
+                        android:layout_width="match_parent">
+                    </View>
+
                 </LinearLayout>
             </LinearLayout>
             <View
@@ -472,7 +477,7 @@
                         android:orientation="horizontal"
                         android:layout_gravity="center">
                         <TextView
-                            android:id="@+id/ResolveNum"
+                            android:id="@+id/ResolveNumTV"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text=""
@@ -501,15 +506,15 @@
                             android:text="Presence"
                             android:textSize="12sp" />
 
-                        <EditText
-                            android:id="@+id/resolve_presenceET"
+                        <TextView
+                            android:id="@+id/resolve_presenceTV"
                             android:layout_width="50dp"
                             android:layout_height="wrap_content"
                             android:inputType="number"
                             android:textSize="12sp"
                             android:fontFamily="times"
                             android:text="">
-                        </EditText>
+                        </TextView>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -522,15 +527,15 @@
                             android:text="Will"
                             android:textSize="12sp" />
 
-                        <EditText
-                            android:id="@+id/resolve_willET"
+                        <TextView
+                            android:id="@+id/resolve_willTV"
                             android:layout_width="50dp"
                             android:textSize="12sp"
                             android:layout_height="wrap_content"
                             android:inputType="number"
                             android:fontFamily="times"
                             android:text="">
-                        </EditText>
+                        </TextView>
                     </LinearLayout>
                 </LinearLayout>
                 <LinearLayout
@@ -575,6 +580,10 @@
                             android:layout_marginLeft="60dp"
                             android:textSize="12sp" />
                     </LinearLayout>
+                    <View
+                        android:layout_height="30dp"
+                        android:layout_width="match_parent">
+                    </View>
                 </LinearLayout>
             </LinearLayout>
 
@@ -641,8 +650,8 @@
                             android:text="Max"
                             android:textSize="20sp" />
 
-                        <EditText
-                            android:id="@+id/maxhpET"
+                        <TextView
+                            android:id="@+id/maxhpTV"
                             android:layout_width="50dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -650,7 +659,7 @@
                             android:inputType="number"
                             android:text="">
 
-                        </EditText>
+                        </TextView>
                     </LinearLayout>
 
                     <View
@@ -782,7 +791,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-
+                        android:layout_marginBottom="10dp"
                         android:layout_marginTop="5dp"
                         android:layout_marginLeft="10dp"
                         android:background="@color/lightyellow"
@@ -790,15 +799,15 @@
                         android:text="d20+"
                         android:layout_weight="1"
                         android:textSize="20sp" />
-                    <EditText
-                        android:id="@+id/d20ET"
+                    <TextView
+                        android:id="@+id/d20TV"
                         android:layout_weight="1"
                         android:layout_width="50dp"
                         android:layout_height="wrap_content"
                         android:inputType="number"
                         android:text=""
                         android:textSize="12sp">
-                    </EditText>
+                    </TextView>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -812,7 +821,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
-
+                        android:layout_marginBottom="10dp"
                         android:layout_marginTop="5dp"
                         android:background="@color/lightyellow"
                         android:fontFamily="times"
@@ -954,7 +963,7 @@
                         android:layout_weight="1"
                         android:orientation="vertical">
                         <TextView
-                            android:id="@+id/spent"
+                            android:id="@+id/attributeSpentTV"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textSize="16sp"
@@ -979,7 +988,7 @@
                         android:layout_weight="1"
                         android:orientation="vertical">
                         <TextView
-                            android:id="@+id/total"
+                            android:id="@+id/attributeTotalTV"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textSize="16sp"
@@ -1069,12 +1078,12 @@
                             </TextView>
 
                             <EditText
-                                android:id="@+id/agilityScore"
+                                android:id="@+id/agilityScoreET"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
                                 android:padding="5dp"
-                                android:text=""
+                                android:inputType="number"
                                 android:textAppearance="?android:attr/textAppearanceMedium">
                             </EditText>
                             <TextView
@@ -1113,11 +1122,12 @@
                             </TextView>
 
                             <EditText
-                                android:id="@+id/fortitudeScore"
+                                android:id="@+id/fortitudeScoreET"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
                                 android:padding="5dp"
+                                android:inputType="number"
                                 android:text=""
                                 android:textAppearance="?android:attr/textAppearanceMedium">
                             </EditText>
@@ -1155,11 +1165,12 @@
                                 android:textAppearance="?android:attr/textAppearanceMedium">
                             </TextView>
                             <EditText
-                                android:id="@+id/mightScore"
+                                android:id="@+id/mightScoreET"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
                                 android:padding="5dp"
+                                android:inputType="number"
                                 android:text=""
                                 android:textAppearance="?android:attr/textAppearanceMedium">
                             </EditText>
@@ -1261,12 +1272,14 @@
                             </TextView>
 
                             <EditText
-                                android:id="@+id/learningScore"
+                                android:id="@+id/learningScoreET"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
                                 android:padding="5dp"
                                 android:text=""
+
+                                android:inputType="number"
                                 android:textAppearance="?android:attr/textAppearanceMedium">
                             </EditText>
                             <TextView
@@ -1305,12 +1318,15 @@
                             </TextView>
 
                             <EditText
-                                android:id="@+id/logicScore"
+                                android:id="@+id/logicScoreET"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
+
+                                android:inputType="number"
                                 android:padding="5dp"
                                 android:text=""
+
                                 android:textAppearance="?android:attr/textAppearanceMedium">
                             </EditText>
                             <TextView
@@ -1347,7 +1363,8 @@
                                 android:textAppearance="?android:attr/textAppearanceMedium">
                             </TextView>
                             <EditText
-                                android:id="@+id/perceptionScore"
+                                android:id="@+id/perceptionScoreET"
+                                android:inputType="number"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
@@ -1388,7 +1405,8 @@
                                 android:textAppearance="?android:attr/textAppearanceMedium">
                             </TextView>
                             <EditText
-                                android:id="@+id/willScore"
+                                android:id="@+id/willScoreET"
+                                android:inputType="number"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
@@ -1489,8 +1507,9 @@
                                 android:textAppearance="?android:attr/textAppearanceMedium">
                             </TextView>
                             <EditText
-                                android:id="@+id/deceptionScore"
+                                android:id="@+id/deceptionScoreET"
                                 android:layout_width="wrap_content"
+                                android:inputType="number"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
                                 android:padding="5dp"
@@ -1532,16 +1551,17 @@
                             </TextView>
 
                             <EditText
-                                android:id="@+id/persuasionScore"
+                                android:id="@+id/persuasionScoreET"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:inputType="number"
                                 android:background="@drawable/box2"
                                 android:padding="5dp"
                                 android:text=""
                                 android:textAppearance="?android:attr/textAppearanceMedium">
                             </EditText>
                             <TextView
-                                android:id="@+id/persuasionCost"
+                                android:id="@+id/persuasionCostTV"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
@@ -1550,7 +1570,7 @@
                                 android:textAppearance="?android:attr/textAppearanceMedium">
                             </TextView>
                             <TextView
-                                android:id="@+id/persuasionDice"
+                                android:id="@+id/persuasionDiceTV"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
@@ -1574,16 +1594,17 @@
                                 android:textAppearance="?android:attr/textAppearanceMedium">
                             </TextView>
                             <EditText
-                                android:id="@+id/presenceScore"
+                                android:id="@+id/presenceScoreET"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:inputType="number"
                                 android:background="@drawable/box2"
                                 android:padding="5dp"
                                 android:text=""
                                 android:textAppearance="?android:attr/textAppearanceMedium">
                             </EditText>
                             <TextView
-                                android:id="@+id/presenceCost"
+                                android:id="@+id/presenceCostTV"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
@@ -1592,7 +1613,7 @@
                                 android:textAppearance="?android:attr/textAppearanceMedium">
                             </TextView>
                             <TextView
-                                android:id="@+id/presenceDice"
+                                android:id="@+id/presenceDiceTV"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
@@ -1674,16 +1695,18 @@
                                 android:textAppearance="?android:attr/textAppearanceMedium">
                             </TextView>
                             <EditText
-                                android:id="@+id/alterationScore"
+                                android:id="@+id/alterationScoreET"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+
+                                android:inputType="number"
                                 android:background="@drawable/box2"
                                 android:padding="5dp"
                                 android:text=""
                                 android:textAppearance="?android:attr/textAppearanceMedium">
                             </EditText>
                             <TextView
-                                android:id="@+id/alterationCost"
+                                android:id="@+id/alterationCostTV"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
@@ -1692,7 +1715,7 @@
                                 android:textAppearance="?android:attr/textAppearanceMedium">
                             </TextView>
                             <TextView
-                                android:id="@+id/alterationDice"
+                                android:id="@+id/alterationDiceTV"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
@@ -1717,16 +1740,18 @@
                             </TextView>
 
                             <EditText
-                                android:id="@+id/creationScore"
+                                android:id="@+id/creationScoreET"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
+
+                                android:inputType="number"
                                 android:padding="5dp"
                                 android:text=""
                                 android:textAppearance="?android:attr/textAppearanceMedium">
                             </EditText>
                             <TextView
-                                android:id="@+id/creationCost"
+                                android:id="@+id/creationCostTV"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
@@ -1735,7 +1760,7 @@
                                 android:textAppearance="?android:attr/textAppearanceMedium">
                             </TextView>
                             <TextView
-                                android:id="@+id/creationDice"
+                                android:id="@+id/creationDiceTV"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
@@ -1758,16 +1783,17 @@
                                 android:textAppearance="?android:attr/textAppearanceMedium">
                             </TextView>
                             <EditText
-                                android:id="@+id/energyScore"
+                                android:id="@+id/energyScoreET"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
                                 android:padding="5dp"
+                                android:inputType="number"
                                 android:text=""
                                 android:textAppearance="?android:attr/textAppearanceMedium">
                             </EditText>
                             <TextView
-                                android:id="@+id/energyCost"
+                                android:id="@+id/energyCostTV"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
@@ -1776,7 +1802,7 @@
                                 android:textAppearance="?android:attr/textAppearanceMedium">
                             </TextView>
                             <TextView
-                                android:id="@+id/energyDice"
+                                android:id="@+id/energyDiceTV"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
@@ -1800,16 +1826,17 @@
                                 android:textAppearance="?android:attr/textAppearanceMedium">
                             </TextView>
                             <EditText
-                                android:id="@+id/entropyScore"
+                                android:id="@+id/entropyScoreET"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:inputType="number"
                                 android:background="@drawable/box2"
                                 android:padding="5dp"
                                 android:text=""
                                 android:textAppearance="?android:attr/textAppearanceMedium">
                             </EditText>
                             <TextView
-                                android:id="@+id/entropyCost"
+                                android:id="@+id/entropyCostTV"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
@@ -1818,7 +1845,7 @@
                                 android:textAppearance="?android:attr/textAppearanceMedium">
                             </TextView>
                             <TextView
-                                android:id="@+id/entropyDice"
+                                android:id="@+id/entropyDiceTV"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
@@ -1841,16 +1868,17 @@
                                 android:textAppearance="?android:attr/textAppearanceMedium">
                             </TextView>
                             <EditText
-                                android:id="@+id/influenceScore"
+                                android:id="@+id/influenceScoreET"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
                                 android:padding="5dp"
+                                android:inputType="number"
                                 android:text=""
                                 android:textAppearance="?android:attr/textAppearanceMedium">
                             </EditText>
                             <TextView
-                                android:id="@+id/infleuenceCost"
+                                android:id="@+id/infleuenceCostTV"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
@@ -1859,7 +1887,7 @@
                                 android:textAppearance="?android:attr/textAppearanceMedium">
                             </TextView>
                             <TextView
-                                android:id="@+id/influenceDice"
+                                android:id="@+id/influenceDiceTV"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
@@ -1882,16 +1910,17 @@
                                 android:textAppearance="?android:attr/textAppearanceMedium">
                             </TextView>
                             <EditText
-                                android:id="@+id/movementScore"
+                                android:id="@+id/movementScoreET"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
                                 android:padding="5dp"
+                                android:inputType="number"
                                 android:text=""
                                 android:textAppearance="?android:attr/textAppearanceMedium">
                             </EditText>
                             <TextView
-                                android:id="@+id/movementCost"
+                                android:id="@+id/movementCostTV"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
@@ -1900,7 +1929,7 @@
                                 android:textAppearance="?android:attr/textAppearanceMedium">
                             </TextView>
                             <TextView
-                                android:id="@+id/movementDice"
+                                android:id="@+id/movementDiceTV"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
@@ -1923,16 +1952,17 @@
                                 android:textAppearance="?android:attr/textAppearanceMedium">
                             </TextView>
                             <EditText
-                                android:id="@+id/prescienceScore"
+                                android:id="@+id/prescienceScoreET"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
+                                android:inputType="number"
                                 android:padding="5dp"
                                 android:text=""
                                 android:textAppearance="?android:attr/textAppearanceMedium">
                             </EditText>
                             <TextView
-                                android:id="@+id/prescienceCost"
+                                android:id="@+id/prescienceCostTV"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
@@ -1941,7 +1971,7 @@
                                 android:textAppearance="?android:attr/textAppearanceMedium">
                             </TextView>
                             <TextView
-                                android:id="@+id/prescienceDice"
+                                android:id="@+id/prescienceDiceTV"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
@@ -1964,16 +1994,17 @@
                                 android:textAppearance="?android:attr/textAppearanceMedium">
                             </TextView>
                             <EditText
-                                android:id="@+id/protectionScore"
+                                android:id="@+id/protectionScoreET"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
                                 android:padding="5dp"
+                                android:inputType="number"
                                 android:text=""
                                 android:textAppearance="?android:attr/textAppearanceMedium">
                             </EditText>
                             <TextView
-                                android:id="@+id/protectionCost"
+                                android:id="@+id/protectionCostTV"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
@@ -1982,7 +2013,7 @@
                                 android:textAppearance="?android:attr/textAppearanceMedium">
                             </TextView>
                             <TextView
-                                android:id="@+id/protectionDice"
+                                android:id="@+id/protectionDiceTV"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
@@ -1993,6 +2024,388 @@
                         </TableRow>
                     </TableLayout>
                 </LinearLayout>
+            </LinearLayout>
+            <!--feats-->
+            <View
+                android:layout_height="15dp"
+                android:layout_width="match_parent">
+            </View>
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="Feats"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/featsSpentTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:text="">
+                        </TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="Spent"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="times"
+                        android:text="/"
+                        android:textSize="16sp" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/featsTotalTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:text="">
+                        </TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="Total"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginRight="10dp"
+                     android:orientation="horizontal"
+                     android:weightSum="5">
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:fontFamily="times"
+                         android:text="Name"
+                         android:layout_weight="4"
+                         android:textSize="12sp" />
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:fontFamily="times"
+                         android:text="Cost"
+                         android:layout_weight="1"
+                         android:textSize="12sp" />
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginRight="10dp"
+                     android:orientation="horizontal"
+                     android:weightSum="5">
+                     <AutoCompleteTextView
+                         android:id="@+id/featsAutoComp1"
+                         android:layout_width="50dp"
+                         android:layout_height="wrap_content"
+                         android:fontFamily="times"
+                         android:text=""
+                         android:completionThreshold="1"
+                         android:layout_weight="4"
+                         android:textSize="12sp" />
+                     <TextView
+                         android:id="@+id/featsCost1TV"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:fontFamily="times"
+                         android:text=""
+                         android:layout_weight="1"
+                         android:textSize="12sp" />
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginRight="10dp"
+                     android:orientation="horizontal"
+                     android:weightSum="5">
+                     <AutoCompleteTextView
+                         android:id="@+id/featsAutoComp2"
+                         android:layout_width="50dp"
+                         android:layout_height="wrap_content"
+                         android:fontFamily="times"
+                         android:text=""
+                         android:completionThreshold="1"
+                         android:layout_weight="4"
+                         android:textSize="12sp" />
+                     <TextView
+                         android:id="@+id/featsCost2TV"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:fontFamily="times"
+                         android:text=""
+                         android:layout_weight="1"
+                         android:textSize="12sp" />
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginRight="10dp"
+                     android:orientation="horizontal"
+                     android:weightSum="5">
+                     <AutoCompleteTextView
+                         android:id="@+id/featsAutoComp3"
+                         android:layout_width="50dp"
+                         android:layout_height="wrap_content"
+                         android:fontFamily="times"
+                         android:text=""
+                         android:completionThreshold="1"
+                         android:layout_weight="4"
+                         android:textSize="12sp" />
+                     <TextView
+                         android:id="@+id/featsCost3TV"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:fontFamily="times"
+                         android:text=""
+                         android:layout_weight="1"
+                         android:textSize="12sp" />
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginRight="10dp"
+                     android:orientation="horizontal"
+                     android:weightSum="5">
+                     <AutoCompleteTextView
+                         android:id="@+id/featsAutoComp4"
+                         android:layout_width="50dp"
+                         android:layout_height="wrap_content"
+                         android:fontFamily="times"
+                         android:text=""
+                         android:completionThreshold="1"
+                         android:layout_weight="4"
+                         android:textSize="12sp" />
+                     <TextView
+                         android:id="@+id/featsCost4TV"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:fontFamily="times"
+                         android:text=""
+                         android:layout_weight="1"
+                         android:textSize="12sp" />
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginRight="10dp"
+                     android:orientation="horizontal"
+                     android:weightSum="5">
+                     <AutoCompleteTextView
+                         android:id="@+id/featsAutoComp5"
+                         android:layout_width="50dp"
+                         android:layout_height="wrap_content"
+                         android:fontFamily="times"
+                         android:text=""
+                         android:completionThreshold="1"
+                         android:layout_weight="4"
+                         android:textSize="12sp" />
+                     <TextView
+                         android:id="@+id/featsCost5TV"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:fontFamily="times"
+                         android:text=""
+                         android:layout_weight="1"
+                         android:textSize="12sp" />
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginRight="10dp"
+                     android:orientation="horizontal"
+                     android:weightSum="5">
+                     <AutoCompleteTextView
+                         android:id="@+id/featsAutoComp6"
+                         android:layout_width="50dp"
+                         android:layout_height="wrap_content"
+                         android:fontFamily="times"
+                         android:text=""
+                         android:completionThreshold="1"
+                         android:layout_weight="4"
+                         android:textSize="12sp" />
+                     <TextView
+                         android:id="@+id/featsCost6TV"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:fontFamily="times"
+                         android:text=""
+                         android:layout_weight="1"
+                         android:textSize="12sp" />
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginRight="10dp"
+                     android:orientation="horizontal"
+                     android:weightSum="5">
+                     <AutoCompleteTextView
+                         android:id="@+id/featsAutoComp7"
+                         android:layout_width="50dp"
+                         android:layout_height="wrap_content"
+                         android:fontFamily="times"
+                         android:text=""
+                         android:completionThreshold="1"
+                         android:layout_weight="4"
+                         android:textSize="12sp" />
+                     <TextView
+                         android:id="@+id/featsCost7TV"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:fontFamily="times"
+                         android:text=""
+                         android:layout_weight="1"
+                         android:textSize="12sp" />
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginRight="10dp"
+                     android:orientation="horizontal"
+                     android:weightSum="5">
+                     <AutoCompleteTextView
+                         android:id="@+id/featsAutoComp8"
+                         android:layout_width="50dp"
+                         android:layout_height="wrap_content"
+                         android:fontFamily="times"
+                         android:text=""
+                         android:completionThreshold="1"
+                         android:layout_weight="4"
+                         android:textSize="12sp" />
+                     <TextView
+                         android:id="@+id/featsCost8TV"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:fontFamily="times"
+                         android:text=""
+                         android:layout_weight="1"
+                         android:textSize="12sp" />
+                 </LinearLayout>
+        </LinearLayout>
+            <!--perks and flaws-->
+            <View
+                android:layout_height="15dp"
+                android:layout_width="match_parent">
+            </View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box2"
+                android:orientation="vertical"
+                android:weightSum="3">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_marginTop="10dp"
+                    android:background="@color/lightyellow"
+                    android:fontFamily="times"
+                    android:text="Perks"
+                    android:layout_weight="1"
+                    android:textSize="16sp" />
+                     <AutoCompleteTextView
+                         android:id="@+id/perk1"
+                         android:layout_width="fill_parent"
+                         android:layout_height="wrap_content"
+                         android:fontFamily="times"
+                         android:text=""
+                         android:completionThreshold="1"
+                         android:layout_weight="1"
+                         android:textSize="12sp" />
+                    <AutoCompleteTextView
+                        android:id="@+id/perk2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="times"
+                        android:text=""
+                        android:completionThreshold="1"
+                        android:layout_weight="1"
+                        android:textSize="12sp" />
+            </LinearLayout>
+            <View
+                android:layout_height="15dp"
+                android:layout_width="match_parent">
+            </View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box2"
+                android:weightSum="3"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_marginTop="10dp"
+                    android:background="@color/lightyellow"
+                    android:fontFamily="times"
+                    android:layout_weight="1"
+                    android:text="Flaws"
+                    android:textSize="16sp" />
+
+                     <AutoCompleteTextView
+                         android:id="@+id/flaw1"
+                         android:layout_width="fill_parent"
+                         android:layout_height="wrap_content"
+                         android:fontFamily="times"
+                         android:text=""
+                         android:completionThreshold="1"
+                         android:layout_weight="1"
+                         android:textSize="12sp" />
+
+                     <AutoCompleteTextView
+                         android:id="@+id/flaw2"
+                         android:layout_width="fill_parent"
+                         android:layout_height="wrap_content"
+                         android:fontFamily="times"
+                         android:text=""
+                         android:completionThreshold="1"
+                         android:layout_weight="1"
+                         android:textSize="12sp" />
             </LinearLayout>
             <!--equip and additional-->
             <View
