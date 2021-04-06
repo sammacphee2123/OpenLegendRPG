@@ -37,7 +37,6 @@
                 android:layout_width="137dp"
                 android:layout_height="60dp"
                 android:background="@android:color/transparent"
-
                 android:layout_gravity="center_horizontal"
                 android:textColor="@color/purple_700"
                 android:layout_marginTop="0dp"
