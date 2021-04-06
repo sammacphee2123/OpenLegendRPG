@@ -44,4 +44,5 @@ public class DrawerItemCustomAdapter extends ArrayAdapter<DataModel> {
 
         return listItem;
     }
+
 }

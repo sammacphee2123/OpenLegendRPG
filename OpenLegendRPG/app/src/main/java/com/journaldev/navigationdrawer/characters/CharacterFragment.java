@@ -71,14 +71,10 @@ public class CharacterFragment extends Fragment
 
     public Character createCharacter(String characterName)
     {
-        Character character = new Character(null, characterName, null, null,
-                0, 0, 0, 0, 0, 0, 0, 0, 0,
-                0, 0, 0, 0, 0, 0, 0, 0,
-                0, 0, 0, null, 0, 0, 0,
-                null, null, null, null,0, 0,
-                0, 0, 0, 0, 0, 0, 0, 0,
-                0, null, null, null, null, null, null,
-                null, null, null, null, null, null);
+        Character character = new Character(characterName, null,
+        0, 0, null, 0, 0, 0, 0,
+                0, 0, 0, 0, 0,
+                null, null);
         return character;
     }
 

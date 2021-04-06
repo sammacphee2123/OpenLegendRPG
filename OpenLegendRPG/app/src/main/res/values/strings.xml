@@ -66,13 +66,13 @@
 
     <!--Beginning of Core Rules strings-->
     <string
-        name="next">Next Chapter
+        name="next">Next\n Chapter
     </string>
     <string
         name="table">Table of Contents
     </string>
     <string
-        name="previous">Previous Chapter
+        name="previous">Previous\n Chapter
     </string>
     <string
         name="introTitle">Introduction: This is Your Story. Tell it.
@@ -257,7 +257,6 @@ The secret’s in the title: Open. Everything about the game has been built to o
     </string>
     <string
         name="Button5">Record Attribute Dice
->>>>>>> 57b148b5ef12ceff6f35de135eb4e5c568ede834
     </string>
 
     <string
