@@ -1,34 +1,31 @@
 package ca.unb.mobiledev.openlegendrpg.Adapters;
 
-import android.database.sqlite.SQLiteQuery;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
-
 import ca.unb.mobiledev.openlegendrpg.Items.Character;
 import ca.unb.mobiledev.openlegendrpg.R;
-import ca.unb.mobiledev.openlegendrpg.UI.characterViewModel;
-import ca.unb.mobiledev.openlegendrpg.dao.characterDao;
 
 public class characterListAdapter extends ListAdapter<Character, characterListAdapter.characterViewHolder>
 {
-    private static final String TAG = "RecyclerAdapter (Character)";
-    private characterViewModel mCharacterViewModel;
-    private characterDao characterDao;
-    private Button deleteCharButton;
-    private Button editCHarButton;
+    private static final String TAG = "character list";
+    EventListener listener;
 
-    public characterListAdapter(@NonNull DiffUtil.ItemCallback<Character> diffCallback)
+    public interface EventListener {
+        void deleteCharacter(String charName);
+    }
+
+    public characterListAdapter(@NonNull DiffUtil.ItemCallback<Character> diffCallback, EventListener listener)
     {
         super(diffCallback);
+        this.listener = listener;
     }
 
     @NonNull
@@ -36,7 +33,6 @@ public class characterListAdapter extends ListAdapter<Character, characterListAd
     public characterViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
     {
         Log.i(TAG, "onCreateViewHolder");
-
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
         View view = layoutInflater.inflate(R.layout.character_row_item, parent, false);
         return new characterViewHolder(view);
@@ -50,8 +46,7 @@ public class characterListAdapter extends ListAdapter<Character, characterListAd
         holder.deleteCharButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String charName = character.getCharName();
-                mCharacterViewModel.deleteCharacter(charName); //this terminates the app because of a null object reference
+                listener.deleteCharacter(character.getCharName());
             }
         });
 
@@ -99,7 +94,7 @@ public class characterListAdapter extends ListAdapter<Character, characterListAd
         @Override
         public void onClick(View v)
         {
-
+            //launch edit character activity
         }
     }
 }

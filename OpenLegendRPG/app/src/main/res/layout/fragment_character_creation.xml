@@ -140,13 +140,13 @@
                 android:layout_width="match_parent">
             </View>
             <LinearLayout
-                android:id="@+id/guard"
                 android:layout_width="match_parent"
                 android:layout_height = "wrap_content"
                 android:background="@drawable/box2"
                 android:orientation="horizontal"
                 android:weightSum="3">
                 <LinearLayout
+                    android:id="@+id/guard"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
@@ -170,7 +170,7 @@
                                 android:orientation="horizontal"
                                 android:layout_gravity="center">
                                 <TextView
-                                    android:id="@+id/GuardNumTV"
+                                    android:id="@+id/guardNumTV"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text=""
@@ -278,7 +278,7 @@
                                 android:layout_height="wrap_content"
                                 android:inputType="number"
                                 android:textSize="12sp"
-                                android:text="">
+                                android:text="0">
                             </EditText>
                         </LinearLayout>
                         <LinearLayout

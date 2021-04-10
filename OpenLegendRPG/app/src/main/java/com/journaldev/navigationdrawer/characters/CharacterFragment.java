@@ -20,7 +20,7 @@ import ca.unb.mobiledev.openlegendrpg.UI.characterViewModel;
 import ca.unb.mobiledev.openlegendrpg.characters.CharacterCreation;
 import static android.app.Activity.RESULT_OK;
 
-public class CharacterFragment extends Fragment
+public class CharacterFragment extends Fragment implements characterListAdapter.EventListener
 {
     public static final int NEW_CHARACTER_ACTIVITY_REQUEST_CODE = 1;
 
@@ -35,7 +35,7 @@ public class CharacterFragment extends Fragment
         View rootView = inflater.inflate(R.layout.fragment_character, container, false);
         RecyclerView recyclerView = rootView.findViewById(R.id.recyclerView);
 
-        final characterListAdapter adapter = new characterListAdapter(new characterListAdapter.characterDiff());
+        final characterListAdapter adapter = new characterListAdapter(new characterListAdapter.characterDiff(), this);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(requireActivity()));
 
@@ -53,29 +53,8 @@ public class CharacterFragment extends Fragment
         });
         return rootView;
     }
-
-    public void onActivityResult(int requestCode, int resultCode, Intent data)
-    {
-        super.onActivityResult(requestCode, resultCode, data);
-
-        if(requestCode == NEW_CHARACTER_ACTIVITY_REQUEST_CODE && resultCode == RESULT_OK)
-        {
-            Character character = createCharacter(data.getStringExtra(CharacterCreation.EXTRA_REPLY));
-            mCharacterViewModel.insert(character);
-        }
-        else
-        {
-            Toast.makeText(getContext(),"Character not saved", Toast.LENGTH_LONG).show();
-        }
+    public void deleteCharacter(String charName){
+        mCharacterViewModel = new ViewModelProvider(this).get(characterViewModel.class);
+        mCharacterViewModel.deleteCharacter(charName);
     }
-
-    public Character createCharacter(String characterName)
-    {
-        Character character = new Character(characterName, null,
-        0, 0, null, 0, 0, 0, 0,
-                0, 0, 0, 0, 0,
-                null, null);
-        return character;
-    }
-
 }
