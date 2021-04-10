@@ -48,28 +48,6 @@ public abstract class CharacterRoomDatabase extends RoomDatabase
             databaseWriterExecutor.execute(() -> {
                 characterDao dao = INSTANCE.characterDao();
                 dao.deleteAll();
-
-                Character character = new Character(null, "characterName", null, null,
-                        0, 0, 0, 0, 0, 0, 0, 0, 0,
-                        0, 0, 0, 0, 0, 0, 0, 0,
-                        0, 0, 0, null, 0, 0, 0,
-                        null, null, null, null,0, 0,
-                        0, 0, 0, 0, 0, 0, 0, 0,
-                        0, null, null, null, null, null, null,
-                        null, null, null, null, null, null);
-                dao.insert(character);
-
-                character = new Character(null, "characterName2", null, null,
-                        0, 0, 0, 0, 0, 0, 0, 0, 0,
-                        0, 0, 0, 0, 0, 0, 0, 0,
-                        0, 0, 0, null, 0, 0, 0,
-                        null, null, null, null,0, 0,
-                        0, 0, 0, 0, 0, 0, 0, 0,
-                        0, null, null, null, null, null, null,
-                        null, null, null, null, null, null);
-                dao.insert(character);
-
-
             });
         }
     };

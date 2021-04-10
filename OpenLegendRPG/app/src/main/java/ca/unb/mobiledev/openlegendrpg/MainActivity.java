@@ -26,16 +26,19 @@ import com.journaldev.navigationdrawer.HomeFragment;
 
 import java.util.Objects;
 
+import ca.unb.mobiledev.openlegendrpg.Items.User;
+
 
 public class MainActivity extends AppCompatActivity {
 
+    private static String string = "Login";
     private String[] mNavigationDrawerItemTitles;
     private DrawerLayout mDrawerLayout;
     private ListView mDrawerList;
     Toolbar toolbar;
     private CharSequence mTitle;
     ActionBarDrawerToggle mDrawerToggle;
-
+    private static User user = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
         View header = getLayoutInflater().inflate(R.layout.header, null);
 
         setupToolbar();
-
 
         DataModel[] drawerItem = new DataModel[7];
 
@@ -118,7 +120,13 @@ public class MainActivity extends AppCompatActivity {
 
             mDrawerList.setItemChecked(position, true);
             mDrawerList.setSelection(position);
-            setTitle(mNavigationDrawerItemTitles[position]);
+            if(user == null) {
+                setTitle(mNavigationDrawerItemTitles[position]);
+            }
+            else{
+
+                setTitle(user.getName());
+            }
             mDrawerLayout.closeDrawer(mDrawerList);
 
         } else {
@@ -152,11 +160,26 @@ public class MainActivity extends AppCompatActivity {
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         Objects.requireNonNull(getSupportActionBar()).setDisplayShowHomeEnabled(true);
+
     }
 
     void setupDrawerToggle(){
         mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar,R.string.app_name,R.string.app_name);
         //This is necessary to change the icon of the Drawer Toggle upon state change.
         mDrawerToggle.syncState();
+    }
+
+    public static void setUser(User newuser) {
+        user = newuser;
+        if(user != null) {
+            string = user.getName();
+        }
+        else{
+            string = "Login";
+        }
+    }
+
+    public static User getUser() {
+        return user;
     }
 }
