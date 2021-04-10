@@ -7,6 +7,8 @@ import androidx.lifecycle.LiveData;
 import java.util.List;
 
 import ca.unb.mobiledev.openlegendrpg.Items.Character;
+import ca.unb.mobiledev.openlegendrpg.Items.User;
+import ca.unb.mobiledev.openlegendrpg.MainActivity;
 import ca.unb.mobiledev.openlegendrpg.dao.characterDao;
 import ca.unb.mobiledev.openlegendrpg.database.CharacterRoomDatabase;
 
@@ -19,7 +21,14 @@ public class characterRepo
     {
         CharacterRoomDatabase db = CharacterRoomDatabase.getDatabase(application);
         mCharacterDao = db.characterDao();
-        mCharacters = mCharacterDao.getCharacters();
+        User user = MainActivity.getUser();
+        if(user != null) {
+            String userId = user.getName();
+            mCharacters = mCharacterDao.getCharacters(userId);
+        }
+        else{
+            mCharacters = null;
+        }
     }
 
     public LiveData<List<Character>> listAllRecords()

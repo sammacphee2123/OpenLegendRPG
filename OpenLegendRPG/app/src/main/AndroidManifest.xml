@@ -50,5 +50,7 @@
 
         <activity android:name=".characters.CharacterCreation"/>
 
+        <activity android:name=".characters.EditCharacter"/>
+
     </application>
 </manifest>

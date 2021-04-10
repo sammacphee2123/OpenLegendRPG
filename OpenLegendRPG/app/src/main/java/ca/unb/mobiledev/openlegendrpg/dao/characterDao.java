@@ -14,8 +14,8 @@ import java.util.List;
 @Dao
 public interface characterDao
 {
-    @Query("SELECT * from character_table")
-    LiveData<List<Character>> getCharacters();
+    @Query("SELECT * from character_table WHERE userId = :userId")
+    LiveData<List<Character>> getCharacters(String userId);
 
     @Query("DELETE FROM character_table")
     void deleteAll();
@@ -25,6 +25,5 @@ public interface characterDao
 
     @Query("DELETE FROM character_table WHERE charName = :charName")
     void deleteCharacterByName(String charName);
-
     //query to drop specific character from table
 }

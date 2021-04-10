@@ -23,22 +23,13 @@
                 android:orientation="horizontal"
                 android:visibility="visible">
 
-                <Button
-                    android:id="@+id/editCharButton"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginStart="1dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_toEndOf="@+id/charNameTV"
-                    android:background="@drawable/ic_baseline_edit_24" />
 
                 <Button
                     android:id="@+id/deleteCharButton"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:layout_alignParentTop="true"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="371dp"
                     android:layout_marginTop="5dp"
                     android:layout_toEndOf="@+id/editCharButton"
                     android:background="@drawable/ic_baseline_delete_24" />
