@@ -27,13 +27,22 @@ public class CharacterCreation extends AppCompatActivity
 {
     characterViewModel charView;
     private EditText charNameET, playerNameET, levelET, expET, descET, armorET, guardOtherET,
-            resolveOtherET, toughnessOtherET, currentHPET, lethalHPET, legendET, wealthET, speedET,
+            resolveOtherET, toughnessOtherET, currentHPET, lethalHPET, initADVET, legendET, wealthET, speedET,
             equipmentET, additionalET, agilityET, fortitudeET, mightET, deceptionET, persuasionET,
             presenceET, learningET, logicET, perceptionET, willET, alterationET, creationET,
             energyET, entropyET, influenceET, movementET, prescienceET, protectionET;
     private TextView attributesTotalTV, featsTotalTV, guardTV, toughnessTV, resolveTV, maxHPTV,
             guard_agilityTV, guard_mightTV, toughness_fortitudeTV, toughness_willTV,
-            resolve_presenceTV, resolve_willTV;
+            resolve_presenceTV, resolve_willTV, initTV, agility_costTV, agility_diceTV, fortitude_costTV,
+            fortitude_diceTV, might_costTV, might_diceTV, learning_costTV, learning_diceTV,
+            logic_costTV, logic_diceTV, perception_costTV, perception_diceTV, will_costTV,
+            will_diceTV, deception_costTV, deception_diceTV, persuasion_costTV, persuasion_diceTV,
+            presence_costTV, presence_diceTV, alteration_costTV, alteration_diceTV, creation_costTV,
+            creation_diceTV, energy_costTV, energy_diceTV, entropy_costTV, entropy_diceTV,
+            influence_costTV, influence_diceTV, movement_costTV, movement_diceTV, prescience_costTV,
+            prescience_diceTV, protection_costTV, protection_diceTV;
+
+
     private AutoCompleteTextView mPerk1AT, mFlaw1AT, mPerk2AT, mFlaw2AT;
     private Button saveButton; //use to save character
     private Button cancelButton; //use to exit activity without saving
@@ -55,6 +64,7 @@ public class CharacterCreation extends AppCompatActivity
         resolveOtherET = findViewById(R.id.resolve_otherET);
         currentHPET = findViewById(R.id.currentET);
         lethalHPET = findViewById(R.id.lethalET);
+        initADVET = findViewById(R.id.advantageET);
         legendET = findViewById(R.id.legendET);
         wealthET = findViewById(R.id.wealthET);
         speedET = findViewById(R.id.speedET);
@@ -85,12 +95,50 @@ public class CharacterCreation extends AppCompatActivity
         toughnessTV = findViewById(R.id.ToughnessNumTV);
         resolveTV = findViewById(R.id.ResolveNumTV);
         maxHPTV = findViewById(R.id.maxhpTV);
+        initTV = findViewById(R.id.d20TV);
         guard_agilityTV = findViewById(R.id.guard_agilityTV);
         guard_mightTV = findViewById(R.id.guard_mightTV);
         toughness_fortitudeTV = findViewById(R.id.toughness_fortitudeTV);
         toughness_willTV = findViewById(R.id.toughness_willTV);
         resolve_presenceTV = findViewById(R.id.resolve_presenceTV);
         resolve_willTV = findViewById(R.id.resolve_willTV);
+        agility_costTV = findViewById(R.id.agilityCost);
+        agility_diceTV = findViewById(R.id.agilityDice);
+        fortitude_costTV = findViewById(R.id.fortitudeCost);
+        fortitude_diceTV = findViewById(R.id.fortitudeDice);
+        might_costTV = findViewById(R.id.mightCost);
+        might_diceTV = findViewById(R.id.mightDice);
+        learning_costTV = findViewById(R.id.learningCost);
+        learning_diceTV = findViewById(R.id.leaningDice);
+        logic_costTV = findViewById(R.id.logicCost);
+        logic_diceTV = findViewById(R.id.logicDice);
+        perception_costTV = findViewById(R.id.perceptionCost);
+        perception_diceTV = findViewById(R.id.perceptionDice);
+        will_costTV = findViewById(R.id.willCost);
+        will_diceTV = findViewById(R.id.willDice);
+        deception_costTV = findViewById(R.id.deceptionCost);
+        deception_diceTV = findViewById(R.id.deceptionDice);
+        persuasion_costTV = findViewById(R.id.persuasionCostTV);
+        persuasion_diceTV = findViewById(R.id.persuasionDiceTV);
+        presence_costTV = findViewById(R.id.presenceCostTV);
+        presence_diceTV = findViewById(R.id.presenceDiceTV);
+        alteration_costTV = findViewById(R.id.alterationCostTV);
+        alteration_diceTV = findViewById(R.id.alterationDiceTV);
+        creation_costTV = findViewById(R.id.creationCostTV);
+        creation_diceTV = findViewById(R.id.creationDiceTV);
+        energy_costTV = findViewById(R.id.energyCostTV);
+        energy_diceTV = findViewById(R.id.energyDiceTV);
+        entropy_costTV = findViewById(R.id.entropyCostTV);
+        entropy_diceTV = findViewById(R.id.entropyDiceTV);
+        influence_costTV = findViewById(R.id.infleuenceCostTV);
+        influence_diceTV = findViewById(R.id.influenceDiceTV);
+        movement_costTV = findViewById(R.id.movementCostTV);
+        movement_diceTV = findViewById(R.id.movementDiceTV);
+        prescience_costTV = findViewById(R.id.prescienceCostTV);
+        prescience_diceTV = findViewById(R.id.prescienceDiceTV);
+        protection_costTV = findViewById(R.id.protectionCostTV);
+        protection_diceTV = findViewById(R.id.protectionDiceTV);
+
 
         mPerk1AT = findViewById(R.id.perk1);
         mPerk2AT = findViewById(R.id.perk2);
@@ -128,23 +176,59 @@ public class CharacterCreation extends AppCompatActivity
                 featsTotalTV.setText(fTotal.toString());
                 //Attributes
                 int agility = getInt(agilityET.getText().toString());
+                agility_costTV.setText(getCost(agility).toString());
+                agility_diceTV.setText(getDice(agility));
                 int fortitude =  getInt(fortitudeET.getText().toString());
+                fortitude_costTV.setText(getCost(fortitude).toString());
+                fortitude_diceTV.setText(getDice(fortitude));
                 int might =  getInt(mightET.getText().toString());
+                might_costTV.setText(getCost(might).toString());
+                might_diceTV.setText(getDice(might));
                 int deception =  getInt(deceptionET.getText().toString());
+                deception_costTV.setText(getCost(deception).toString());
+                deception_diceTV.setText(getDice(deception));
                 int persuasion =  getInt(persuasionET.getText().toString());
+                persuasion_costTV.setText(getCost(persuasion).toString());
+                persuasion_diceTV.setText(getDice(persuasion));
                 int presence =  getInt(presenceET.getText().toString());
+                presence_costTV.setText(getCost(presence).toString());
+                presence_diceTV.setText(getDice(presence));
                 int learning =  getInt(learningET.getText().toString());
+                learning_costTV.setText(getCost(learning).toString());
+                learning_diceTV.setText(getDice(learning));
                 int logic =  getInt(logicET.getText().toString());
+                logic_costTV.setText(getCost(logic).toString());
+                logic_diceTV.setText(getDice(logic));
                 int perception =  getInt(perceptionET.getText().toString());
+                perception_costTV.setText(getCost(perception).toString());
+                perception_diceTV.setText(getDice(perception));
                 int will =  getInt(willET.getText().toString());
+                will_costTV.setText(getCost(will).toString());
+                will_diceTV.setText(getDice(will));
                 int alteration =  getInt(alterationET.getText().toString());
+                alteration_costTV.setText(getCost(alteration).toString());
+                alteration_diceTV.setText(getDice(alteration));
                 int creation =  getInt(creationET.getText().toString());
+                creation_costTV.setText(getCost(creation).toString());
+                creation_diceTV.setText(getDice(creation));
                 int energy =  getInt(energyET.getText().toString());
+                energy_costTV.setText(getCost(energy).toString());
+                energy_diceTV.setText(getDice(energy));
                 int entropy =  getInt(entropyET.getText().toString());
+                entropy_costTV.setText(getCost(entropy).toString());
+                entropy_diceTV.setText(getDice(entropy));
                 int influence =  getInt(influenceET.getText().toString());
+                influence_costTV.setText(getCost(influence).toString());
+                influence_diceTV.setText(getDice(influence));
                 int movement =  getInt(movementET.getText().toString());
+                movement_costTV.setText(getCost(movement).toString());
+                movement_diceTV.setText(getDice(movement));
                 int prescience =  getInt(prescienceET.getText().toString());
+                prescience_costTV.setText(getCost(prescience).toString());
+                prescience_diceTV.setText(getDice(prescience));
                 int protection =  getInt(protectionET.getText().toString());
+                protection_costTV.setText(getCost(protection).toString());
+                protection_diceTV.setText(getDice(protection));
                 //Guard
                 System.out.println("test");
                 System.out.println(armorET.getText().toString());
@@ -172,7 +256,8 @@ public class CharacterCreation extends AppCompatActivity
                 Integer maxHP = (2 * (fortitude + presence + will)) + 10;
                 maxHPTV.setText(maxHP.toString());
                 //Initiative
-
+                initTV.setText(agility);
+                int initADV = getInt(initADVET.getText().toString());
                 //Legend, wealth, speed
                 int legend = getInt(legendET.getText().toString());
                 int wealth = getInt(wealthET.getText().toString());
@@ -189,8 +274,7 @@ public class CharacterCreation extends AppCompatActivity
 
                 if(!TextUtils.isEmpty(charName)){
                     try {
-
-                        boolean isUnique = createCharacter(charName, playerName, level, exp, desc, lethalHP, currentHP,
+                        boolean isUnique = createCharacter(charName, playerName, level, exp, desc, lethalHP, currentHP, initADV,
                                 legend, wealth, speed, guardOther, toughnessOther, resolveOther, armor,
                                 equipment, additional, agility, fortitude, might, deception,
                                 persuasion, presence, learning, logic, perception, will,
@@ -230,7 +314,7 @@ public class CharacterCreation extends AppCompatActivity
 
     private boolean createCharacter(String charName, String playerName,
                                  int level, int exp, String desc, int lethalHP, int currentHP,
-                                 int legend, int wealth, int speed,
+                                 int initADV, int legend, int wealth, int speed,
                                  int guardOther, int toughnessOther, int resolveOther, int armor,
                                  String equipment, String additional, int agility, int fortitude,
                                  int might, int deception, int persuasion, int presence, int learning,
@@ -242,9 +326,9 @@ public class CharacterCreation extends AppCompatActivity
         String userId = MainActivity.getUser().getName();
         boolean isUnique = false;
         Character character = new Character(charName, playerName, level, exp, desc,
-                lethalHP, currentHP, legend, wealth, speed, guardOther,
+                lethalHP, currentHP,  legend, wealth, speed, guardOther,
                 toughnessOther, resolveOther, armor , equipment,
-                additional,  userId, agility, fortitude, might, deception, persuasion , presence,
+                additional, userId, agility, fortitude, might, deception, persuasion , presence,
                 learning, logic, perception, will, alteration, creation, energy,
                 entropy,influence,movement, prescience ,protection);
         isUnique = charView.insert(character);
@@ -254,5 +338,47 @@ public class CharacterCreation extends AppCompatActivity
     private static Integer getInt(String s){
         if(s.isEmpty()) return 0;
         return Integer.parseInt(s);
+    }
+
+    public Integer getCost(int attribute){
+        Integer cost = 0;
+        for(int temp = attribute; temp > 0; temp--){
+            cost += temp;
+        }
+        return cost;
+    }
+    public String getDice(int attribute){
+        String Dice = "";
+        switch(attribute){
+            case 1:
+                Dice = "d4";
+                break;
+            case 2:
+                Dice = "d6";
+                break;
+            case 3:
+                Dice = "d8";
+                break;
+            case 4:
+                Dice = "d10";
+                break;
+            case 5:
+                Dice = "2d6";
+                break;
+            case 6:
+                Dice = "2d8";
+                break;
+            case 7:
+                Dice = "2d10";
+                break;
+            case 8:
+                Dice = "3d8";
+                break;
+            case 9:
+                Dice = "3d10";
+                break;
+
+        }
+        return Dice;
     }
 }
