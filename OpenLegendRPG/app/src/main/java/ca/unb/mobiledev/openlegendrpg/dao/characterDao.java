@@ -8,6 +8,7 @@ import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 
 import ca.unb.mobiledev.openlegendrpg.Items.Character;
+import ca.unb.mobiledev.openlegendrpg.Items.User;
 
 import java.util.List;
 
@@ -25,5 +26,9 @@ public interface characterDao
 
     @Query("DELETE FROM character_table WHERE charName = :charName")
     void deleteCharacterByName(String charName);
+    //query to drop specific character from table
+
+    @Query("SELECT * FROM character_table WHERE charName = :charName")
+    List<Character> selectCharacterByName(String charName);
     //query to drop specific character from table
 }

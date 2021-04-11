@@ -11,7 +11,83 @@
         <item>Login</item>
         <item>Create Account</item>
     </string-array>
+    <string-array name="perks">
+        <item>Ageless</item>
+        <item>Artisan</item>
+        <item>Ascetic</item>
+        <item>Attractive</item>
+        <item>Brute</item>
+        <item>Courageous</item>
+        <item>Crowd Favorite</item>
+        <item>Disease Immunity</item>
 
+        <item>Divine Agent</item>
+        <item>Divine Insight</item>
+        <item>Ear of the Emperor</item>
+        <item>Extraordinary Presence</item>
+        <item>Fugitive</item>
+        <item>Idol</item>
+        <item>Innocent</item>
+        <item>Jack of all Trades</item>
+
+        <item>Legendary Bloodline</item>
+        <item>Local Hero</item>
+        <item>Lucky</item>
+        <item>Merchant</item>
+        <item>Natures Ally</item>
+        <item>Observant</item>
+        <item>Profession</item>
+        <item>Pure-Hearted</item>
+
+        <item>Resilient</item>
+        <item>Scavenger</item>
+        <item>Scent</item>
+        <item>Scholar</item>
+        <item>Silver Tongue</item>
+        <item>Stone Sense</item>
+        <item>Street Rat</item>
+        <item>Upper Class</item>
+
+        <item>Vagabond</item>
+        <item>Warriors Code</item>
+        <item>Whisperer to the Wild</item>
+    </string-array>
+    <string-array name="flaws">
+        <item>Absent-Minded</item>
+        <item>Addiction</item>
+        <item>Ambitions</item>
+        <item>BloodLust</item>
+        <item>Brash</item>
+        <item>Bravado</item>
+        <item>Cosmetic Deformity</item>
+        <item>Compulsion</item>
+
+        <item>Cowardly</item>
+        <item>Dimwitted</item>
+        <item>Disabled</item>
+        <item>Greedy</item>
+        <item>Honest</item>
+        <item>Hot Tempered</item>
+        <item>Illiterate</item>
+        <item>Literal Minded</item>
+
+        <item>Mood Disorder</item>
+        <item>Naive</item>
+        <item>Overt</item>
+        <item>Overweight</item>
+        <item>Pacifist</item>
+        <item>Phobia</item>
+        <item>Proud</item>
+        <item>Psychotic</item>
+
+        <item>Short-Winded</item>
+        <item>Sick</item>
+        <item>Socially Awkward</item>
+        <item>Stubborn</item>
+        <item>Uncoordinated</item>
+        <item>Vengeful</item>
+        <item>Zealous</item>
+    </string-array>
     <string
         name="OLRPG_logo">Open legend rpg logo
     </string>
