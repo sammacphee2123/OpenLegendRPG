@@ -32,6 +32,10 @@ public class characterViewModel extends AndroidViewModel
         boolean created = characterRepository.insertRecord(character);
         return created;
     }
+    public boolean update(Character character) throws ExecutionException, InterruptedException {
+        boolean created = characterRepository.updateRecord(character);
+        return created;
+    }
 
     public void deleteCharacter(String charName)
     {

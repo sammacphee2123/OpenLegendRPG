@@ -14,7 +14,7 @@ public class Character {
     @PrimaryKey
     @NonNull
     private String charName;
-    private String playerName, description, equipment, additionalNotes;
+    private String playerName, description, equipment, additionalNotes, perk1, perk2, flaw1, flaw2;
     private int level;
     private int experience;
     private int lethalHP;
@@ -59,7 +59,7 @@ public class Character {
                      String additionalNotes, String userId, int agility, int fortitude,
                      int might, int deception, int persuasion, int presence, int learning,
                      int logic, int perception, int will, int alteration, int creation, int energy,
-                     int entropy, int influence, int movement, int prescience, int protection)
+                     int entropy, int influence, int movement, int prescience, int protection, String perk1, String perk2, String flaw1, String flaw2)
     {
         this.charName = charName;
         this.playerName = playerName;
@@ -97,6 +97,11 @@ public class Character {
         this.movement = movement;
         this.prescience = prescience;
         this.protection = protection;
+
+        this.perk1 = perk1;
+        this.perk2 = perk2;
+        this.flaw1 = flaw1;
+        this.flaw2 = flaw2;
     }
 
     @NonNull
@@ -243,4 +248,19 @@ public class Character {
     public int getProtection() { return protection; }
 
     public void setProtection(int protection) { this.protection = protection; }
+    public String getPerk2() { return perk2; }
+
+    public void setPerk2(String perk1) { this.perk2 = perk2; }
+
+    public String getPerk1() { return perk1; }
+
+    public void setPerk1(String perk1) { this.perk1 = perk1; }
+
+    public String getFlaw2() { return flaw2; }
+
+    public void setFlaw2(String flaw1) { this.flaw2 = flaw2; }
+
+    public String getFlaw1() { return flaw1; }
+
+    public void setFlaw1(String flaw1) { this.flaw1 = flaw1; }
 }

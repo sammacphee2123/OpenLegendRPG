@@ -3,6 +3,7 @@ package ca.unb.mobiledev.openlegendrpg.characters;
 import android.content.Context;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
@@ -30,8 +31,8 @@ public class CharacterCreation extends AppCompatActivity
             presenceET, learningET, logicET, perceptionET, willET, alterationET, creationET,
             energyET, entropyET, influenceET, movementET, prescienceET, protectionET;
     private TextView attributesTotalTV, featsTotalTV, guardTV, toughnessTV, resolveTV, maxHPTV,
-            initTV, guard_agilityTV, guard_mightTV, toughness_fortitudeTV, toughness_willTV,
-            resolve_presenceTV, resolve_willTV, agility_costTV, agility_diceTV, fortitude_costTV,
+            guard_agilityTV, guard_mightTV, toughness_fortitudeTV, toughness_willTV,
+            resolve_presenceTV, resolve_willTV, initTV, agility_costTV, agility_diceTV, fortitude_costTV,
             fortitude_diceTV, might_costTV, might_diceTV, learning_costTV, learning_diceTV,
             logic_costTV, logic_diceTV, perception_costTV, perception_diceTV, will_costTV,
             will_diceTV, deception_costTV, deception_diceTV, persuasion_costTV, persuasion_diceTV,
@@ -39,6 +40,7 @@ public class CharacterCreation extends AppCompatActivity
             creation_diceTV, energy_costTV, energy_diceTV, entropy_costTV, entropy_diceTV,
             influence_costTV, influence_diceTV, movement_costTV, movement_diceTV, prescience_costTV,
             prescience_diceTV, protection_costTV, protection_diceTV, attributesSpentTV;
+            
     private AutoCompleteTextView mPerk1AT, mFlaw1AT, mPerk2AT, mFlaw2AT;
     private Button saveButton; //use to save character
     private Button cancelButton; //use to exit activity without saving
@@ -135,12 +137,18 @@ public class CharacterCreation extends AppCompatActivity
         protection_diceTV = findViewById(R.id.protectionDiceTV);
         attributesSpentTV = findViewById(R.id.attributeSpentTV);
 
-
         mPerk1AT = findViewById(R.id.perk1);
         mPerk2AT = findViewById(R.id.perk2);
         mFlaw1AT = findViewById(R.id.flaw1);
         mFlaw2AT = findViewById(R.id.flaw2);
-
+        String[] perks= getResources().getStringArray(R.array.perks);
+        String[] flaws= getResources().getStringArray(R.array.flaws);
+        ArrayAdapter<String> perkAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, perks);
+        ArrayAdapter<String> flawAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, flaws);
+        mPerk1AT.setAdapter(perkAdapter);
+        mPerk2AT.setAdapter(perkAdapter);
+        mFlaw1AT.setAdapter(flawAdapter);
+        mFlaw2AT.setAdapter(flawAdapter);
 
         cancelButton = findViewById(R.id.cancelCharCreationButton);
         cancelButton.setOnClickListener(new View.OnClickListener()
@@ -226,8 +234,10 @@ public class CharacterCreation extends AppCompatActivity
                 int speed = getInt(speedET.getText().toString());
                 //Feats
                 //Perks and flaws
-
-
+                String perk1 = mPerk1AT.getText().toString();
+                String perk2 = mPerk2AT.getText().toString();
+                String flaw1 = mFlaw1AT.getText().toString();
+                String flaw2 = mFlaw2AT.getText().toString();
 
                 //Other details
                 String equipment = equipmentET.getText().toString();
@@ -236,14 +246,14 @@ public class CharacterCreation extends AppCompatActivity
 
                 if(!TextUtils.isEmpty(charName)){
                     try {
-
-                        boolean isUnique = createCharacter(charName, playerName, level, exp, desc, lethalHP, currentHP,
-                                initADV, legend, wealth, speed, guardOther, toughnessOther,
-                                resolveOther, armor, equipment, additional, agility, fortitude,
-                                might, deception, persuasion, presence, learning, logic, perception,
-                                will, alteration, creation, energy, entropy, influence, movement,
-                                prescience, protection);
-                        if(isUnique){
+                        boolean isUnique = createCharacter(charName, playerName, level, exp, desc, lethalHP, currentHP, initADV,
+                                legend, wealth, speed, guardOther, toughnessOther, resolveOther, armor,
+                                equipment, additional, agility, fortitude, might, deception,
+                                persuasion, presence, learning, logic, perception, will,
+                                alteration, creation, energy, entropy, influence, movement,
+                                prescience, protection, perk1, perk2, flaw1, flaw2);
+                        Log.i("log", perk1);
+                        if(!isUnique){
                             Context context = getApplicationContext();
                             String text = "Please enter a unique character name";
                             int duration = Toast.LENGTH_SHORT;
@@ -265,14 +275,7 @@ public class CharacterCreation extends AppCompatActivity
                 }
             }
         });
-        String[] perks= getResources().getStringArray(R.array.perks);
-        String[] flaws= getResources().getStringArray(R.array.flaws);
-        ArrayAdapter<String> perkAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, perks);
-        ArrayAdapter<String> flawAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, flaws);
-        mPerk1AT.setAdapter(perkAdapter);
-        mPerk2AT.setAdapter(perkAdapter);
-        mFlaw1AT.setAdapter(flawAdapter);
-        mFlaw2AT.setAdapter(flawAdapter);
+
     }
 
     private boolean createCharacter(String charName, String playerName,
@@ -283,7 +286,7 @@ public class CharacterCreation extends AppCompatActivity
                                  int might, int deception, int persuasion, int presence, int learning,
                                  int logic, int perception, int will, int alteration, int creation,
                                  int energy, int entropy, int influence, int movement,
-                                 int prescience, int protection)
+                                 int prescience, int protection,String perk1,String perk2,String flaw1, String flaw2)
             throws ExecutionException, InterruptedException{
         charView = new ViewModelProvider(this).get(characterViewModel.class);
         String userId = MainActivity.getUser().getName();
@@ -293,7 +296,7 @@ public class CharacterCreation extends AppCompatActivity
                 toughnessOther, resolveOther, armor , equipment,
                 additional, userId, agility, fortitude, might, deception, persuasion , presence,
                 learning, logic, perception, will, alteration, creation, energy,
-                entropy,influence,movement, prescience ,protection);
+                entropy,influence,movement, prescience ,protection, perk1,perk2 , flaw1,flaw2 );
         isUnique = charView.insert(character);
         return isUnique;
     }

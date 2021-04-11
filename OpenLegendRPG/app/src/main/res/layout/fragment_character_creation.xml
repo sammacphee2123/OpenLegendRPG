@@ -32,7 +32,7 @@
             android:layout_height="60dp"
             android:layout_weight="1"
             android:layout_marginTop="0dp"
-            android:text="CANCEL" />
+            android:text="EXIT" />
     </LinearLayout>
     <ScrollView
         android:id="@+id/scrl"
@@ -2136,7 +2136,7 @@
                          android:layout_height="wrap_content"
                          android:fontFamily="times"
                          android:text=""
-                         android:completionThreshold="1"
+                         android:completionThreshold="0"
                          android:layout_weight="4"
                          android:textSize="12sp" />
                      <TextView
@@ -2161,7 +2161,7 @@
                          android:layout_height="wrap_content"
                          android:fontFamily="times"
                          android:text=""
-                         android:completionThreshold="1"
+                         android:completionThreshold="0"
                          android:layout_weight="4"
                          android:textSize="12sp" />
                      <TextView
@@ -2186,7 +2186,7 @@
                          android:layout_height="wrap_content"
                          android:fontFamily="times"
                          android:text=""
-                         android:completionThreshold="1"
+                         android:completionThreshold="0"
                          android:layout_weight="4"
                          android:textSize="12sp" />
                      <TextView
@@ -2211,7 +2211,7 @@
                          android:layout_height="wrap_content"
                          android:fontFamily="times"
                          android:text=""
-                         android:completionThreshold="1"
+                         android:completionThreshold="0"
                          android:layout_weight="4"
                          android:textSize="12sp" />
                      <TextView
@@ -2236,7 +2236,7 @@
                          android:layout_height="wrap_content"
                          android:fontFamily="times"
                          android:text=""
-                         android:completionThreshold="1"
+                         android:completionThreshold="0"
                          android:layout_weight="4"
                          android:textSize="12sp" />
                      <TextView
@@ -2261,7 +2261,7 @@
                          android:layout_height="wrap_content"
                          android:fontFamily="times"
                          android:text=""
-                         android:completionThreshold="1"
+                         android:completionThreshold="0"
                          android:layout_weight="4"
                          android:textSize="12sp" />
                      <TextView
@@ -2286,7 +2286,7 @@
                          android:layout_height="wrap_content"
                          android:fontFamily="times"
                          android:text=""
-                         android:completionThreshold="1"
+                         android:completionThreshold="0"
                          android:layout_weight="4"
                          android:textSize="12sp" />
                      <TextView
@@ -2311,7 +2311,7 @@
                          android:layout_height="wrap_content"
                          android:fontFamily="times"
                          android:text=""
-                         android:completionThreshold="1"
+                         android:completionThreshold="0"
                          android:layout_weight="4"
                          android:textSize="12sp" />
                      <TextView
@@ -2352,7 +2352,7 @@
                          android:layout_height="wrap_content"
                          android:fontFamily="times"
                          android:text=""
-                         android:completionThreshold="1"
+                         android:completionThreshold="0"
                          android:layout_weight="1"
                          android:textSize="12sp" />
                     <AutoCompleteTextView
@@ -2361,7 +2361,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="times"
                         android:text=""
-                        android:completionThreshold="1"
+                        android:completionThreshold="0"
                         android:layout_weight="1"
                         android:textSize="12sp" />
             </LinearLayout>
@@ -2393,7 +2393,7 @@
                          android:layout_height="wrap_content"
                          android:fontFamily="times"
                          android:text=""
-                         android:completionThreshold="1"
+                         android:completionThreshold="0"
                          android:layout_weight="1"
                          android:textSize="12sp" />
 
@@ -2403,7 +2403,7 @@
                          android:layout_height="wrap_content"
                          android:fontFamily="times"
                          android:text=""
-                         android:completionThreshold="1"
+                         android:completionThreshold="0"
                          android:layout_weight="1"
                          android:textSize="12sp" />
             </LinearLayout>
