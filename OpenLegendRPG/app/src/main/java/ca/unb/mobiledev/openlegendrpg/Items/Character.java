@@ -7,26 +7,19 @@ import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
 import java.util.List;
 
+
 @Entity(tableName = "character_table")
 public class Character {
     //Basic character information
     @PrimaryKey
     @NonNull
     private String charName;
-    private String playerName;
-    private int level;
-    private int experience;
-    private String description;
-    private int lethalHP;
-    private int currentHP;
-    private int legend;
-    private int wealth;
-    private int speed;
-    private int guardOther;
-    private int toughnessOther;
-    private int resolveOther;
-    private int armor;
-    //private List<attribute> attributes;
+    private String playerName, description, equipment, additionalNotes;
+    private int level, experience, lethalHP, currentHP, legend, wealth, speed, guardOther,
+            toughnessOther, resolveOther, armor, agility, fortitude, might, deception,
+            persuasion, presence, learning, logic, perception, will, alteration, creation, energy,
+            entropy, influence, movement, prescience, protection;
+
     //private List<Feat> feats;
     //private String[] perks;
     //private String[] flaws;
@@ -35,10 +28,16 @@ public class Character {
     private String userId;
 
 
+
     public Character(String charName, String playerName, int level, int experience,
                      String description, int lethalHP, int currentHP, int legend, int wealth,
                      int speed, int guardOther, int toughnessOther, int resolveOther, int armor, String equipment,
-                     String additionalNotes, String userId)
+                     String additionalNotes, String userId,
+                     int speed, int guardOther, int toughnessOther, int resolveOther, int armor,
+                     String equipment, String additionalNotes, int agility, int fortitude,
+                     int might, int deception, int persuasion, int presence, int learning,
+                     int logic, int perception, int will, int alteration, int creation, int energy,
+                     int entropy, int influence, int movement, int prescience, int protection)
     {
         this.charName = charName;
         this.playerName = playerName;
@@ -57,6 +56,25 @@ public class Character {
         this.equipment = equipment;
         this.additionalNotes = additionalNotes;
         this.userId = userId;
+        this.expanded = false;
+        this.agility = agility;
+        this.fortitude = fortitude;
+        this.might = might;
+        this.deception = deception;
+        this.persuasion = persuasion;
+        this.presence = presence;
+        this.learning = learning;
+        this.logic = logic;
+        this.perception = perception;
+        this.will = will;
+        this.alteration = alteration;
+        this.creation = creation;
+        this.energy = energy;
+        this.entropy = entropy;
+        this.influence = influence;
+        this.movement = movement;
+        this.prescience = prescience;
+        this.protection = protection;
     }
 
     @NonNull
@@ -124,8 +142,81 @@ public class Character {
 
     public void setAdditionalNotes(String additionalNotes) { this.additionalNotes = additionalNotes; }
 
-
     public String getUserId() { return userId; }
 
     public void setUserId(String userId) { this.userId = userId; }
+
+    public void setExpanded(boolean expanded) { this.expanded = expanded; }
+
+    public int getAgility() { return agility; }
+
+    public void setAgility(int agility) { this.agility = agility; }
+
+    public int getFortitude() { return fortitude; }
+
+    public void setFortitude(int fortitude) { this.fortitude = fortitude; }
+
+    public int getMight() { return might; }
+
+    public void setMight(int might) { this.might = might; }
+
+    public int getDeception() { return deception; }
+
+    public void setDeception(int deception) { this.deception = deception; }
+
+    public int getPersuasion() { return persuasion; }
+
+    public void setPersuasion(int persuasion) { this.persuasion = persuasion; }
+
+    public int getPresence() { return presence; }
+
+    public void setPresence(int presence) { this.presence = presence; }
+
+    public int getLearning() { return learning; }
+
+    public void setLearning(int learning) { this.learning = learning; }
+
+    public int getLogic() { return logic; }
+
+    public void setLogic(int logic) { this.logic = logic; }
+
+    public int getPerception() { return perception; }
+
+    public void setPerception(int perception) { this.perception = perception; }
+
+    public int getWill() { return will; }
+
+    public void setWill(int will) { this.will = will; }
+
+    public int getAlteration() { return alteration; }
+
+    public void setAlteration(int alteration) { this.alteration = alteration; }
+
+    public int getCreation() { return creation; }
+
+    public void setCreation(int creation) { this.creation = creation; }
+
+    public int getEnergy() { return energy; }
+
+    public void setEnergy(int energy) { this.energy = energy; }
+
+    public int getEntropy() { return entropy; }
+
+    public void setEntropy(int entropy) { this.entropy = entropy; }
+
+    public int getInfluence() { return influence; }
+
+    public void setInfluence(int influence) { this.influence = influence; }
+
+    public int getMovement() { return movement; }
+
+    public void setMovement(int movement) { this.movement = movement; }
+
+    public int getPrescience() { return prescience; }
+
+    public void setPrescience(int prescience) { this.prescience = prescience; }
+
+    public int getProtection() { return protection; }
+
+    public void setProtection(int protection) { this.protection = protection; }
 }

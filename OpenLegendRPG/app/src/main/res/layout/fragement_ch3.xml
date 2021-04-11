@@ -5,56 +5,56 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent">
 
-    <ImageView
-        android:id="@+id/background_image"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleX="2.5"
-        android:scaleY="2.1"
-        android:scrollX="60dp"
-        android:alpha="0.85"
-        app:srcCompat="@drawable/paper_bg" />
-    <LinearLayout
-        android:id="@+id/Buttons"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_centerInParent="true"
-        android:orientation="horizontal">
-        <Button
-            android:id="@+id/PreviousButton"
-            android:layout_width="0dp"
+        <ImageView
+            android:id="@+id/background_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleX="2.5"
+            android:scaleY="2.1"
+            android:scrollX="60dp"
+            android:alpha="0.85"
+            app:srcCompat="@drawable/paper_bg" />
+        <LinearLayout
+            android:id="@+id/Buttons"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginTop="0dp"
-            android:background="@android:color/transparent"
-            android:textColor="@color/purple_700"
-            android:text="@string/previous" />
-        <Button
-            android:id="@+id/TableButton"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@android:color/transparent"
-
-            android:layout_gravity="center_horizontal"
-            android:textColor="@color/purple_700"
-            android:layout_marginTop="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
             android:layout_centerInParent="true"
-            android:text="@string/table" />
+            android:orientation="horizontal">
+                <Button
+                    android:id="@+id/PreviousButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="0dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/purple_700"
+                    android:text="@string/previous" />
+                <Button
+                    android:id="@+id/TableButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
 
-        <Button
-            android:id="@+id/NextButton"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textAlignment="center"
-            android:background="@android:color/transparent"
-            android:textColor="@color/purple_700"
-            android:text="@string/next" />
-    </LinearLayout>
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/purple_700"
+                    android:layout_marginTop="0dp"
+                    android:layout_centerInParent="true"
+                    android:text="@string/table" />
+
+                <Button
+                    android:id="@+id/NextButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/purple_700"
+                    android:text="@string/next" />
+        </LinearLayout>
         <ScrollView
             android:id="@+id/scrl"
             android:layout_width="match_parent"
@@ -66,445 +66,445 @@
             android:paddingLeft="30dp"
             android:layout_gravity="center_horizontal">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-                <TextView
-                    android:id="@+id/chapter3_title"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="40dp"
-                    android:layout_marginEnd="0dp"
-                    android:background="@drawable/corerules"
-                    android:duplicateParentState="false"
-                    android:text="@string/chapter3Title"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="28sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <Button
-                    android:id="@+id/Button1"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:fontFamily="times"
-                    android:background="@android:color/transparent"
-                    android:text="@string/CH3Button1"
-                    android:textColor="@color/purple_700" />
-                <Button
-                    android:id="@+id/Button2"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:fontFamily="times"
-                    android:background="@android:color/transparent"
-                    android:text="@string/CH3Button2"
-                    android:textColor="@color/purple_700" />
+                    android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/chapter3_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="40dp"
+                            android:layout_marginEnd="0dp"
+                            android:background="@drawable/corerules"
+                            android:duplicateParentState="false"
+                            android:text="@string/chapter3Title"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="28sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <Button
+                            android:id="@+id/Button1"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:fontFamily="times"
+                            android:background="@android:color/transparent"
+                            android:text="@string/CH3Button1"
+                            android:textColor="@color/purple_700" />
+                        <Button
+                            android:id="@+id/Button2"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:fontFamily="times"
+                            android:background="@android:color/transparent"
+                            android:text="@string/CH3Button2"
+                            android:textColor="@color/purple_700" />
 
-                <Button
-                    android:id="@+id/Button3"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:background="@android:color/transparent"
-                    android:textColor="@color/purple_700"
-                    android:fontFamily="times"
-                    android:text="@string/CH3Button3" />
-                <Button
-                    android:id="@+id/Button4"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:fontFamily="times"
-                    android:background="@android:color/transparent"
-                    android:textColor="@color/purple_700"
-                    android:text="@string/CH3Button4" />
-                <TextView
-                    android:id="@+id/Chapter3_Description1"
-                    android:layout_width="match_parent"
-                    android:fontFamily="times"
-                    android:layout_height="wrap_content"
-                    android:text="@string/Chapter3_Description1"
-                    android:textColor="@color/black"
-                    android:textSize="16dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"/>
-                <TextView
-                    android:id="@+id/Chapter3_Description2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="times"
-                    android:text="@string/Chapter3_Description2"
-                    android:textColor="@color/black"
-                    android:textSize="16dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"/>
-                <TextView
-                    android:id="@+id/SubTitle1"
-                    android:fontFamily="times"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:background="@color/purple_100"
-                    android:text="@string/CH3Button1"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <TextView
-                    android:id="@+id/Chapter3_Description3"
-                    android:layout_width="match_parent"
-                    android:fontFamily="times"
-                    android:layout_height="wrap_content"
-                    android:text="@string/Chapter3_Description3"
-                    android:textColor="@color/black"
-                    android:textSize="16dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"/>
+                        <Button
+                            android:id="@+id/Button3"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@android:color/transparent"
+                            android:textColor="@color/purple_700"
+                            android:fontFamily="times"
+                            android:text="@string/CH3Button3" />
+                        <Button
+                            android:id="@+id/Button4"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:fontFamily="times"
+                            android:background="@android:color/transparent"
+                            android:textColor="@color/purple_700"
+                            android:text="@string/CH3Button4" />
+                        <TextView
+                            android:id="@+id/Chapter3_Description1"
+                            android:layout_width="match_parent"
+                            android:fontFamily="times"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Chapter3_Description1"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"/>
+                        <TextView
+                            android:id="@+id/Chapter3_Description2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/Chapter3_Description2"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"/>
+                        <TextView
+                            android:id="@+id/SubTitle1"
+                            android:fontFamily="times"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:background="@color/purple_100"
+                            android:text="@string/CH3Button1"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <TextView
+                            android:id="@+id/Chapter3_Description3"
+                            android:layout_width="match_parent"
+                            android:fontFamily="times"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Chapter3_Description3"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"/>
 
-                <TextView
-                    android:id="@+id/Chapter3_Description4"
-                    android:layout_width="match_parent"
-                    android:fontFamily="times"
-                    android:layout_height="wrap_content"
-                    android:text="@string/Chapter3_Description4"
-                    android:textColor="@color/black"
-                    android:textSize="20dp"
-                    android:gravity="center"
-                    android:background="@android:color/white"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                        <TextView
+                            android:id="@+id/Chapter3_Description4"
+                            android:layout_width="match_parent"
+                            android:fontFamily="times"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Chapter3_Description4"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:gravity="center"
+                            android:background="@android:color/white"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
 
-                <TextView
-                    android:id="@+id/Chapter3_Description5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/Chapter3_Description5"
-                    android:textColor="@color/black"
-                    android:textSize="16dp"
-                    android:fontFamily="times"
-                    android:background="@android:color/white"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:background="@android:color/white"/>
+                        <TextView
+                            android:id="@+id/Chapter3_Description5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Chapter3_Description5"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:fontFamily="times"
+                            android:background="@android:color/white"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"
+                            android:background="@android:color/white"/>
 
-                <TextView
-                    android:id="@+id/SubTitle2"
-                    android:fontFamily="times"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:background="@color/purple_100"
-                    android:text="@string/CH3Button2"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <TextView
-                    android:id="@+id/Chapter3_Description6"
-                    android:layout_width="match_parent"
-                    android:fontFamily="times"
-                    android:layout_height="wrap_content"
-                    android:text="@string/Chapter3_Description6"
-                    android:textColor="@color/black"
-                    android:textSize="16dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"/>
+                        <TextView
+                            android:id="@+id/SubTitle2"
+                            android:fontFamily="times"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:background="@color/purple_100"
+                            android:text="@string/CH3Button2"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <TextView
+                            android:id="@+id/Chapter3_Description6"
+                            android:layout_width="match_parent"
+                            android:fontFamily="times"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Chapter3_Description6"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"/>
 
-                <TextView
-                    android:id="@+id/Chapter3_Description7"
-                    android:layout_width="match_parent"
-                    android:fontFamily="times"
-                    android:layout_height="wrap_content"
-                    android:text="@string/Chapter3_Description7"
-                    android:textColor="@color/black"
-                    android:textSize="16dp"
-                    android:gravity="center"
-                    android:background="@android:color/transparent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"/>
-                <TextView
-                    android:id="@+id/Chapter3_Description8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/Chapter3_Description8"
-                    android:textColor="@color/black"
-                    android:textSize="16dp"
-                    android:fontFamily="times"
-                    android:background="@android:color/transparent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"/>
+                        <TextView
+                            android:id="@+id/Chapter3_Description7"
+                            android:layout_width="match_parent"
+                            android:fontFamily="times"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Chapter3_Description7"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:gravity="center"
+                            android:background="@android:color/transparent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"/>
+                        <TextView
+                            android:id="@+id/Chapter3_Description8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Chapter3_Description8"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:fontFamily="times"
+                            android:background="@android:color/transparent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"/>
 
-                <TextView
-                    android:id="@+id/SubTitle3"
-                    android:fontFamily="times"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:background="@color/purple_100"
-                    android:text="@string/CH3Button3"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <TextView
-                    android:id="@+id/Chapter3_Description9"
-                    android:layout_width="match_parent"
-                    android:fontFamily="times"
-                    android:layout_height="wrap_content"
-                    android:text="@string/Chapter3_Description9"
-                    android:textColor="@color/black"
-                    android:textSize="16dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"/>
+                        <TextView
+                            android:id="@+id/SubTitle3"
+                            android:fontFamily="times"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:background="@color/purple_100"
+                            android:text="@string/CH3Button3"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <TextView
+                            android:id="@+id/Chapter3_Description9"
+                            android:layout_width="match_parent"
+                            android:fontFamily="times"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Chapter3_Description9"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"/>
 
-                <TextView
-                    android:id="@+id/Chapter3_Description10"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@android:color/transparent"
-                    android:fontFamily="times"
-                    android:gravity="center"
-                    android:text="@string/Chapter3_Description10"
-                    android:textColor="@color/black"
-                    android:textSize="16dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                        <TextView
+                            android:id="@+id/Chapter3_Description10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="times"
+                            android:gravity="center"
+                            android:text="@string/Chapter3_Description10"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"/>
-                <TextView
-                    android:id="@+id/Chapter3_Description11"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/Chapter3_Description11"
-                    android:textColor="@color/black"
-                    android:textSize="16dp"
-                    android:fontFamily="times"
-                    android:background="@android:color/transparent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"/>
-                <TextView
-                    android:id="@+id/Chapter3_Description12"
-                    android:layout_width="match_parent"
-                    android:fontFamily="times"
-                    android:layout_height="wrap_content"
-                    android:text="@string/Chapter3_Description12"
-                    android:textColor="@color/black"
-                    android:textSize="16dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"/>
+                        <TextView
+                            android:id="@+id/Chapter3_Description11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Chapter3_Description11"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:fontFamily="times"
+                            android:background="@android:color/transparent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"/>
+                        <TextView
+                            android:id="@+id/Chapter3_Description12"
+                            android:layout_width="match_parent"
+                            android:fontFamily="times"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Chapter3_Description12"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"/>
 
-                <TextView
-                    android:id="@+id/Chapter3_Description13"
-                    android:layout_width="match_parent"
-                    android:fontFamily="times"
-                    android:layout_height="wrap_content"
-                    android:text="@string/Chapter3_Description13"
-                    android:textColor="@color/black"
-                    android:textSize="16dp"
-                    android:gravity="center"
-                    android:background="@android:color/transparent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"/>
-                <TextView
-                    android:id="@+id/Chapter3_Description14"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/Chapter3_Description14"
-                    android:textColor="@color/black"
-                    android:textSize="16dp"
-                    android:fontFamily="times"
-                    android:background="@android:color/transparent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"/>
-                <TextView
-                    android:id="@+id/Chapter3_Description15"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/Chapter3_Description15"
-                    android:textColor="@color/black"
-                    android:textSize="16dp"
-                    android:fontFamily="times"
-                    android:background="@android:color/transparent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"/>
-                <TextView
-                    android:id="@+id/SubTitle4"
-                    android:fontFamily="times"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:background="@color/purple_100"
-                    android:text="@string/CH3Button4"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <TextView
-                    android:id="@+id/Chapter3_Description16"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/Chapter3_Description16"
-                    android:textColor="@color/black"
-                    android:textSize="16dp"
-                    android:fontFamily="times"
-                    android:background="@android:color/transparent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"/>
-                <TextView
-                    android:id="@+id/Chapter3_Description17"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/Chapter3_Description17"
-                    android:textColor="@color/black"
-                    android:textSize="16dp"
-                    android:fontFamily="times"
-                    android:background="@android:color/transparent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"/>
-                <TextView
-                    android:id="@+id/Chapter3_Description18"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/Chapter3_Description18"
-                    android:textColor="@color/black"
-                    android:textSize="16dp"
-                    android:fontFamily="times"
-                    android:background="@android:color/transparent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"/>
-                <TextView
-                    android:id="@+id/Chapter3_Description19"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/Chapter3_Description19"
-                    android:textColor="@color/black"
-                    android:textSize="16dp"
-                    android:fontFamily="times"
-                    android:background="@android:color/transparent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"/>
-                <TextView
-                    android:id="@+id/Chapter3_Description20"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/Chapter3_Description20"
-                    android:textColor="@color/black"
-                    android:textSize="16dp"
-                    android:fontFamily="times"
-                    android:background="@android:color/transparent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"/>
-                <TextView
-                    android:id="@+id/Chapter3_Description21"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/Chapter3_Description21"
-                    android:textColor="@color/black"
-                    android:textSize="16dp"
-                    android:fontFamily="times"
-                    android:background="@android:color/transparent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"/>
-                <TextView
-                    android:id="@+id/Chapter3_Description22"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/Chapter3_Description22"
-                    android:textColor="@color/black"
-                    android:textSize="16dp"
-                    android:fontFamily="times"
-                    android:background="@android:color/transparent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"/>
-            </LinearLayout>
+                        <TextView
+                            android:id="@+id/Chapter3_Description13"
+                            android:layout_width="match_parent"
+                            android:fontFamily="times"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Chapter3_Description13"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:gravity="center"
+                            android:background="@android:color/transparent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"/>
+                        <TextView
+                            android:id="@+id/Chapter3_Description14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Chapter3_Description14"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:fontFamily="times"
+                            android:background="@android:color/transparent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"/>
+                        <TextView
+                            android:id="@+id/Chapter3_Description15"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Chapter3_Description15"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:fontFamily="times"
+                            android:background="@android:color/transparent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"/>
+                        <TextView
+                            android:id="@+id/SubTitle4"
+                            android:fontFamily="times"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:background="@color/purple_100"
+                            android:text="@string/CH3Button4"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <TextView
+                            android:id="@+id/Chapter3_Description16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Chapter3_Description16"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:fontFamily="times"
+                            android:background="@android:color/transparent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"/>
+                        <TextView
+                            android:id="@+id/Chapter3_Description17"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Chapter3_Description17"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:fontFamily="times"
+                            android:background="@android:color/transparent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"/>
+                        <TextView
+                            android:id="@+id/Chapter3_Description18"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Chapter3_Description18"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:fontFamily="times"
+                            android:background="@android:color/transparent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"/>
+                        <TextView
+                            android:id="@+id/Chapter3_Description19"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Chapter3_Description19"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:fontFamily="times"
+                            android:background="@android:color/transparent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"/>
+                        <TextView
+                            android:id="@+id/Chapter3_Description20"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Chapter3_Description20"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:fontFamily="times"
+                            android:background="@android:color/transparent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"/>
+                        <TextView
+                            android:id="@+id/Chapter3_Description21"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Chapter3_Description21"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:fontFamily="times"
+                            android:background="@android:color/transparent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"/>
+                        <TextView
+                            android:id="@+id/Chapter3_Description22"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Chapter3_Description22"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:fontFamily="times"
+                            android:background="@android:color/transparent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"/>
+                </LinearLayout>
         </ScrollView>
 </RelativeLayout>
