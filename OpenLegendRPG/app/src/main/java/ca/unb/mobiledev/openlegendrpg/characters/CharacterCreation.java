@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -32,6 +34,7 @@ public class CharacterCreation extends AppCompatActivity
     private TextView attributesTotalTV, featsTotalTV, guardTV, toughnessTV, resolveTV, maxHPTV,
             guard_agilityTV, guard_mightTV, toughness_fortitudeTV, toughness_willTV,
             resolve_presenceTV, resolve_willTV;
+    private AutoCompleteTextView mPerk1AT, mFlaw1AT, mPerk2AT, mFlaw2AT;
     private Button saveButton; //use to save character
     private Button cancelButton; //use to exit activity without saving
 
@@ -88,6 +91,12 @@ public class CharacterCreation extends AppCompatActivity
         toughness_willTV = findViewById(R.id.toughness_willTV);
         resolve_presenceTV = findViewById(R.id.resolve_presenceTV);
         resolve_willTV = findViewById(R.id.resolve_willTV);
+
+        mPerk1AT = findViewById(R.id.perk1);
+        mPerk2AT = findViewById(R.id.perk2);
+        mFlaw1AT = findViewById(R.id.flaw1);
+        mFlaw2AT = findViewById(R.id.flaw2);
+
 
         cancelButton = findViewById(R.id.cancelCharCreationButton);
         cancelButton.setOnClickListener(new View.OnClickListener()
@@ -170,6 +179,9 @@ public class CharacterCreation extends AppCompatActivity
                 int speed = getInt(speedET.getText().toString());
                 //Feats
                 //Perks and flaws
+
+
+
                 //Other details
                 String equipment = equipmentET.getText().toString();
                 String additional = additionalET.getText().toString();
@@ -177,12 +189,20 @@ public class CharacterCreation extends AppCompatActivity
 
                 if(!TextUtils.isEmpty(charName)){
                     try {
-                        createCharacter(charName, playerName, level, exp, desc, lethalHP, currentHP,
+
+                        boolean isUnique = createCharacter(charName, playerName, level, exp, desc, lethalHP, currentHP,
                                 legend, wealth, speed, guardOther, toughnessOther, resolveOther, armor,
                                 equipment, additional, agility, fortitude, might, deception,
                                 persuasion, presence, learning, logic, perception, will,
                                 alteration, creation, energy, entropy, influence, movement,
                                 prescience, protection);
+                        if(isUnique){
+                            Context context = getApplicationContext();
+                            String text = "Please enter a unique character name";
+                            int duration = Toast.LENGTH_SHORT;
+                            Toast toast = Toast.makeText(context, text, duration);
+                            toast.show();
+                        }
                     } catch (ExecutionException e) {
                         e.printStackTrace();
                     } catch (InterruptedException e) {
@@ -198,9 +218,17 @@ public class CharacterCreation extends AppCompatActivity
                 }
             }
         });
+        String[] perks= getResources().getStringArray(R.array.perks);
+        String[] flaws= getResources().getStringArray(R.array.flaws);
+        ArrayAdapter<String> perkAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, perks);
+        ArrayAdapter<String> flawAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, flaws);
+        mPerk1AT.setAdapter(perkAdapter);
+        mPerk2AT.setAdapter(perkAdapter);
+        mFlaw1AT.setAdapter(flawAdapter);
+        mFlaw2AT.setAdapter(flawAdapter);
     }
 
-    private void createCharacter(String charName, String playerName,
+    private boolean createCharacter(String charName, String playerName,
                                  int level, int exp, String desc, int lethalHP, int currentHP,
                                  int legend, int wealth, int speed,
                                  int guardOther, int toughnessOther, int resolveOther, int armor,
@@ -212,13 +240,15 @@ public class CharacterCreation extends AppCompatActivity
             throws ExecutionException, InterruptedException{
         charView = new ViewModelProvider(this).get(characterViewModel.class);
         String userId = MainActivity.getUser().getName();
+        boolean isUnique = false;
         Character character = new Character(charName, playerName, level, exp, desc,
                 lethalHP, currentHP, legend, wealth, speed, guardOther,
                 toughnessOther, resolveOther, armor , equipment,
                 additional,  userId, agility, fortitude, might, deception, persuasion , presence,
                 learning, logic, perception, will, alteration, creation, energy,
                 entropy,influence,movement, prescience ,protection);
-        charView.insert(character);
+        isUnique = charView.insert(character);
+        return isUnique;
     }
 
     private static Integer getInt(String s){

@@ -9,6 +9,7 @@ import androidx.lifecycle.LiveData;
 import ca.unb.mobiledev.openlegendrpg.Items.Character;
 import ca.unb.mobiledev.openlegendrpg.repositories.characterRepo;
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 
 public class characterViewModel extends AndroidViewModel
 {
@@ -27,9 +28,9 @@ public class characterViewModel extends AndroidViewModel
         return characters;
     }
 
-    public void insert(Character character)
-    {
-        characterRepository.insertRecord(character);
+    public boolean insert(Character character) throws ExecutionException, InterruptedException {
+        boolean created = characterRepository.insertRecord(character);
+        return created;
     }
 
     public void deleteCharacter(String charName)
