@@ -1,12 +1,15 @@
 package ca.unb.mobiledev.openlegendrpg.Items;
 
 import androidx.annotation.NonNull;
+import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
+import java.util.List;
+
 
 @Entity(tableName = "character_table")
-public class Character
-{
+public class Character {
     //Basic character information
     @PrimaryKey
     @NonNull
@@ -20,11 +23,16 @@ public class Character
     //private List<Feat> feats;
     //private String[] perks;
     //private String[] flaws;
+    private String equipment;
+    private String additionalNotes;
+    private String userId;
 
-    private boolean expanded;
+
 
     public Character(String charName, String playerName, int level, int experience,
                      String description, int lethalHP, int currentHP, int legend, int wealth,
+                     int speed, int guardOther, int toughnessOther, int resolveOther, int armor, String equipment,
+                     String additionalNotes, String userId,
                      int speed, int guardOther, int toughnessOther, int resolveOther, int armor,
                      String equipment, String additionalNotes, int agility, int fortitude,
                      int might, int deception, int persuasion, int presence, int learning,
@@ -47,6 +55,7 @@ public class Character
         this.armor = armor;
         this.equipment = equipment;
         this.additionalNotes = additionalNotes;
+        this.userId = userId;
         this.expanded = false;
         this.agility = agility;
         this.fortitude = fortitude;
@@ -133,7 +142,9 @@ public class Character
 
     public void setAdditionalNotes(String additionalNotes) { this.additionalNotes = additionalNotes; }
 
-    public boolean isExpanded() { return expanded; }
+    public String getUserId() { return userId; }
+
+    public void setUserId(String userId) { this.userId = userId; }
 
     public void setExpanded(boolean expanded) { this.expanded = expanded; }
 

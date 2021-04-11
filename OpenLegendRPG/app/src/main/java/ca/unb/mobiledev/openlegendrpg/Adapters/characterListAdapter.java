@@ -1,5 +1,9 @@
 package ca.unb.mobiledev.openlegendrpg.Adapters;
 
+import android.app.Application;
+import android.content.Intent;
+import android.database.sqlite.SQLiteQuery;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,21 +16,25 @@ import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
 import ca.unb.mobiledev.openlegendrpg.Items.Character;
 import ca.unb.mobiledev.openlegendrpg.R;
+import ca.unb.mobiledev.openlegendrpg.UI.characterViewModel;
+import ca.unb.mobiledev.openlegendrpg.characters.CharacterCreation;
+import ca.unb.mobiledev.openlegendrpg.characters.EditCharacter;
+import ca.unb.mobiledev.openlegendrpg.dao.characterDao;
 
 public class characterListAdapter extends ListAdapter<Character, characterListAdapter.characterViewHolder>
 {
-    private static final String TAG = "character list";
-    EventListener listener;
+    private static final String TAG = "Adapter (Character)";
+    private characterViewModel mCharacterViewModel;
+    private characterDao characterDao;
+    private Button deleteCharButton;
+    private Application app;
+    private Button editCHarButton;
 
-    public interface EventListener {
-        void deleteCharacter(String charName);
-    }
-
-    public characterListAdapter(@NonNull DiffUtil.ItemCallback<Character> diffCallback, EventListener listener)
+    public characterListAdapter(@NonNull DiffUtil.ItemCallback<Character> diffCallback, Application application)
     {
         super(diffCallback);
-        this.listener = listener;
-    }
+        mCharacterViewModel = new characterViewModel(application);
+        app = application;
 
     @NonNull
     @Override
@@ -49,15 +57,33 @@ public class characterListAdapter extends ListAdapter<Character, characterListAd
                 listener.deleteCharacter(character.getCharName());
             }
         });
-
-        holder.editCharButton.setOnClickListener(new View.OnClickListener() {
+        holder.charNameTV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //launch edit activity
+                Intent intent = new Intent(app, EditCharacter.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                final Character character = getItem(position);
+                intent.putExtra("charName", character.getCharName());
+                intent.putExtra("playerName", character.getPlayerName());
+                intent.putExtra("level", character.getLevel());
+                intent.putExtra("experience", character.getExperience());
+                intent.putExtra("description", character.getDescription());
+                intent.putExtra("lethal", character.getLethalHP());
+                intent.putExtra("current", character.getCurrentHP());
+                intent.putExtra("legend", character.getLegend());
+                intent.putExtra("wealth", character.getWealth());
+                intent.putExtra("speed", character.getSpeed());
+                intent.putExtra("guardOther", character.getGuardOther());
+                intent.putExtra("toughnessOther", character.getToughnessOther());
+                intent.putExtra("resolveOther", character.getResolveOther());
+                intent.putExtra("armour", character.getArmor());
+                intent.putExtra("equipment", character.getEquipment());
+                intent.putExtra("additionalNotes", character.getAdditionalNotes());
+                intent.putExtra("userId", character.getUserId());
+                app.startActivity(intent);
             }
         });
     }
-
 
     public static class characterDiff extends DiffUtil.ItemCallback<Character>
     {
@@ -86,7 +112,6 @@ public class characterListAdapter extends ListAdapter<Character, characterListAd
             charNameTV = itemView.findViewById(R.id.charNameTV);
 
             //deal with these two buttons after add char functionality works
-            editCharButton = itemView.findViewById(R.id.editCharButton);
             deleteCharButton = itemView.findViewById(R.id.deleteCharButton);
 
         }
@@ -98,26 +123,5 @@ public class characterListAdapter extends ListAdapter<Character, characterListAd
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
