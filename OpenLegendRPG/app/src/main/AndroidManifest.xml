@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OpenLegendRPG">
         <activity android:name=".MainActivity"
+            android:configChanges="orientation|screenSize"
             android:theme = "@style/Theme.OpenLegendRPG.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -51,6 +52,7 @@
         <activity android:name=".characters.CharacterCreation"/>
 
         <activity android:name=".characters.EditCharacter"/>
+
 
     </application>
 </manifest>
