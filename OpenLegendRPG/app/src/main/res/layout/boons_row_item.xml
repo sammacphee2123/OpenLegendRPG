@@ -88,14 +88,8 @@
                     android:layout_margin="16dp"
                     android:fontFamily="times"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1">
-
                 </TextView>
-
-
             </LinearLayout>
-
         </LinearLayout>
-
     </androidx.cardview.widget.CardView>
-
 </RelativeLayout>

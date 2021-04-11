@@ -19,8 +19,7 @@ public abstract class CharacterRoomDatabase extends RoomDatabase
     public abstract characterDao characterDao();
     private static volatile CharacterRoomDatabase INSTANCE;
     private static final int NUMBER_OF_THREADS = 15;
-    public static final ExecutorService databaseWriterExecutor =
-            Executors.newFixedThreadPool(NUMBER_OF_THREADS);
+    public static final ExecutorService databaseWriterExecutor = Executors.newFixedThreadPool(NUMBER_OF_THREADS);
 
     public static CharacterRoomDatabase getDatabase(final Context context)
     {
@@ -44,7 +43,6 @@ public abstract class CharacterRoomDatabase extends RoomDatabase
         public void onCreate(@NonNull SupportSQLiteDatabase db)
         {
             super.onCreate(db);
-
             databaseWriterExecutor.execute(() -> {
                 characterDao dao = INSTANCE.characterDao();
                 dao.deleteAll();

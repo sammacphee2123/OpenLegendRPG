@@ -624,11 +624,17 @@
                 android:orientation="horizontal"
                 android:background="@color/yellow"
                 android:weightSum="2" >
-
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical"
+                    android:background="@color/yellow"
+                    android:layout_weight="1" >
                 <TextView
                     android:id="@+id/intro_Description30"
                     android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="fill_parent"
                     android:background="@color/yellow"
                     android:fontFamily="times"
                     android:text="@string/intro_Description30"
@@ -639,6 +645,8 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"/>
+
+                </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -695,170 +703,9 @@
                             android:background="@color/yellow"
                             android:layout_weight="1" >
 
-                            <TextView
-                                android:id="@+id/intro_Description31"
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content"
-                                android:background="@color/yellow"
-                                android:text="@string/intro_Description31"
-                                android:textColor="@color/black"
-                                android:textSize="16sp"
-                                android:fontFamily="times"
-                                android:textAlignment="center"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"/>
-                            <TextView
-                                android:id="@+id/intro_Description32"
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content"
-                                android:background="@color/yellow"
-                                android:text="@string/intro_Description32"
-                                android:fontFamily="times"
-                                android:textColor="@color/black"
-                                android:textSize="16sp"
-                                android:textAlignment="center"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
-                            <TextView
-                                android:id="@+id/intro_Description33"
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content"
-                                android:background="@color/yellow"
-                                android:text="@string/intro_Description33"
-                                android:textColor="@color/black"
-                                android:textSize="16sp"
-                                android:fontFamily="times"
-                                android:textAlignment="center"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
-
                         </LinearLayout>
 
                 </LinearLayout>
-                <TextView
-                    android:id="@+id/intro_Description34"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/intro_Description34"
-                    android:fontFamily="times"
-                    android:textColor="@color/black"
-                    android:textSize="20dp"
-                    android:gravity="center"
-                    android:background="@android:color/white"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <TextView
-                    android:id="@+id/intro_Description35"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/intro_Description35"
-                    android:textColor="@color/black"
-                    android:textSize="16dp"
-                    android:fontFamily="times"
-                    android:background="@android:color/white"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:background="@android:color/white"/>
-                <TextView
-                    android:id="@+id/intro_Description36"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/intro_Description36"
-                    android:textColor="@color/black"
-                    android:fontFamily="times"
-                    android:textSize="16dp"
-                    android:background="@android:color/white"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:fontFamily="times"
-                    android:background="@android:color/white"/>
-                <TextView
-                    android:id="@+id/intro_Description37"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/intro_Description37"
-                    android:textColor="@color/black"
-                    android:textSize="16dp"
-                    android:fontFamily="times"
-                    android:background="@android:color/white"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:background="@android:color/white"/>
-                <TextView
-                    android:id="@+id/treasures_Title"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:background="@color/purple_100"
-                    android:text="@string/treasures"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:fontFamily="times"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <TextView
-                    android:id="@+id/intro_Description38"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/corerules"
-                    android:text="@string/intro_Description38"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    android:fontFamily="times"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <LinearLayout
-                    android:id="@+id/Buttons"
-                    android:layout_width="match_parent"
-                    android:layout_height="70dp"
-                    android:layout_alignParentBottom="true"
-                    android:orientation="horizontal">
-
-                    <Button
-                        android:id="@+id/TableButton"
-                        android:layout_width="137dp"
-                        android:layout_height="60dp"
-                        android:layout_marginStart="137dp"
-                        android:layout_marginTop="0dp"
-                        android:fontFamily="times"
-                        android:textColor="@color/purple_700"
-                        android:background="@android:color/transparent"
-                        android:layout_centerInParent="true"
-                        android:layout_alignParentBottom="true"
-                        android:text="@string/table" />
-
-                    <Button
-                        android:id="@+id/NextButton"
-                        android:layout_width="137dp"
-                        android:layout_height="60dp"
-                        android:textAlignment="center"
-                        android:fontFamily="times"
-                        android:textColor="@color/purple_700"
-                        android:background="@android:color/transparent"
-                        android:layout_alignParentBottom="true"
-                        android:text="@string/next" />
-                  
-                </LinearLayout>
-
             </LinearLayout>
             <TextView
                 android:id="@+id/intro_Description34"

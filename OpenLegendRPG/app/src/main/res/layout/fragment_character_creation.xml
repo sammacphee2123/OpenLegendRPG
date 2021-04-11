@@ -140,13 +140,13 @@
                 android:layout_width="match_parent">
             </View>
             <LinearLayout
-                android:id="@+id/guard"
                 android:layout_width="match_parent"
                 android:layout_height = "wrap_content"
                 android:background="@drawable/box2"
                 android:orientation="horizontal"
                 android:weightSum="3">
                 <LinearLayout
+                    android:id="@+id/guard"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
@@ -161,7 +161,7 @@
                             android:fontFamily="times"
                             android:text="Guard"
                             android:layout_gravity="center_horizontal"
-                            android:background="@color/lightyellow"
+                            android:background="@color/Orange"
                             android:textSize="16sp" />
                             <LinearLayout
                                 android:layout_width="50dp"
@@ -170,7 +170,7 @@
                                 android:orientation="horizontal"
                                 android:layout_gravity="center">
                                 <TextView
-                                    android:id="@+id/GuardNumTV"
+                                    android:id="@+id/guardNumTV"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text=""
@@ -278,7 +278,7 @@
                                 android:layout_height="wrap_content"
                                 android:inputType="number"
                                 android:textSize="12sp"
-                                android:text="">
+                                android:text="0">
                             </EditText>
                         </LinearLayout>
                         <LinearLayout
@@ -323,7 +323,7 @@
                         android:fontFamily="times"
                         android:text="Toughness"
                         android:layout_gravity="center_horizontal"
-                        android:background="@color/lightyellow"
+                        android:background="@color/Orange"
                         android:textSize="16sp" />
                     <LinearLayout
                         android:layout_width="50dp"
@@ -468,7 +468,7 @@
                         android:fontFamily="times"
                         android:text="Resolve"
                         android:layout_gravity="center_horizontal"
-                        android:background="@color/lightyellow"
+                        android:background="@color/Orange"
                         android:textSize="16sp" />
                     <LinearLayout
                         android:layout_width="50dp"
@@ -610,7 +610,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
 
-                    android:background="@color/lightyellow"
+                    android:background="@color/Orange"
                     android:fontFamily="times"
                     android:text="Hit Points"
                     android:textSize="20sp" />
@@ -645,7 +645,7 @@
 
                             android:layout_marginTop="5dp"
                             android:layout_weight="1"
-                            android:background="@color/lightyellow"
+                            android:background="@color/Orange"
                             android:fontFamily="times"
                             android:text="Max"
                             android:textSize="20sp" />
@@ -707,7 +707,7 @@
                             android:layout_marginTop="5dp"
                             android:layout_marginLeft="10dp"
                             android:layout_weight="1"
-                            android:background="@color/lightyellow"
+                            android:background="@color/Orange"
                             android:fontFamily="times"
                             android:text="Lethal"
                             android:textSize="20sp" />
@@ -734,7 +734,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:background="@color/lightyellow"
+                        android:background="@color/Orange"
                         android:fontFamily="times"
                         android:text="Current"
                         android:textSize="20sp" />
@@ -772,7 +772,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:background="@color/lightyellow"
+                    android:background="@color/Orange"
                     android:fontFamily="times"
                     android:text="Initiative"
                     android:textSize="20sp" />
@@ -794,7 +794,7 @@
                         android:layout_marginBottom="10dp"
                         android:layout_marginTop="5dp"
                         android:layout_marginLeft="10dp"
-                        android:background="@color/lightyellow"
+                        android:background="@color/Orange"
                         android:fontFamily="times"
                         android:text="d20+"
                         android:layout_weight="1"
@@ -823,7 +823,7 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginBottom="10dp"
                         android:layout_marginTop="5dp"
-                        android:background="@color/lightyellow"
+                        android:background="@color/Orange"
                         android:fontFamily="times"
                         android:text="Advantage"
                         android:layout_weight="1"
@@ -862,7 +862,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/lightyellow"
+                        android:background="@color/Orange"
                         android:fontFamily="times"
                         android:text="Legend"
                         android:textSize="16sp" />
@@ -887,7 +887,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/lightyellow"
+                        android:background="@color/Orange"
                         android:fontFamily="times"
                         android:text="Wealth"
                         android:textSize="16sp" />
@@ -910,7 +910,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/lightyellow"
+                        android:background="@color/Orange"
                         android:fontFamily="times"
                         android:text="Speed"
                         android:textSize="16sp" />
@@ -1027,7 +1027,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:background="@color/lightyellow"
+                                android:background="@color/Orange"
                                 android:padding="5dp"
                                 android:text="Physical"
                                 android:textAppearance="?android:attr/textAppearanceMedium">
@@ -1221,7 +1221,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:background="@color/lightyellow"
+                                android:background="@color/Orange"
                                 android:padding="5dp"
                                 android:text="Mental"
                                 android:textAppearance="?android:attr/textAppearanceMedium">
@@ -1458,7 +1458,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:background="@color/lightyellow"
+                                android:background="@color/Orange"
                                 android:padding="5dp"
                                 android:text="Social"
                                 android:textAppearance="?android:attr/textAppearanceMedium">
@@ -1647,7 +1647,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:background="@color/lightyellow"
+                                android:background="@color/Orange"
                                 android:padding="5dp"
                                 android:text="Extraordinary"
                                 android:textAppearance="?android:attr/textAppearanceMedium">
@@ -2341,7 +2341,7 @@
                     android:layout_marginLeft="10dp"
 
                     android:layout_marginTop="10dp"
-                    android:background="@color/lightyellow"
+                    android:background="@color/Orange"
                     android:fontFamily="times"
                     android:text="Perks"
                     android:layout_weight="1"
@@ -2381,7 +2381,7 @@
                     android:layout_marginLeft="10dp"
 
                     android:layout_marginTop="10dp"
-                    android:background="@color/lightyellow"
+                    android:background="@color/Orange"
                     android:fontFamily="times"
                     android:layout_weight="1"
                     android:text="Flaws"
@@ -2421,7 +2421,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:background="@color/lightyellow"
+                    android:background="@color/Orange"
                     android:fontFamily="times"
                     android:text="Equipment"
                     android:textSize="16sp" />
@@ -2443,7 +2443,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:background="@color/lightyellow"
+                    android:background="@color/Orange"
                     android:fontFamily="times"
                     android:text="Additional Notes"
                     android:textSize="16sp" />
