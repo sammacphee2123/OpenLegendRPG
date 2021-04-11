@@ -75,6 +75,7 @@ public class characterListAdapter extends ListAdapter<Character, characterListAd
                 intent.putExtra("experience", character.getExperience());
                 intent.putExtra("description", character.getDescription());
                 intent.putExtra("lethal", character.getLethalHP());
+                intent.putExtra("initADV", character.getInitADV());
                 intent.putExtra("current", character.getCurrentHP());
                 intent.putExtra("initADV", character.getInitADV());
                 intent.putExtra("legend", character.getLegend());
@@ -83,7 +84,7 @@ public class characterListAdapter extends ListAdapter<Character, characterListAd
                 intent.putExtra("guardOther", character.getGuardOther());
                 intent.putExtra("toughnessOther", character.getToughnessOther());
                 intent.putExtra("resolveOther", character.getResolveOther());
-                intent.putExtra("armour", character.getArmor());
+                intent.putExtra("armor", character.getArmor());
                 intent.putExtra("might", character.getMight());
                 intent.putExtra("fortitude", character.getFortitude());
                 intent.putExtra("agility", character.getAgility());

@@ -44,8 +44,9 @@ public class EditCharacter extends android.app.Activity {
             presence_costTV, presence_diceTV, alteration_costTV, alteration_diceTV, creation_costTV,
             creation_diceTV, energy_costTV, energy_diceTV, entropy_costTV, entropy_diceTV,
             influence_costTV, influence_diceTV, movement_costTV, movement_diceTV, prescience_costTV,
-            prescience_diceTV, protection_costTV, protection_diceTV;
+            prescience_diceTV, protection_costTV, protection_diceTV, attributesSpentTV;
     private AutoCompleteTextView mPerk1AT, mFlaw1AT, mPerk2AT, mFlaw2AT;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -136,13 +137,13 @@ public class EditCharacter extends android.app.Activity {
         prescience_diceTV = findViewById(R.id.prescienceDiceTV);
         protection_costTV = findViewById(R.id.protectionCostTV);
         protection_diceTV = findViewById(R.id.protectionDiceTV);
-
+        attributesSpentTV = findViewById(R.id.attributeSpentTV);
         mPerk1AT = findViewById(R.id.perk1);
         mPerk2AT = findViewById(R.id.perk2);
         mFlaw1AT = findViewById(R.id.flaw1);
         mFlaw2AT = findViewById(R.id.flaw2);
-        String[] perks= getResources().getStringArray(R.array.perks);
-        String[] flaws= getResources().getStringArray(R.array.flaws);
+        String[] perks = getResources().getStringArray(R.array.perks);
+        String[] flaws = getResources().getStringArray(R.array.flaws);
         ArrayAdapter<String> perkAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, perks);
         ArrayAdapter<String> flawAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, flaws);
         mPerk1AT.setAdapter(perkAdapter);
@@ -157,31 +158,32 @@ public class EditCharacter extends android.app.Activity {
         int exp = intent.getIntExtra("experience", 0);
         String description = intent.getStringExtra("description");
         int lethalHP = intent.getIntExtra("lethal", 0);
-        int currentHP  = intent.getIntExtra("current", 0);
+        int currentHP = intent.getIntExtra("current", 0);
         int legend = intent.getIntExtra("legend", 0);
         int wealth = intent.getIntExtra("wealth", 0);
         int speed = intent.getIntExtra("speed", 0);
         int guardOther = intent.getIntExtra("guardOther", 0);
         int toughnessOther = intent.getIntExtra("toughnessOther", 0);
-        int  resolveOther = intent.getIntExtra("resolveOther", 0);
+        int resolveOther = intent.getIntExtra("resolveOther", 0);
         String equipment = intent.getStringExtra("equipment");
         int armor = intent.getIntExtra("armor", 0);
+        int initADV = intent.getIntExtra("initADV", 0);
         String additionalNotes = intent.getStringExtra("additionalNotes");
         int agility = intent.getIntExtra("agility", 0);
         int might = intent.getIntExtra("might", 0);
         int deception = intent.getIntExtra("deception", 0);
         int persuasion = intent.getIntExtra("persuasion", 0);
-        int perception  = intent.getIntExtra("perception", 0);
+        int perception = intent.getIntExtra("perception", 0);
         int learning = intent.getIntExtra("learning", 0);
         int logic = intent.getIntExtra("logic", 0);
         int presence = intent.getIntExtra("presence", 0);
         int will = intent.getIntExtra("will", 0);
         int alteration = intent.getIntExtra("alteration", 0);
         int creation = intent.getIntExtra("creation", 0);
-        int  energy = intent.getIntExtra("energy", 0);
+        int energy = intent.getIntExtra("energy", 0);
         int entropy = intent.getIntExtra("entropy", 0);
         int influence = intent.getIntExtra("influence", 0);
-        int  movement = intent.getIntExtra("movement", 0);
+        int movement = intent.getIntExtra("movement", 0);
         int prescience = intent.getIntExtra("prescience", 0);
         int fortitude = intent.getIntExtra("fortitude", 0);
         int protection = intent.getIntExtra("protection", 0);
@@ -195,6 +197,7 @@ public class EditCharacter extends android.app.Activity {
         levelET.setText(String.valueOf(level));
         expET.setText(String.valueOf(exp));
         descET.setText(description);
+        initADVET.setText(String.valueOf(initADV));
         lethalHPET.setText(String.valueOf(lethalHP));
         currentHPET.setText(String.valueOf(currentHP));
         legendET.setText(String.valueOf(legend));
@@ -230,47 +233,31 @@ public class EditCharacter extends android.app.Activity {
         mFlaw2AT.setText(String.valueOf(flaw2));
         //SET ALL NonEditables
         //level and exp
-        Integer atotal = 40 + ((level - 1)*9 + (3 * exp));
+        Integer atotal = 40 + ((level - 1) * 9 + (3 * exp));
         attributesTotalTV.setText(atotal.toString());
         Integer fTotal = 3 + (3 * level) + exp;
         featsTotalTV.setText(fTotal.toString());
         //Attributes
-        agility_costTV.setText(getCost(agility).toString());
-        agility_diceTV.setText(getDice(agility));
-        fortitude_costTV.setText(getCost(fortitude).toString());
-        fortitude_diceTV.setText(getDice(fortitude));
-        might_costTV.setText(getCost(might).toString());
-        might_diceTV.setText(getDice(might));
-        deception_costTV.setText(getCost(deception).toString());
-        deception_diceTV.setText(getDice(deception));
-        persuasion_costTV.setText(getCost(persuasion).toString());
-        persuasion_diceTV.setText(getDice(persuasion));
-        presence_costTV.setText(getCost(presence).toString());
-        presence_diceTV.setText(getDice(presence));
-        learning_costTV.setText(getCost(learning).toString());
-        learning_diceTV.setText(getDice(learning));
-        logic_costTV.setText(getCost(logic).toString());
-        logic_diceTV.setText(getDice(logic));
-        perception_costTV.setText(getCost(perception).toString());
-        perception_diceTV.setText(getDice(perception));
-        will_costTV.setText(getCost(will).toString());
-        will_diceTV.setText(getDice(will));
-        alteration_costTV.setText(getCost(alteration).toString());
-        alteration_diceTV.setText(getDice(alteration));
-        creation_costTV.setText(getCost(creation).toString());
-        creation_diceTV.setText(getDice(creation));
-        energy_costTV.setText(getCost(energy).toString());
-        energy_diceTV.setText(getDice(energy));
-        entropy_costTV.setText(getCost(entropy).toString());
-        entropy_diceTV.setText(getDice(entropy));
-        influence_costTV.setText(getCost(influence).toString());
-        influence_diceTV.setText(getDice(influence));
-        movement_costTV.setText(getCost(movement).toString());
-        movement_diceTV.setText(getDice(movement));
-        prescience_costTV.setText(getCost(prescience).toString());
-        prescience_diceTV.setText(getDice(prescience));;
-        protection_costTV.setText(getCost(protection).toString());
-        protection_diceTV.setText(getDice(protection));
+        Integer spent = 0;
+        handleAttribute2(agility, spent, agility_costTV, agility_diceTV);
+        handleAttribute2(fortitude, spent, fortitude_costTV, fortitude_diceTV);
+        handleAttribute2(might, spent, might_costTV, might_diceTV);
+        handleAttribute2(deception, spent, deception_costTV, deception_diceTV);
+        handleAttribute2(persuasion, spent, persuasion_costTV, persuasion_diceTV);
+        handleAttribute2(presence, spent, presence_costTV, presence_diceTV);
+        handleAttribute2(learning, spent, learning_costTV, learning_diceTV);
+        handleAttribute2(logic, spent, logic_costTV, logic_diceTV);
+        handleAttribute2(perception, spent, perception_costTV, perception_diceTV);
+        handleAttribute2(will, spent, will_costTV, will_diceTV);
+        handleAttribute2(alteration, spent, alteration_costTV, alteration_diceTV);
+        handleAttribute2(creation, spent, creation_costTV, creation_diceTV);
+        handleAttribute2(energy, spent, energy_costTV, energy_diceTV);
+        handleAttribute2(entropy, spent, entropy_costTV, entropy_diceTV);
+        handleAttribute2(influence, spent, influence_costTV, influence_diceTV);
+        handleAttribute2(movement, spent, movement_costTV, movement_diceTV);
+        handleAttribute2(prescience, spent, prescience_costTV, prescience_diceTV);
+        handleAttribute2(protection, spent, protection_costTV, protection_diceTV);
+        attributesSpentTV.setText(spent.toString());
         //Guard
         guardOther = getInt(guardOtherET.getText().toString());
         Integer guard = 10 + guardOther + armor + might + agility;
@@ -294,93 +281,52 @@ public class EditCharacter extends android.app.Activity {
         initTV.setText(String.valueOf(getDice(agility)));
 
 
-
         cancelButton = findViewById(R.id.cancelCharCreationButton);
-        cancelButton.setOnClickListener(new View.OnClickListener()
-        {
+        cancelButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)
-            {
+            public void onClick(View v) {
                 finish();
             }
         });
 
         saveButton = findViewById(R.id.saveCharButton);
-        saveButton.setOnClickListener(new View.OnClickListener()
-        {
+        saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)
-            {
+            public void onClick(View v) {
                 String charName = charNameET.getText().toString();
                 String playerName = playerNameET.getText().toString();
                 String desc = descET.getText().toString();
 
                 int level, exp, armor, guardOther, toughnessOther, resolveOther, currentHP, lethalHP;
                 //level and exp
-                level =  getInt(levelET.getText().toString());
+                level = getInt(levelET.getText().toString());
                 exp = getInt(expET.getText().toString());
-                Integer atotal = 40 + ((level - 1)*9 + (3 * exp));
+                Integer atotal = 40 + ((level - 1) * 9 + (3 * exp));
                 attributesTotalTV.setText(atotal.toString());
                 Integer fTotal = 3 + (3 * level) + exp;
                 featsTotalTV.setText(fTotal.toString());
                 //Attributes
-                int agility = getInt(agilityET.getText().toString());
-                agility_costTV.setText(getCost(agility).toString());
-                agility_diceTV.setText(getDice(agility));
-                int fortitude =  getInt(fortitudeET.getText().toString());
-                fortitude_costTV.setText(getCost(fortitude).toString());
-                fortitude_diceTV.setText(getDice(fortitude));
-                int might =  getInt(mightET.getText().toString());
-                might_costTV.setText(getCost(might).toString());
-                might_diceTV.setText(getDice(might));
-                int deception =  getInt(deceptionET.getText().toString());
-                deception_costTV.setText(getCost(deception).toString());
-                deception_diceTV.setText(getDice(deception));
-                int persuasion =  getInt(persuasionET.getText().toString());
-                persuasion_costTV.setText(getCost(persuasion).toString());
-                persuasion_diceTV.setText(getDice(persuasion));
-                int presence =  getInt(presenceET.getText().toString());
-                presence_costTV.setText(getCost(presence).toString());
-                presence_diceTV.setText(getDice(presence));
-                int learning =  getInt(learningET.getText().toString());
-                learning_costTV.setText(getCost(learning).toString());
-                learning_diceTV.setText(getDice(learning));
-                int logic =  getInt(logicET.getText().toString());
-                logic_costTV.setText(getCost(logic).toString());
-                logic_diceTV.setText(getDice(logic));
-                int perception =  getInt(perceptionET.getText().toString());
-                perception_costTV.setText(getCost(perception).toString());
-                perception_diceTV.setText(getDice(perception));
-                int will =  getInt(willET.getText().toString());
-                will_costTV.setText(getCost(will).toString());
-                will_diceTV.setText(getDice(will));
-                int alteration =  getInt(alterationET.getText().toString());
-                alteration_costTV.setText(getCost(alteration).toString());
-                alteration_diceTV.setText(getDice(alteration));
-                int creation =  getInt(creationET.getText().toString());
-                creation_costTV.setText(getCost(creation).toString());
-                creation_diceTV.setText(getDice(creation));
-                int energy =  getInt(energyET.getText().toString());
-                energy_costTV.setText(getCost(energy).toString());
-                energy_diceTV.setText(getDice(energy));
-                int entropy =  getInt(entropyET.getText().toString());
-                entropy_costTV.setText(getCost(entropy).toString());
-                entropy_diceTV.setText(getDice(entropy));
-                int influence =  getInt(influenceET.getText().toString());
-                influence_costTV.setText(getCost(influence).toString());
-                influence_diceTV.setText(getDice(influence));
-                int movement =  getInt(movementET.getText().toString());
-                movement_costTV.setText(getCost(movement).toString());
-                movement_diceTV.setText(getDice(movement));
-                int prescience =  getInt(prescienceET.getText().toString());
-                prescience_costTV.setText(getCost(prescience).toString());
-                prescience_diceTV.setText(getDice(prescience));
-                int protection =  getInt(protectionET.getText().toString());
-                protection_costTV.setText(getCost(protection).toString());
-                protection_diceTV.setText(getDice(protection));
+                Integer spent = 0;
+                int agility = handleAttribute(agilityET, spent, agility_costTV, agility_diceTV);
+                int fortitude = handleAttribute(fortitudeET, spent, fortitude_costTV, fortitude_diceTV);
+                int might = handleAttribute(mightET, spent, might_costTV, might_diceTV);
+                int deception = handleAttribute(deceptionET, spent, deception_costTV, deception_diceTV);
+                int persuasion = handleAttribute(persuasionET, spent, persuasion_costTV, persuasion_diceTV);
+                int presence = handleAttribute(presenceET, spent, presence_costTV, presence_diceTV);
+                int learning = handleAttribute(learningET, spent, learning_costTV, learning_diceTV);
+                int logic = handleAttribute(logicET, spent, logic_costTV, logic_diceTV);
+                int perception = handleAttribute(perceptionET, spent, perception_costTV, perception_diceTV);
+                int will = handleAttribute(willET, spent, will_costTV, will_diceTV);
+                int alteration = handleAttribute(alterationET, spent, alteration_costTV, alteration_diceTV);
+                int creation = handleAttribute(creationET, spent, creation_costTV, creation_diceTV);
+                int energy = handleAttribute(energyET, spent, energy_costTV, energy_diceTV);
+                int entropy = handleAttribute(entropyET, spent, entropy_costTV, entropy_diceTV);
+                int influence = handleAttribute(influenceET, spent, influence_costTV, influence_diceTV);
+                int movement = handleAttribute(movementET, spent, movement_costTV, movement_diceTV);
+                int prescience = handleAttribute(prescienceET, spent, prescience_costTV, prescience_diceTV);
+                int protection = handleAttribute(protectionET, spent, protection_costTV, protection_diceTV);
+                attributesSpentTV.setText(spent.toString());
                 //Guard
-                System.out.println("test");
-                System.out.println(armorET.getText().toString());
                 armor = getInt(armorET.getText().toString());
                 guardOther = getInt(guardOtherET.getText().toString());
                 Integer guard = 10 + guardOther + armor + might + agility;
@@ -405,7 +351,7 @@ public class EditCharacter extends android.app.Activity {
                 Integer maxHP = (2 * (fortitude + presence + will)) + 10;
                 maxHPTV.setText(maxHP.toString());
                 //Initiative
-                initTV.setText(String.valueOf(agility));
+                initTV.setText(String.valueOf(getDice(agility)));
                 int initADV = getInt(initADVET.getText().toString());
                 //Legend, wealth, speed
                 int legend = getInt(legendET.getText().toString());
@@ -423,7 +369,7 @@ public class EditCharacter extends android.app.Activity {
                 String additional = additionalET.getText().toString();
 
 
-                if(!TextUtils.isEmpty(charName)){
+                if (!TextUtils.isEmpty(charName)) {
                     try {
                         boolean isUnique = updateCharacter(charName, playerName, level, exp, desc, lethalHP, currentHP, initADV,
                                 legend, wealth, speed, guardOther, toughnessOther, resolveOther, armor,
@@ -432,7 +378,7 @@ public class EditCharacter extends android.app.Activity {
                                 alteration, creation, energy, entropy, influence, movement,
                                 prescience, protection, perk1, perk2, flaw1, flaw2);
                         Log.i("log", perk1);
-                        if(!isUnique){
+                        if (!isUnique) {
                             Context context = getApplicationContext();
                             String text = "Please enter a unique character name";
                             int duration = Toast.LENGTH_SHORT;
@@ -444,8 +390,7 @@ public class EditCharacter extends android.app.Activity {
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                }
-                else{
+                } else {
                     Context context = getApplicationContext();
                     String text = "Please enter a character name";
                     int duration = Toast.LENGTH_SHORT;
@@ -455,6 +400,7 @@ public class EditCharacter extends android.app.Activity {
             }
         });
     }
+
     private boolean updateCharacter(String charName, String playerName,
                                     int level, int exp, String desc, int lethalHP, int currentHP,
                                     int initADV, int legend, int wealth, int speed,
@@ -463,36 +409,37 @@ public class EditCharacter extends android.app.Activity {
                                     int might, int deception, int persuasion, int presence, int learning,
                                     int logic, int perception, int will, int alteration, int creation,
                                     int energy, int entropy, int influence, int movement,
-                                    int prescience, int protection,String perk1,String perk2,String flaw1, String flaw2)
-            throws ExecutionException, InterruptedException{
+                                    int prescience, int protection, String perk1, String perk2, String flaw1, String flaw2)
+            throws ExecutionException, InterruptedException {
         charView = new characterViewModel(getApplication());
         String userId = MainActivity.getUser().getName();
         boolean isUnique = false;
         Character character = new Character(charName, playerName, level, exp, desc,
                 lethalHP, currentHP, initADV, legend, wealth, speed, guardOther,
-                toughnessOther, resolveOther, armor , equipment,
-                additional, userId, agility, fortitude, might, deception, persuasion , presence,
+                toughnessOther, resolveOther, armor, equipment,
+                additional, userId, agility, fortitude, might, deception, persuasion, presence,
                 learning, logic, perception, will, alteration, creation, energy,
-                entropy,influence,movement, prescience ,protection, perk1,perk2 , flaw1,flaw2 );
+                entropy, influence, movement, prescience, protection, perk1, perk2, flaw1, flaw2);
         isUnique = charView.update(character);
         return isUnique;
     }
 
-    private static Integer getInt(String s){
-        if(s.isEmpty()) return 0;
+    private static Integer getInt(String s) {
+        if (s.isEmpty()) return 0;
         return Integer.parseInt(s);
     }
 
-    public Integer getCost(int attribute){
+    public Integer getCost(int attribute) {
         Integer cost = 0;
-        for(int temp = attribute; temp > 0; temp--){
+        for (int temp = attribute; temp > 0; temp--) {
             cost += temp;
         }
         return cost;
     }
-    public String getDice(int attribute){
+
+    public String getDice(int attribute) {
         String Dice = "";
-        switch(attribute){
+        switch (attribute) {
             case 1:
                 Dice = "d4";
                 break;
@@ -523,5 +470,29 @@ public class EditCharacter extends android.app.Activity {
 
         }
         return Dice;
+    }
+
+    public int handleAttribute(EditText et, int spent, TextView costTV, TextView diceTV) {
+        int attribute = getInt(et.getText().toString());
+        Integer attCost = getCost(attribute);
+        spent += attCost;
+        if (attCost == 0) {
+            costTV.setText("");
+        } else {
+            costTV.setText(attCost.toString());
+        }
+        diceTV.setText(getDice(attribute));
+        return attribute;
+    }
+    public void handleAttribute2(int attribute,  int spent, TextView costTV, TextView diceTV) {
+        Integer attCost = getCost(attribute);
+        spent += attCost;
+        if (attCost == 0) {
+            costTV.setText("");
+        } else {
+            costTV.setText(attCost.toString());
+        }
+        diceTV.setText(getDice(attribute));
+        return;
     }
 }

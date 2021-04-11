@@ -260,6 +260,7 @@ public class CharacterCreation extends AppCompatActivity
                             Toast toast = Toast.makeText(context, text, duration);
                             toast.show();
                         }
+                        finish();
                     } catch (ExecutionException e) {
                         e.printStackTrace();
                     } catch (InterruptedException e) {
