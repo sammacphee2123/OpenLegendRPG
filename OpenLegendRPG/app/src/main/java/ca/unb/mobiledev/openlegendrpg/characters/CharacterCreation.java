@@ -15,6 +15,8 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.lifecycle.ViewModelStoreOwner;
 
 import java.util.concurrent.ExecutionException;
+
+import ca.unb.mobiledev.openlegendrpg.MainActivity;
 import ca.unb.mobiledev.openlegendrpg.UI.characterViewModel;
 import ca.unb.mobiledev.openlegendrpg.Items.Character;
 import ca.unb.mobiledev.openlegendrpg.R;
@@ -27,7 +29,9 @@ public class CharacterCreation extends AppCompatActivity
             equipmentET, additionalET, agilityET, fortitudeET, mightET, deceptionET, persuasionET,
             presenceET, learningET, logicET, perceptionET, willET, alterationET, creationET,
             energyET, entropyET, influenceET, movementET, prescienceET, protectionET;
-    private TextView attributesTotalTV, featsTotalTV, guardTV, toughnessTV, resolveTV, maxHPTV;
+    private TextView attributesTotalTV, featsTotalTV, guardTV, toughnessTV, resolveTV, maxHPTV,
+            guard_agilityTV, guard_mightTV, toughness_fortitudeTV, toughness_willTV,
+            resolve_presenceTV, resolve_willTV;
     private Button saveButton; //use to save character
     private Button cancelButton; //use to exit activity without saving
 
@@ -78,6 +82,12 @@ public class CharacterCreation extends AppCompatActivity
         toughnessTV = findViewById(R.id.ToughnessNumTV);
         resolveTV = findViewById(R.id.ResolveNumTV);
         maxHPTV = findViewById(R.id.maxhpTV);
+        guard_agilityTV = findViewById(R.id.guard_agilityTV);
+        guard_mightTV = findViewById(R.id.guard_mightTV);
+        toughness_fortitudeTV = findViewById(R.id.toughness_fortitudeTV);
+        toughness_willTV = findViewById(R.id.toughness_willTV);
+        resolve_presenceTV = findViewById(R.id.resolve_presenceTV);
+        resolve_willTV = findViewById(R.id.resolve_willTV);
 
         cancelButton = findViewById(R.id.cancelCharCreationButton);
         cancelButton.setOnClickListener(new View.OnClickListener()
@@ -133,14 +143,20 @@ public class CharacterCreation extends AppCompatActivity
                 guardOther = getInt(guardOtherET.getText().toString());
                 Integer guard = 10 + guardOther + armor + might + agility;
                 guardTV.setText(guard.toString());
+                guard_agilityTV.setText(String.valueOf(agility));
+                guard_mightTV.setText(String.valueOf(might));
                 //Toughness
                 toughnessOther = getInt(toughnessOtherET.getText().toString());
                 Integer toughness = 10 + toughnessOther + fortitude + will;
                 toughnessTV.setText(toughness.toString());
+                toughness_fortitudeTV.setText(String.valueOf(fortitude));
+                toughness_willTV.setText(String.valueOf(will));
                 //Resolve
                 resolveOther = getInt(resolveOtherET.getText().toString());
                 Integer resolve = 10 + resolveOther + presence + will;
                 resolveTV.setText(resolve.toString());
+                resolve_presenceTV.setText(String.valueOf(presence));
+                resolve_willTV.setText(String.valueOf(will));
                 //Hit points
                 currentHP = getInt(currentHPET.getText().toString());
                 lethalHP = getInt(lethalHPET.getText().toString());
@@ -195,10 +211,11 @@ public class CharacterCreation extends AppCompatActivity
                                  int prescience, int protection)
             throws ExecutionException, InterruptedException{
         charView = new ViewModelProvider(this).get(characterViewModel.class);
+        String userId = MainActivity.getUser().getName();
         Character character = new Character(charName, playerName, level, exp, desc,
                 lethalHP, currentHP, legend, wealth, speed, guardOther,
                 toughnessOther, resolveOther, armor , equipment,
-                additional, agility, fortitude, might, deception, persuasion , presence,
+                additional,  userId, agility, fortitude, might, deception, persuasion , presence,
                 learning, logic, perception, will, alteration, creation, energy,
                 entropy,influence,movement, prescience ,protection);
         charView.insert(character);

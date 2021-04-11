@@ -15,7 +15,6 @@ import ca.unb.mobiledev.openlegendrpg.Items.Character;
 import ca.unb.mobiledev.openlegendrpg.MainActivity;
 import ca.unb.mobiledev.openlegendrpg.R;
 
-import static ca.unb.mobiledev.openlegendrpg.characters.CharacterCreation.EXTRA_REPLY;
 
 public class EditCharacter extends android.app.Activity {
     private Button saveButton; //use to save character
@@ -116,7 +115,7 @@ public class EditCharacter extends android.app.Activity {
                 else
                 {
                     String name = charNameET.getText().toString();
-                    replyIntent.putExtra(EXTRA_REPLY, name);
+                    //replyIntent.putExtra(EXTRA_REPLY, name);
                     setResult(RESULT_OK, replyIntent);
                 }
                 finish();

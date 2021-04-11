@@ -10,10 +10,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
+
 import ca.unb.mobiledev.openlegendrpg.Items.Character;
 import ca.unb.mobiledev.openlegendrpg.R;
 import ca.unb.mobiledev.openlegendrpg.UI.characterViewModel;
@@ -36,11 +38,14 @@ public class characterListAdapter extends ListAdapter<Character, characterListAd
         mCharacterViewModel = new characterViewModel(application);
         app = application;
 
+    }
+
     @NonNull
     @Override
     public characterViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
     {
         Log.i(TAG, "onCreateViewHolder");
+
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
         View view = layoutInflater.inflate(R.layout.character_row_item, parent, false);
         return new characterViewHolder(view);
@@ -54,7 +59,8 @@ public class characterListAdapter extends ListAdapter<Character, characterListAd
         holder.deleteCharButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                listener.deleteCharacter(character.getCharName());
+                String charName = character.getCharName();
+                mCharacterViewModel.deleteCharacter(charName); //this terminates the app because of a null object reference
             }
         });
         holder.charNameTV.setOnClickListener(new View.OnClickListener() {
@@ -119,9 +125,6 @@ public class characterListAdapter extends ListAdapter<Character, characterListAd
         @Override
         public void onClick(View v)
         {
-            //launch edit character activity
         }
     }
 }
-
-

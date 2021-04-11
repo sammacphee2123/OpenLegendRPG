@@ -23,8 +23,6 @@ public class Character {
     //private List<Feat> feats;
     //private String[] perks;
     //private String[] flaws;
-    private String equipment;
-    private String additionalNotes;
     private String userId;
 
 
@@ -32,9 +30,7 @@ public class Character {
     public Character(String charName, String playerName, int level, int experience,
                      String description, int lethalHP, int currentHP, int legend, int wealth,
                      int speed, int guardOther, int toughnessOther, int resolveOther, int armor, String equipment,
-                     String additionalNotes, String userId,
-                     int speed, int guardOther, int toughnessOther, int resolveOther, int armor,
-                     String equipment, String additionalNotes, int agility, int fortitude,
+                     String additionalNotes, String userId, int agility, int fortitude,
                      int might, int deception, int persuasion, int presence, int learning,
                      int logic, int perception, int will, int alteration, int creation, int energy,
                      int entropy, int influence, int movement, int prescience, int protection)
@@ -56,7 +52,6 @@ public class Character {
         this.equipment = equipment;
         this.additionalNotes = additionalNotes;
         this.userId = userId;
-        this.expanded = false;
         this.agility = agility;
         this.fortitude = fortitude;
         this.might = might;
@@ -145,8 +140,6 @@ public class Character {
     public String getUserId() { return userId; }
 
     public void setUserId(String userId) { this.userId = userId; }
-
-    public void setExpanded(boolean expanded) { this.expanded = expanded; }
 
     public int getAgility() { return agility; }
 
