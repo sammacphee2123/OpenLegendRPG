@@ -30,7 +30,6 @@ import static android.content.Context.INPUT_METHOD_SERVICE;
 
 public class CreateAccountFragment extends Fragment {
     private userViewModel mUserViewModel;
-    private Button mLoginButton;
     private EditText mNameEditText;
     private EditText mPasswordEditText;
     private EditText mEmailEditText;

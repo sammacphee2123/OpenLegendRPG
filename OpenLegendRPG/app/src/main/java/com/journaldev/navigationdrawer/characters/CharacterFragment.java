@@ -24,7 +24,7 @@ import ca.unb.mobiledev.openlegendrpg.UI.characterViewModel;
 import ca.unb.mobiledev.openlegendrpg.characters.CharacterCreation;
 import static android.app.Activity.RESULT_OK;
 
-public class CharacterFragment extends Fragment
+public class CharacterFragment extends Fragment implements characterListAdapter.EventListener
 {
     public static final int NEW_CHARACTER_ACTIVITY_REQUEST_CODE = 1;
 
@@ -49,7 +49,16 @@ public class CharacterFragment extends Fragment
             LiveData<List<Character>> characters = mCharacterViewModel.listAllRecords();
             if(characters != null) {
                 characters.observe(requireActivity(), adapter::submitList);
-            }
+            }   
+            View rootView = inflater.inflate(R.layout.fragment_character, container, false);
+            RecyclerView recyclerView = rootView.findViewById(R.id.recyclerView);
+
+            final characterListAdapter adapter = new characterListAdapter(new characterListAdapter.characterDiff(), this);
+            recyclerView.setAdapter(adapter);
+            recyclerView.setLayoutManager(new LinearLayoutManager(requireActivity()));
+
+            mCharacterViewModel = new ViewModelProvider(this).get(characterViewModel.class);
+            mCharacterViewModel.listAllRecords().observe(requireActivity(), adapter::submitList);
 
             addCharButton = rootView.findViewById(R.id.addCharButton);
             addCharButton.setOnClickListener(new View.OnClickListener() {
@@ -61,7 +70,6 @@ public class CharacterFragment extends Fragment
                 }
             });
         }
-
         return rootView;
     }
 
@@ -88,5 +96,8 @@ public class CharacterFragment extends Fragment
                 null, null, MainActivity.getUser().getName());
         return character;
     }
-
+    public void deleteCharacter(String charName){
+        mCharacterViewModel = new ViewModelProvider(this).get(characterViewModel.class);
+        mCharacterViewModel.deleteCharacter(charName);
+    }
 }
