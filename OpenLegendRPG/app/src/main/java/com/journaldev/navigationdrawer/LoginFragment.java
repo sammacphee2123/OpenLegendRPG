@@ -150,6 +150,8 @@ public class LoginFragment extends Fragment {
         mPasswordEditText.setText("");
         return user;
     }
+
+
 }
 
 
