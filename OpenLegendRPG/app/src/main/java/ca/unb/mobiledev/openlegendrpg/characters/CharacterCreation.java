@@ -42,7 +42,6 @@ public class CharacterCreation extends AppCompatActivity
             influence_costTV, influence_diceTV, movement_costTV, movement_diceTV, prescience_costTV,
             prescience_diceTV, protection_costTV, protection_diceTV;
 
-
     private AutoCompleteTextView mPerk1AT, mFlaw1AT, mPerk2AT, mFlaw2AT;
     private Button saveButton; //use to save character
     private Button cancelButton; //use to exit activity without saving
@@ -326,7 +325,7 @@ public class CharacterCreation extends AppCompatActivity
         String userId = MainActivity.getUser().getName();
         boolean isUnique = false;
         Character character = new Character(charName, playerName, level, exp, desc,
-                lethalHP, currentHP,  legend, wealth, speed, guardOther,
+                lethalHP, currentHP, initADV, legend, wealth, speed, guardOther,
                 toughnessOther, resolveOther, armor , equipment,
                 additional, userId, agility, fortitude, might, deception, persuasion , presence,
                 learning, logic, perception, will, alteration, creation, energy,
