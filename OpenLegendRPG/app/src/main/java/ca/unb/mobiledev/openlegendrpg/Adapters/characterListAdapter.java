@@ -118,7 +118,6 @@ public class characterListAdapter extends ListAdapter<Character, characterListAd
             charNameTV = itemView.findViewById(R.id.charNameTV);
 
             //deal with these two buttons after add char functionality works
-            editCharButton = itemView.findViewById(R.id.editCharButton);
             deleteCharButton = itemView.findViewById(R.id.deleteCharButton);
 
         }
