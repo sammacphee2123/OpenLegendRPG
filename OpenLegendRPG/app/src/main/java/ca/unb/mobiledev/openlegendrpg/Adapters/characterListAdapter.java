@@ -76,6 +76,7 @@ public class characterListAdapter extends ListAdapter<Character, characterListAd
                 intent.putExtra("description", character.getDescription());
                 intent.putExtra("lethal", character.getLethalHP());
                 intent.putExtra("current", character.getCurrentHP());
+                intent.putExtra("initADV", character.getInitADV());
                 intent.putExtra("legend", character.getLegend());
                 intent.putExtra("wealth", character.getWealth());
                 intent.putExtra("speed", character.getSpeed());
