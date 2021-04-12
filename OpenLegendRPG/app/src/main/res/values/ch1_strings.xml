@@ -1,0 +1,1657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="ch1_p1">
+        Before you can start telling your story, you’ll need a character to play. This chapter will offer you step-by-step instructions to create your own hero. In Open Legend, you typically begin as a level one character. As you complete missions or quests and gain more experience as a hero, you’ll level up and gain more power. These rules explain how to create a character starting at level one. Later, you’ll learn what to do when you level up.
+    </string>
+
+    <string name="ch1_p2">
+        Before reading on, take a minute and think of your favorite movies, books, or video games.
+    </string>
+
+    <string name="ch1_p3">
+        <i>Who were the characters you identified with?</i>
+    </string>
+
+    <string name="ch1_p4">
+        <i>Who inspired you?</i>
+    </string>
+    
+    <string name="ch1_p5">
+        Now that you’ve got some of your favorites in mind, let’s create your character.
+    </string>
+
+    <string name="ch1_preGenCharacters">
+        <b>Pre-generated Characters to Get You Started</b>
+    </string>
+
+    <string name="ch1_p6">
+        If you would like some character inspiration or an easy place to start, you can browse the pre-generated characters linked below. If you find a character you would like to use, simply copy the spreadsheet and adjust as you see fit. The spreadsheets include formulas to do most of the calculations for you, and you can adjust the Level field to generate the appropriate number of feat and attribute points if you are creating a character above first level.
+    </string>
+
+    <string name="ch1_preGenCharactersButton">
+        <b><u>View Pre-generated Character Options</u></b>
+    </string>
+    
+    <string name="ch1_title1">
+        <b>Step 1: Describe Your Character</b>
+    </string>
+    
+    <string name="ch1_p7">
+        Open Legend is a role playing game, which means your character will need more depth than merely a selection of attributes, feats, perks, and gear. To make your character come to life, add some of the following details. If you can’t think of anything yet, try to fill in the blanks during your first couple of play sessions as you get to know your character better.
+    </string>
+    
+    <string name="ch1_p8">
+        <b>A heroic name.</b> Be sure to check with your GM to see if they have any particular setting in mind. Phil the Fighter would feel quite out of place next to Therilas Windcaster and Gorion Skullcleaver.
+    </string>
+
+    <string name="ch1_p9">
+        <b>Your race.</b> Your decision of race is limited only by your imagination, the setting, and the constraints provided by your GM. A typical fantasy campaign might feature dwarves, elves, halflings, celestials, and dragon-blooded. If you are playing in a futuristic space opera on the fringes of the galaxy, your GM might have several alien races to choose from. Some campaigns, such as a mystery of Lovecraftian horror, might allow only for regular old humans. Really, though, as long as it is approved by your GM, you can play anything you would like, whether that’s a psionic humanoid tiger, a 3-inch tall pixie, or anything in between.
+    </string>
+    
+    <string name="ch1_p10">
+        As part of deciding your race, you should also choose your <b>size</b>: small, medium, or large. A medium character is roughly the size of an average human. Small creatures range from about 2 - 4 feet in height, while large creatures are about 7 - 10 feet tall. A large creature occupies a 10’x10’ square in combat and has a 10’ reach (see Chapter 7: Combat for details). The GM may assign advantage or disadvantage during situations in which your size is relevant. For example, small creatures may gain advantage on rolls to hide and receive disadvantage on rolls to kick down a door. Likewise, large creatures might suffer disadvantage on attack rolls when fighting in confined spaces but gain advantage on rolls to intimidate smaller creatures.
+    </string>
+
+    <string name="ch1_p11">
+        At the GM’s discretion, you may choose to be even smaller or larger than the listed sizes. A large creature’s reach is always equal to the length of its base. So, a giant with a 15’x15’ base would have a 15’ reach. All creatures always have at least a 5’ reach.
+    </string>
+    
+    <string name="ch1_noRacialAbilitiesAdjustments">
+        <b>No Racial Abilities or Adjustments?</b>
+    </string>
+
+    <string name="ch1_p12">
+        In Open Legend, races do not provide specific mechanical costs and benefits. Instead, you’ll have a chance to further define your character in a later step of character creation by choosing your perks and flaws. Some or all of your decisions at that stage may be influenced by your race, and you are encouraged to explain to the rest of your group how your race informs your choice of perks and flaws. For example, if you are playing a psionic humanoid tiger, you might choose the <i>scent</i> perk to highlight your hunter’s bloodline and the <i>observant</i> perk to simulate your extrasensory perception. Likewise, you could select the <i>hot tempered</i> flaw to represent the savage animal that still lurks beneath your intelligent outer shell.
+    </string>
+    
+    <string name="ch1_p13">
+        <b>Two exceptional physical traits.</b> Think of the first two features that other characters notice when they see you. Do your eyes glow red when you are angry? Are you seven feet tall? Is your hair a rainbow hue?
+    </string>
+    
+    <string name="ch1_p14">
+        <b>Two defining social traits.</b> Maybe you stutter when you’re nervous. Maybe you don’t trust anyone until they’ve proven themselves to you. Or, perhaps, you are a winsome bard who almost always talks in sing-song. Your two social traits should be characteristics that others will learn shortly after getting to know you.
+    </string>
+
+    <string name="ch1_p15">
+        <b>A secret.</b> Your secret is something that other characters probably won’t find out about until they’ve gotten to know you quite well. It’s also a seed for great adventure that the GM can weave into the campaign.
+    </string>
+    
+    <string name="ch1_exampleCharacterSecrets">
+        <b>Example Character Secrets</b>
+    </string>
+    
+    <string name="ch1_p16">
+        Before Volkor changed his name and began wandering the land as a barbarian sellsword, he was heir to the throne.
+    </string>
+    
+    <string name="ch1_p17">
+        Sir Thomas Tuckburrough served as an assassin for the local thieves guild until a job went bad and he murdered an innocent child—that’s when he began his road to the priesthood.
+    </string>
+    
+    <string name="ch1_p18">
+        Talia suffered from a horrible car accident as a youth. She only survived because a mad street doctor found her body and kept it alive with a number of cybernetic implants that have left her half machine, both physically and mentally.
+    </string>
+    
+    <string name="ch1_title2">
+        <b>Step 2: Choose Attributes</b>
+    </string>
+    
+    <string name="ch1_p19">
+        Attributes are the backbone of every character in Open Legend. They define what your character can and can’t do—the spheres they excel in, as well as their greatest weaknesses. Whenever your character attempts a heroic action in Open Legend, you’ll look to your attributes to see how well you succeed or fail.
+    </string>
+
+    <string name="ch1_p20">
+        In Open Legend, attributes are divided into four categories: physical, social, mental, and extraordinary.
+    </string>
+    
+    <string name="ch1_p21">
+        A character’s skill with each attribute is expressed as a score from 0 (completely unpracticed) to 9 (superhuman). A character cannot use an extraordinary attribute if they have a score of zero, though physical, social, and mental attributes may still be used untrained.
+    </string>
+    
+    <string name="ch1_p22">
+        The average commoner or craftsman usually has scores ranging from 1 - 3 in several physical, social, and mental attributes. Extraordinary attributes are generally reserved for characters of power and note.
+    </string>
+    
+    <string name="ch1_p23">
+        The Attributes at a Glance tables provide a quick overview of some of the common actions that each attribute will help you accomplish. All of the attributes are explained in further detail in Chapter 2: Actions and Attributes.
+    </string>
+
+    <string name="ch1_physicalAttributes">
+        <b>PHYSICAL ATTRIBUTES AT A GLANCE</b>
+    </string>
+
+    <string name="ch1_agility">
+        <b>Agility</b>
+    </string>
+
+    <string name="ch1_fortitude">
+        <b>Fortitude</b>
+    </string>
+
+    <string name="ch1_might">
+        <b>Might</b>
+    </string>
+
+    <string name="ch1_agilityDescription">
+        Dodge attacks, move with stealth, perform acrobatics, shoot a bow, pick a pocket
+    </string>
+
+    <string name="ch1_fortitudeDescription">
+        Resist poison, shrug off pain, survive in a desert, wear heavy armor
+    </string>
+
+    <string name="ch1_mightDescription">
+        	Swing a maul, jump over a chasm, break down a door, wrestle a foe to submission
+    </string>
+
+    <string name="ch1_mentalAttributesTitle">
+        <b>MENTAL ATTRIBUTES AT A GLANCE</b>
+    </string>
+    
+    <string name="ch1_learning">
+        <b>Learning</b>
+    </string>
+
+    <string name="ch1_logic">
+        <b>Logic</b>
+    </string>
+
+    <string name="ch1_perception">
+        <b>Perception</b>
+    </string>
+
+    <string name="ch1_will">
+        <b>Will</b>
+    </string>
+    
+    <string name="ch1_learningDescription">
+        Recall facts about history, arcane magic, the natural world, or any information you picked up from an external source
+    </string>
+    
+    <string name="ch1_logicDescription">
+        Innovate a new crafting method, decipher a code, jury-rig a device, get the gist of a language you don’t speak
+    </string>
+    
+    <string name="ch1_perceptionDescription">
+        Sense ulterior motives, track someone, catch a gut feeling, spot a hidden foe, find a secret door
+    </string>
+    
+    <string name="ch1_willDescription">
+        Maintain your resolve, resist torture, study long hours, stay awake on watch, stave off insanity
+    </string>
+
+    <string name="ch1_socialAttributesTitle">
+        <b>SOCIAL ATTRIBUTES AT A GLANCE</b>
+    </string>
+
+    <string name="ch1_deception">
+        <b>Deception</b>
+    </string>
+
+    <string name="ch1_persuasion">
+        <b>Persuasion</b>
+    </string>
+
+    <string name="ch1_presence">
+        <b>Presence</b>
+    </string>
+
+    <string name="ch1_deceptionDescription">
+        Tell a lie, bluff at cards, disguise yourself, spread rumors, swindle a sucker
+    </string>
+
+    <string name="ch1_persuasionDescription">
+        Negotiate a deal, convince someone, haggle a good price, pry information
+    </string>
+
+    <string name="ch1_presenceDescription">
+        Give a speech, sing a song, inspire an army, exert your force of personality, have luck smile upon you
+    </string>
+
+    <string name="ch1_extraordinaryAttributesTitle">
+        <b>EXTRAORDINARY ATTRIBUTES AT A GLANCE</b>
+    </string>
+
+    <string name="ch1_alteration">
+        <b>Alteration</b>
+    </string>
+
+    <string name="ch1_creation">
+        <b>Creation</b>
+    </string>
+
+    <string name="ch1_energy">
+        <b>Energy</b>
+    </string>
+
+    <string name="ch1_entropy">
+        <b>Entropy</b>
+    </string>
+
+    <string name="ch1_influence">
+        <b>Influence</b>
+    </string>
+
+    <string name="ch1_movement">
+        <b>Movement</b>
+    </string>
+
+    <string name="ch1_prescience">
+        <b>Prescience</b>
+    </string>
+
+    <string name="ch1_protection">
+        <b>Protection</b>
+    </string>
+
+    <string name="ch1_alterationDescription">
+        Change shape, alter molecular structures, transmute one material into another
+    </string>
+
+    <string name="ch1_creationDescription">
+        Channel higher powers, manifest something from nothing, regenerate, divinely bolster
+    </string>
+
+    <string name="ch1_energyDescription">
+        Create and control the elements—fire, cold, electricity
+    </string>
+
+    <string name="ch1_entropyDescription">
+        Disintegrate matter, kill with a word, create undead, sicken others
+    </string>
+
+    <string name="ch1_influenceDescription">
+        Control the minds of others, speak telepathically, instill fear, create illusory figments, cloak with invisibility
+    </string>
+
+    <string name="ch1_movementDescription">
+        Teleport, fly, hasten, telekinetically push
+    </string>
+
+    <string name="ch1_prescienceDescription">
+        See the future, read minds or auras, view from afar, detect magic or evil, communicate with extraplanar entities
+    </string>
+
+    <string name="ch1_protectionDescription">
+        Protect from damage, break supernatural influence, dispel magic, exile extradimensional beings
+    </string>
+
+    <string name="ch1_p24">
+        In Open Legend, you get to define your character’s strengths and weaknesses by choosing the attributes that fit your character concept. Described below are several methods by which you can assign your attributes.
+    </string>
+
+    <string name="ch1_quickBuildTitle">
+        <b>Quick Build</b>
+    </string>
+
+    <string name="ch1_p25">
+        If you are new to roleplaying games, or are just looking to get your character built quickly, choose one of the attribute sets listed in the Attribute Quick Builds table. Assign the scores listed to the attributes that define the type of character you want to play. The rest of your attributes begin with a score of zero.
+    </string>
+
+    <string name="ch1_attributesQuickBuilds">
+        <b>ATTRIBUTE QUICK BUILDS</b>
+    </string>
+
+    <string name="ch1_specializedHero">
+        <b>Specialized Hero</b>
+    </string>
+
+    <string name="ch1_specializedHeroNumbers">
+        5, 4, 3, 2, 2, 2
+    </string>
+
+    <string name="ch1_wellRoundedHero">
+        <b>Well-rounded Hero</b>
+    </string>
+
+    <string name="ch1_wellRoundedHeroNumbers">
+        4, 4, 3, 3, 3, 1, 1
+    </string>
+
+    <string name="ch1_jackOfAllTrades">
+        <b>Jack of All Trades</b>
+    </string>
+
+    <string name="ch1_jackOfAllTradesNumbers">
+        3, 3, 3, 3, 3, 2, 2, 2, 1
+    </string>
+
+    <string name="ch1_customBuildTitle">
+        <b>Custom Build</b>
+    </string>
+
+    <string name="ch1_p26">
+        If you would like more control over your attributes, you can purchase them to create your own set. With this method, at first level, you have a budget of 40 attribute points to spend, and the cost of each score is defined in the Purchasing Attributes table. The highest any score can reach at first level is 5, and you don’t have to spend all of your points at character creation.
+    </string>
+
+    <string name="ch1_purchasingAttributes">
+        <b>PURCHASING ATTRIBUTES</b>
+    </string>
+
+    <string name="ch1_attributeScore">
+        <b>Attribute Score</b>
+    </string>
+
+    <string name="ch1_cost">
+        <b>Cost</b>
+    </string>
+
+    <string name="ch1_recordAttributeDiceTitle">
+        <b>Record Attribute Dice</b>
+    </string>
+
+    <string name="ch1_p27">
+        Every attribute score above 0 grants you bonus dice to increase your chance of success. Consult the Attribute Dice table for each of your attributes and record the appropriate dice (You’ll learn what to do with these dice later on).
+    </string>
+
+    <string name="ch1_attributeDiceCAPS">
+        <b>ATTRIBUTE DICE</b>
+    </string>
+
+    <string name="ch1_attributeDice">
+        <b>Attribute Dice</b>
+    </string>
+
+    <string name="ch1_1d4">
+        1d4
+    </string>
+
+    <string name="ch1_1d6">
+        1d6
+    </string>
+
+    <string name="ch1_1d8">
+        1d8
+    </string>
+
+    <string name="ch1_1d10">
+        1d10
+    </string>
+
+    <string name="ch1_2d6">
+        2d6
+    </string>
+
+    <string name="ch1_2d8">
+        2d8
+    </string>
+
+    <string name="ch1_2d10">
+        2d10
+    </string>
+
+    <string name="ch1_3d8">
+        3d8
+    </string>
+
+    <string name="ch1_3d10">
+        3d10
+    </string>
+
+    <string name="ch1_4d8">
+        4d8
+    </string>
+
+    <string name="ch1_rollThemBones">
+        <b>Roll Them Bones</b>
+    </string>
+
+    <string name="ch1_p28">
+        If you are new to gaming, you may not be familiar with dice notation, such as 2d6.
+    </string>
+
+    <string name="ch1_p29">
+        As you play Open Legend, you’ll often need to roll dice to determine the outcome of actions. <b>Dice notation</b> is a shorthand way of indicating which dice to roll.
+    </string>
+
+    <string name="ch1_p30">
+        Every die roll is indicated by a formula such as 3d6. The number before the d indicates how many dice to roll, and the number after the d indicates how many sides those dice have.
+    </string>
+
+    <string name="ch1_p31">
+        So, 3d6 means that you roll three six-sided dice. 5d4 indicates five four-sided dice. And so on.
+    </string>
+
+    <string name="ch1_title3">
+        <b>Step 3: Record Defenses, Hit Points, and Speed</b>
+    </string>
+    
+    <string name="ch1_p32">
+        When an enemy tries to attack you—whether with the shot of a rifle, a deft sword thrust, or a mental assault—it will first need to overcome your defense. You have three defense scores, and each one protects you from different types of attacks. The higher your defense, the better you are at avoiding or shrugging off whatever your foes throw at you.
+    </string>
+
+    <string name="ch1_p33">
+        <b>TOUGHNESS = 10 + FORTITUDE + WILL</b>
+    </string>
+
+    <string name="ch1_p34">
+        <b>Toughness</b> protects you from attacks that test your endurance, bodily health, sturdiness, and survivability. For example, foes attempting to poison you, drain your life force, or stun you will target your toughness.
+    </string>
+
+    <string name="ch1_p35">
+        <b>GUARD = 10 + AGILITY + MIGHT + ARMOR</b>
+    </string>
+
+    <string name="ch1_p36">
+        <b>Guard</b> protects you from attacks that can either be dodged, deflected, or directly withstood via raw physical power. Your enemies would need to overcome your guard in order to hit you with a grenade, shoot you with an arrow, or smash you with a maul.
+    </string>
+    
+    <string name="ch1_p37">
+        <b>RESOLVE = 10 + PRESENCE + WILL</b>
+    </string>
+
+    <string name="ch1_p38">
+        <b>Resolve</b> represents your character’s ability to resist mental domination and stand brave in the face of danger. Enemies who wish to charm you, deceive you with illusions, or frighten you must target your resolve.
+    </string>
+
+    <string name="ch1_p39">
+        <b>HIT POINTS = 2 X (FORTITUDE + PRESENCE + WILL) + 10</b>
+    </string>
+
+    <string name="ch1_p40">
+        <i>That is, add your Fortitude, Presence, and Will scores. Multiply the total by 2. Finally, add 10.</i>
+    </string>
+
+    <string name="ch1_p41">
+        <b>Hit Points</b> (or HP) are an abstract measure of how well you can ignore pain, avoid deadly blows, and maintain a presence on the battlefield in spite of wounds or exhaustion. If they reach zero, you fall unconscious and are at risk of death.
+    </string>
+
+    <string name="ch1_p42">
+        <b>Speed</b> indicates how far your character can move using a single move action (see Chapter 7: Combat). Your base speed is 30 feet. Other effects, such as banes, boons, and feats may cause your speed to increase or decrease.
+    </string>
+
+    <string name="ch1_title4">
+        <b>Step 4: Purchase Feats</b>
+    </string>
+
+    <string name="ch1_p43">
+        While your character’s attributes define your skill at accomplishing heroic tasks, your <b>feats</b> are what make you unique among other characters. Feats allow you to customize your character, granting you the ability to accomplish specific actions exceptionally well.
+    </string>
+
+    <string name="ch1_p44">
+        For example, two different characters who specialize in melee combat might both start with a Might score of 5. However, one character is a swashbuckling pirate, so she takes the <i>Combat Momentum</i> feat to move deftly from one foe to the next like a whirling dervish. The other, a battle-scarred barbarian, takes <i>Battle Trance</i> so that he can fly into a frenzied rage in order to decimate foes.
+    </string>
+
+    <string name="ch1_chooseYourFeats">
+        <b>Choose Your Feats</b>
+    </string>
+
+    <string name="ch1_p45">
+        Feats are purchased using feat points. At 1st level, you have 6 feat points to spend. Any leftover feat points may be saved for the future.
+    </string>
+
+    <string name="ch1_title5">
+        <b>Step 5: Choose Starting Equipment</b>
+    </string>
+
+    <string name="ch1_p46">
+        In a typical game of Open Legend, your character will start with the gear they need for the basic adventuring life. The GM, however, may decide that the campaign starts under special circumstances (such as the entire party caged in a slave convoy) that might dictate otherwise.
+    </string>
+
+    <string name="ch1_p47">
+        Usually, though, you begin with a wealth score of 2, and may select up to three items of wealth level 2 and any number of items of a lesser wealth level. See chapter 6 for rules concerning wealth as well as equipment details. After selecting your equipment, be sure to note any changes to your defenses or other statistics.
+    </string>
+
+    <string name="ch1_title6">
+        <b>Step 6: Choose Perks and Flaws</b>
+    </string>
+
+    <string name="ch1_p48">
+        Perks and flaws provide you with additional ways to define your character’s personality, appearance, strengths, weaknesses, and background. Complete descriptions of the available perks and flaws, as well as how they are used in play, are described in Chapter 5: Perks &amp; Flaws.
+    </string>
+
+    <string name="ch1_p49">
+        At character creation, you may optionally choose up to two perks and up to two flaws. You do not have to choose any.
+    </string>
+
+    <string name="ch1_title7">
+        <b>Step 7: Tell Your Story</b>
+    </string>
+
+    <string name="ch1_p50">
+        With your character created, you are all ready to start playing Open Legend. Whether you’re playing with old friends or complete strangers, and whether you’re completely new to roleplaying games or an experienced veteran, the following tips will help ensure a fun time for everyone at the table.
+    </string>
+
+    <string name="ch1_relaxTitle">
+        <b>Relax</b>
+    </string>
+
+    <string name="ch1_p51">
+        Open Legend gives you a chance to step out of everyday life for a few hours and into a fantastical world where you can perform heroic deeds. Pour the Mountain Dew or grab a beer, order some takeout or pop open the pretzels—but whatever you do, shake the dice like your character’s life depends on it and have fun. If you’re playing a dwarf, maybe pull out your best Scottish accent. If your character’s a witch, squint your eyes and speak in riddles. If you’re no expert thespian, think of other ways to add to the fun: play adventurous music on your phone, illustrate the party’s escapades, and so on.
+    </string>
+    
+    <string name="ch1_respectTheGM">
+        <b>Respect the GM</b>
+    </string>
+    
+    <string name="ch1_p52">
+        If you’ve never GM’d before, you might not realize all the work that goes into it. More likely than not, your GM worked for hours to put their campaign together and prep for this session. Go with their storyline, overlook any accidental inconsistencies, and don’t cause a ruckus just for the sake of causing a ruckus. If there’s a dispute over the rules, accept the GM’s final ruling and agree to look it up later for the sake of keeping the game going.
+    </string>
+
+    <string name="ch1_respectTheOtherPlayers">
+        <b>Respect the Other Players</b>
+    </string>
+
+    <string name="ch1_p53">
+        Different people play roleplaying games for different reasons. Some enjoy the tactical, chess-like combat encounters. Others just want to tell an epic story. Still others are born actors, reveling in every conversation with every character. Whatever it is that you enjoy about playing Open Legend, just remember that not everyone else at the table may enjoy the same aspects. The GM is there to help every character shine, but you can help by not hogging the spotlight and by encouraging the other players to have fun, whatever that means for them.
+    </string>
+
+    <string name="ch1_title8">
+        <b>Archetype Builds</b>
+    </string>
+
+    <string name="ch1_p54">
+        This section contains an assortment of characters built for a variety of genres. If you do not want to create your own character from scratch, you can use these as is. Just add your own perks, flaws, and descriptive traits and you are ready to go. Alternatively, you might use one of these archetypes to get you started, swapping out attributes and feats to develop your own unique character concept for the setting that you will be playing in.
+    </string>
+
+    <string name="ch1_bardTitle">
+        <b>Bard</b>
+    </string>
+
+    <string name="ch1_p55">
+        Bards are a little bit of everything: leaders, loremasters, artists, performers, magicians, swashbucklers, and more. A bard is a jack-of-all-trades who gets allies out of the frying pan just as often as they land them in the fire.
+    </string>
+
+    <string name="ch1_p56_strategy">
+        <b>STRATEGY</b>
+    </string>
+
+    <string name="ch1_p57">
+        Bards can lend a helping hand in almost any non-combat scenario by using their <i>well-rounded</i> feat, though they particularly excel in social situations thanks to their strong Presence and Persuasion attributes. Their Influence score also provides access to banes such as <i>charmed</i> and <i>phantasm</i>, which can be useful for deceiving enemies, winning them over, or prying information out of them.
+    </string>
+
+    <string name="ch1_p58">
+        In combat, a Bard supports allies with <i>bolster</i>, using the <i>boon focus</i> feat to inspire as many allies as possible at once. When friends are wounded, the Bard uses <i>heal</i> to get them back in the fight, and can even help several allies hold the line by invoking a healing <i>aura</i>. Bards are reasonably adept in melee combat, using their rapier to disarm foes whenever the opportunity presents itself.
+    </string>
+
+    <string name="ch1_p59">
+       <b>Attributes:</b> Agility 3 (1d8), Learning 3 (1d8), Will 3 (1d8), Presence 4 (1d10), Persuasion 3 (1d8), Influence 3 (1d8)
+    </string>
+
+    <string name="ch1_p60">
+        <b>Hit Points:</b> 24
+    </string>
+
+    <string name="ch1_p61">
+        <b>Guard:</b> 14 (15 with shield - Agility 3, Leather Armor 1)
+    </string>
+
+    <string name="ch1_p62">
+        <b>Toughness:</b> 13
+    </string>
+
+    <string name="ch1_p63">
+        <b>Resolve:</b> 17
+    </string>
+
+    <string name="ch1_p64">
+        <b>Speed:</b> 30’
+    </string>
+
+    <string name="ch1_p65">
+        <b>Feats:</b> Well-rounded, Boon Focus I (Bolster), Great Leap
+    </string>
+
+    <string name="ch1_p66">
+        <b>Notable Equipment:</b> Leather Armor, Rapier (treat as Longsword), Small Shield, Lore Book, Musical Instrument
+    </string>
+
+    <string name="ch1_p67_favoredActions">
+        <b>Favored Actions</b>
+    </string>
+
+    <string name="ch1_p68">
+        <b><i>Rapier</i></b> (damaging attack): Agility vs. Guard
+    </string>
+
+    <string name="ch1_p69">
+        <b><i>En Garde!</i></b> (inflict disarm): Agility vs. Guard, advantage 1
+    </string>
+
+    <string name="ch1_p70">
+        <b><i>Inspiring Word</i></b> (invoke <i>bolster</i>):
+    </string>
+
+    <string name="ch1_p71">
+        => 1 target: Auto-success of PL 3 via <i>boon focus</i>
+    </string>
+
+    <string name="ch1_p72">
+        => 10’ cube: Presence vs. 16 (PL 3)
+    </string>
+
+    <string name="ch1_p73">
+        <b><i>Healing Word</i></b> (invoke <i>heal</i>): Presence vs. 12 - 18 (PL 1 - 4)
+    </string>
+
+    <string name="ch1_p74">
+        <b><i>Song of Vivification</i></b> (invoke 5’ <i>aura: heal</i>): Presence vs. 18 (PL 4)
+    </string>
+
+    <string name="ch1_p75">
+        <b><i>Winning Smile</i></b> (inflict <i>charmed</i>): Influence vs. Resolve
+    </string>
+
+    <string name="ch1_p76">
+        <b><i>Magic Trick</i></b> (inflict <i>phantasm</i>): Influence vs. Resolve
+    </string>
+
+    <string name="ch1_battleMageTitle">
+        <b>Battle Mage</b>
+    </string>
+
+    <string name="ch1_p77">
+        Battle Mages are masters of might and magic. Gifted with innate talents for melee combat and elemental sorcery, these elite soldiers are a force to be reckoned with on the battlefield. The Battle Mage is typically heavily armored, equipped with a variety of close combat weapons, and crackling with raw magical energy.
+    </string>
+
+    <string name="ch1_p78">
+        The Battle Mages were born and bred for combat, but they can still hold their own in some non-combat situations. They are typically strong leaders who carry an intimidating aura, capable of commanding attention when the circumstances demand it.
+    </string>
+
+    <string name="ch1_p79">
+        In combat, Battle Mages serve as a one man front line brute squad. Their heavy armor makes them nearly impervious to lesser foes, and their command over the element of ice allow them to control the battlefield with area attacks. Making use of the multi-target attack specialist feat, they can attack multiple foes without hindrance. When enemies do manage to outmaneuver their wintry gusts and icy bolts, Battle Mages are ready to engage in hand to hand combat with an arsenal of weaponry for any occasion.
+    </string>
+
+    <string name="ch1_p80">
+        <b>Attributes:</b> Agility 2 (1d6), Fortitude 3 (1d8), Might 4 (1d10), Presence 3 (1d8), Energy 5 (2d6)
+    </string>
+
+    <string name="ch1_p81">
+        <b>Hit Points:</b> 22
+    </string>
+
+    <string name="ch1_p82">
+        <b>Guard:</b> 20 (21 with shield - Agility 2, Might 4, Full Plate Armor 3, Feat 1)
+    </string>
+
+    <string name="ch1_p83">
+        <b>Toughness:</b> 13
+    </string>
+
+    <string name="ch1_p84">
+        <b>Resolve:</b> 13
+    </string>
+
+    <string name="ch1_p85">
+        <b>Speed:</b> 25’
+    </string>
+
+    <string name="ch1_p86">
+        <b>Feats:</b> Multi-Target Attack Specialist II (Area), Armor Mastery I
+    </string>
+
+    <string name="ch1_p87">
+        <b>Notable Equipment:</b> Full Plate Armor, Small Shield, Longsword, Longspear, Mace
+    </string>
+
+    <string name="ch1_p88">
+        <b><i>Icy Bolt</i></b> (damaging attack): Energy vs. Guard
+    </string>
+
+    <string name="ch1_p89">
+        <b><i>Earthquake</i></b> (damaging attack, 10’ cube): Energy vs. Guard
+    </string>
+
+    <string name="ch1_p90">
+        <b><i>Frostbite</i></b> (inflict persistent <i>damage</i>, 10’ cube): Energy vs. Guard
+    </string>
+
+    <string name="ch1_p91">
+        <b><i>Tremor</i></b> (inflict <i>knockdown</i>, 10’ cube): Energy vs. Guard
+    </string>
+
+    <string name="ch1_p92">
+        <b><i>Quicksand</i></b> (inflict <i>immobile</i>, 10’ cube): Energy vs. Toughness
+    </string>
+
+    <string name="ch1_p93">
+        <b><i>Longsword</i></b> (damaging attack): Might vs. Guard
+    </string>
+
+    <string name="ch1_p94">
+        <b><i>Longspear</i></b> (damaging attack, 10’ reach): Might vs. Guard, advantage 1
+    </string>
+    
+    <string name="ch1_beastMasterTitle">
+        <b>Beast Master</b>
+    </string>
+
+    <string name="ch1_p95">
+        The Beast Master summons and commands the creatures of the wild, and is capable of taming even monsters of great legend, such as dragons and manticores.
+    </string>
+    
+    <string name="ch1_p96">
+        The Beast Master commands a legendary manticore, which serves as both mount and combatant. The manticore’s flight allows the Beast Master access to areas that might be out of reach for the rest of the party. Out of combat, Beast Masters can use their Influence attribute to soothe and command a wide array of animals and mythical beasts, gradually winning their loyalty.
+    </string>
+
+    <string name="ch1_p97">
+        Once combat ensues, the Beast Master takes to the sky, picking off foes with a longbow and commanding dominated creatures to gain control over the battlefield. When their arrows aren’t getting the job done, the Beast Master doesn’t hesitate to close into melee and let the manticore tear foes to shreds with its razor sharp claws or disable them with its venomous sting.
+    </string>
+
+    <string name="ch1_p98">
+        <b>Attributes:</b> Agility 4 (1d10), Fortitude 2 (1d6), Might 1 (1d4), Perception 3 (1d8), Will 2 (1d6), Presence 1 (1d4), Influence 5 (2d6)
+    </string>
+
+    <string name="ch1_p99">
+        <b>Hit Points:</b> 24
+    </string>
+
+    <string name="ch1_p100">
+        <b>Guard:</b> 17 (Agility 4, Might 1, Breastplate 2)
+    </string>
+
+    <string name="ch1_p101">
+        <b>Toughness:</b> 14
+    </string>
+
+    <string name="ch1_p102">
+        <b>Resolve:</b> 13
+    </string>
+
+    <string name="ch1_p103">
+        <b>Speed:</b> 30’
+    </string>
+
+    <string name="ch1_p104">
+        <b>Feats:</b> Companion III
+    </string>
+
+    <string name="ch1_p105">
+        <b>Notable Equipment:</b> Breastplate, Longbow, Longspear
+    </string>
+
+    <string name="ch1_p106">
+        <b><i>Longbow</i></b> (damaging attack): Agility vs. Guard
+    </string>
+
+    <string name="ch1_p107">
+        <b><i>Barbed Arrow</i></b> (inflict <i>persistent damage</i>): Agility vs. Guard, advantage 1
+    </string>
+
+    <string name="ch1_p108">
+        <b><i>Longspear</i></b> (damaging attack, 10’ reach): Agility vs. Guard, advantage 1
+    </string>
+    
+    <string name="ch1_p109">
+        <b><i>Charm Beast</i></b> (inflict <i>charmed</i>): Influence vs. Resolve
+    </string>
+
+    <string name="ch1_p110">
+        <b><i>Command Beast</i></b> (inflict dominated): Influence vs. Resolve
+    </string>
+
+    <string name="ch1_p111">
+        <b>MANTICORE COMPANION</b>
+    </string>
+
+    <string name="ch1_p112">
+        <b>Attributes:</b> Agility 1 (1d4), Fortitude 3 (1d8), Might 4 (1d10), Perception 1 (1d4), Will 2 (1d6), Entropy 5 (2d6)
+    </string>
+
+    <string name="ch1_p113">
+        <b>Hit Points:</b> 20
+    </string>
+
+    <string name="ch1_p114">
+        <b>Guard:</b> 15 (Agility 1, Might 4)
+    </string>
+
+    <string name="ch1_p115">
+        <b>Toughness:</b> 15
+    </string>
+
+    <string name="ch1_p116">
+        <b>Resolve:</b> 12
+    </string>
+
+    <string name="ch1_p117">
+        <b>Speed:</b> 30’ flying
+    </string>
+
+    <string name="ch1_p118">
+        <b>Feats:</b> Flying
+    </string>
+
+    <string name="ch1_p119">
+        <b><i>Claws</i></b> (damaging attack): Might vs. Guard
+    </string>
+
+    <string name="ch1_p120">
+        <b><i>Deadly Sting</i></b> (damaging attack): Entropy vs. Guard
+    </string>
+
+    <string name="ch1_p121">
+        <b><i>Toxic Sting</i></b> (inflict <i>persistent damage</i>): Entropy vs. Toughness
+    </string>
+
+    <string name="ch1_p122">
+        <b><i>Takedown</i></b> (inflict <i>knockdown</i>): Might vs. Guard
+    </string>
+
+    <string name="ch1_p123">
+        <b><i>Disorienting Sting</i></b> (inflict <i>stunned</i>): Entropy vs. Toughness
+    </string>
+
+    <!--Berserker strings-->
+    <string name="ch1_berserkerTitle">
+        <b>Berserker</b>
+    </string>
+
+    <string name="ch1_p124">
+        Berserkers are the elite frontline forces of the barbarian hordes, known for surmounting impossible odds. Those who don’t fall beneath the terror of their frenzied rage will tell tales of the Berserkers’ mighty thews that will be the stuff of nightmares for generations to come.
+    </string>
+
+    <string name="ch1_p125">
+        Berserkers are born and bred for the sole purpose of slaying foes. Outside of combat, they can occasionally lend a hand by bending bars, lifting gates, or intimidating foes.
+    </string>
+
+    <string name="ch1_p126">
+        Once combat ensues, the Berserker is a near unstoppable killing machine. Their two handed axe combined with a Might score of 5 ensures that the Berserker will dish out considerable damage. They have exceptionally high defenses, so Berserkers are always willing to call out foes with the <i>provoked</i> bane. In particularly difficult fights, they will activate their <i>battle trance</i> to fly into a rage, making their attacks even more deadly and further improving their survivability. Berserkers must use their rage sparingly, however, as entering a <i>battle trance</i> comes at the cost of one level of the <i>fatigued</i> bane.
+    </string>
+
+    <string name="ch1_p127">
+        <b>Attributes:</b> Agility 2 (1d6), Fortitude 4 (1d10), Might 5 (2d6), Will 3 (1d8), Presence 3 (1d8)
+    </string>
+
+    <string name="ch1_p128">
+        <b>Hit Points:</b> 30
+    </string>
+
+    <string name="ch1_p129">
+        <b>Guard:</b> 19 (20 in battle trance - Agility 2, Might 5, Chainmail 2)
+    </string>
+
+    <string name="ch1_p130">
+        <b>Toughness:</b> 17 (20 in battle trance)
+    </string>
+    
+    <string name="ch1_p131">
+        <b>Resolve:</b> 16 (19 in battle trance)
+    </string>
+
+    <string name="ch1_p132">
+        <b>Speed:</b> 30’
+    </string>
+
+    <string name="ch1_p133">
+        <b>Feats:</b> Battle Trance, Reckless Attack
+    </string>
+
+    <string name="ch1_p134">
+        <b>Notable Equipment:</b> Great Axe, Chainmail, Throwing Axe
+    </string>
+
+    <string name="ch1_p135">
+        <b><i>Great Axe</i></b> (damaging attack): Might vs. Guard, advantage 1
+    </string>
+
+    <string name="ch1_p136">
+        <b><i>Forceful Blow</i></b> (inflict <i>forced move</i>): Might vs. Guard, advantage 2
+    </string>
+
+    <string name="ch1_p137">
+        <b><i>Devastating Blow</i></b> (inflict <i>stunned</i> ): Might vs. Toughness, advantage 2
+    </string>
+
+    <string name="ch1_p138">
+        <b><i>Battle Cry</i></b> (inflict <i>fear</i>): Might vs. Resolve
+    </string>
+
+    <string name="ch1_p139">
+        <b><i>Foam at the Mouth</i></b> (inflict <i>provoked</i>): Might vs. Resolve
+    </string>
+
+    <string name="ch1_p140">
+        <b><i>Warrior’s Chant</i></b> (invoke <i>bolster</i>): Presence vs. 16 (PL 3)
+    </string>
+
+    <string name="ch1_chronomageTitle">
+        <b>Chronomage</b>
+    </string>
+
+    <string name="ch1_p141">
+        Chronomages see and manipulate the flow of the most powerful force in the universe: time. They possess the power to unravel the very fabric of the universe and rearrange it to suit their needs. Past, present, and future are all one to the Chronomage, and their preternatural connection to the fourth dimension often creates rifts between those with a more conventional understanding of time.
+    </string>
+
+    <string name="ch1_p142">
+        Chronomages can both control the flow of time and see beyond its usual boundaries. Out of combat, they use this sixth sense by way of the <i>precognition</i> boon to peer into past and future events that are beyond mortal ken.
+    </string>
+
+    <string name="ch1_p143">
+        When combat ensues, the Chronomage’s control of time offers the party options. Whether the Chronomage is slowing down time to allow their companions to move with seemingly inhuman speed, speeding up the flow of time to exhaust the enemy, or reversing time to close wounds, the Chronomage is able to use their mastery over the fourth dimension to gain an advantage in any situation. They make use of the <i>boon focus</i> feat to invoke these beneficial and baleful effects in a field around them or an ally. <i>Attribute substitution</i> protects their fragile physical forms, which are neither strong nor agile outside of their powers. When enemies incur their wrath, the Chronomage hyperlapses time within a foe’s body, hastening the entropic decay of bones and flesh.
+    </string>
+
+    <string name="ch1_p144">
+        <b>Attributes:</b> Will 2 (1d6), Creation 3 (1d8), Entropy 4 (1d10), Movement 5 (2d6), Prescience 3 (1d8)
+    </string>
+
+    <string name="ch1_p145">
+       <b>Hit Points:</b> 14
+    </string>
+
+    <string name="ch1_p146">
+        <b>Guard:</b> 16 (Movement 5 via <i>attribute substitution</i>, Steelsilk Armor 1)
+    </string>
+    
+    <string name="ch1_p147">
+        <b>Toughness:</b> 12
+    </string>
+
+    <string name="ch1_p148">
+        <b>Resolve:</b> 12
+    </string>
+
+    <string name="ch1_p149">
+        <b>Speed:</b> 30’
+    </string>
+
+    <string name="ch1_p150">
+        <b>Feats:</b> Boon Focus I (Aura), Lightning Reflexes I, Attribute Substitution I (Movement > Agility)
+    </string>
+
+    <string name="ch1_p151">
+        <b>Notable Equipment:</b> Steelsilk Armor
+    </string>
+
+    <string name="ch1_p152">
+        <b><i>Hyperlapse Decay</i></b> (damaging attack): Entropy vs. Guard
+    </string>
+
+    <string name="ch1_p153">
+        <b><i>Stasis Field</i></b> (invoke 5’ <i>aura: immobile</i>): Auto-success at PL 1 via <i>boon focus</i>
+    </string>
+
+    <string name="ch1_p154">
+        <b><i>Time Dilation Field</i></b> (invoke 5’ <i>aura: slowed</i> ): Auto-success at PL 1 via <i>boon focus</i>
+    </string>
+
+    <string name="ch1_p155">
+        <b><i>Fast Forward</i></b> (invoke <i>haste</i>): Movement vs. 14 - 18 (PL 2 - 4)
+    </string>
+
+    <string name="ch1_p156">
+        <b><i>Mass Fast Forward</i></b> (invoke 5’ <i>aura: haste</i>): Auto-success at PL 2 via <i>boon focus</i>
+    </string>
+
+    <string name="ch1_p157">
+        <b><i>Rewind</i></b> (invoke <i>heal</i>): Creation vs. 12 - 16 (PL 1 - 3)
+    </string>
+
+    <string name="ch1_p158">
+        <b><i>Time Step</i></b> (invoke <i>teleport</i>): Movement vs. 16 (PL 3)
+    </string>
+
+    <string name="ch1_p159">
+        <b><i>Futuresight</i></b> (invoke <i>precognition</i>): Prescience vs. 12 - 16 (PL 1 - 3)
+    </string>
+
+    <string name="ch1_courtierTitle">
+        <b>Courtier</b>
+    </string>
+
+    <string name="ch1_p160">
+        Courtiers are career politicians who make it their life’s pursuit to be an embodiment of majestic social grace. The air of gravitas that they carry makes all who encounter them like clay in a Courtier’s hands. As a host, a courtier will often have a social gathering engineered down to the most minute detail, such that guests feel exactly as the courtier has planned for them to feel. Often they command respect with regal attire, whether a showcase of Victorian splendor, Far Eastern grace, or the sleek fashion of modern day corporate fat cats.
+    </string>
+    
+    <string name="ch1_p161">
+        Specialized primarily in social situations and of little help when a fight breaks out, a courtier invests most of their effort in engineering circumstances to avoid bloodshed. When that fails, they aim to ally themselves with the side heavily favored to win through the use of Deception, Persuasion, Presence, and Influence. Once the Courtier has earned the trust of a powerful acquaintance via the <i>charmed</i> bane, it’s common for the target to remain indefinitely loyal to the Courtier, thanks to the <i>potent bane</i> and <i>unending charm</i> feats.
+    </string>
+
+    <string name="ch1_p162">
+        <b>Attributes:</b> Agility 2 (1d6), Will 3 (1d8), Deception 4 (1d10), Presence 3 (1d8), Influence 5 (2d6)
+    </string>
+
+    <string name="ch1_p163">
+        <b>Hit Points:</b> 22
+    </string>
+
+    <string name="ch1_p164">
+        <b>Guard:</b> 13 (Agility 2, Steelsilk Armor 1)
+    </string>
+
+    <string name="ch1_p165">
+        <b>Toughness:</b> 13
+    </string>
+
+    <string name="ch1_p166">
+        <b>Resolve:</b> 16
+    </string>
+
+    <string name="ch1_p167">
+        <b>Speed:</b> 30’
+    </string>
+
+    <string name="ch1_p168">
+        <b>Feats:</b> Potent Bane (Charmed), Unending Charm
+    </string>
+
+    <string name="ch1_p169">
+        <b>Notable Equipment:</b> Majestic Clothing, Dagger, Compact Pistol (Handgun), Steelsilk Armor
+    </string>
+
+    <string name="ch1_p170">
+        <b><i>Master Conversationalist</i></b> (inflict <i>charmed</i>): Influence vs. Resolve
+    </string>
+
+    <string name="ch1_p171">
+        <b>Scathing Insult</b> (inflict <i>demoralized</i>): Influence vs. Resolve
+    </string>
+
+    <string name="ch1_p172">
+        <b>Conflicting Stories</b> (inflict <i>memory alteration</i>): Influence vs. Resolve
+    </string>
+
+    <string name="ch1_p173">
+        <b><i>Sympathetic Ear</i></b> (inflict <i>truthfulness</i>): Influence vs. Resolve
+    </string>
+
+    <string name="ch1_p174">
+        <b><i>Personal Favor</i></b> (inflict <i>dominated</i>): Influence vs. Resolve
+    </string>
+
+    <string name="ch1_p175">
+        <b><i>Hidden Pistol</i></b> (damaging attack): Agility vs. Guard
+    </string>
+
+    <string name="ch1_druidTitle">
+        <b>Druid</b>
+    </string>
+    
+    <string name="ch1_p176">
+        Druids are defenders of nature who draw upon its power via a close bond that enables them to shapechange into many of the powerful creatures found in their natural habitats. Not all druids are attuned to the woodlands. Some of them shapeshift into aquatic species and spend long periods beneath the ocean’s surface, while others dwell as all manner of avian species in mountain ranges that pierce the clouds high above. Whatever their preferred habitat, druids are nothing if not adaptable.
+    </string>
+    
+    <string name="ch1_p177">
+        Being one with nature, druids tend to use natural surroundings to their advantage, whether summoning up an imposing wall of briars with the <i>barrier</i> boon, an animated vine that entwines the target with <i>immobile</i>, or hastening the healing power of nature via the <i>regeneration</i> boon. Druids also make excellent combatants and scouts. As a scout, they are able to sneak unnoticed into an enemy camp as a naturally occurring animal species. As a combatant, they can shift into a massive and powerful creature, such as a bear, to quickly deal with enemies.
+    </string>
+
+    <string name="ch1_p178">
+        <b>Attributes:</b> Agility 2 (1d6), Fortitude 3 (1d8), Might 2 (1d6), Perception 2 (1d6), Will 2 (1d6), Alteration 5 (2d6), Creation 3 (1d8)
+    </string>
+
+    <string name="ch1_p179">
+        <b>Hit Points:</b> 20
+    </string>
+
+    <string name="ch1_p180">
+        <b>Guard:</b> 17 (Agility 2, Might 2, Splint Mail 3)
+    </string>
+
+    <string name="ch1_p181">
+        <b>Toughness:</b> 15
+    </string>
+    
+    <string name="ch1_p182">
+        <b>Resolve:</b> 12
+    </string>
+    
+    <string name="ch1_p183">
+        <b>Speed:</b> 25’
+    </string>
+    
+    <string name="ch1_p184">
+        <b>Feats:</b> Boon Focus II (Shapeshift)
+    </string>
+    
+    <string name="ch1_p185">
+        <b>Notable Equipment:</b> Splint Mail (treat as Full Plate), Staff, Shortspear
+    </string>
+
+    <string name="ch1_p186">
+        <b><i>Shapechange</i></b> (invoke <i>shapeshift</i>): Auto-success at PL 5 via <i>boon focus</i>
+    </string>
+
+    <string name="ch1_p187">
+        <b><i>Ensnaring Vines</i></b> (inflict <i>immobile</i>): Creation vs. Toughness
+    </string>
+
+    <string name="ch1_p188">
+        <b>Wall of Briars</b> (invoke <i>barrier</i>): Creation vs. 16 (PL 3)
+    </string>
+    
+    <string name="ch1_p189">
+        <b><i>Animate Plants</i></b> (invoke <i>summon creature</i>): Alteration vs. 18 - 20 (PL 4 - 5)
+    </string>
+
+    <string name="ch1_p190">
+        <b><i>Regrowth</i></b> (invoke <i>regeneration</i>): Alteration vs. 12 - 20 (PL 1 - 5)
+    </string>
+
+    <string name="ch1_p191">
+        <b>BEAR FORM</b>
+    </string>
+
+    <string name="ch1_p192">
+        <b>Attributes:</b> Might 5 (2d6), Agility 1 (1d4), Fortitude 3 (1d8), Perception 2 (1d6)
+    </string>
+
+    <string name="ch1_p193">
+        <b>Hit Points:</b> 20
+    </string>
+
+    <string name="ch1_p194">
+        <b>Guard:</b> 19 (Agility 1, Might 5, Splint Mail 3)
+    </string>
+
+    <string name="ch1_p195">
+        <b>Speed:</b> 25’
+    </string>
+
+    <string name="ch1_p196">
+        <b>HAWK FORM</b>
+    </string>
+
+    <string name="ch1_p197">
+        <b>Attributes:</b> Might 1 (1d4), Agility 3 (1d8), Fortitude 1 (1d4), Perception 5 (2d6)
+    </string>
+
+    <string name="ch1_p198">
+        <b>Hit Points:</b> 16
+    </string>
+
+    <string name="ch1_p199">
+        <b>Guard:</b> 14 (Agility 3, Might 1)
+    </string>
+
+    <string name="ch1_p200">
+        <b>Speed:</b> 30’ flying
+    </string>
+
+    <string name="ch1_p201">
+        <b>SHARK FORM</b>
+    </string>
+
+    <string name="ch1_p202">
+        <b>Attributes:</b> Might 4 (1d10), Agility 2 (1d6), Fortitude 3 (1d8), Perception 3 (1d8)
+    </string>
+
+    <string name="ch1_p203">
+        <b>Hit Points:</b> 20
+    </string>
+
+    <string name="ch1_p204">
+        <b>Guard:</b> 19 (Agility 2, Might 4, Splint Mail 3)
+    </string>
+
+    <string name="ch1_p205">
+        <b>Speed:</b> 30’ swimming
+    </string>
+
+    <string name="ch1_engineerTitle">
+        <b>Engineer</b>
+    </string>
+
+    <string name="ch1_p206">
+        Engineers are infused with the spark of creation, and can comprehend the inner workings of extremely complex systems. While Engineers are typically dextrous and tough as nails, their real power lies in the cogwheel gadgets they whip up with ease from spare parts and salvaged goods. These hissing steam gizmos and mechanical implements ensure that the Engineer is prepared for any situation.
+    </string>
+    
+    <string name="ch1_p207">
+        In non-combat situations, the Engineer’s prowess comes from the versatility of their creations. Given enough time, they can use the <i>craft extraordinary item</i> feat to prepare for a wide variety of situations. Whether they are building a 100’ ladder that can collapse to the size of a backpack, a remote controlled scout bot, or a wearable automated wound closing device, the Engineer can always find a way to put their creative skills to provide the party with utility and flexibility.
+    </string>
+
+    <string name="ch1_p208">
+        In combat, Engineers adjust their strategy to the problem at hand to support their companions. The bolster boon can represent anything from a pair of spring loaded boots to a guided targeting helmet. When enemies are overwhelming, the Engineer uses <i>summon creature</i> to activate one or more of their combat bots. And if their fancy creations and jury-rigged gizmos aren’t doing the job, the Engineer is no slouch with a trusty old hand cannon.
+    </string>
+
+    <string name="ch1_p209">
+        <b>Attributes:</b> Agility 3 (1d8), Fortitude 3 (1d8), Learning 3 (1d8), Logic 3 (1d8), Perception 1 (1d4), Creation 5 (2d6)
+    </string>
+
+    <string name="ch1_p210">
+        <b>Hit Points:</b> 16
+    </string>
+
+    <string name="ch1_p211">
+        <b>Guard:</b> 15 (Agility 3, Kevlar Vest 2)
+    </string>
+
+    <string name="ch1_p212">
+        <b>Toughness:</b> 13
+    </string>
+
+    <string name="ch1_p213">
+        <b>Resolve:</b> 10
+    </string>
+
+    <string name="ch1_p214">
+        <b>Speed:</b> 30’
+    </string>
+
+    <string name="ch1_p215">
+        <b>Feats:</b> Boon Focus I (Summon Creature), Craft Extraordinary Item I
+    </string>
+
+    <string name="ch1_p216">
+        <b>Notable Equipment:</b> Hand cannon (same as revolver), Kevlar Vest, 2 Grenades, Engineering Tools
+    </string>
+
+    <string name="ch1_p217">
+        <b><i>Hand Cannon</i></b> (damaging attack): Agility vs. Guard
+    </string>
+
+    <string name="ch1_p218">
+        <b><i>Grenade</i></b> (damaging attack, 10’ cube): Agility vs. Guard
+    </string>
+
+    <string name="ch1_p219">
+        <b><i>Leg Shot</i></b> (inflict <i>slowed</i>): Agility vs. Guard, advantage 1
+    </string>
+
+    <string name="ch1_p220">
+        <b><i>Reinforcements!</i></b> (invoke <i>summon creature</i>): Auto-success at PL 5 via <i>boon focus</i>
+    </string>
+
+    <string name="ch1_p221">
+        <b><i>Gadgets &amp; Gizmos</i></b> (invoke <i>bolster</i>): Creation vs. 16 (PL 3)
+    </string>
+
+    <string name="ch1_p222">
+        <b><i>Jerry Rig</i></b> (invoke <i>genesis</i>): Creation vs. 12 - 20 (PL 1 - 5)
+    </string>
+
+    <string name="ch1_p223">
+        <b><i>Cauterize Wounds</i></b> (invoke <i>heal</i>): Creation vs. 12 - 20 (PL 1 - 5)
+    </string>
+
+    <string name="ch1_gunslingerTitle">
+        <b>Gunslinger</b>
+    </string>
+
+    <string name="ch1_p224">
+        Some are lawmen who serve as judge, jury, and executioner. Others are bounty hunters trying to earn enough cash to pay off an old debt. Still others are mercenaries who shoot for the highest bidder. Whatever their motivation, all Gunslingers invoke fear from any fool unfortunate enough to end up on the wrong end of their barrel.
+    </string>
+
+    <string name="ch1_p225">
+        Gunslingers do more than just hurl lead. Their prowess in ranged combat is fueled by entropic energy gained from otherworldly powers, either purchased through diabolical pacts or earned through prowess of mind and spirit. Out of combat, Gunslingers are perceptive and intimidating, and they can overawe lesser folk with ease. While many Gunslingers are loners bent solely on achieving their mission, those who step up to the occasion make excellent leaders to pull a ragtag posse together into a cohesive unit.
+    </string>
+
+    <string name="ch1_p226">
+        When a fight breaks out, Gunslingers keep their distance and use their dual revolvers to rain hell down upon their foes. When damage alone isn’t getting the job done, Gunslingers can aim their shots to hinder enemies in all manner of ways: shooting their weapons out of their hands, knocking the wind out of them, or blowing off a toe. The <i>multi-attack specialist</i> feat allows them to shoot twice as fast as a lesser gunfighter, enabling them to take on large groups of foes single-handedly. Supplementing their marksmanship with dark powers, they invoke banes and boons with Entropy. Favorites include invoking <i>life drain</i> to heal a little bit with every shot and afflicting enemies with the <i>sickened</i> bane to render their attacks nearly useless. When foes close in, a Gunslinger doesn’t hesitate to use Entropy to create a defensive <i>aura</i> or scare enemies away with <i>fear</i>.
+    </string>
+
+    <string name="ch1_p227">
+        Attributes: Agility 5 (2d6), Perception 3 (1d8), Will 2 (1d6), Presence 3 (1d8), Entropy 4 (1d10)
+    </string>
+
+    <string name="ch1_p228">
+        <b>Hit Points:</b> 20
+    </string>
+
+    <string name="ch1_p229">
+        <b>Guard:</b> 17 (Agility 5, Heavy Trench Coat 2)
+    </string>
+
+    <string name="ch1_p230">
+        <b>Toughness:</b> 15
+    </string>
+
+    <string name="ch1_p231">
+        <b>Resolve:</b> 16
+    </string>
+
+    <string name="ch1_p232">
+        <b>Speed:</b> 30’
+    </string>
+
+    <string name="ch1_p233">
+        <b>Feats:</b> Multi-Attack Specialist II
+    </string>
+
+    <string name="ch1_p234">
+        <b>Notable Equipment:</b> Heavy Trench Coat (treat as Kevlar Vest), 2 Revolvers, Rifle
+    </string>
+
+    <string name="ch1_p235">
+        <b><i>Two-Gun Assault</i></b> (focus action, damaging attack, 2 attacks): Agility vs. Guard
+    </string>
+
+    <string name="ch1_p236">
+        <b><i>Fan the Hammer</i></b> (focus action, damaging attack, 3 attacks): Agility vs. Guard, disadvantage 3
+    </string>
+
+    <string name="ch1_p237">
+        <b><i>Bounty’s Curse</i></b> (inflict <i>stunned</i>): Entropy vs. Toughness
+    </string>
+
+    <string name="ch1_p238">
+        <b><i>Toe Shot</i></b> (inflict <i>slowed</i>): Agility vs. Guard. advantage 1
+    </string>
+
+    <string name="ch1_p239">
+        <b><i>Hand Shot</i></b> (inflict <i>disarmed</i>): Agility vs. Guard, advantage 1
+    </string>
+    
+    <string name="ch1_p240">
+        <b><i>Rifle</i></b> (damaging attack): Agility vs. Guard
+    </string>
+
+    <string name="ch1_p241">
+        <b><i>Darkblast Shot</i></b> (inflict <i>sickened</i>): Entropy vs. Toughness
+    </string>
+
+    <string name="ch1_p242">
+        <b><i>Baleful Shadow</i></b> (invoke 5’ <i>aura: persistent damage</i>): Entropy vs. 18 (PL 4)
+    </string>
+
+    <string name="ch1_p243">
+        <b><i>Soul Syphon</i></b> (invoke <i>life drain</i>): Entropy vs. 20 (PL 5)
+    </string>
+
+    <string name="ch1_p244">
+        <b><i>Unnerving Gaze</i></b> (inflict <i>fear</i>): Entropy vs. Resolve
+    </string>
+
+    <string name="ch1_hackerTitle">
+        <b>Hacker</b>
+    </string>
+
+    <string name="ch1_p245">
+        Knowledge is power, as the saying goes, and the Hacker is a testament to the fact that nearly anyone can be taken down with the right information. Some Hackers are mercenaries that work for the highest bidder, primarily in the game for the adrenaline rush and the thrill of controlling massive amounts of data and the fates of those who depend on it. Others rally behind a larger cause with intent of changing the world for better or worse.
+    </string>
+
+    <string name="ch1_p246">
+        The Hacker is a master of data and information. Above all, they seek to gather information and harness its power. Hackers use information to piece together secrets and data which others assume is secured beyond access. Out of combat, the Hacker uses banes and boons such as <i>seeing</i> via their drone and <i>spying</i> or <i>precognition</i> to track information or persons of interest through databases, servers, surveillance cameras, credit card records, and and other sources of poorly secured or encrypted data. If deception is called for, Hackers tap into the almost omni-present streams of data of systems distributed throughout the world to fabricate video feeds, holograms, or audio transmissions using the <i>phantasm</i> bane.
+    </string>
+
+    <string name="ch1_p247">
+        When combat breaks out, Hackers tend to avoid the front lines, relying on their drones to do the fighting for them. From a secure vantage point, the Hacker pilots the multi-purpose drone using a tablet or similar device, using its mounted laser cannon to hold enemies back. In addition to drone combat, Hackers also assist allies with the <i>bolster</i> boon through illicit data and hacking nearby systems to gain an edge.
+    </string>
+
+    <string name="ch1_p248">
+        <b>Attributes:</b> Logic 4 (1d10), Will 3 (1d8), Perception 2 (1d6), Influence 3 (1d8), Prescience 5 (2d6)
+    </string>
+
+    <string name="ch1_p249">
+        <b>Hit Points:</b> 16
+    </string>
+
+    <string name="ch1_p250">
+        <b>Guard:</b> 10
+    </string>
+
+    <string name="ch1_p251">
+        <b>Toughness:</b> 13
+    </string>
+
+    <string name="ch1_p252">
+        <b>Resolve:</b> 13
+    </string>
+
+    <string name="ch1_p253">
+        <b>Speed:</b> 30’
+    </string>
+
+    <string name="ch1_p254">
+        <b>Feats:</b> Companion I (Drone), Bane Focus (Spying), Untrackable
+    </string>
+
+    <string name="ch1_p255">
+        <b>Notable Equipment:</b> Tablet, Laptop, VR Goggles
+    </string>
+
+    <string name="ch1_p256">
+        <b><i>Dark Web Insight</i></b> (invoke <i>bolster</i>): Prescience vs. 16 (PL 3)
+    </string>
+
+    <string name="ch1_p257">
+        <b><i>Algorithmic Prediction</i></b> (invoke <i>precognition</i>): Prescience vs. 12 - 20 (PL 1 - 5)
+    </string>
+
+    <string name="ch1_p258">
+        <b><i>Multivariate Sensor Sweep</i></b> (invoke <i>truesight</i>): Prescience vs. 20 (PL 5)
+    </string>
+
+    <string name="ch1_p259">
+        <b><i>IoT Zombie Network</i></b> (inflict <i>spying</i>): Prescience vs. Resolve, advantage 2
+    </string>
+
+    <string name="ch1_p260">
+        <b><i>Hologram Projection</i></b> (inflict <i>phantasm</i>): Influence vs. Resolve
+    </string>
+
+    <string name="ch1_p261">
+        <b><i>Neural Rewiring</i></b> (inflict <i>charmed</i>): Influence vs. Resolve
+    </string>
+
+    <string name="ch1_p262">
+        <b>DRONE COMPANION</b>
+    </string>
+
+    <string name="ch1_p263">
+        <b>Attributes:</b> Agility 3 (1d8), Fortitude 1 (1d4), Logic 1 (1d4), Perception 2 (1d6), Will 2 (1d6), Energy 4 (1d10)
+    </string>
+
+    <string name="ch1_p264">
+        <b>Hit Points:</b> 16
+    </string>
+
+    <string name="ch1_p265">
+        <b>Guard:</b> 13 (Agility 3)
+    </string>
+
+    <string name="ch1_p266">
+        <b>Toughness:</b> 13
+    </string>
+
+    <string name="ch1_p267">
+        <b>Resolve:</b> 12
+    </string>
+
+    <string name="ch1_p268">
+        <b>Speed:</b> 30’
+    </string>
+
+    <string name="ch1_p269">
+        <b>Feats:</b> none
+    </string>
+
+    <string name="ch1_p270">
+        <b><i>Laser</i></b> (damaging attack): Energy vs. Guard
+    </string>
+
+    <string name="ch1_p271">
+        <b>Stun Ray</b> (inflict <i>immobile</i>): Energy vs. Toughness
+    </string>
+
+    <string name="ch1_mysticTitle">
+        <b>Mystic</b>
+    </string>
+
+    <string name="ch1_p272">
+        Mystics are typically found far removed from the hustle and bustle of the city and detached from the advances of the society they left behind. They prefer to listen to the still quiet voice within, eschewing all material possessions and living as ascetics attempting to purge themselves of all self-centered ambition.
+    </string>
+
+    <string name="ch1_p273">
+        Out of combat, Mystics command a vast array of capabilities that make them excellent information gatherers, detectives, and supernaturally empowered forensic analysts. They are able to predict future danger via the <i>precognition</i> boon, discover all manner of information by divining an item’s past with the <i>reading</i> boon, utilize the <i>spying</i> bane to track enemy movements from far away, and communicate with any creature via the <i>telepathy</i> boon.
+    </string>
+
+    <string name="ch1_p274">
+        Mystics who have allied with a larger group typically utilize their powers purely for defense and protection of others, invoking <i>bolster</i> to impart psychic insight to allies, <i>mind dredge</i> to steal enemy secrets, and using Protection to perform defend actions with the help of the <i>defensive reflexes</i> feat. Mystics are also adept at shutting down enemy boons via <i>nullify</i>, as well as canceling banes afflicting allies via the <i>hospitaler</i> feat.
+    </string>
+    
+    <string name="ch1_p275">
+        <b>Attributes:</b> Agility 3 (1d8), Will 3 (1d8), Creation 2 (1d6), Prescience 5 (2d6), Protection 4 (1d10)
+    </string>
+
+    <string name="ch1_p276">
+        <b>Hit Points:</b> 16
+    </string>
+
+    <string name="ch1_p277">
+        <b>Guard:</b> 13
+    </string>
+    
+    <string name="ch1_p278">
+        <b>Toughness:</b> 13
+    </string>
+
+    <string name="ch1_p279">
+        <b>Resolve:</b> 13
+    </string>
+    
+    <string name="ch1_p280">
+        <b>Speed:</b> 30’
+    </string>
+
+    <string name="ch1_p281">
+        <b>Feats:</b> Heightened Invocation I, Defensive Reflexes I, Hospitaler
+    </string>
+
+    <string name="ch1_p282">
+        <b>Notable Equipment:</b> Staff, Robe
+    </string>
+
+    <string name="ch1_p283">
+        <b><i>See the Path</i></b> (defend action): Protection vs. target’s attack roll, advantage 1
+    </string>
+
+    <string name="ch1_p284">
+        <b><i>Break Free</i></b> (special action): Use <i>hospitaler</i> feat to grant a resist to an ally
+    </string>
+
+    <string name="ch1_p285">
+        <b><i>Shared Insight</i></b> (invoke <i>bolster</i>): Prescience vs. 16 (PL 3)
+    </string>
+
+    <string name="ch1_p286">
+        <b><i>View from Afar</i></b> (inflict <i>spying</i>): Prescience vs. Resolve
+    </string>
+
+    <string name="ch1_p287">
+        <b><i>Mind Link</i></b> (invoke <i>telepathy</i> ): Prescience vs. 16 - 20 (PL 3 - 5)
+    </string>
+
+    <string name="ch1_p288">
+        <b><i>Power Drain</i></b> (inflict <i>nullify</i>): Protection vs. Resolve
+    </string>
+
+    <string name="ch1_p289">
+        <b><i>Read Thoughts</i></b> (inflict <i>mind dredge</i>): Prescience vs. Resolve
+    </string>
+
+    <string name="ch1_p290">
+        <b><i>See the Past</i></b> (invoke <i>reading</i>): Prescience vs. 20 (PL 5)
+    </string>
+    
+    <string name="ch1_p291">
+        <b><i>Pierce the Veil</i></b> (invoke <i>precognition</i>): Prescience vs. 12 - 20 (PL 1 - 5)
+    </string>
+
+    <string name="ch1_p292">
+        <b><i>Rejuvenate</i></b> (invoke <i>heal</i>): Creation vs. 12 - 14 (PL 1 - 2)
+    </string>
+
+
+
+
+    <string name="ch1_title9">
+        <b>Gaining XP and Leveling Up</b>
+    </string>
+
+    <string name="ch1_p293">
+        As the legend you are creating unfolds and grows in danger and magnitude, your character’s power will grow to match the challenge. This power comes in the form of experience points (or XP), which are rewarded by the GM and allow you to advance in level and gain access to new feats, attributes, banes, and boons.
+    </string>
+
+    <string name="ch1_p294">
+        Your total XP earned determines your level, with every 3 XP allowing you to advance to the next level. Your level is used to determine your maximum attribute score as well as to provide a general indication of your power compared to other characters and enemy or ally NPCs. The Player Character Level Advancement table details the XP requirements and maximum attribute score for each level.
+    </string>
+
+    <string name="ch1_pcLvlAdvancement">
+        <b>PLAYER CHARACTER LEVEL ADVANCEMENT</b>
+    </string>
+
+    <string name="ch1_totalXP">
+        <b>Total XP</b>
+    </string>
+
+    <string name="ch1_level">
+        <b>Level</b>
+    </string>
+
+    <string name="ch1_maxAttributeScore">
+        <b>Maximum Attribute Score</b>
+    </string>
+
+    <string name="ch1_featAndAttributePoints">
+        <b>Feat and Attribute Points</b>
+    </string>
+
+    <string name="ch1_p295">
+        For every XP that you earn, you also gain 1 feat point and 3 attribute points. These can be spent immediately or saved for later. You gain these points <i>every</i> time you are awarded XP, not just when you level up.
+    </string>
+
+    <string name="ch1_p296">
+        Attribute points can be used to increase your current attributes or buy completely new ones. The cost to increase an attribute is equal to the new score. So, for example, to raise your Might from 3 to 4 would cost 4 attribute points. The cost to purchase a brand new attribute is summarized in the Attribute Overview Table, which also details the attribute dice for scores above 5.
+    </string>
+
+    <string name="ch1_attributeOverview">
+        <b>ATTRIBUTE OVERVIEW</b>
+    </string>
+
+    <string name="ch1_p297">
+        <b>Note: </b> An attribute score of 10 cannot be purchased with attribute points. It can only be obtained through feats, boons, or other special means. No attribute may advance beyond a score of 10.
+    </string>
+
+    <string name="ch1_newHitPoints">
+        <b>New Hit Points</b>
+    </string>
+
+    <string name="ch1_p298">
+        In Open Legend, attributes are the means by which your hit points increase. If you want your character to be able to take more hits, increase either your Fortitude, Presence, or Will attribute. As outlined in the default hit point formula, you’ll gain 2 hit points each time you raise any of those attributes by one.
+    </string>
+
+    <string name="ch1_title10">
+        <b>Starting Beyond First Level</b>
+    </string>
+
+    <string name="ch1_p299">
+        Sometimes a new player will join a campaign in progress in which the other PCs have already advanced several levels, so it would be unbalanced to insert a first level character into the party. Other times, the GM may decide to run a campaign with PCs who have already accumulated some wealth and power. In situations like these, you can use the Characters Beyond First Level table to determine attribute points, feat points, and wealth for PCs. When choosing starting gear, you may select three items of your current wealth score and any number of lesser valued items.
+    </string>
+
+    <string name="ch1_charsBeyondFirstLvl">
+        <b>CHARACTERS BEYOND FIRST LEVEL</b>
+    </string>
+
+    <string name="ch1_p300">
+        <b>Attribute Points (AP)</b>
+    </string>
+    
+    <string name="ch1_p301">
+        <b>Max Attribute (MA)</b>
+    </string>
+
+    <string name="ch1_p302">
+        <b>Feat Points (FP)</b>
+    </string>
+
+    <string name="ch1_p303">
+        <b>Wealth Score (WS)</b>
+    </string>
+    
+    <string name="ch1_AP">
+        <b>AP</b>
+    </string>
+
+    <string name="ch1_MA">
+        <b>MA</b>
+    </string>
+    
+    <string name="ch1_FP">
+        <b>FP</b>
+    </string>
+
+    <string name="ch1_WS">
+        <b>WS</b>
+    </string>
+
+    <string name="ch1_XP">
+        <b>XP</b>
+    </string>
+
+    <string name="ch1_LVL">
+        <b>LVL</b>
+    </string>
+    
+
+</resources>
