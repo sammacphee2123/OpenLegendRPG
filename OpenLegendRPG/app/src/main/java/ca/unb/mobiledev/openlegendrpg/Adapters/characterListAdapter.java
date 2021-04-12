@@ -56,6 +56,7 @@ public class characterListAdapter extends ListAdapter<Character, characterListAd
     {
         Character character = getItem(position);
         holder.charNameTV.setText(character.getCharName());
+        holder.listingLevelTV.setText("Lv. " + character.getLevel());
         holder.deleteCharButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -133,6 +134,7 @@ public class characterListAdapter extends ListAdapter<Character, characterListAd
     public class characterViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener
     {
         public TextView charNameTV;
+        public TextView listingLevelTV;
         public Button editCharButton, deleteCharButton;
 
         public characterViewHolder(@NonNull final View itemView)
@@ -140,7 +142,7 @@ public class characterListAdapter extends ListAdapter<Character, characterListAd
             super(itemView);
 
             charNameTV = itemView.findViewById(R.id.charNameTV);
-
+            listingLevelTV = itemView.findViewById(R.id.listingLevelTV);
             //deal with these two buttons after add char functionality works
             deleteCharButton = itemView.findViewById(R.id.deleteCharButton);
 

@@ -90,6 +90,60 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"/>
 
+                <Button
+                    android:id="@+id/whenToRollButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:fontFamily="times"
+                    android:background="@android:color/transparent"
+                    android:text="@string/ch2_title1"
+                    android:textColor="@color/purple_700" />
+
+                <Button
+                    android:id="@+id/everyRollMattersButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:fontFamily="times"
+                    android:background="@android:color/transparent"
+                    android:text="@string/ch2_title2"
+                    android:textColor="@color/purple_700" />
+
+                <Button
+                    android:id="@+id/actionRollsButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:fontFamily="times"
+                    android:background="@android:color/transparent"
+                    android:text="@string/ch2_title3"
+                    android:textColor="@color/purple_700" />
+
+                <Button
+                    android:id="@+id/challengeRatingButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:fontFamily="times"
+                    android:background="@android:color/transparent"
+                    android:text="@string/ch2_title4"
+                    android:textColor="@color/purple_700" />
+
+                <Button
+                    android:id="@+id/advantageDisadvantageButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:fontFamily="times"
+                    android:background="@android:color/transparent"
+                    android:text="@string/ch2_title5"
+                    android:textColor="@color/purple_700" />
+
+                <Button
+                    android:id="@+id/legendPointsButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:fontFamily="times"
+                    android:background="@android:color/transparent"
+                    android:text="@string/ch2_title6"
+                    android:textColor="@color/purple_700" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -130,6 +184,7 @@
                     android:paddingBottom="15dp"/>
 
                 <TextView
+                    android:id="@+id/ch2_title2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"

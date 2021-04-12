@@ -94,7 +94,7 @@ public class LoginFragment extends Fragment {
                 }
                 else{
                     Context context = getActivity().getApplicationContext();
-                    String text = "Unsuccessful Login, already login";
+                    String text = "Unsuccessful Logout, you aren't logged in";
                     int duration = Toast.LENGTH_SHORT;
                     Toast toast = Toast.makeText(context, text, duration);
                     toast.show();

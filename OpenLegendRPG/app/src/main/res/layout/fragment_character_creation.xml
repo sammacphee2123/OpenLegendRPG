@@ -144,13 +144,13 @@
                 android:layout_height = "wrap_content"
                 android:background="@drawable/box2"
                 android:orientation="horizontal"
-                android:weightSum="3">
+                android:weightSum="5">
                 <LinearLayout
                     android:id="@+id/guard"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:layout_weight="1">
+                    android:layout_weight="3">
                         <View
                             android:layout_height="15dp"
                             android:layout_width="match_parent">
@@ -234,7 +234,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:layout_weight="1">
+                            android:layout_weight="1">
                         <View
                             android:layout_height="15dp"
                             android:layout_width="match_parent">
@@ -306,12 +306,12 @@
                 android:layout_height = "wrap_content"
                 android:background="@drawable/box2"
                 android:orientation="horizontal"
-                android:weightSum="3">
+                android:weightSum="5">
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:layout_weight="1">
+                    android:layout_weight="3">
                     <View
                         android:layout_height="15dp"
                         android:layout_width="match_parent">
@@ -450,12 +450,12 @@
                 android:layout_height = "wrap_content"
                 android:background="@drawable/box2"
                 android:orientation="horizontal"
-                android:weightSum="3">
+                android:weightSum="5">
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:layout_weight="1">
+                    android:layout_weight="3">
                     <View
                         android:layout_height="15dp"
                         android:layout_width="match_parent">
@@ -473,14 +473,15 @@
                         android:background="@drawable/box2"
                         android:orientation="horizontal"
                         android:layout_gravity="center">
+
                         <TextView
                             android:id="@+id/ResolveNumTV"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:text=""
-                            android:textSize="20sp"
+                            android:fontFamily="times"
                             android:gravity="center"
-                            android:fontFamily="times"/>
+                            android:text=""
+                            android:textSize="20sp" />
                     </LinearLayout>
                 </LinearLayout>
                 <LinearLayout
@@ -682,8 +683,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:orientation="vertical"
-                    android:weightSum="2">
+                    android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -722,24 +722,46 @@
                         android:layout_height="10dp">
 
                     </View>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:fontFamily="times"
-                        android:text="Current"
-                        android:textSize="20sp" />
-
-                    <EditText
-                        android:id="@+id/currentET"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textMultiLine"
-                        android:text=""
-                        android:textSize="12sp">
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:weightSum="2">
 
-                    </EditText>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/box2"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="times"
+                                android:text="Current"
+                                android:textSize="20sp" />
+
+                            <EditText
+                                android:id="@+id/currentET"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="12sp"
+                                android:inputType="number"
+                                android:text="">
+
+                            </EditText>
+                        </LinearLayout>
+                </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
@@ -777,25 +799,25 @@
                     android:background="@drawable/box2"
                     android:orientation="horizontal"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:weightSum="2">
+                    android:layout_marginRight="10dp">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
                         android:layout_marginTop="5dp"
                         android:fontFamily="times"
-                        android:text="d20+"
-                        android:layout_weight="1"
+                        android:text="d20+ "
                         android:textSize="20sp" />
                     <TextView
                         android:id="@+id/d20TV"
-                        android:layout_weight="1"
                         android:layout_width="50dp"
+                        android:layout_marginTop="5dp"
                         android:layout_height="wrap_content"
                         android:inputType="number"
                         android:text=""
-                        android:textSize="12sp">
+                        android:textSize="20sp">
                     </TextView>
                 </LinearLayout>
                 <LinearLayout
@@ -848,8 +870,9 @@
                     android:layout_weight="1"
                     android:orientation="vertical">
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
                         android:fontFamily="times"
                         android:text="Legend"
                         android:textSize="16sp" />
@@ -872,8 +895,9 @@
                     android:layout_weight="1"
                     android:orientation="vertical">
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
                         android:fontFamily="times"
                         android:text="Wealth"
                         android:textSize="16sp" />
@@ -894,8 +918,9 @@
                     android:layout_weight="1"
                     android:orientation="vertical">
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
                         android:fontFamily="times"
                         android:text="Speed"
                         android:textSize="16sp" />
@@ -992,7 +1017,6 @@
                     xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-
                     android:layout_marginBottom="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
@@ -1002,6 +1026,7 @@
                         android:layout_height="match_parent">
                     </TableRow>
                     <TableLayout
+                        android:stretchColumns="*"
                         android:id="@+id/table2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
@@ -1010,7 +1035,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="120dp"
                                 android:layout_height="wrap_content"
                                 android:padding="5dp"
                                 android:text="Physical"
@@ -1052,7 +1077,7 @@
                             android:layout_height="wrap_content">
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="120dp"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
                                 android:padding="5dp"
@@ -1096,7 +1121,7 @@
                             android:layout_height="wrap_content">
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="120dp"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
                                 android:padding="5dp"
@@ -1141,7 +1166,7 @@
                             android:layout_height="wrap_content">
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="120dp"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
                                 android:padding="5dp"
@@ -1196,6 +1221,7 @@
                         android:layout_width="match_parent"
                         android:layout_marginBottom="10dp"
                         android:layout_marginLeft="10dp"
+                        android:stretchColumns="*"
                         android:layout_marginRight="10dp"
                         android:layout_height="match_parent">
                         <TableRow
@@ -1203,7 +1229,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="120dp"
                                 android:layout_height="wrap_content"
                                 android:padding="5dp"
                                 android:text="Mental"
@@ -1245,7 +1271,7 @@
                             android:layout_height="wrap_content">
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="120dp"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
                                 android:padding="5dp"
@@ -1291,7 +1317,7 @@
                             android:layout_height="wrap_content">
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="120dp"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
                                 android:padding="5dp"
@@ -1338,7 +1364,7 @@
                             android:layout_height="wrap_content">
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="120dp"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
                                 android:padding="5dp"
@@ -1380,7 +1406,7 @@
                             android:layout_height="wrap_content">
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="120dp"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
                                 android:padding="5dp"
@@ -1433,13 +1459,14 @@
                     <TableLayout
                         android:id="@+id/table3"
                         android:layout_width="match_parent"
+                        android:stretchColumns="*"
                         android:layout_height="match_parent">
                         <TableRow
                             android:id="@+id/table3Row1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="120dp"
                                 android:layout_height="wrap_content"
                                 android:padding="5dp"
                                 android:text="Social"
@@ -1481,7 +1508,7 @@
                             android:layout_height="wrap_content">
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="120dp"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
                                 android:padding="5dp"
@@ -1523,7 +1550,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="120dp"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
                                 android:padding="5dp"
@@ -1568,7 +1595,7 @@
                             android:layout_height="wrap_content">
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="120dp"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
                                 android:padding="5dp"
@@ -1621,13 +1648,14 @@
                         android:layout_marginBottom="10dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
+                        android:stretchColumns="*"
                         android:layout_height="match_parent">
                         <TableRow
                             android:id="@+id/table4Row1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="120dp"
                                 android:layout_height="wrap_content"
                                 android:padding="5dp"
                                 android:text="Extraordinary"
@@ -1668,7 +1696,7 @@
                             android:layout_height="wrap_content">
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="120dp"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
                                 android:padding="5dp"
@@ -1711,7 +1739,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="120dp"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
                                 android:padding="5dp"
@@ -1725,7 +1753,6 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
-
                                 android:inputType="number"
                                 android:padding="5dp"
                                 android:text=""
@@ -1756,7 +1783,7 @@
                             android:layout_height="wrap_content">
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="120dp"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
                                 android:padding="5dp"
@@ -1799,7 +1826,7 @@
                             android:layout_height="wrap_content">
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="120dp"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
                                 android:padding="5dp"
@@ -1841,7 +1868,7 @@
                             android:layout_height="wrap_content">
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="120dp"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
                                 android:padding="5dp"
@@ -1883,7 +1910,7 @@
                             android:layout_height="wrap_content">
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="120dp"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
                                 android:padding="5dp"
@@ -1925,7 +1952,7 @@
                             android:layout_height="wrap_content">
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="120dp"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
                                 android:padding="5dp"
@@ -1967,7 +1994,7 @@
                             android:layout_height="wrap_content">
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="120dp"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/box2"
                                 android:padding="5dp"
@@ -2329,6 +2356,8 @@
                      <AutoCompleteTextView
                          android:id="@+id/perk1"
                          android:layout_width="fill_parent"
+                         android:layout_marginRight="10dp"
+                         android:layout_marginLeft="10dp"
                          android:layout_height="wrap_content"
                          android:fontFamily="times"
                          android:text=""
@@ -2338,6 +2367,8 @@
                     <AutoCompleteTextView
                         android:id="@+id/perk2"
                         android:layout_width="fill_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
                         android:layout_height="wrap_content"
                         android:fontFamily="times"
                         android:text=""
@@ -2369,6 +2400,8 @@
                      <AutoCompleteTextView
                          android:id="@+id/flaw1"
                          android:layout_width="fill_parent"
+                         android:layout_marginRight="10dp"
+                         android:layout_marginLeft="10dp"
                          android:layout_height="wrap_content"
                          android:fontFamily="times"
                          android:text=""
@@ -2378,6 +2411,8 @@
 
                      <AutoCompleteTextView
                          android:id="@+id/flaw2"
+                         android:layout_marginRight="10dp"
+                         android:layout_marginLeft="10dp"
                          android:layout_width="fill_parent"
                          android:layout_height="wrap_content"
                          android:fontFamily="times"

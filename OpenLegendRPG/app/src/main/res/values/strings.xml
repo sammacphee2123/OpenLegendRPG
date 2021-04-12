@@ -189,7 +189,7 @@
         name="theActionRoll">The Core Mechanic: The Action Roll
     </string>
     <string
-        name="treasures">Greater Treasures Lie Within
+        name="treasures"><b>Greater Treasures Lie Within</b>
     </string>
     <string
         name="intro_Description1">Why Open Legend?
@@ -320,19 +320,19 @@ The secret’s in the title: Open. Everything about the game has been built to o
     </string>
     <!--Beginning of chapter 1 strings-->
     <string
-        name="Button1">Step 1: Describe Your Character
+        name="Button1"><b>Step 1: Describe Your Character</b>
     </string>
     <string
-        name="Button2">Step 2: Choose Attributes
+        name="Button2"><b>Step 2: Choose Attributes</b>
     </string>
     <string
-        name="Button3">Quick Build
+        name="Button3"><b>Quick Build</b>
     </string>
     <string
-        name="Button4">Custom Build
+        name="Button4"><b>Custom Build</b>
     </string>
     <string
-        name="Button5">Record Attribute Dice
+        name="Button5"><b>Record Attribute Dice</b>
     </string>
 
     <string
@@ -572,6 +572,22 @@ The secret’s in the title: Open. Everything about the game has been built to o
 
 <b>Effect.</b> This entry indicates the mechanical effects of the feat on the rules of the game.
     </string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!--Beginning of chapter2 strings-->
     <!--Beginning of chapter3 strings-->
     <string
