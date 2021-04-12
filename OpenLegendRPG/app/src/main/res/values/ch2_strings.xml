@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="ch2_p1">
+        The Introduction and Chapter 1 provided you with the core mechanic for action resolution as well as a brief overview of what the different attributes are used for. This chapter will delve a little bit deeper, explaining when to make different types of action rolls and how to interpret the results.
+    </string>
+
+    <string name="ch2_title1">
+        <b>When to Roll the Dice</b>
+    </string>
+
+    <string name="ch2_p2">
+        Open Legend is about creating great stories full of epic moments of heroism, and you will roll dice to determine the outcome of those moments. In short, you only need to make action rolls when the outcome of the intended action plays a significant role in the story. In combat, for example, you’ll be making plenty of action rolls to clash blades, sling spells, shoot blasters, and leap over treacherous chasms. But you don’t need to make a Persuasion roll every time you go to buy something from the bazaar, and you don’t need to roll Logic to remember where you left your multi-pass.
+    </string>
+
+    <string name="ch2_p3">
+        Open Legend includes a number of extraordinary attributes that can be used to represent futuristic theoretical science, magic, or inherent supernatural capabilities. For all other types of attribute, you can make an action roll with an attribute score of zero, but extraordinary attributes require a minimum score of 1 in order to attempt a roll.
+    </string>
+
+    <string name="ch2_title2">
+        <b>Every Roll Matters</b>
+    </string>
+
+    <string name="ch2_p4">
+        Another important point in Open Legend is that every action roll should drive the story in a new direction, for better or worse. A failed roll should not let the story stagnate, nor should a failure be easily negated by a successful roll from another character.
+    </string>
+
+    <string name="ch2_p5">
+        If you look back to the Core Mechanic, you can see that a simple failure is not an option:
+    </string>
+
+    <string name="ch2_actionRollTitle">
+        <b>The Action Roll</b>
+    </string>
+
+    <string name="ch2_actionRollText">
+        Roll 1d20 + attribute dice (all dice explode)
+    </string>
+
+    <string name="ch2_ifActionRoll">
+        <b>If the action roll...</b>
+    </string>
+
+    <string name="ch2_actionRollEqualsExceeds">
+        equals or exceeds the Challenge Rating,
+    </string>
+
+    <string name="ch2_actionRollLessThan">
+        is less than the Challenge Rating,
+    </string>
+
+    <string name="ch2_thenActionRoll">
+        <b>then the result is...</b>
+    </string>
+
+    <string name="ch2_actionRollPlayerSucceeds">
+        the player succeeds.
+    </string>
+
+    <string name="ch2_actionRollPlayerFails">
+        the player succeeds with a twist. <b>OR</b> the player fails, but the story progresses. (GM\'s Choice)
+    </string>
+
+    <string name="ch2_p6">
+        The following example illustrates how to make every roll matter.
+    </string>
+
+    <string name="ch2_p7">
+        <i>Pelias Quickenfit, a halfling burglar, is attempting to pick the lock on a door. He makes an Agility roll but gets lower than the challenge rating.</i>
+    </string>
+
+    <string name="ch2_p8">
+        Here are two potential outcomes for the roll:
+    </string>
+
+    <string name="ch2_p9">
+        <i>If the GM chooses <b>success with a twist</b>, they might rule that Pelias is able to open the lock; however, just as he finishes the job, he begins to hear a faint hissing sound from the door. A poison gas trap! The burglar immediately falls unconscious, and the rest of the party must decide what to do before the gas reaches them in a matter of seconds.</i>
+    </string>
+
+    <string name="ch2_p10">
+        <i>If the GM chooses <b>failure, but the story progresses</b>, they might rule that although Pelias is unable to get the lock open, he hears footsteps approaching from around the corner accompanied by the familiar jingle of a jailer’s keychain. If the party can position themselves quickly enough, they may be able to get the keys without a fight.</i>
+    </string>
+
+    <string name="ch2_p11">
+        Notice how both of these options allow Pelias’s action to drive the story forward just as much as a successful roll would have.
+    </string>
+
+    <string name="ch2_whatNotToDo">
+        <b>What NOT To Do</b>
+    </string>
+
+    <string name="ch2_p12">
+        In the above example, what might often happen at a gaming table is that upon seeing the halfling’s failure, another character immediately steps forward, say the barbarian, and attempts to force the door down. In Open Legend, such a reaction is frowned upon because it would mean that the burglar’s roll didn’t matter. It didn’t drive the story at all. Instead, the barbarian should wait for the GM to interpret the result of Pelias’s roll. The GM has a right to interpret the results of a failed action roll so that they can ensure that every roll matters. Players should make a special effort to avoid stepping on the GM’s toes in this regard.
+    </string>
+
+    <string name="ch2_oldHabits">
+        <b>Old Habits Die Hard</b>
+    </string>
+
+    <string name="ch2_p13">
+        If you’ve played other RPGs in the past, you may be tempted to immediately follow another player’s failed roll with an action roll of your own. The following are common situations in which you should be especially vigilant to give the GM time to interpret the results of a failed action roll:
+    </string>
+
+    <string name="ch2_p14">
+        • Perception rolls to find secret doors or other hidden objects
+    </string>
+
+    <string name="ch2_p15">
+        • Perception rolls to notice when someone is lying
+    </string>
+
+    <string name="ch2_p16">
+        • Persuasion rolls to convince an NPC of something
+    </string>
+
+    <string name="ch2_p17">
+        • Learning rolls to recall useful information
+    </string>
+
+    <string name="ch2_keepItSimple">
+        <b>Keep It Simple: Every Roll Matters for the GM</b>
+    </string>
+
+    <string name="ch2_p18">
+        The “every roll matters” rule was designed to make player actions meaningful to the story whether they succeed or fail. It recognizes the fact that static pass / fail rolls aren’t particularly fun for players. But “every roll matters” also adds an extra layer of complexity to the game because it requires the GM to make on-the-fly interpretations.
+    </string>
+
+    <string name="ch2_p19">
+        <b>So when the GM makes a roll</b>, a success is a success and a failure is a failure.
+    </string>
+
+    <string name="ch2_p20">
+        This is for the sake of simplicity and fun. When a player fails a roll, it’s not very fun if something doesn’t come out of it. When the GM fails a roll, though, there is usually much rejoicing at the table.
+    </string>
+
+    <string name="ch2_title3">
+        <b>Interpreting Action Rolls</b>
+    </string>
+
+    <string name="ch2_p21">
+        The previous scenario involving Pelias provides just one method in which a GM might interpret the results of an action roll, but there is a little more to it than that. In this section, you’ll get some empowering guidelines to help everyone at the table feel comfortable with the amount of improvisation required for Open Legend.
+    </string>
+
+    <string name="ch2_interpretingSuccessTitle">
+        <b>Interpreting Success</b>
+    </string>
+
+    <string name="ch2_p22">
+        A successful action roll is by far the easiest to interpret: it means that the player gets what they were hoping for. If they were rolling to climb a cliff, then they climb it. If they were trying to pick a pocket, then it’s picked. If they were trying to stab an orc, it is stabbed. And so on.
+    </string>
+
+    <string name="ch2_p23">
+        In some cases, the results of a success are already written into the rules (such as in combat, explained in Chapter 7). Often, though, the GM will need to determine what happens with a successful action roll.
+    </string>
+
+    <string name="ch2_p24">
+        There are two primary factors to consider when adjudicating a success:
+    </string>
+
+    <string name="ch2_p25">
+        <b>Don’t roll if there’s nothing to succeed at.</b> For example, if a character wants to search a corridor for secret passages, but the GM knows there aren’t any, they don’t need to have the character make a Perception roll, because there’s nothing to find; the roll doesn’t matter.
+    </string>
+
+    <string name="ch2_p26">
+        <b>Describe your success.</b> Whenever the situation allows, the player should show the rest of the table what success looks like. It’s their turn in the spotlight, so let them shine. If your rogue successfully disarms a trap, describe how the scything blade just barely nicked your cheek before you finished the job. If your mech knight makes a successful leap attack against an enemy tank, narrate how you use the extra momentum provided by the leap to dig your servo-blades through the tank’s hull. Sometimes, of course, the GM has privileged information, so they need to be the one to describe things. Whenever possible, though, the players should describe their own success.
+    </string>
+
+    <string name="ch2_interpretingSuccessTwistTitle">
+        <b>Interpreting Success with a Twist</b>
+    </string>
+
+    <string name="ch2_p27">
+        When a player fails an action roll, the GM may choose to allow the player’s action to succeed with a twist. In this case, the player gets what they wanted originally, but there is some sort of unintended consequence or unexpected cost. The following list is not exhaustive, but it should give you an idea of what qualifies as a twist.
+    </string>
+
+    <string name="ch2_twist1">
+        <b>• Put a character in danger</b>
+    </string>
+
+    <string name="ch2_twist2">
+        <b>• Expend a resource</b>
+    </string>
+
+    <string name="ch2_twist3">
+        <b>• Make an enemy or lose a friend</b>
+    </string>
+
+    <string name="ch2_twist4">
+        <b>• Overlook an important detail</b>
+    </string>
+
+    <string name="ch2_twist5">
+        <b>• Waste time</b>
+    </string>
+
+    <string name="ch2_twist6">
+        <b>• Attract attention</b>
+    </string>
+
+    <string name="ch2_twist7">
+        <b>• Find something you weren’t looking for</b>
+    </string>
+
+    <string name="ch2_p28">
+        The important thing to realize is that a success with a twist is still a success. It just comes at some sort of a cost: You find the trail of the hydra you’re tracking, but it leads you through a swamp infested with undead. You sense that the merchant is overcharging you, but you fail to realize that he’s also distracting you from the thugs sneaking up behind you. You are able to land a shot against the zombie, but it costs you the last bullet in your magazine.
+    </string>
+
+    <string name="ch2_interpretingFailureTitle">
+        <b>Interpreting Failure, but the Story Progresses</b>
+    </string>
+
+    <string name="ch2_p29">
+        In Open Legend, a failure is never just a failure. It’s always an important element in the story, hence the wording that “the story progresses”.
+    </string>
+
+    <string name="ch2_p30">
+        Progress, though, can mean a lot of things. When the GM selects this option, the following interpretations should give you some idea of how the story can progress in spite of failure.
+    </string>
+
+    <string name="ch2_p31">
+        <b>The player finds an opportunity for success.</b> Even though your magic fails to dispel the curse afflicting your ally, you discover during later study that a rare herb growing in a nearby forest would give you the power you require.
+    </string>
+
+    <string name="ch2_p32">
+        <b>The danger snowballs.</b> You fail to jump a chasm while fleeing a band of cannibals and fall along the cliffside, taking some damage. When you gather your senses, you realize that you aren’t only separated from the rest of your party, but you’ve also fallen into the nest of a Roc.
+    </string>
+
+    <string name="ch2_p33">
+        <b>The information is false.</b> You think you’ve got a good read on the mayor during your negotiations. It seems like she’s completely in favor of your plan to negotiate an alliance among the neighboring survivor settlements. When you set out the next day, however, it turns out you were wrong, and the guards the mayor sent to ensure your safe passage turn out to be your assassins.
+    </string>
+
+    <string name="ch2_p34">
+        The GM gets to decide how bad a failed action roll turns out to be, and sometimes, it’s really bad. While some of these examples are harsher than others, they all share one common factor: they steer the narrative forward. Failure is never just a failure.
+    </string>
+
+    <string name="ch2_title4">
+        <b>Determining Challenge Rating</b>
+    </string>
+
+    <string name="ch2_p35">
+        Many actions that you will undertake in Open Legend have a Challenge Rating (CR) that is determined by the rules. Attacks in combat, for example, use one of the target’s defense scores as the CR.
+    </string>
+
+    <string name="ch2_p36">
+        Oftentimes, though, the GM will need to determine the CR for actions that aren’t spelled out clearly in the rules. In these cases, the GM can use the Challenge Ratings by Difficulty Table to set an appropriate CR.
+    </string>
+
+    <string name="ch2_challengeRatingByDifficulty">
+        <b>CHALLENGE RATINGS BY DIFFICULTY</b>
+    </string>
+
+    <string name="ch2_difficulty">
+        <b>Difficulty</b>
+    </string>
+
+    <string name="ch2_everyday">
+        Everyday
+    </string>
+
+    <string name="ch2_challenging">
+        Challenging
+    </string>
+
+    <string name="ch2_heroic">
+        Heroic
+    </string>
+
+    <string name="ch2_epic">
+        Epic
+    </string>
+
+    <string name="ch2_legendary">
+        Legendary
+    </string>
+
+    <string name="ch2_challengeRating">
+        <b>Challenge Rating</b>
+    </string>
+
+    <string name="ch2_10">
+        10
+    </string>
+
+    <string name="ch2_15">
+        15
+    </string>
+
+    <string name="ch2_20">
+        20
+    </string>
+
+    <string name="ch2_25">
+        25
+    </string>
+
+    <string name="ch2_30">
+        30
+    </string>
+
+    <string name="ch2_exampleActions">
+        <b>Example Actions</b>
+    </string>
+
+    <string name="ch2_exampleAction1">
+        leap a 5’ gap, climb a surface with ledges, break down a household door, haggle a simple merchant for a discount
+    </string>
+
+    <string name="ch2_exampleAction2">
+        climb a rough surface, catch the drift of a text in an unfamiliar language, break down a strong wooden door
+    </string>
+
+    <string name="ch2_exampleAction3">
+        climb a smooth surface, leap a 15’ gap, translate a text in an unfamiliar language, convince a neutral party to take a risk for you
+    </string>
+
+    <string name="ch2_exampleAction4">
+        translate a text in an alien language, break down an iron door
+    </string>
+
+    <string name="ch2_exampleAction5">
+        leap a 25’ chasm, climb a flat surface, befriend an enemy with a vendetta against you
+    </string>
+
+    <string name="ch2_p37">
+        It’s important to note that Challenge Ratings are not typically set to be relative to the party’s level. So, breaking down a strong wooden door is CR 15 whether the party is first level or tenth. However, it may be helpful when creating scenarios for GMs to understand the typical capabilities of a character based on their attribute score. The Average Challenge Ratings vs. Attribute Scores Table lists Challenge Ratings that are of average difficulty for a character with specific attribute scores. A character with the listed score can be expected to succeed at the listed Challenge Rating about <b>50%</b> of the time.
+    </string>
+
+    <string name="ch2_avgChallengeRating_attributeScores_title">
+        <b>AVERAGE CHALLENGE RATINGS VS. ATTRIBUTE SCORES</b>
+    </string>
+
+    <string name="ch2_attributeScore">
+        <b>Attribute Score</b>
+    </string>
+
+    <string name="ch2_avgChallengeRating">
+        <b>Average Challenge Rating</b>
+    </string>
+
+    <string name="ch2_contestedActionsTitle">
+        <b>Contested Actions</b>
+    </string>
+
+    <string name="ch2_p38">
+        Sometimes, two or more characters are directly opposing each other in a test of strength, wits, or charm. For example, a mighty barbarian wrestles with a minotaur to get hold of a magical gem. Or three representatives of different star systems attempt to persuade the warleader of the intergalactic reavers to join their forces. Or a stealthy ninja attempts to sneak unseen past the watch of the monks on guard. These sorts of situations are called <b>contested actions</b>.
+    </string>
+
+    <string name="ch2_p39">
+        To resolve such contests, each character involved makes an action roll using an appropriate attribute. Whoever rolls the highest succeeds at the action. Sometimes, all parties use the same attribute for their action rolls, but often, each character will use a different attribute, as in the case of the rogue attempting to sneak (Agility) past the guard’s watch (Perception).
+    </string>
+
+    <string name="ch2_exampleContestedAction">
+        <b>EXAMPLE CONTESTED ACTION</b>
+    </string>
+
+    <string name="ch2_p40">
+        As the Unnamed Necromancer attempts to open a portal to release a shade demon upon the land, Uldric the Protector attempts to exert every ounce of his magical will to close the portal. The GM calls for a contested action between the two. The Necromancer makes an Entropy roll and gets a 25, while Uldric gets a 20 on his Protection roll. Unfortunately for the rest of the world, the demon has been unleashed.
+    </string>
+
+    <string name="ch2_groupActionRollsTitle">
+        <b>Group Action Rolls</b>
+    </string>
+
+    <string name="ch2_p41">
+        In certain scenarios, the success of an action relies on the skills of multiple characters, such as a party of treasure hunters attempting to sneak past a pair of guards or two hackers working together to access restricted data. In these cases, all characters who are contributing to the task describe what they are doing and make an action roll using an appropriate attribute. Count the number of successes and failures based on the Challenge Rating of the task. If there are more failures than successes, the task fails. Otherwise, the task succeeds. The GM interprets this success or failure as if it were a single action roll, rather than interpreting each action roll separately.
+    </string>
+
+    <string name="ch2_p42">
+        The GM always has the final say as to when a group action roll is called for and, if so, which characters may contribute to the task.
+    </string>
+
+    <string name="ch2_title5">
+        <b>Advantage &amp; Disadvantage</b>
+    </string>
+
+    <string name="ch2_p43">
+        Sometimes, you will attempt an action under circumstances that give you a significant upper hand, such as when attacking an enemy from behind. Other times, you’ll be working against exceptional hindrances, such as when trying to climb a rope that an enemy has covered in grease. In these types of cases, instead of adjusting the Challenge Rating of the task, the GM should assign your roll either <b>advantage</b> or <b>disadvantage</b>.
+    </string>
+
+    <string name="ch2_p44">
+        Advantage and disadvantage are always expressed with a numeric level, such as “advantage 1” or “disadvantage 3”. Multiple instances of advantage and disadvantage can add together, so if you have advantage 1 on an attack because you are flanking a foe, and you also possess a feat that grants you advantage 1, you have a total of advantage 2.
+    </string>
+
+    <string name="ch2_p45">
+        If a situation arises in which you are assigned both advantage and disadvantage, find the difference between the two values to determine your final outcome. For example, if you have advantage 1 and disadvantage 1, they negate each other and thus your action roll is normal. If you have advantage 1 and disadvantage 2, your action roll would be made with disadvantage 1.
+    </string>
+
+    <string name="ch2_effectsOfAdvDis">
+        <b>Effects of Advantage &amp; Disadvantage</b>
+    </string>
+
+    <string name="ch2_p46">
+        When you have advantage on an action, roll an extra number of attribute dice equal to your advantage level. Then, when adding your dice together, ignore the lowest X attribute dice, in which X is your advantage level.
+    </string>
+
+    <string name="ch2_exampleOfAdvantage">
+        <b>EXAMPLE OF ADVANTAGE</b>
+    </string>
+
+    <string name="ch2_p47">
+        Vera leaps down upon her foe from a ledge ten feet above. The GM rules that she gains advantage 1 on the attack. Her Might score is 9, granting her 3d10 for attribute dice. The advantage 1 allows her to roll 1 extra d10. So she rolls 1d20 + 4d10. The d20 rolls a 16 and the 4d10 roll 3, 5, 7, and 9. She removes the lowest d10 before calculating her total, leaving her with a final roll of 16 + 5 + 7 + 9 = 37.
+    </string>
+
+    <string name="ch2_p48">
+        Disadvantage works in a similar manner. When you have disadvantage, you still roll an extra number of attribute dice equal to your disadvantage value. However, instead of ignoring the lowest dice, you ignore the <i>highest</i> dice.
+    </string>
+
+    <string name="ch2_exampleDisadvantage">
+        <b>EXAMPLE OF DISADVANTAGE</b>
+    </string>
+
+    <string name="ch2_p49">
+        Armand attempts to blast his foe with psychokinetic fire. However, he is currently being distracted by a smoke bomb hurled by an enemy soldier, granting him disadvantage 1. Furthermore, he has also been subject to the <i>fatigued</i> bane, adding on an additional disadvantage 1. Armand’s Energy score is 5, granting him 2d6 attribute dice. He rolls 1d20 + 4d6. After rolling, but before calculating his total, he removes the two <i>highest</i> rolling d6s.
+    </string>
+
+    <string name="ch2_advantageAndDisadvantage">
+        <b>Advantage &amp; Disadvantage Are Only Applied BEFORE Explosions</b>
+    </string>
+
+    <string name="ch2_p50">
+        Advantage and Disadvantage only apply to your initial pool of dice for an action roll. They do not apply to subsequent rolls granted by exploding dice.
+    </string>
+
+    <string name="ch2_exampleAdvantageExplodingDice">
+        <b>EXAMPLE OF ADVANTAGE WITH EXPLODING DICE</b>
+    </string>
+
+    <string name="ch2_p51">
+        Tommy “Two Guns” unloads his pistols on an enemy gangster. His Agility is 3 and he has advantage 2 on the roll, so he rolls 1d20 + 3d8. Tommy’s d20 rolls a 10 and the d8s land 8, 8, and 3. Because of his advantage 2, Tommy ignores the lowest two dice: the 3 and one of the 8s. He re-rolls the remaining 8 because dice explode on their maximum result and gets a 5. His final roll is 23 (10 + 8 + 5).
+    </string>
+
+    <string name="ch2_advDisNoAttributeDice">
+        <b>Advantage &amp; Disadvantage without Attribute Dice</b>
+    </string>
+
+    <string name="ch2_p52">
+        When making an action roll without attribute dice, advantage and disadvantage affect the d20. For advantage, roll 2d20 and keep the highest. For disadvantage, roll 2d20 and keep the lowest. Additionally, you cannot accrue advantage or disadvantage greater than 1 in such situations. Your character is already so inept at the action that they cannot capitalize on cumulative circumstantial help or hindrances.
+    </string>
+
+    <string name="ch2_p53">
+        These rules apply to both actions performed with an attribute score of zero, as well as non-action rolls (like the d20 used for a Resist roll). In addition, if you make a roll without attribute dice, you cannot voluntarily incur disadvantage for some beneficial effect. Thus, you cannot multi-target attack if you have an attribute score of zero.
+    </string>
+
+    <string name="ch2_assigningAdvDis">
+        <b>Assigning Advantage &amp; Disadvantage</b>
+    </string>
+
+    <string name="ch2_p54">
+        Advantage and disadvantage can be assigned by the GM due to situational effects, or they can be assigned by feats, banes, and boons. When assigned situationally, the GM should never apply more than one level of advantage or disadvantage. Feats, banes, and boons—on the other hand—will often provide multiple levels as they rise in tier or power level. The Advantage and Disadvantage Examples Table provides a listing of typical situations in which the GM may assign advantage and disadvantage, though this list is by no means exhaustive.
+    </string>
+
+    <string name="ch2_advDisExamples">
+        <b>ADVANTAGE AND DISADVANTAGE EXAMPLES</b>
+    </string>
+
+    <string name="ch2_advantageSituations">
+        <b>Situations Meriting Advantage</b>
+    </string>
+
+    <string name="ch2_advExample1">
+        Attacking a surprised or unaware foe
+    </string>
+
+    <string name="ch2_advExample2">
+        Attacking a foe during an acrobatic stunt
+    </string>
+
+    <string name="ch2_advExample3">
+        Attacking a flanked foe
+    </string>
+
+    <string name="ch2_advExample4">
+        Negotiating with someone you have leverage over
+    </string>
+
+    <string name="ch2_advExample5">
+        Expending a valuable arcane focus when casting a spell
+    </string>
+
+    <string name="ch2_advExample6">
+        Conducting research in a well-stocked library
+    </string>
+
+    <string name="ch2_advExample7">
+        Tracking a large group
+    </string>
+
+    <string name="ch2_disadvantageSituations">
+        <b>Situations Meriting Disadvantage</b>
+    </string>
+
+    <string name="ch2_disExample1">
+        Attacking while balancing on a beam
+    </string>
+
+    <string name="ch2_disExample2">
+        Attacking in a confined space
+    </string>
+
+    <string name="ch2_disExample3">
+        Attacking a flanked foe
+    </string>
+
+    <string name="ch2_disExample4">
+        Negotiating with someone who has leverage over you
+    </string>
+
+    <string name="ch2_disExample5">
+        Casting a spell in the midst of a heavy storm
+    </string>
+
+    <string name="ch2_disExample6">
+        Conducting research while sick
+    </string>
+
+    <string name="ch2_disExample7">
+        Tracking a creature smaller than a child
+    </string>
+
+    <string name="ch2_title6">
+        <b>Legend Points</b>
+    </string>
+
+    <string name="ch2_p55">
+        An additional layer of depth to action resolution comes in the form of legend points, which allow players an opportunity to stack the dice when it comes time to perform a particularly legendary action.
+    </string>
+
+    <string name="ch2_p56">
+        Characters begin play with zero legend points, and the maximum they may acquire is 10. The GM may reward a PC with a legend point when they use one of their flaws to their own disadvantage or for particularly strong roleplaying.
+    </string>
+
+    <string name="ch2_exampleEarnLegendPoint">
+        <b>Example of Earning a Legend Point</b>
+    </string>
+
+    <string name="ch2_p57">
+        Zaax has the <i>hot tempered</i> flaw, causing him to easily lose control of his anger. In the middle of the party’s tense negotiations with the Imperial Guard, Zaax loses his patience with the high commander and shoots one of the guardsmen. This is a clear example of Zaax roleplaying his flaw despite negative consequences, so the GM awards him with a legend point.
+    </string>
+
+    <string name="ch2_p58">
+        The GM may also feel free to establish other rules for awarding legend points. For example, some GMs like to allow each player to award another PC one legend point each session. Other tables might have a vote for MVP or best roleplayer at the end of each session, with the winner gaining a legend point.
+    </string>
+
+    <string name="ch2_spendingLegendPoints">
+        <b>Spending Legend Points</b>
+    </string>
+
+    <string name="ch2_p59">
+        A PC may spend a maximum number of legend points equal to their level plus one in order to enhance a single action roll.
+    </string>
+
+    <string name="ch2_p60">
+        Before making an action roll, the PC declares how many legend points they are spending, and gains advantage 1 on the roll for each legend point spent. Additionally, for each legend point spent on the roll a +1 is added to the end result.
+    </string>
+
+</resources>
