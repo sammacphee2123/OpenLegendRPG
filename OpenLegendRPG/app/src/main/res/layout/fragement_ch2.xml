@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,28 +6,66 @@
     android:layout_width="match_parent"
     android:background="@drawable/paper_bg">
 
-    <ImageView
-        android:id="@+id/background_image"
+    <LinearLayout
+        android:id="@+id/Buttons"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleX="2.1"
-        android:scaleY="2.1"
-        android:scrollX="60dp"
-        android:alpha="0.85"
-        app:srcCompat="@drawable/paper_bg" />
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/PreviousButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="0dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/purple_700"
+            android:text="@string/previous" />
+
+        <Button
+            android:id="@+id/TableButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/purple_700"
+            android:layout_marginTop="0dp"
+            android:layout_centerInParent="true"
+            android:text="@string/table" />
+
+        <Button
+            android:id="@+id/NextButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:background="@android:color/transparent"
+            android:textColor="@color/purple_700"
+            android:text="@string/next" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingBottom="70dp">
+
         <ScrollView
+            android:id="@+id/scrl_ch2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="0dp"
             android:fillViewport="true"
-            android:layout_gravity="center_horizontal">
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
 
-            <RelativeLayout
+            <LinearLayout
                 android:id="@+id/ch2_container"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -38,9 +75,9 @@
                 <TextView
                     android:id="@+id/chapter2_title"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="51dp"
                     android:layout_marginEnd="0dp"
                     android:background="@drawable/corerules"
                     android:duplicateParentState="false"
@@ -48,52 +85,2009 @@
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="28sp"
+                    android:paddingBottom="15dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"/>
 
-                <LinearLayout
-                    android:id="@+id/Buttons"
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_centerInParent="true"
-                    android:orientation="horizontal">
-                    <Button
-                        android:id="@+id/PreviousButton"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:layout_marginTop="0dp"
-                        android:background="@android:color/transparent"
-                        android:textColor="@color/purple_700"
-                        android:text="@string/previous" />
-                    <Button
-                        android:id="@+id/TableButton"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="@android:color/transparent"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p1"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
 
-                        android:layout_gravity="center_horizontal"
-                        android:textColor="@color/purple_700"
-                        android:layout_marginTop="0dp"
-                        android:layout_centerInParent="true"
-                        android:text="@string/table" />
+                <TextView
+                    android:id="@+id/ch2_title1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/purple_100"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_title1"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:paddingBottom="5dp"/>
 
-                    <Button
-                        android:id="@+id/NextButton"
-                        android:layout_width="0dp"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p2"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p3"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/purple_100"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_title2"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:paddingBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p4"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p5"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_actionRollTitle"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="5dp"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_actionRollText"
+                    android:textColor="@color/black"
+                    android:background="@color/white"
+                    android:textSize="16sp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textAlignment="center"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--Title row-->
+                    <TableRow
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:textAlignment="center"
-                        android:background="@android:color/transparent"
-                        android:textColor="@color/purple_700"
-                        android:text="@string/next" />
-                </LinearLayout>
-            </RelativeLayout>
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_ifActionRoll"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="5dp"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_thenActionRoll"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="10dp"
+                            android:textAlignment="center"/>
+                    </TableRow>
+
+                    <!--Row 1-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_actionRollEqualsExceeds"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="5dp"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_actionRollPlayerSucceeds"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="10dp"
+                            android:textAlignment="center"/>
+                    </TableRow>
+
+                    <!--Row 2-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/yellow"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_actionRollLessThan"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="5dp"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_actionRollPlayerFails"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="10dp"
+                            android:textAlignment="center"/>
+                    </TableRow>
+                </TableLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p6"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p7"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p8"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p9"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p10"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p11"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_whatNotToDo"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:paddingBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p12"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_oldHabits"
+                    android:textColor="@color/black"
+                    android:background="@color/white"
+                    android:textSize="20sp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p13"
+                    android:textColor="@color/black"
+                    android:background="@color/white"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p14"
+                    android:textColor="@color/black"
+                    android:background="@color/white"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p15"
+                    android:textColor="@color/black"
+                    android:background="@color/white"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p16"
+                    android:textColor="@color/black"
+                    android:background="@color/white"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p17"
+                    android:textColor="@color/black"
+                    android:background="@color/white"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_keepItSimple"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:paddingBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p18"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p19"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p20"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:id="@+id/ch2_title3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/purple_100"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_title3"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:paddingBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p21"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_interpretingSuccessTitle"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:paddingBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p22"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p23"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p24"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p25"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p26"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_interpretingSuccessTwistTitle"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:paddingBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p27"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_twist1"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_twist2"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_twist3"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_twist4"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_twist5"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_twist6"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_twist7"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p28"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_interpretingFailureTitle"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:paddingBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p29"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p30"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p31"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p32"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p33"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p34"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:id="@+id/ch2_title4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/purple_100"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_title4"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:paddingBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p35"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p36"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_challengeRatingByDifficulty"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <!--Challenge Ratings by Difficulty table-->
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--Column titles-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="3"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_difficulty"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_challengeRating"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_exampleActions"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+                    </TableRow>
+
+                    <!--Row 1-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:weightSum="3"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_everyday"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_10"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_exampleAction1"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+                    </TableRow>
+
+                    <!--Row 2-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/yellow"
+                        android:weightSum="3"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_challenging"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_15"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_exampleAction2"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+                    </TableRow>
+
+                    <!--Row 3-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:weightSum="3"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_heroic"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_20"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_exampleAction3"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+                    </TableRow>
+
+                    <!--Row 4-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/yellow"
+                        android:weightSum="3"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_epic"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_25"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_exampleAction4"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+                    </TableRow>
+
+                    <!--Row 5-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:weightSum="3"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_legendary"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_30"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_exampleAction5"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+                    </TableRow>
+
+                </TableLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p37"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_avgChallengeRating_attributeScores_title"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--Column titles-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_attributeScore"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_avgChallengeRating"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+                    </TableRow>
+
+                    <!--Row 0-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="10"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+                    </TableRow>
+
+                    <!--Row 1-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:background="@color/yellow">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="1"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="12"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+                    </TableRow>
+
+                    <!--Row 2-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="2"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="14"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+                    </TableRow>
+
+                    <!--Row 3-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:background="@color/yellow">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="3"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="16"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+                    </TableRow>
+
+                    <!--Row 4-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="4"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="18"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+                    </TableRow>
+
+                    <!--Row 5-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:background="@color/yellow">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="5"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="20"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+                    </TableRow>
+
+                    <!--Row 6-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="6"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="22"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+                    </TableRow>
+
+                    <!--Row 7-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:background="@color/yellow">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="7"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="24"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+                    </TableRow>
+
+                    <!--Row 8-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="8"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="26"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+                    </TableRow>
+
+                    <!--Row 9-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:background="@color/yellow">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="9"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="28"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+                    </TableRow>
+
+                    <!--Row 10-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="10"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="30"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+                    </TableRow>
+
+                </TableLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_contestedActionsTitle"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:paddingBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p38"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p39"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_exampleContestedAction"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:background="@color/white"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p40"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:background="@color/white"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_groupActionRollsTitle"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:paddingBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p41"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p42"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:id="@+id/ch2_title5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/purple_100"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_title5"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:paddingBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p43"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p44"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p45"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_effectsOfAdvDis"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p46"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_exampleOfAdvantage"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="5dp"
+                    android:background="@color/white"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p47"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:background="@color/white"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p50"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_exampleDisadvantage"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="5dp"
+                    android:background="@color/white"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p49"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:background="@color/white"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_advantageAndDisadvantage"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p50"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_exampleAdvantageExplodingDice"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="5dp"
+                    android:background="@color/white"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p51"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:background="@color/white"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_advDisNoAttributeDice"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p52"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p53"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_assigningAdvDis"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p54"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_advDisExamples"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"/>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--Column titles-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_advantageSituations"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="15dp"
+                            android:textAlignment="center"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_disadvantageSituations"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="15dp"
+                            android:textAlignment="center"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"/>
+                    </TableRow>
+
+                    <!--Row 1-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_advExample1"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="15dp"
+                            android:textAlignment="center"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_disExample1"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="15dp"
+                            android:textAlignment="center"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"/>
+                    </TableRow>
+
+                    <!--Row 2-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:background="@color/yellow">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_advExample2"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="15dp"
+                            android:textAlignment="center"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_disExample2"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="15dp"
+                            android:textAlignment="center"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"/>
+                    </TableRow>
+
+                    <!--Row 3-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_advExample3"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="15dp"
+                            android:textAlignment="center"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_disExample3"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="15dp"
+                            android:textAlignment="center"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"/>
+                    </TableRow>
+
+                    <!--Row 4-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:background="@color/yellow">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_advExample4"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="15dp"
+                            android:textAlignment="center"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_disExample4"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="15dp"
+                            android:textAlignment="center"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"/>
+                    </TableRow>
+
+                    <!--Row 5-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_advExample5"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="15dp"
+                            android:textAlignment="center"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_disExample5"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="15dp"
+                            android:textAlignment="center"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"/>
+                    </TableRow>
+
+                    <!--Row 6-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:background="@color/yellow">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_advExample6"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="15dp"
+                            android:textAlignment="center"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_disExample6"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="15dp"
+                            android:textAlignment="center"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"/>
+                    </TableRow>
+
+                    <!--Row 7-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_advExample7"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="15dp"
+                            android:textAlignment="center"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="times"
+                            android:text="@string/ch2_disExample7"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:paddingBottom="15dp"
+                            android:textAlignment="center"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"/>
+                    </TableRow>
+                </TableLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"/>
+
+                <TextView
+                    android:id="@+id/ch2_title6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/purple_100"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_title6"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:paddingBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p55"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p56"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_exampleEarnLegendPoint"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"
+                    android:background="@color/white"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p57"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="5dp"
+                    android:background="@color/white"/>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p58"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_spendingLegendPoints"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p59"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times"
+                    android:text="@string/ch2_p60"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="15dp"/>
+
+
+            </LinearLayout>
         </ScrollView>
     </LinearLayout>
 </RelativeLayout>
