@@ -102,13 +102,53 @@ public class CreateAccountFragment extends Fragment {
     }
     private void createAccount(String name, String password, String email) throws ExecutionException, InterruptedException {
         mUserViewModel = new ViewModelProvider(this).get(userViewModel.class);
-        boolean result = mUserViewModel.createUser(name, password, email);
-        if(!result){
-            subtitle.setText("Cannot create account username is taken");
+        String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+        if(password.length() >= 7 && email.trim().matches(emailPattern)) {
+
+            boolean result = mUserViewModel.createUser(name, password, email);
+            if (!result) {
+                subtitle.setText("Cannot create account username is taken");
+                Context context = getActivity().getApplicationContext();
+                String text = "Unsuccessful Account Creation";
+                int duration = Toast.LENGTH_SHORT;
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
+            } else {
+                subtitle.setText("AccountCreated, Login and you are set");
+                Context context = getActivity().getApplicationContext();
+                String text = "Successful Account Creation";
+                int duration = Toast.LENGTH_SHORT;
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
+            }
         }
         else{
-            subtitle.setText("AccountCreated, Login and you are set");
+            if(password.length() < 7 && !email.trim().matches(emailPattern)){
+                subtitle.setText("Cannot create account password must be 8 characters and email must exist");
+                Context context = getActivity().getApplicationContext();
+                String text = "Unsuccessful Account Creation";
+                int duration = Toast.LENGTH_SHORT;
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
+            }
+            else if(password.length() <= 7){
+                subtitle.setText("Cannot create account password must be 8 characters");
+                Context context = getActivity().getApplicationContext();
+                String text = "Unsuccessful Account Creation";
+                int duration = Toast.LENGTH_SHORT;
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
+            }
+            else{
+                subtitle.setText("Cannot create account email must exist");
+                Context context = getActivity().getApplicationContext();
+                String text = "Unsuccessful Account Creation";
+                int duration = Toast.LENGTH_SHORT;
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
+            }
         }
+
         mNameEditText.setText("");
         mPasswordEditText.setText("");
         mEmailEditText.setText("");

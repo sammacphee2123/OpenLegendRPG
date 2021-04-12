@@ -1,5 +1,6 @@
 package ca.unb.mobiledev.openlegendrpg;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
@@ -31,10 +32,10 @@ import ca.unb.mobiledev.openlegendrpg.Items.User;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static String string = "Login";
     private String[] mNavigationDrawerItemTitles;
     private DrawerLayout mDrawerLayout;
-    private ListView mDrawerList;
+    private static ListView mDrawerList;
+    private static ActionBar actionBar;
     Toolbar toolbar;
     private CharSequence mTitle;
     ActionBarDrawerToggle mDrawerToggle;
@@ -43,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         mNavigationDrawerItemTitles= getResources().getStringArray(R.array.navigation_drawer_items_array);
         mDrawerLayout = findViewById(R.id.drawer_layout);
         mDrawerList = findViewById(R.id.left_drawer);
@@ -115,6 +115,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (fragment != null) {
+
+            actionBar = getSupportActionBar();
             FragmentManager fragmentManager = getSupportFragmentManager();
             fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
 
@@ -124,7 +126,6 @@ public class MainActivity extends AppCompatActivity {
                 setTitle(mNavigationDrawerItemTitles[position]);
             }
             else{
-
                 setTitle(user.getName());
             }
             mDrawerLayout.closeDrawer(mDrawerList);
@@ -171,15 +172,20 @@ public class MainActivity extends AppCompatActivity {
 
     public static void setUser(User newuser) {
         user = newuser;
-        if(user != null) {
-            string = user.getName();
-        }
-        else{
-            string = "Login";
-        }
+        setLoginHeader();
     }
 
     public static User getUser() {
         return user;
+    }
+    public static void setLoginHeader() {
+        mDrawerList.setItemChecked(6, true);
+        mDrawerList.setSelection(6);
+        if(user == null) {
+            Objects.requireNonNull(actionBar).setTitle("Login");
+        }
+        else {
+            Objects.requireNonNull(actionBar).setTitle(user.getName());
+        }
     }
 }
