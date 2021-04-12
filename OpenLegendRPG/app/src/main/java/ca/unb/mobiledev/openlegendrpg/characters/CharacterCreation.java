@@ -238,7 +238,6 @@ public class CharacterCreation extends AppCompatActivity
                 String perk2 = mPerk2AT.getText().toString();
                 String flaw1 = mFlaw1AT.getText().toString();
                 String flaw2 = mFlaw2AT.getText().toString();
-
                 //Other details
                 String equipment = equipmentET.getText().toString();
                 String additional = additionalET.getText().toString();
@@ -293,7 +292,7 @@ public class CharacterCreation extends AppCompatActivity
         boolean isUnique = false;
         Character character = new Character(charName, playerName, level, exp, desc,
                 lethalHP, currentHP, initADV, legend, wealth, speed, guardOther,
-                toughnessOther, resolveOther, armor , equipment,
+                toughnessOther, resolveOther, armor, equipment,
                 additional, userId, agility, fortitude, might, deception, persuasion , presence,
                 learning, logic, perception, will, alteration, creation, energy,
                 entropy,influence,movement, prescience ,protection, perk1,perk2 , flaw1,flaw2 );
