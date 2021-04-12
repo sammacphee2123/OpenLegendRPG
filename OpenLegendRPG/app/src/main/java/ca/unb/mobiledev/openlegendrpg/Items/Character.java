@@ -1,12 +1,8 @@
 package ca.unb.mobiledev.openlegendrpg.Items;
 
 import androidx.annotation.NonNull;
-import androidx.room.ColumnInfo;
 import androidx.room.Entity;
-import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
-import java.util.List;
-
 
 @Entity(tableName = "character_table")
 public class Character {
@@ -14,52 +10,24 @@ public class Character {
     @PrimaryKey
     @NonNull
     private String charName;
-    private String playerName, description, equipment, additionalNotes, perk1, perk2, flaw1, flaw2;
-    private int level;
-    private int experience;
-    private int lethalHP;
-    private int currentHP;
-    private int initADV;
-    private int legend;
-    private int wealth;
-    private int speed;
-    private int guardOther;
-    private int toughnessOther;
-    private int resolveOther;
-    private int armor;
-    private int agility;
-    private int fortitude;
-    private int might;
-    private int deception;
-    private int persuasion;
-    private int presence;
-    private int learning;
-    private int logic;
-    private int perception;
-    private int will;
-    private int alteration;
-    private int creation;
-    private int energy;
-    private int entropy;
-    private int influence;
-    private int movement;
-    private int prescience;
-    private int protection;
-
+    //@TypeConverters(featsTypeConverter.class)
     //private List<Feat> feats;
-    //private String[] perks;
-    //private String[] flaws;
+    private String playerName, description, equipment, additionalNotes, perk1, perk2, flaw1, flaw2;
+    private int level, experience, lethalHP, currentHP, initADV, legend, wealth, speed, guardOther,
+            toughnessOther, resolveOther, armor, agility, fortitude, might, deception, persuasion,
+            presence, learning, logic, perception, will, alteration, creation, energy, entropy,
+            influence,  movement, prescience, protection;
     private String userId;
 
-
-
     public Character(String charName, String playerName, int level, int experience,
-                     String description, int lethalHP, int currentHP, int initADV, int legend, int wealth,
-                     int speed, int guardOther, int toughnessOther, int resolveOther, int armor, String equipment,
-                     String additionalNotes, String userId, int agility, int fortitude,
-                     int might, int deception, int persuasion, int presence, int learning,
-                     int logic, int perception, int will, int alteration, int creation, int energy,
-                     int entropy, int influence, int movement, int prescience, int protection, String perk1, String perk2, String flaw1, String flaw2)
+                     String description, int lethalHP, int currentHP, int initADV, int legend,
+                     int wealth, int speed, int guardOther, int toughnessOther, int resolveOther,
+                     int armor, String equipment, String additionalNotes, String userId,
+                     int agility, int fortitude, int might, int deception, int persuasion,
+                     int presence, int learning, int logic, int perception, int will, int alteration,
+                     int creation, int energy, int entropy, int influence, int movement,
+                     int prescience, int protection, String perk1, String perk2, String flaw1,
+                     String flaw2)
     {
         this.charName = charName;
         this.playerName = playerName;
@@ -248,6 +216,7 @@ public class Character {
     public int getProtection() { return protection; }
 
     public void setProtection(int protection) { this.protection = protection; }
+
     public String getPerk2() { return perk2; }
 
     public void setPerk2(String perk1) { this.perk2 = perk2; }
