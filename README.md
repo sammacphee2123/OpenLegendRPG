@@ -24,4 +24,4 @@ KNOWN BUGS
   
 
 CONTRIBUTING
-  If you'd like to contribute, feel free to pick an item from the trello board under CHANGELOG, pull down the code and work on it. Your code will be reviewed before being added to the project.
+  If you'd like to contribute, feel free to pick an item from the trello board under CHANGELOG, pull down the code and work on it. When you're done, make a pull request and your code will be reviewed before being added to the project.
