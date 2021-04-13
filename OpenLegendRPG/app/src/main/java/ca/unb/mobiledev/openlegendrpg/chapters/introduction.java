@@ -23,15 +23,18 @@ public class introduction extends android.app.Activity {
         Log.i("please: ", "onCreate() called");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragement_intro);
-        ScrollView sv = (ScrollView)findViewById(R.id.scrl);
-        Button Button1 = findViewById(R.id.whatDefinesOpenLegend);
-        Button1.setOnClickListener(new View.OnClickListener() {
+        ScrollView sv = (ScrollView)findViewById(R.id.scrl_intro);
+
+        Button button1 = findViewById(R.id.whatDefinesOpenLegend);
+        button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 TextView text = findViewById(R.id.whatDefinesOpenLegend_Title);
                 sv.scrollTo(0, text.getTop());
             }
         });
+
+
         Button Button2 = findViewById(R.id.theActionRoll);
         Button2.setOnClickListener(new View.OnClickListener() {
             @Override
