@@ -14,39 +14,45 @@ public class chapter3 extends android.app.Activity{
     private Button NextButton;
     private Button PreviousButton;
 
+    private Button title1;
+    private Button title2;
+    private Button title3;
+    private Button title4;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragement_ch3);
         ScrollView sv = (ScrollView)findViewById(R.id.scrl_ch3);
-        Button Button1 = findViewById(R.id.Button1_ch3);
-        Button1.setOnClickListener(new View.OnClickListener() {
+
+        title1 = findViewById(R.id.Button1_ch3);
+        title1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TextView text = findViewById(R.id.SubTitle1_ch3);
+                TextView text = findViewById(R.id.ch3_title1);
                 sv.scrollTo(0, text.getTop());
             }
         });
-        Button Button2 = findViewById(R.id.Button2_ch3);
-        Button2.setOnClickListener(new View.OnClickListener() {
+        title2 = findViewById(R.id.Button2_ch3);
+        title2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TextView text = findViewById(R.id.SubTitle2_ch3);
+                TextView text = findViewById(R.id.ch3_title2);
                 sv.scrollTo(0, text.getTop());
             }
         });
-        Button Button3 = findViewById(R.id.Button3_ch3);
-        Button3.setOnClickListener(new View.OnClickListener() {
+        title3 = findViewById(R.id.Button3_ch3);
+        title3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TextView text = findViewById(R.id.SubTitle3_ch3);
+                TextView text = findViewById(R.id.ch3_title3);
                 sv.scrollTo(0, text.getTop());
             }
         });
-        Button Button4 = findViewById(R.id.Button4_ch3);
-        Button3.setOnClickListener(new View.OnClickListener() {
+        title4 = findViewById(R.id.Button4_ch3);
+        title4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TextView text = findViewById(R.id.SubTitle4_ch3);
+                TextView text = findViewById(R.id.ch3_title4);
                 sv.scrollTo(0, text.getTop());
             }
         });
