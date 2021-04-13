@@ -17,7 +17,7 @@ public class chapter3 extends android.app.Activity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragement_ch3);
-        ScrollView sv = (ScrollView)findViewById(R.id.scrl);
+        ScrollView sv = (ScrollView)findViewById(R.id.scrl_ch3);
         Button Button1 = findViewById(R.id.Button1_ch3);
         Button1.setOnClickListener(new View.OnClickListener() {
             @Override

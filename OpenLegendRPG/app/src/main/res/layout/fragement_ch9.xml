@@ -39,29 +39,25 @@
             android:layout_centerInParent="true"
             android:text="@string/table" />
 
-        <Button
-            android:id="@+id/NextButton"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textAlignment="center"
-            android:background="@android:color/transparent"
-            android:textColor="@color/purple_700"
-            android:text="@string/next" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingBottom="70dp">
+
         <ScrollView
+            android:id="@+id/scrl_ch9"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="0dp"
             android:fillViewport="true"
-            android:layout_gravity="center_horizontal">
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
 
-            <RelativeLayout
+            <LinearLayout
                 android:id="@+id/ch9_container"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -71,9 +67,9 @@
                 <TextView
                     android:id="@+id/chapter9_title"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="51dp"
                     android:layout_marginEnd="0dp"
                     android:background="@drawable/corerules"
                     android:duplicateParentState="false"
@@ -81,11 +77,27 @@
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="28sp"
+                    android:paddingBottom="15dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-            </RelativeLayout>
+                    app:layout_constraintTop_toTopOf="parent"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="51dp"
+                    android:layout_marginEnd="0dp"
+                    android:background="@drawable/corerules"
+                    android:duplicateParentState="false"
+                    android:text="Work In Progress"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="28sp"
+                    android:paddingBottom="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+            </LinearLayout>
         </ScrollView>
     </LinearLayout>
 </RelativeLayout>
